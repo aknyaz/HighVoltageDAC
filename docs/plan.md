@@ -53,8 +53,9 @@ count, but not total ideal heat at the same code and output resistance.
 - [x] Check all 4096 ideal 12-bit codes and verify both alternatives in structural 5 V SPICE.
 - [x] Quantify branch count, resistor span, hottest resistor, and midpoint idle heat.
 
-The next concrete step is a readable wired KiCad sheet for the parallel candidate,
-using a low-bit demonstrator first. Retain R–2R as a reference. Before preferring
+- [x] Create a complete wired 4-bit parallel KiCad bench and verify its actual SPICE export.
+
+The parallel demonstrator is in `kicad/parallel/`; R–2R remains a reference. Before preferring
 binary or segmented hardware, evaluate resistance mismatch, leakage, switch
 capacitance/timing, and long-held code states. No real HV device is selected yet.
 

@@ -1,0 +1,14 @@
+{
+  "verified_symbols": 29,
+  "verified_pins": 76,
+  "verified_nets": 21,
+  "load_power_w": 0.0011186949917308916,
+  "primary_mean_v": -1.3197399354337296e-05,
+  "supply_power_w": 0.010213791378599516,
+  "resistor_heat_w": 0.009095086082725039,
+  "power_balance_residual_w": 1.0304143585257441e-08,
+  "max_secondary_difference_from_reference_v": 2.832148848774807e-09,
+  "r2r_reference_heat_w": 0.02107425258466797,
+  "heat_reduction_factor": 2.317103147016479,
+  "relative_load_power_difference": 5.433411609523375e-09
+}

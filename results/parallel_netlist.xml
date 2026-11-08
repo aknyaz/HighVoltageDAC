@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\aknya\MyProjects\HighVoltageDAC\kicad\parallel\hv_rdac_parallel.kicad_sch</source>
+    <date>2026-11-08T15:12:13</date>
+    <tool>Eeschema 10.0.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>HV-RDAC | parallel 4-bit simulation bench</title>
+        <company/>
+        <rev>P1</rev>
+        <date/>
+        <source>hv_rdac_parallel.kicad_sch</source>
+        <comment number="1" value="5 V model only | 1 kHz PCM at 192 kS/s | idealized switches and transformer"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="R1">
+      <value>16k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>81eb3b5c-2fd5-53be-9e8e-a889f10b58c2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>8k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c7a9ad42-e65d-5097-81fd-16496ee6b407</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>4k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1809e9d8-003d-516d-8d4c-e2e3d3a56e67</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>2k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>30dd33f3-20b3-5893-b47f-ab8e21e49a93</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>16k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5f78e3c1-1172-5d6f-ba7a-5af7a10552ff</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>16k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>03b38c0a-92fc-5d50-968e-50f63bc00230</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R10">
+      <value>8k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ddb416bc-656c-55dc-b805-9457e371143d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R11">
+      <value>4k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3dfb728d-7cc4-5d5e-9569-a07546758e19</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R12">
+      <value>2k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>82a6e751-02cb-5a85-b42b-e5f6d0f669c9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R16">
+      <value>16k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>398d70a4-abf3-54f7-b1bc-ee3ca4db23c6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R17">
+      <value>8</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b72644c5-9838-5f1f-8c4e-fc164d47c563</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="T1">
+      <value>10 H : 40 mH</value>
+      <fields>
+        <field name="Sim.Device">SUBCKT</field>
+        <field name="Sim.Library">hv_rdac_models.lib</field>
+        <field name="Sim.Name">RDAC_TRANSFORMER</field>
+        <field name="Sim.Pins">1=1 2=2 3=3 4=4</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="Transformer" description=""/>
+      <property name="Sim.Device" value="SUBCKT"/>
+      <property name="Sim.Library" value="hv_rdac_models.lib"/>
+      <property name="Sim.Name" value="RDAC_TRANSFORMER"/>
+      <property name="Sim.Pins" value="1=1 2=2 3=3 4=4"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c96e7709-f11b-5cf5-a9ed-9b7e33c45f0d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>SPDT</value>
+      <fields>
+        <field name="Sim.Device">SUBCKT</field>
+        <field name="Sim.Library">hv_rdac_models.lib</field>
+        <field name="Sim.Name">RDAC_SPDT</field>
+        <field name="Sim.Pins">1=1 2=2 3=3 4=4</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="SPDT" description=""/>
+      <property name="Sim.Device" value="SUBCKT"/>
+      <property name="Sim.Library" value="hv_rdac_models.lib"/>
+      <property name="Sim.Name" value="RDAC_SPDT"/>
+      <property name="Sim.Pins" value="1=1 2=2 3=3 4=4"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>48f14650-9686-507a-a7d8-b681517c510d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>SPDT</value>
+      <fields>
+        <field name="Sim.Device">SUBCKT</field>
+        <field name="Sim.Library">hv_rdac_models.lib</field>
+        <field name="Sim.Name">RDAC_SPDT</field>
+        <field name="Sim.Pins">1=1 2=2 3=3 4=4</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="SPDT" description=""/>
+      <property name="Sim.Device" value="SUBCKT"/>
+      <property name="Sim.Library" value="hv_rdac_models.lib"/>
+      <property name="Sim.Name" value="RDAC_SPDT"/>
+      <property name="Sim.Pins" value="1=1 2=2 3=3 4=4"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7755533a-4778-5a18-a469-ebedbcacc51b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>SPDT</value>
+      <fields>
+        <field name="Sim.Device">SUBCKT</field>
+        <field name="Sim.Library">hv_rdac_models.lib</field>
+        <field name="Sim.Name">RDAC_SPDT</field>
+        <field name="Sim.Pins">1=1 2=2 3=3 4=4</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="SPDT" description=""/>
+      <property name="Sim.Device" value="SUBCKT"/>
+      <property name="Sim.Library" value="hv_rdac_models.lib"/>
+      <property name="Sim.Name" value="RDAC_SPDT"/>
+      <property name="Sim.Pins" value="1=1 2=2 3=3 4=4"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>20f20896-79ff-5832-8aff-0a08c2e4bb17</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U4">
+      <value>SPDT</value>
+      <fields>
+        <field name="Sim.Device">SUBCKT</field>
+        <field name="Sim.Library">hv_rdac_models.lib</field>
+        <field name="Sim.Name">RDAC_SPDT</field>
+        <field name="Sim.Pins">1=1 2=2 3=3 4=4</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="SPDT" description=""/>
+      <property name="Sim.Device" value="SUBCKT"/>
+      <property name="Sim.Library" value="hv_rdac_models.lib"/>
+      <property name="Sim.Name" value="RDAC_SPDT"/>
+      <property name="Sim.Pins" value="1=1 2=2 3=3 4=4"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a3d3a458-cbf5-5fb9-8e36-cfd259d55a75</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U5">
+      <value>PCM A0</value>
+      <fields>
+        <field name="Sim.Device">SUBCKT</field>
+        <field name="Sim.Library">hv_rdac_models.lib</field>
+        <field name="Sim.Name">PCM_A0</field>
+        <field name="Sim.Pins">1=1 2=2</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="PCM" description=""/>
+      <property name="Sim.Device" value="SUBCKT"/>
+      <property name="Sim.Library" value="hv_rdac_models.lib"/>
+      <property name="Sim.Name" value="PCM_A0"/>
+      <property name="Sim.Pins" value="1=1 2=2"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aca881e8-3980-5b39-9b78-6748725ee3ae</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U6">
+      <value>PCM A1</value>
+      <fields>
+        <field name="Sim.Device">SUBCKT</field>
+        <field name="Sim.Library">hv_rdac_models.lib</field>
+        <field name="Sim.Name">PCM_A1</field>
+        <field name="Sim.Pins">1=1 2=2</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="PCM" description=""/>
+      <property name="Sim.Device" value="SUBCKT"/>
+      <property name="Sim.Library" value="hv_rdac_models.lib"/>
+      <property name="Sim.Name" value="PCM_A1"/>
+      <property name="Sim.Pins" value="1=1 2=2"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>340a4829-bd6a-5238-9b17-e40ee6a8f566</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U7">
+      <value>PCM A2</value>
+      <fields>
+        <field name="Sim.Device">SUBCKT</field>
+        <field name="Sim.Library">hv_rdac_models.lib</field>
+        <field name="Sim.Name">PCM_A2</field>
+        <field name="Sim.Pins">1=1 2=2</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="PCM" description=""/>
+      <property name="Sim.Device" value="SUBCKT"/>
+      <property name="Sim.Library" value="hv_rdac_models.lib"/>
+      <property name="Sim.Name" value="PCM_A2"/>
+      <property name="Sim.Pins" value="1=1 2=2"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2595d1dd-af11-52f3-9e22-813c92ebc93c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U8">
+      <value>PCM A3</value>
+      <fields>
+        <field name="Sim.Device">SUBCKT</field>
+        <field name="Sim.Library">hv_rdac_models.lib</field>
+        <field name="Sim.Name">PCM_A3</field>
+        <field name="Sim.Pins">1=1 2=2</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="PCM" description=""/>
+      <property name="Sim.Device" value="SUBCKT"/>
+      <property name="Sim.Library" value="hv_rdac_models.lib"/>
+      <property name="Sim.Name" value="PCM_A3"/>
+      <property name="Sim.Pins" value="1=1 2=2"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>efc4f33a-4800-5ffe-aa4c-2b72ca12556e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U9">
+      <value>SPDT</value>
+      <fields>
+        <field name="Sim.Device">SUBCKT</field>
+        <field name="Sim.Library">hv_rdac_models.lib</field>
+        <field name="Sim.Name">RDAC_SPDT</field>
+        <field name="Sim.Pins">1=1 2=2 3=3 4=4</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="SPDT" description=""/>
+      <property name="Sim.Device" value="SUBCKT"/>
+      <property name="Sim.Library" value="hv_rdac_models.lib"/>
+      <property name="Sim.Name" value="RDAC_SPDT"/>
+      <property name="Sim.Pins" value="1=1 2=2 3=3 4=4"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2ff832d8-74a1-52dd-9875-d59e989a651f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U10">
+      <value>SPDT</value>
+      <fields>
+        <field name="Sim.Device">SUBCKT</field>
+        <field name="Sim.Library">hv_rdac_models.lib</field>
+        <field name="Sim.Name">RDAC_SPDT</field>
+        <field name="Sim.Pins">1=1 2=2 3=3 4=4</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="SPDT" description=""/>
+      <property name="Sim.Device" value="SUBCKT"/>
+      <property name="Sim.Library" value="hv_rdac_models.lib"/>
+      <property name="Sim.Name" value="RDAC_SPDT"/>
+      <property name="Sim.Pins" value="1=1 2=2 3=3 4=4"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>127e099f-0805-5cf4-afe3-9bb5a6de6f1d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U11">
+      <value>SPDT</value>
+      <fields>
+        <field name="Sim.Device">SUBCKT</field>
+        <field name="Sim.Library">hv_rdac_models.lib</field>
+        <field name="Sim.Name">RDAC_SPDT</field>
+        <field name="Sim.Pins">1=1 2=2 3=3 4=4</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="SPDT" description=""/>
+      <property name="Sim.Device" value="SUBCKT"/>
+      <property name="Sim.Library" value="hv_rdac_models.lib"/>
+      <property name="Sim.Name" value="RDAC_SPDT"/>
+      <property name="Sim.Pins" value="1=1 2=2 3=3 4=4"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dca6f594-2c79-56cd-898f-e4a0c5de7e0e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U12">
+      <value>SPDT</value>
+      <fields>
+        <field name="Sim.Device">SUBCKT</field>
+        <field name="Sim.Library">hv_rdac_models.lib</field>
+        <field name="Sim.Name">RDAC_SPDT</field>
+        <field name="Sim.Pins">1=1 2=2 3=3 4=4</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="SPDT" description=""/>
+      <property name="Sim.Device" value="SUBCKT"/>
+      <property name="Sim.Library" value="hv_rdac_models.lib"/>
+      <property name="Sim.Name" value="RDAC_SPDT"/>
+      <property name="Sim.Pins" value="1=1 2=2 3=3 4=4"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>38424d32-0b46-5f27-a656-15d51ea02a90</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U13">
+      <value>PCM B0</value>
+      <fields>
+        <field name="Sim.Device">SUBCKT</field>
+        <field name="Sim.Library">hv_rdac_models.lib</field>
+        <field name="Sim.Name">PCM_B0</field>
+        <field name="Sim.Pins">1=1 2=2</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="PCM" description=""/>
+      <property name="Sim.Device" value="SUBCKT"/>
+      <property name="Sim.Library" value="hv_rdac_models.lib"/>
+      <property name="Sim.Name" value="PCM_B0"/>
+      <property name="Sim.Pins" value="1=1 2=2"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a93bf893-20c6-509d-a9ca-1ca645f364cd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U14">
+      <value>PCM B1</value>
+      <fields>
+        <field name="Sim.Device">SUBCKT</field>
+        <field name="Sim.Library">hv_rdac_models.lib</field>
+        <field name="Sim.Name">PCM_B1</field>
+        <field name="Sim.Pins">1=1 2=2</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="PCM" description=""/>
+      <property name="Sim.Device" value="SUBCKT"/>
+      <property name="Sim.Library" value="hv_rdac_models.lib"/>
+      <property name="Sim.Name" value="PCM_B1"/>
+      <property name="Sim.Pins" value="1=1 2=2"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0ad23d12-1dd7-57fb-a1e0-23e986c4ab1f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U15">
+      <value>PCM B2</value>
+      <fields>
+        <field name="Sim.Device">SUBCKT</field>
+        <field name="Sim.Library">hv_rdac_models.lib</field>
+        <field name="Sim.Name">PCM_B2</field>
+        <field name="Sim.Pins">1=1 2=2</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="PCM" description=""/>
+      <property name="Sim.Device" value="SUBCKT"/>
+      <property name="Sim.Library" value="hv_rdac_models.lib"/>
+      <property name="Sim.Name" value="PCM_B2"/>
+      <property name="Sim.Pins" value="1=1 2=2"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3a893275-a252-5713-9b98-b36e308e9cba</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U16">
+      <value>PCM B3</value>
+      <fields>
+        <field name="Sim.Device">SUBCKT</field>
+        <field name="Sim.Library">hv_rdac_models.lib</field>
+        <field name="Sim.Name">PCM_B3</field>
+        <field name="Sim.Pins">1=1 2=2</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="PCM" description=""/>
+      <property name="Sim.Device" value="SUBCKT"/>
+      <property name="Sim.Library" value="hv_rdac_models.lib"/>
+      <property name="Sim.Name" value="PCM_B3"/>
+      <property name="Sim.Pins" value="1=1 2=2"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>08659423-4c79-5049-92a0-81b7bf1c6dde</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="V1">
+      <value>5 V</value>
+      <fields>
+        <field name="Sim.Device">V</field>
+        <field name="Sim.Type">DC</field>
+        <field name="Sim.Params">dc=5</field>
+        <field name="Sim.Pins">1=+ 2=-</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC_Parallel" part="V" description=""/>
+      <property name="Sim.Device" value="V"/>
+      <property name="Sim.Type" value="DC"/>
+      <property name="Sim.Params" value="dc=5"/>
+      <property name="Sim.Pins" value="1=+ 2=-"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_parallel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c21edb0b-5f91-5e64-bed0-f57c760a132e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="HV_RDAC_Parallel" part="PCM">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PCM</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT" type="passive"/>
+        <pin num="2" name="RET" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HV_RDAC_Parallel" part="R">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HV_RDAC_Parallel" part="SPDT">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SPDT</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="HI" type="passive"/>
+        <pin num="2" name="LO" type="passive"/>
+        <pin num="3" name="OUT" type="passive"/>
+        <pin num="4" name="CTRL" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HV_RDAC_Parallel" part="Transformer">
+      <fields>
+        <field name="Reference">T</field>
+        <field name="Value">Transformer</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="P+" type="passive"/>
+        <pin num="2" name="P-" type="passive"/>
+        <pin num="3" name="S+" type="passive"/>
+        <pin num="4" name="S-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HV_RDAC_Parallel" part="V">
+      <fields>
+        <field name="Reference">V</field>
+        <field name="Value">V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="power_out"/>
+        <pin num="2" name="-" type="power_out"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="HV_RDAC_Parallel">
+      <uri>${KIPRJMOD}/HV_RDAC_Parallel.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/AOUT" class="Default">
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="T1" pin="1" pinfunction="P+_1" pintype="passive"/>
+    </net>
+    <net code="2" name="/BOUT" class="Default">
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="T1" pin="2" pinfunction="P-_2" pintype="passive"/>
+    </net>
+    <net code="3" name="/CA0" class="Default">
+      <node ref="U1" pin="4" pinfunction="CTRL_4" pintype="passive"/>
+      <node ref="U5" pin="1" pinfunction="OUT_1" pintype="passive"/>
+    </net>
+    <net code="4" name="/CA1" class="Default">
+      <node ref="U2" pin="4" pinfunction="CTRL_4" pintype="passive"/>
+      <node ref="U6" pin="1" pinfunction="OUT_1" pintype="passive"/>
+    </net>
+    <net code="5" name="/CA2" class="Default">
+      <node ref="U3" pin="4" pinfunction="CTRL_4" pintype="passive"/>
+      <node ref="U7" pin="1" pinfunction="OUT_1" pintype="passive"/>
+    </net>
+    <net code="6" name="/CA3" class="Default">
+      <node ref="U4" pin="4" pinfunction="CTRL_4" pintype="passive"/>
+      <node ref="U8" pin="1" pinfunction="OUT_1" pintype="passive"/>
+    </net>
+    <net code="7" name="/CB0" class="Default">
+      <node ref="U13" pin="1" pinfunction="OUT_1" pintype="passive"/>
+      <node ref="U9" pin="4" pinfunction="CTRL_4" pintype="passive"/>
+    </net>
+    <net code="8" name="/CB1" class="Default">
+      <node ref="U10" pin="4" pinfunction="CTRL_4" pintype="passive"/>
+      <node ref="U14" pin="1" pinfunction="OUT_1" pintype="passive"/>
+    </net>
+    <net code="9" name="/CB2" class="Default">
+      <node ref="U11" pin="4" pinfunction="CTRL_4" pintype="passive"/>
+      <node ref="U15" pin="1" pinfunction="OUT_1" pintype="passive"/>
+    </net>
+    <net code="10" name="/CB3" class="Default">
+      <node ref="U12" pin="4" pinfunction="CTRL_4" pintype="passive"/>
+      <node ref="U16" pin="1" pinfunction="OUT_1" pintype="passive"/>
+    </net>
+    <net code="11" name="/SEC" class="Default">
+      <node ref="R17" pin="1" pintype="passive"/>
+      <node ref="T1" pin="3" pinfunction="S+_3" pintype="passive"/>
+    </net>
+    <net code="12" name="/VREF" class="Default">
+      <node ref="U1" pin="1" pinfunction="HI_1" pintype="passive"/>
+      <node ref="U10" pin="1" pinfunction="HI_1" pintype="passive"/>
+      <node ref="U11" pin="1" pinfunction="HI_1" pintype="passive"/>
+      <node ref="U12" pin="1" pinfunction="HI_1" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="HI_1" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="HI_1" pintype="passive"/>
+      <node ref="U4" pin="1" pinfunction="HI_1" pintype="passive"/>
+      <node ref="U9" pin="1" pinfunction="HI_1" pintype="passive"/>
+      <node ref="V1" pin="1" pinfunction="+_1" pintype="power_out"/>
+    </net>
+    <net code="13" name="GND" class="Default">
+      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="R17" pin="2" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="T1" pin="4" pinfunction="S-_4" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="LO_2" pintype="passive"/>
+      <node ref="U10" pin="2" pinfunction="LO_2" pintype="passive"/>
+      <node ref="U11" pin="2" pinfunction="LO_2" pintype="passive"/>
+      <node ref="U12" pin="2" pinfunction="LO_2" pintype="passive"/>
+      <node ref="U13" pin="2" pinfunction="RET_2" pintype="passive"/>
+      <node ref="U14" pin="2" pinfunction="RET_2" pintype="passive"/>
+      <node ref="U15" pin="2" pinfunction="RET_2" pintype="passive"/>
+      <node ref="U16" pin="2" pinfunction="RET_2" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="LO_2" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="LO_2" pintype="passive"/>
+      <node ref="U4" pin="2" pinfunction="LO_2" pintype="passive"/>
+      <node ref="U5" pin="2" pinfunction="RET_2" pintype="passive"/>
+      <node ref="U6" pin="2" pinfunction="RET_2" pintype="passive"/>
+      <node ref="U7" pin="2" pinfunction="RET_2" pintype="passive"/>
+      <node ref="U8" pin="2" pinfunction="RET_2" pintype="passive"/>
+      <node ref="U9" pin="2" pinfunction="LO_2" pintype="passive"/>
+      <node ref="V1" pin="2" pinfunction="-_2" pintype="power_out"/>
+    </net>
+    <net code="14" name="Net-(U1-OUT)" class="Default">
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="OUT_3" pintype="passive"/>
+    </net>
+    <net code="15" name="Net-(U2-OUT)" class="Default">
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="OUT_3" pintype="passive"/>
+    </net>
+    <net code="16" name="Net-(U3-OUT)" class="Default">
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="OUT_3" pintype="passive"/>
+    </net>
+    <net code="17" name="Net-(U4-OUT)" class="Default">
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="U4" pin="3" pinfunction="OUT_3" pintype="passive"/>
+    </net>
+    <net code="18" name="Net-(U9-OUT)" class="Default">
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U9" pin="3" pinfunction="OUT_3" pintype="passive"/>
+    </net>
+    <net code="19" name="Net-(U10-OUT)" class="Default">
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="U10" pin="3" pinfunction="OUT_3" pintype="passive"/>
+    </net>
+    <net code="20" name="Net-(U11-OUT)" class="Default">
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="U11" pin="3" pinfunction="OUT_3" pintype="passive"/>
+    </net>
+    <net code="21" name="Net-(U12-OUT)" class="Default">
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="U12" pin="3" pinfunction="OUT_3" pintype="passive"/>
+    </net>
+  </nets>
+</export>

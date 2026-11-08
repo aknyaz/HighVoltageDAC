@@ -16,6 +16,7 @@ Current status: **a low-voltage simulation of a 4-bit core**, not a finished 5�
 - `kicad/hv_rdac_core.kicad_pro` — initial KiCad project with an editable passive core.
 - `kicad/full/hv_rdac_full.kicad_pro` — complete wired simulation schematic with PCM sources,
   switches, both ladders, reference supply, transformer, and load.
+- `kicad/parallel/hv_rdac_parallel.kicad_pro` — complete wired 4-bit parallel resistor alternative.
 
 ## Running the simulations (PowerShell, from the repository root)
 
@@ -33,6 +34,10 @@ With a standalone ngspice CLI, circuits can also be run using, for example,
 `ngspice -b -r output.raw sim/generated/code_sweep.cir`.
 
 ## KiCad
+
+The latest alternative is **`kicad/parallel/hv_rdac_parallel.kicad_pro`**;
+see [the parallel bench walkthrough](docs/kicad_parallel_bench.md). It preserves
+the reference bench's 5 V supply, output resistance, PCM, and transformer for a direct comparison.
 
 Open **`kicad/full/hv_rdac_full.kicad_pro`**, then `hv_rdac_full.kicad_sch`.
 This A3 sheet contains the complete wired test bench. Local SPICE models and a transient
@@ -83,5 +88,5 @@ python sim/verify_resistive_comparison.py
 
 Results are in `results/resistive_comparison/`, the chart is in
 `plots/resistive_comparison/`, and low-voltage decks are in
-`sim/generated/resistive_comparison/`. The existing KiCad sheet still shows R–2R;
-the new alternatives have not yet been transferred to a KiCad sheet.
+`sim/generated/resistive_comparison/`. The binary parallel alternative now has
+a 4-bit KiCad project in `kicad/parallel/`. A segmented KiCad sheet is not yet supplied.

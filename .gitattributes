@@ -4,6 +4,7 @@
 # Preserve tool-generated formatting without whitespace diagnostics.
 plots/kicad/*.svg -whitespace
 plots/kicad_full/*.svg -whitespace
+plots/kicad_parallel/*.svg -whitespace
 results/*.log -whitespace
 results/power_study/*.log -whitespace
 results/resistive_comparison/*.log -whitespace
