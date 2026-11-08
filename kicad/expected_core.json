@@ -1,0 +1,155 @@
+[
+  {
+    "ref": "R1",
+    "spice_ref": "RA0V",
+    "value": "2k",
+    "nodes": [
+      "A0",
+      "D_A0"
+    ]
+  },
+  {
+    "ref": "R2",
+    "spice_ref": "RA1V",
+    "value": "2k",
+    "nodes": [
+      "A1",
+      "D_A1"
+    ]
+  },
+  {
+    "ref": "R3",
+    "spice_ref": "RA1H",
+    "value": "1k",
+    "nodes": [
+      "A0",
+      "A1"
+    ]
+  },
+  {
+    "ref": "R4",
+    "spice_ref": "RA2V",
+    "value": "2k",
+    "nodes": [
+      "A2",
+      "D_A2"
+    ]
+  },
+  {
+    "ref": "R5",
+    "spice_ref": "RA2H",
+    "value": "1k",
+    "nodes": [
+      "A1",
+      "A2"
+    ]
+  },
+  {
+    "ref": "R6",
+    "spice_ref": "RA3V",
+    "value": "2k",
+    "nodes": [
+      "A3",
+      "D_A3"
+    ]
+  },
+  {
+    "ref": "R7",
+    "spice_ref": "RA3H",
+    "value": "1k",
+    "nodes": [
+      "A2",
+      "A3"
+    ]
+  },
+  {
+    "ref": "R8",
+    "spice_ref": "RAT",
+    "value": "2k",
+    "nodes": [
+      "0",
+      "A0"
+    ]
+  },
+  {
+    "ref": "R9",
+    "spice_ref": "RB0V",
+    "value": "2k",
+    "nodes": [
+      "B0",
+      "D_B0"
+    ]
+  },
+  {
+    "ref": "R10",
+    "spice_ref": "RB1V",
+    "value": "2k",
+    "nodes": [
+      "B1",
+      "D_B1"
+    ]
+  },
+  {
+    "ref": "R11",
+    "spice_ref": "RB1H",
+    "value": "1k",
+    "nodes": [
+      "B0",
+      "B1"
+    ]
+  },
+  {
+    "ref": "R12",
+    "spice_ref": "RB2V",
+    "value": "2k",
+    "nodes": [
+      "B2",
+      "D_B2"
+    ]
+  },
+  {
+    "ref": "R13",
+    "spice_ref": "RB2H",
+    "value": "1k",
+    "nodes": [
+      "B1",
+      "B2"
+    ]
+  },
+  {
+    "ref": "R14",
+    "spice_ref": "RB3V",
+    "value": "2k",
+    "nodes": [
+      "B3",
+      "D_B3"
+    ]
+  },
+  {
+    "ref": "R15",
+    "spice_ref": "RB3H",
+    "value": "1k",
+    "nodes": [
+      "B2",
+      "B3"
+    ]
+  },
+  {
+    "ref": "R16",
+    "spice_ref": "RBT",
+    "value": "2k",
+    "nodes": [
+      "0",
+      "B0"
+    ]
+  },
+  {
+    "ref": "R17",
+    "spice_ref": "RLOAD",
+    "value": "2k",
+    "nodes": [
+      "A3",
+      "B3"
+    ]
+  }
+]

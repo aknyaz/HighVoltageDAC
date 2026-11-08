@@ -1,0 +1,55 @@
+4-bit differential R-2R low-voltage research bench
+Vref ref 0 5
+.model ideal SW(Ron=1u Roff=1e12 Vt=0.5 Vh=0)
+.options reltol=1e-6 abstol=1e-12
+Va0 ca0 0 PWL(0 1 4.16666666667e-05 1 4.16676666667e-05 0)
+Ba0 na0 0 V=1-v(ca0)
+Sa0h da0 ref ca0 0 ideal
+Sa0l da0 0 na0 0 ideal
+Ra0v a0 da0 2000.0
+Va1 ca1 0 PWL(0 1 4.16866666667e-05 1 4.16876666667e-05 0)
+Ba1 na1 0 V=1-v(ca1)
+Sa1h da1 ref ca1 0 ideal
+Sa1l da1 0 na1 0 ideal
+Ra1v a1 da1 2000.0
+Ra1h a1 a0 1000.0
+Va2 ca2 0 PWL(0 1 4.17066666667e-05 1 4.17076666667e-05 0)
+Ba2 na2 0 V=1-v(ca2)
+Sa2h da2 ref ca2 0 ideal
+Sa2l da2 0 na2 0 ideal
+Ra2v a2 da2 2000.0
+Ra2h a2 a1 1000.0
+Va3 ca3 0 PWL(0 0 4.17266666667e-05 0 4.17276666667e-05 1)
+Ba3 na3 0 V=1-v(ca3)
+Sa3h da3 ref ca3 0 ideal
+Sa3l da3 0 na3 0 ideal
+Ra3v a3 da3 2000.0
+Ra3h a3 a2 1000.0
+Raterm a0 0 2000.0
+Vb0 cb0 0 PWL(0 0 4.16666666667e-05 0 4.16676666667e-05 1)
+Bb0 nb0 0 V=1-v(cb0)
+Sb0h db0 ref cb0 0 ideal
+Sb0l db0 0 nb0 0 ideal
+Rb0v b0 db0 2000.0
+Vb1 cb1 0 PWL(0 0 4.16866666667e-05 0 4.16876666667e-05 1)
+Bb1 nb1 0 V=1-v(cb1)
+Sb1h db1 ref cb1 0 ideal
+Sb1l db1 0 nb1 0 ideal
+Rb1v b1 db1 2000.0
+Rb1h b1 b0 1000.0
+Vb2 cb2 0 PWL(0 0 4.17066666667e-05 0 4.17076666667e-05 1)
+Bb2 nb2 0 V=1-v(cb2)
+Sb2h db2 ref cb2 0 ideal
+Sb2l db2 0 nb2 0 ideal
+Rb2v b2 db2 2000.0
+Rb2h b2 b1 1000.0
+Vb3 cb3 0 PWL(0 1 4.17266666667e-05 1 4.17276666667e-05 0)
+Bb3 nb3 0 V=1-v(cb3)
+Sb3h db3 ref cb3 0 ideal
+Sb3l db3 0 nb3 0 ideal
+Rb3v b3 db3 2000.0
+Rb3h b3 b2 1000.0
+Rbterm b0 0 2000.0
+Rload a3 b3 2000
+.tran 200n 8.33333333333e-05 0 200n
+.end

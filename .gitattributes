@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.png binary
+
+# Preserve tool-generated formatting without whitespace diagnostics.
+plots/kicad/*.svg -whitespace
+results/*.log -whitespace

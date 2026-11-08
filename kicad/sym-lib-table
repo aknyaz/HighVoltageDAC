@@ -1,0 +1,1 @@
+(sym_lib_table (version 7) (lib (name "HV_RDAC") (type "KiCad") (uri "${KIPRJMOD}/HV_RDAC.kicad_sym") (options "") (descr "Local passive core symbols")))

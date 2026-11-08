@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\aknya\MyProjects\HighVoltageDAC\kicad\hv_rdac_core.kicad_sch</source>
+    <date>2026-11-08T12:36:07</date>
+    <tool>Eeschema 10.0.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>HV-RDAC | 4-bit passive core</title>
+        <company/>
+        <rev>A0</rev>
+        <date/>
+        <source>hv_rdac_core.kicad_sch</source>
+        <comment number="1" value="5 V simulation only; switched stimulus and transformer in sim/generated"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="R1">
+      <value>2k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_core.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ee417b95-da28-45bc-b559-6a9536f74b1d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>2k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_core.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>03103036-37b7-45b6-8fed-50c0c27871e3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>1k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_core.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8494fe98-e7d0-4a23-a3f2-739d612380dc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>2k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_core.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3797c236-3807-43de-a4c0-83ac881b8df6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>1k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_core.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9a62fc6d-08fa-42d3-bcc1-2b2b0067bf42</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>2k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_core.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b2567795-0d89-4a1c-8038-c0ade503485f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>1k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_core.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>95992cb9-59c3-4f20-a990-a1198acd5633</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>2k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_core.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>12f437ff-189f-4fca-9460-5294d732db91</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>2k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_core.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0b4350bc-6450-44c0-8edb-9707b43c5abf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R10">
+      <value>2k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_core.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bfd9a45b-359f-499d-91eb-b79c8f3acaff</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R11">
+      <value>1k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_core.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1baffc70-8c39-4323-92a4-adc7cd04388c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R12">
+      <value>2k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_core.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e64869a2-3721-469f-956f-0a92c796ae37</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R13">
+      <value>1k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_core.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8967d332-dc72-4758-a18f-efae31407509</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R14">
+      <value>2k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_core.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7731968f-b978-4d44-a940-87b01075759e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R15">
+      <value>1k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_core.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1e0f5f87-3679-436f-88aa-b1a5bbb1d499</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R16">
+      <value>2k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_core.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a32348de-6357-44a3-8796-75940dbd25ef</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R17">
+      <value>2k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="HV_RDAC" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hv_rdac_core.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>788c667d-b537-43f9-b251-e43ecf3ac77d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="HV_RDAC" part="R">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="HV_RDAC">
+      <uri>${KIPRJMOD}/HV_RDAC.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/0" class="Default">
+      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+    </net>
+    <net code="2" name="/A0" class="Default">
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+    </net>
+    <net code="3" name="/A1" class="Default">
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+    </net>
+    <net code="4" name="/A2" class="Default">
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+    </net>
+    <net code="5" name="/A3" class="Default">
+      <node ref="R17" pin="1" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+    </net>
+    <net code="6" name="/B0" class="Default">
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+    </net>
+    <net code="7" name="/B1" class="Default">
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+    </net>
+    <net code="8" name="/B2" class="Default">
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+    </net>
+    <net code="9" name="/B3" class="Default">
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="R17" pin="2" pintype="passive"/>
+    </net>
+    <net code="10" name="/D_A0" class="Default">
+      <node ref="R1" pin="2" pintype="passive"/>
+    </net>
+    <net code="11" name="/D_A1" class="Default">
+      <node ref="R2" pin="2" pintype="passive"/>
+    </net>
+    <net code="12" name="/D_A2" class="Default">
+      <node ref="R4" pin="2" pintype="passive"/>
+    </net>
+    <net code="13" name="/D_A3" class="Default">
+      <node ref="R6" pin="2" pintype="passive"/>
+    </net>
+    <net code="14" name="/D_B0" class="Default">
+      <node ref="R9" pin="2" pintype="passive"/>
+    </net>
+    <net code="15" name="/D_B1" class="Default">
+      <node ref="R10" pin="2" pintype="passive"/>
+    </net>
+    <net code="16" name="/D_B2" class="Default">
+      <node ref="R12" pin="2" pintype="passive"/>
+    </net>
+    <net code="17" name="/D_B3" class="Default">
+      <node ref="R14" pin="2" pintype="passive"/>
+    </net>
+  </nets>
+</export>

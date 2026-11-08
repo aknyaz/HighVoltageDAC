@@ -1,0 +1,82 @@
+{
+  "engine": [
+    "stderr Warning: can't find the initialization file spinit.",
+    "stdout ******",
+    "stdout ** ngspice-46 shared library",
+    "stdout ** Creation Date: Apr 14 2026   05:15:29",
+    "stdout ******",
+    "stdout ******",
+    "stdout ** ngspice-46 : Circuit level simulation program",
+    "stdout ** Compiled with KLU Direct Linear Solver",
+    "stdout ** The U. C. Berkeley CAD Group",
+    "stdout ** Copyright 1985-1994, Regents of the University of California.",
+    "stdout ** Copyright 2001-2025, The ngspice team.",
+    "stdout ** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html",
+    "stdout ** Please file your bug-reports at https://ngspice.sourceforge.io/bugrep.html",
+    "stdout ** Creation Date: Apr 14 2026   05:15:29",
+    "stdout ******"
+  ],
+  "ideal_transformer": [
+    {
+      "power_w": 5,
+      "turns_ratio": 25.0,
+      "secondary_rms_v": 6.324555320336759,
+      "primary_rms_v": 158.11388300841898,
+      "primary_peak_v": 223.60679774997897,
+      "primary_rms_a": 0.03162277660168379,
+      "attenuation": 0.5,
+      "required_source_peak_v": 447.21359549995793,
+      "equivalent_series_loss_w": 5.0,
+      "attainable_sine_power_w": 6.25
+    },
+    {
+      "power_w": 10,
+      "turns_ratio": 25.0,
+      "secondary_rms_v": 8.94427190999916,
+      "primary_rms_v": 223.60679774997897,
+      "primary_peak_v": 316.22776601683796,
+      "primary_rms_a": 0.044721359549995794,
+      "attenuation": 0.5,
+      "required_source_peak_v": 632.4555320336759,
+      "equivalent_series_loss_w": 10.0,
+      "attainable_sine_power_w": 6.25
+    }
+  ],
+  "runs": {
+    "code_sweep": {
+      "load_power_w": 0.0010375977815464087,
+      "ladder_heat_w": 0.02047118920242433,
+      "primary_mean_v": -6.027834654928924e-06,
+      "supply_power_w": 0.021508789186621635
+    },
+    "major_carry_ideal": {
+      "load_power_w": 1.2207031199312145e-05,
+      "ladder_heat_w": 0.01925048826999993,
+      "primary_mean_v": -1.5000001843758565e-06,
+      "supply_power_w": 0.019262696150723846
+    },
+    "major_carry_skew": {
+      "load_power_w": 1.3026840158912193e-05,
+      "ladder_heat_w": 0.01925046714878338,
+      "primary_mean_v": -0.0010508554684377554,
+      "supply_power_w": 0.01926349484328943
+    },
+    "sine_0.9": {
+      "load_power_w": 0.001118694997809222,
+      "ladder_heat_w": 0.02107425258466797,
+      "primary_mean_v": -1.3201030693747782e-05,
+      "supply_power_w": 0.022192952168316807,
+      "primary_mean_a": 6.610585490993583e-09,
+      "thd_2_to_20_percent": 2.5462148984795023
+    },
+    "sine_0.25": {
+      "load_power_w": 7.525831858490755e-05,
+      "ladder_heat_w": 0.02259323523979495,
+      "primary_mean_v": -1.1488109350146233e-05,
+      "supply_power_w": 0.022668497822587855,
+      "primary_mean_a": 5.743276652500718e-09,
+      "thd_2_to_20_percent": 18.22258287094211
+    }
+  },
+  "code_sweep_max_error_v": 5.453490992124443e-10
+}
