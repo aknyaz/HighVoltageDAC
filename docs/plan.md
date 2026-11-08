@@ -59,6 +59,13 @@ The parallel demonstrator is in `kicad/parallel/`; R–2R remains a reference. B
 binary or segmented hardware, evaluate resistance mismatch, leakage, switch
 capacitance/timing, and long-held code states. No real HV device is selected yet.
 
+- [x] Study bounded resistor mismatch for the 12-bit binary parallel network:
+  80,000 random networks, exact carry-step analysis, and six full-code SPICE checks.
+  Results: `docs/resistor_tolerance.md`. A 0.01% ratio-error scenario is a useful
+  next-model baseline, not a hardware accuracy guarantee.
+- [ ] Extend mismatch analysis to the segmented network and add temperature/voltage
+  dependence, leakage, and finite switch behavior before selecting components.
+
 1. Check frequency response and output impedance, including at 20 Hz.
 2. Measure DC current and magnetic flux during startup, with a constant code, and with PCM offset.
 3. Add a 12-bit test bench and compare quantization and switching glitches.

@@ -90,3 +90,16 @@ Results are in `results/resistive_comparison/`, the chart is in
 `plots/resistive_comparison/`, and low-voltage decks are in
 `sim/generated/resistive_comparison/`. The binary parallel alternative now has
 a 4-bit KiCad project in `kicad/parallel/`. A segmented KiCad sheet is not yet supplied.
+
+## 12-bit resistor mismatch
+
+The [static tolerance study](docs/resistor_tolerance.md) evaluates bounded resistor
+errors, endpoint INL/DNL, gain/offset, and monotonicity of the binary parallel network.
+
+```powershell
+python calc/resistor_tolerance.py
+python sim/verify_resistor_tolerance.py
+```
+
+Results: `results/resistor_tolerance/`. Plots: `plots/resistor_tolerance/`.
+Monte Carlo fractions describe the stated uniform-error scenario, not manufacturing yield.

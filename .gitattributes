@@ -8,3 +8,4 @@ plots/kicad_parallel/*.svg -whitespace
 results/*.log -whitespace
 results/power_study/*.log -whitespace
 results/resistive_comparison/*.log -whitespace
+results/resistor_tolerance/*.log -whitespace
