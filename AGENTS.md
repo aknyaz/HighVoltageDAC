@@ -5,3 +5,5 @@ Work incrementally, with reproducible calculations and actually executed simulat
 This repository is simulation-only at this stage; no energized HV build or PCB design.
 Run `python sim/run_phase_a.py` after changing the initial circuit or analysis.
 Keep generated netlists, quantitative results and limitations synchronized.
+Write all project documentation, including README files and Markdown reports, in English.
+Keep conversations with the user in Russian unless they request another language.

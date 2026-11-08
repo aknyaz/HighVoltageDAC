@@ -1,30 +1,31 @@
-# План проекта
+# Project plan
 
-## Этап A0 — первый воспроизводимый стенд
+## Phase A0 — first reproducible test bench
 
-- [x] Найти KiCad CLI и запустить ngspice DLL.
-- [x] Создать расчёт трансформатора и эквивалентного сопротивления источника.
-- [x] Проверить два 4-битных R–2R плеча, 5 V, на всех 16 кодах.
-- [x] Проверить баланс энергии на резистивной нагрузке.
-- [x] Запустить синус 1 kHz при 192 kS/s на двух уровнях через упрощённый трансформатор.
-- [x] Сравнить одновременный major carry с задержкой 20 ns между битами.
-- [x] Создать первый редактируемый лист KiCad: пассивное ядро стенда.
+- [x] Locate the KiCad CLI and run the ngspice DLL.
+- [x] Implement transformer and equivalent source resistance calculations.
+- [x] Verify two 4-bit R–2R arms at 5 V across all 16 codes.
+- [x] Verify power balance with a resistive load.
+- [x] Run a 1 kHz sine at 192 kS/s at two levels through a simplified transformer.
+- [x] Compare simultaneous major-carry switching with a 20 ns delay between bits.
+- [x] Create the first editable KiCad sheet: the passive core of the test bench.
 
-## Следующий этап A1
+## Next phase: A1
 
-1. Проверить частотную характеристику и выходное сопротивление, включая 20 Hz.
-2. Измерить постоянный ток и поток при запуске, постоянном коде и смещении PCM.
-3. Добавить 12-битный стенд, сравнить квантование и переключательные выбросы.
-4. Ввести допуски R, температурный дрейф и разброс задержек; сравнить сегментацию.
-5. Сопоставить несколько реальных трансформаторов по документации и выбрать диапазон сопротивлений.
-6. Перенести полную проверенную модель в симулятор KiCad, сохранив независимые .cir.
+1. Check frequency response and output impedance, including at 20 Hz.
+2. Measure DC current and magnetic flux during startup, with a constant code, and with PCM offset.
+3. Add a 12-bit test bench and compare quantization and switching glitches.
+4. Introduce resistor tolerances, temperature drift, and delay variation; compare segmentation.
+5. Compare datasheets for several real transformers and select an impedance range.
+6. Transfer the complete validated model into the KiCad simulator while retaining independent .cir files.
 
-## Этап B
+## Phase B
 
-Сопротивления обмоток, Lm, рассеяние, ёмкости, потери и при обосновании нелинейный сердечник.
-Потом Ron/Coss и модели реальных ключей, пассивный фильтр и тепловая оценка.
+Add winding resistance, magnetizing inductance, leakage inductance, capacitance, losses,
+and a nonlinear core model if justified. Then add Ron/Coss and models of real switches,
+a passive filter, and a thermal assessment.
 
-## Этап C
+## Phase C
 
-Полная принципиальная схема после проверки архитектуры. Проектирование платы и физического
-высоковольтного устройства в текущую работу не входят.
+Develop the complete schematic after validating the architecture. PCB design and
+physical high-voltage hardware are outside the current scope.
