@@ -13,7 +13,15 @@
 
 ## Next phase: A1
 
-### Immediate next step: power and impedance trade study
+### Completed: power and impedance trade study
+
+- [x] Evaluated 2,695 feasible amplitude/resistance points across 36 target cases.
+- [x] Verified all 33 feasible best sampled cases plus one reserve case in scaled 5 V SPICE.
+- [x] Verified independent nodal solutions and voltage/resistance scaling identities.
+- [x] Reported full internal ladder heat, useful power, headroom, and infeasible cases.
+
+Results: `docs/power_trade_study.md`. The 12-bit models at this stage verify power
+and code-dependent static loading; a complete 12-bit frequency/glitch study remains open.
 
 Compare 600, 650, and 700 V supply targets at the same useful output power
 (5 W nominal and 10 W stretch) into 8 ohm. Sweep the transformer's reflected
@@ -35,6 +43,12 @@ power, followed by a justified working range for ladder and transformer impedanc
 The present 5 V bench's efficiency is not a verdict on the final architecture.
 
 ### Following steps
+
+The immediate design decision is whether to accept the ordinary R–2R ladder's
+large internal dissipation. Compare a binary-weighted parallel resistor DAC and
+a clearly specified segmented resistive DAC at equal useful power before selecting
+real HV switches. Both candidates must retain direct transformer drive and explicitly
+account for all internal currents; lower heat is a hypothesis to test, not a promised result.
 
 1. Check frequency response and output impedance, including at 20 Hz.
 2. Measure DC current and magnetic flux during startup, with a constant code, and with PCM offset.

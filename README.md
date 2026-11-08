@@ -7,6 +7,8 @@ Current status: **a low-voltage simulation of a 4-bit core**, not a finished 5�
 
 - `docs/` — original brief, project plan, assumptions, and architecture comparisons.
 - `calc/architecture.py` — ideal transformer and Thevenin source calculations.
+- `calc/power_trade_study.py` — equal-output-power sweep including every ladder resistor.
+- `sim/verify_power_study.py` — independent nodal and scaled 5 V SPICE verification of the sweep.
 - `sim/run_phase_a.py` — circuit generation, ngspice execution, and verification.
 - `sim/generated/*.cir` — complete standalone SPICE circuits with switches and sources.
 - `results/` — measured values in JSON, waveform CSV files, and the ngspice log.
@@ -51,3 +53,17 @@ The verifier uses the installed KiCad CLI; override its location with `KICAD_CLI
 schematic and project settings. Preserve any manual edits before running it.
 
 Results and limitations: `docs/phase_a_results.md`. Next steps: `docs/plan.md`.
+
+## Power and impedance study
+
+The completed [equal-power study](docs/power_trade_study.md) compares 600–700 V
+targets, 5–20 kohm reflected primary loads, and 4/12-bit ladders at 5 and 10 W
+of useful sine output. The SPICE checks run at 5 V and scale the results analytically.
+
+```powershell
+python calc/power_trade_study.py
+python sim/verify_power_study.py
+```
+
+Tables and verification data are in `results/power_study/`; charts are in
+`plots/power_study/`. These are ideal architecture comparisons, not hardware ratings.

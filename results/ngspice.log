@@ -252,42 +252,41 @@ stdout va1#branch                                   0
 stdout va0#branch                                   0
 stdout vref#branch                        -0.00385742
  Reference value :  0.00000e+00
- Reference value :  6.33844e-03
- Reference value :  1.19182e-02
- Reference value :  1.69206e-02
- Reference value :  2.14982e-02
- Reference value :  2.57846e-02
- Reference value :  2.97723e-02
- Reference value :  3.35190e-02
- Reference value :  3.70729e-02
- Reference value :  4.03718e-02
- Reference value :  4.35593e-02
- Reference value :  4.66056e-02
- Reference value :  4.95469e-02
- Reference value :  5.23912e-02
- Reference value :  5.50957e-02
- Reference value :  5.75991e-02
- Reference value :  5.98499e-02
- Reference value :  6.21963e-02
- Reference value :  6.45623e-02
- Reference value :  6.69503e-02
- Reference value :  6.92603e-02
- Reference value :  7.15202e-02
- Reference value :  7.37087e-02
- Reference value :  7.58373e-02
- Reference value :  7.78617e-02
- Reference value :  7.99384e-02
- Reference value :  8.18698e-02
- Reference value :  8.38281e-02
- Reference value :  8.57905e-02
- Reference value :  8.76897e-02
- Reference value :  8.94615e-02
- Reference value :  9.11823e-02
- Reference value :  9.25897e-02
- Reference value :  9.41510e-02
- Reference value :  9.56977e-02
- Reference value :  9.74509e-02
- Reference value :  9.92077e-02
+ Reference value :  6.29239e-03
+ Reference value :  1.18330e-02
+ Reference value :  1.68263e-02
+ Reference value :  2.12945e-02
+ Reference value :  2.51224e-02
+ Reference value :  2.90062e-02
+ Reference value :  3.26799e-02
+ Reference value :  3.62521e-02
+ Reference value :  3.96270e-02
+ Reference value :  4.28736e-02
+ Reference value :  4.59830e-02
+ Reference value :  4.90000e-02
+ Reference value :  5.19011e-02
+ Reference value :  5.46601e-02
+ Reference value :  5.73748e-02
+ Reference value :  6.00021e-02
+ Reference value :  6.25701e-02
+ Reference value :  6.50749e-02
+ Reference value :  6.75132e-02
+ Reference value :  6.98698e-02
+ Reference value :  7.21502e-02
+ Reference value :  7.43970e-02
+ Reference value :  7.65739e-02
+ Reference value :  7.87133e-02
+ Reference value :  8.08242e-02
+ Reference value :  8.28755e-02
+ Reference value :  8.48805e-02
+ Reference value :  8.68281e-02
+ Reference value :  8.87039e-02
+ Reference value :  9.05260e-02
+ Reference value :  9.19663e-02
+ Reference value :  9.36362e-02
+ Reference value :  9.53765e-02
+ Reference value :  9.70792e-02
+ Reference value :  9.88794e-02
 stdout No. of Data Rows : 546110
 stdout Note: No compatibility mode selected!
 stdout Circuit: 4-bit differential r-2r low-voltage research bench
@@ -351,22 +350,23 @@ stdout va1#branch                                   0
 stdout va0#branch                                   0
 stdout vref#branch                        -0.00385742
  Reference value :  0.00000e+00
- Reference value :  7.28535e-03
- Reference value :  1.42163e-02
- Reference value :  2.07725e-02
- Reference value :  2.71265e-02
- Reference value :  3.29249e-02
- Reference value :  3.88497e-02
- Reference value :  4.44109e-02
- Reference value :  5.00108e-02
- Reference value :  5.53431e-02
- Reference value :  6.05886e-02
- Reference value :  6.52285e-02
- Reference value :  7.01289e-02
- Reference value :  7.46495e-02
- Reference value :  7.93251e-02
- Reference value :  8.37973e-02
- Reference value :  8.83783e-02
- Reference value :  9.21739e-02
- Reference value :  9.66355e-02
+ Reference value :  7.29495e-03
+ Reference value :  1.37013e-02
+ Reference value :  1.96287e-02
+ Reference value :  2.58371e-02
+ Reference value :  3.18233e-02
+ Reference value :  3.77855e-02
+ Reference value :  4.35671e-02
+ Reference value :  4.86899e-02
+ Reference value :  5.41443e-02
+ Reference value :  5.94771e-02
+ Reference value :  6.44249e-02
+ Reference value :  6.94361e-02
+ Reference value :  7.42717e-02
+ Reference value :  7.90712e-02
+ Reference value :  8.36105e-02
+ Reference value :  8.80846e-02
+ Reference value :  9.25031e-02
+ Reference value :  9.62651e-02
+ Reference value :  9.95977e-02
 stdout No. of Data Rows : 510306

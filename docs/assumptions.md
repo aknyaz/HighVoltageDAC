@@ -15,3 +15,15 @@
 - FFT interpolation affects high-frequency detail; ns glitch energy needs a separate convergence study.
 - Code test uses a resistor instead of an inductor: a transformer cannot transfer static code levels.
 - No physical HV build, real component selection, damping certification, or audio-quality claim.
+
+## Additional scope: equal-power study
+
+`calc/power_trade_study.py` and `sim/verify_power_study.py` have a separate scope:
+4/12-bit ladders, ideal reflected resistive loads of 5/10/20 kohm, and analytically
+scaled supply targets of 600/650/700 V. The useful target is the 1 kHz fundamental
+power (including the zero-order-hold sinc factor), not total waveform RMS power.
+The power sweep omits finite magnetizing inductance, transformer bandwidth and
+losses. Each SPICE check runs one 1 ms period at 5 V into the reflected resistor;
+there are no energy-storage elements requiring settling in these particular decks.
+This study verifies dissipation and static loading, not full 12-bit audio performance.
+See `power_trade_study.md` for derivations, numerical tolerances, and limitations.

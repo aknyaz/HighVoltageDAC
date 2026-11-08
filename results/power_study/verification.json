@@ -1,0 +1,586 @@
+{
+  "direct_nodal_max_error_v": 2.2737367544323206e-13,
+  "voltage_scaling_checks": "passed",
+  "spice_cases": 34,
+  "maximum_relative_error": 4.516257951059366e-06,
+  "records": [
+    {
+      "case": "4bit_600V_5000ohm_5W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 74.11590989060126,
+        "supply_power_w": 79.12958427319106,
+        "total_load_power_w": 5.013500250239949,
+        "fundamental_power_w": 4.99999934219382
+      },
+      "relative_errors": {
+        "ladder_heat_w": 1.8940666923761285e-08,
+        "supply_power_w": 2.1786609094576193e-06,
+        "total_load_power_w": 6.62987115207514e-08,
+        "fundamental_power_w": 1.3156123601643088e-07
+      },
+      "power_balance_error_w": 0.00017413234984875459
+    },
+    {
+      "case": "4bit_600V_10000ohm_5W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 68.33775318121123,
+        "supply_power_w": 73.35137430889431,
+        "total_load_power_w": 5.0135002503980095,
+        "fundamental_power_w": 4.9999993423514795
+      },
+      "relative_errors": {
+        "ladder_heat_w": 1.6519252632463122e-08,
+        "supply_power_w": 1.6280044023986306e-06,
+        "total_load_power_w": 6.626718496161033e-08,
+        "fundamental_power_w": 1.315297046833308e-07
+      },
+      "power_balance_error_w": 0.00012087728507115258
+    },
+    {
+      "case": "4bit_600V_20000ohm_5W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 96.92031700568569,
+        "supply_power_w": 101.93382593296427,
+        "total_load_power_w": 5.013500250389796,
+        "fundamental_power_w": 4.999999342342898
+      },
+      "relative_errors": {
+        "ladder_heat_w": 1.4254279534497982e-08,
+        "supply_power_w": 6.83102110432543e-08,
+        "total_load_power_w": 6.626882276261625e-08,
+        "fundamental_power_w": 1.3153142042199306e-07
+      },
+      "power_balance_error_w": 8.6768887834765e-06
+    },
+    {
+      "case": "4bit_650V_5000ohm_5W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 77.2704258099606,
+        "supply_power_w": 82.28398347559514,
+        "total_load_power_w": 5.013500250309148,
+        "fundamental_power_w": 4.9999993422629325
+      },
+      "relative_errors": {
+        "ladder_heat_w": 1.9421227515081796e-08,
+        "supply_power_w": 6.754942407649622e-07,
+        "total_load_power_w": 6.628490867299774e-08,
+        "fundamental_power_w": 1.315474135177297e-07
+      },
+      "power_balance_error_w": 5.741532538827698e-05
+    },
+    {
+      "case": "4bit_650V_10000ohm_5W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 68.26817685752432,
+        "supply_power_w": 73.28157315694605,
+        "total_load_power_w": 5.013500250470722,
+        "fundamental_power_w": 4.999999342424133
+      },
+      "relative_errors": {
+        "ladder_heat_w": 1.7077101399642913e-08,
+        "supply_power_w": 1.4389548854687462e-06,
+        "total_load_power_w": 6.625268123006123e-08,
+        "fundamental_power_w": 1.31515173529273e-07
+      },
+      "power_balance_error_w": 0.00010395104899352248
+    },
+    {
+      "case": "4bit_650V_20000ohm_5W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 82.20616138708341,
+        "supply_power_w": 87.21981817518812,
+        "total_load_power_w": 5.013500250512804,
+        "fundamental_power_w": 4.999999342465913
+      },
+      "relative_errors": {
+        "ladder_heat_w": 1.4659553793094915e-08,
+        "supply_power_w": 1.777126450885902e-06,
+        "total_load_power_w": 6.624428716683894e-08,
+        "fundamental_power_w": 1.3150681732465586e-07
+      },
+      "power_balance_error_w": 0.00015653759190747962
+    },
+    {
+      "case": "4bit_700V_5000ohm_5W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 80.69566237790866,
+        "supply_power_w": 85.70914236145596,
+        "total_load_power_w": 5.01350025036618,
+        "fundamental_power_w": 4.999999342319889
+      },
+      "relative_errors": {
+        "ladder_heat_w": 1.984511244224052e-08,
+        "supply_power_w": 2.5902125988519487e-07,
+        "total_load_power_w": 6.627353366095434e-08,
+        "fundamental_power_w": 1.3153602262949704e-07
+      },
+      "power_balance_error_w": 2.026681888089854e-05
+    },
+    {
+      "case": "4bit_700V_10000ohm_5W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 69.07176082460752,
+        "supply_power_w": 74.08548225448902,
+        "total_load_power_w": 5.013500250527603,
+        "fundamental_power_w": 4.999999342480959
+      },
+      "relative_errors": {
+        "ladder_heat_w": 1.7589346645863202e-08,
+        "supply_power_w": 2.964588610154806e-06,
+        "total_load_power_w": 6.624133608301719e-08,
+        "fundamental_power_w": 1.3150380906434833e-07
+      },
+      "power_balance_error_w": 0.00022117935389687204
+    },
+    {
+      "case": "4bit_700V_20000ohm_5W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 74.97220481844371,
+        "supply_power_w": 79.98586502348194,
+        "total_load_power_w": 5.013500250590857,
+        "fundamental_power_w": 4.999999342543953
+      },
+      "relative_errors": {
+        "ladder_heat_w": 1.511178537860758e-08,
+        "supply_power_w": 1.9814720981781164e-06,
+        "total_load_power_w": 6.622871928652074e-08,
+        "fundamental_power_w": 1.3149120969835337e-07
+      },
+      "power_balance_error_w": 0.00015995444736383035
+    },
+    {
+      "case": "4bit_600V_5000ohm_10W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 136.67550634078503,
+        "supply_power_w": 146.7026675928625,
+        "total_load_power_w": 10.02700049955153,
+        "fundamental_power_w": 9.999998683460168
+      },
+      "relative_errors": {
+        "ladder_heat_w": 1.667756499568185e-08,
+        "supply_power_w": 1.0756966999370121e-06,
+        "total_load_power_w": 6.639129868091231e-08,
+        "fundamental_power_w": 1.3165398371484116e-07
+      },
+      "power_balance_error_w": 0.00016075252593239497
+    },
+    {
+      "case": "4bit_600V_10000ohm_10W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 193.8406339665239,
+        "supply_power_w": 203.86763510212214,
+        "total_load_power_w": 10.027000499512313,
+        "fundamental_power_w": 9.999998683419538
+      },
+      "relative_errors": {
+        "ladder_heat_w": 1.448564213024639e-08,
+        "supply_power_w": 1.3918663444023593e-08,
+        "total_load_power_w": 6.639520921947195e-08,
+        "fundamental_power_w": 1.3165804624293287e-07
+      },
+      "power_balance_error_w": 6.360859128307084e-07
+    },
+    {
+      "case": "4bit_650V_5000ohm_10W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 136.53635369679156,
+        "supply_power_w": 146.56332993944966,
+        "total_load_power_w": 10.02700049982359,
+        "fundamental_power_w": 9.999998683732015
+      },
+      "relative_errors": {
+        "ladder_heat_w": 1.721081721584028e-08,
+        "supply_power_w": 1.8607994423103236e-07,
+        "total_load_power_w": 6.636416560734659e-08,
+        "fundamental_power_w": 1.3162679868283789e-07
+      },
+      "power_balance_error_w": 2.425716549581125e-05
+    },
+    {
+      "case": "4bit_650V_10000ohm_10W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 164.41232274683168,
+        "supply_power_w": 174.4390854729676,
+        "total_load_power_w": 10.027000500009207,
+        "fundamental_power_w": 9.99999868391645
+      },
+      "relative_errors": {
+        "ladder_heat_w": 1.4825813465790816e-08,
+        "supply_power_w": 1.3808621756039585e-06,
+        "total_load_power_w": 6.634565352658939e-08,
+        "fundamental_power_w": 1.31608354991819e-07
+      },
+      "power_balance_error_w": 0.00023777387327861277
+    },
+    {
+      "case": "4bit_700V_5000ohm_10W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 138.14352163321098,
+        "supply_power_w": 148.1706564744301,
+        "total_load_power_w": 10.02700050003582,
+        "fundamental_power_w": 9.999998683944046
+      },
+      "relative_errors": {
+        "ladder_heat_w": 1.770519764132672e-08,
+        "supply_power_w": 8.85669422689972e-07,
+        "total_load_power_w": 6.634300009356053e-08,
+        "fundamental_power_w": 1.316055963096474e-07
+      },
+      "power_balance_error_w": 0.0001343411833030217
+    },
+    {
+      "case": "4bit_700V_10000ohm_10W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 149.94440961741566,
+        "supply_power_w": 159.9716007482723,
+        "total_load_power_w": 10.027000500309146,
+        "fundamental_power_w": 9.999998684216337
+      },
+      "relative_errors": {
+        "ladder_heat_w": 1.524164527921812e-08,
+        "supply_power_w": 1.173210865124119e-06,
+        "total_load_power_w": 6.631574112070382e-08,
+        "fundamental_power_w": 1.3157836664667855e-07
+      },
+      "power_balance_error_w": 0.00019063054748968966
+    },
+    {
+      "case": "4bit_700V_20000ohm_10W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 776.647280744096,
+        "supply_power_w": 786.6743931939155,
+        "total_load_power_w": 10.027000496982517,
+        "fundamental_power_w": 9.999998680887071
+      },
+      "relative_errors": {
+        "ladder_heat_w": 1.4690629823732593e-08,
+        "supply_power_w": 1.2695867313006204e-07,
+        "total_load_power_w": 6.664750828999644e-08,
+        "fundamental_power_w": 1.319112937769873e-07
+      },
+      "power_balance_error_w": 0.00011195283706655346
+    },
+    {
+      "case": "12bit_600V_5000ohm_5W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 173.93792133710215,
+        "supply_power_w": 178.93875328728953,
+        "total_load_power_w": 5.000446360408891,
+        "fundamental_power_w": 4.9999996547882555
+      },
+      "relative_errors": {
+        "ladder_heat_w": 2.0963057179024247e-08,
+        "supply_power_w": 2.134349273319458e-06,
+        "total_load_power_w": 5.3045120518291355e-09,
+        "fundamental_power_w": 6.904234839399948e-08
+      },
+      "power_balance_error_w": 0.00038558977848435205
+    },
+    {
+      "case": "12bit_600V_10000ohm_5W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 159.75134539939216,
+        "supply_power_w": 164.7521253657364,
+        "total_load_power_w": 5.0004463605664,
+        "fundamental_power_w": 4.999999654945749
+      },
+      "relative_errors": {
+        "ladder_heat_w": 2.1285290197070594e-08,
+        "supply_power_w": 2.004099902030987e-06,
+        "total_load_power_w": 5.273013470308285e-09,
+        "fundamental_power_w": 6.901084970145632e-08
+      },
+      "power_balance_error_w": 0.0003336057778255963
+    },
+    {
+      "case": "12bit_600V_20000ohm_5W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 205.7184666524024,
+        "supply_power_w": 210.71796583413314,
+        "total_load_power_w": 5.000446360622844,
+        "fundamental_power_w": 4.9999996550021875
+      },
+      "relative_errors": {
+        "ladder_heat_w": 2.165961787703452e-08,
+        "supply_power_w": 4.516257951059366e-06,
+        "total_load_power_w": 5.261725499750014e-09,
+        "fundamental_power_w": 6.899956195294266e-08
+      },
+      "power_balance_error_w": 0.0009471788921171509
+    },
+    {
+      "case": "12bit_650V_5000ohm_5W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 181.00989599380873,
+        "supply_power_w": 186.01028790194334,
+        "total_load_power_w": 5.000446360467683,
+        "fundamental_power_w": 4.9999996548470405
+      },
+      "relative_errors": {
+        "ladder_heat_w": 2.087304218356678e-08,
+        "supply_power_w": 3.13192398682105e-07,
+        "total_load_power_w": 5.29275501204296e-09,
+        "fundamental_power_w": 6.90305913542133e-08
+      },
+      "power_balance_error_w": 5.4452333066556946e-05
+    },
+    {
+      "case": "12bit_650V_10000ohm_5W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 160.193531092906,
+        "supply_power_w": 165.19381955540965,
+        "total_load_power_w": 5.000446360620347,
+        "fundamental_power_w": 4.999999654999692
+      },
+      "relative_errors": {
+        "ladder_heat_w": 2.118195363554065e-08,
+        "supply_power_w": 9.765346250523166e-07,
+        "total_load_power_w": 5.262225544200305e-09,
+        "fundamental_power_w": 6.900006188637064e-08
+      },
+      "power_balance_error_w": 0.00015789811669986165
+    },
+    {
+      "case": "12bit_650V_20000ohm_5W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 182.62667620410753,
+        "supply_power_w": 187.62665602723843,
+        "total_load_power_w": 5.000446360692456,
+        "fundamental_power_w": 4.999999655071794
+      },
+      "relative_errors": {
+        "ladder_heat_w": 2.1540876971037903e-08,
+        "supply_power_w": 2.5076211018770778e-06,
+        "total_load_power_w": 5.247804413244239e-09,
+        "fundamental_power_w": 6.898564064439228e-08
+      },
+      "power_balance_error_w": 0.0004665375615555689
+    },
+    {
+      "case": "12bit_700V_5000ohm_5W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 188.64819522490876,
+        "supply_power_w": 193.64871288009547,
+        "total_load_power_w": 5.000446360504069,
+        "fundamental_power_w": 4.999999654883425
+      },
+      "relative_errors": {
+        "ladder_heat_w": 2.079516736586129e-08,
+        "supply_power_w": 3.477704779708546e-07,
+        "total_load_power_w": 5.285478277272659e-09,
+        "fundamental_power_w": 6.902331506353221e-08
+      },
+      "power_balance_error_w": 7.129468264288619e-05
+    },
+    {
+      "case": "12bit_700V_10000ohm_5W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 162.32092147223665,
+        "supply_power_w": 167.32063986819492,
+        "total_load_power_w": 5.000446360638042,
+        "fundamental_power_w": 4.999999655017388
+      },
+      "relative_errors": {
+        "ladder_heat_w": 2.1091502544479113e-08,
+        "supply_power_w": 4.371315882378823e-06,
+        "total_load_power_w": 5.25868659728701e-09,
+        "fundamental_power_w": 6.899652260639044e-08
+      },
+      "power_balance_error_w": 0.0007279646797737627
+    },
+    {
+      "case": "12bit_700V_20000ohm_5W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 170.6073177392679,
+        "supply_power_w": 175.60835396547043,
+        "total_load_power_w": 5.000446360722382,
+        "fundamental_power_w": 4.999999655101717
+      },
+      "relative_errors": {
+        "ladder_heat_w": 2.144167243756101e-08,
+        "supply_power_w": 3.3380138577676632e-06,
+        "total_load_power_w": 5.2418198670523e-09,
+        "fundamental_power_w": 6.897965665331185e-08
+      },
+      "power_balance_error_w": 0.0005898654801477221
+    },
+    {
+      "case": "12bit_600V_5000ohm_10W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 319.5026907482742,
+        "supply_power_w": 329.50343419529366,
+        "total_load_power_w": 10.000892720113944,
+        "fundamental_power_w": 9.999999308872734
+      },
+      "relative_errors": {
+        "ladder_heat_w": 2.1443380071595186e-08,
+        "supply_power_w": 4.739798609154633e-07,
+        "total_load_power_w": 5.374889977538544e-09,
+        "fundamental_power_w": 6.911272598664198e-08
+      },
+      "power_balance_error_w": 0.00014927309445589287
+    },
+    {
+      "case": "12bit_600V_10000ohm_10W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 411.43693321935416,
+        "supply_power_w": 421.4388010715285,
+        "total_load_power_w": 10.000892720324437,
+        "fundamental_power_w": 9.999999309083204
+      },
+      "relative_errors": {
+        "ladder_heat_w": 2.1867306299050426e-08,
+        "supply_power_w": 2.2923458902202043e-06,
+        "total_load_power_w": 5.3538423694377e-09,
+        "fundamental_power_w": 6.909167904467495e-08
+      },
+      "power_balance_error_w": 0.0009751318498771866
+    },
+    {
+      "case": "12bit_650V_5000ohm_10W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 320.38706214273026,
+        "supply_power_w": 330.38753828028325,
+        "total_load_power_w": 10.000892720323247,
+        "fundamental_power_w": 9.999999309082014
+      },
+      "relative_errors": {
+        "ladder_heat_w": 2.1316421405792596e-08,
+        "supply_power_w": 1.2817229119166385e-06,
+        "total_load_power_w": 5.353962051479755e-09,
+        "fundamental_power_w": 6.9091798726717e-08
+      },
+      "power_balance_error_w": 0.0004165827702529157
+    },
+    {
+      "case": "12bit_650V_10000ohm_10W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 365.25335235108565,
+        "supply_power_w": 375.2550319048025,
+        "total_load_power_w": 10.00089272060403,
+        "fundamental_power_w": 9.999999309362773
+      },
+      "relative_errors": {
+        "ladder_heat_w": 2.1697287300170842e-08,
+        "supply_power_w": 2.0755390133242457e-06,
+        "total_load_power_w": 5.325885510387707e-09,
+        "fundamental_power_w": 6.906372218562495e-08
+      },
+      "power_balance_error_w": 0.0007868331127962591
+    },
+    {
+      "case": "12bit_650V_20000ohm_10W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 2974.9704808393244,
+        "supply_power_w": 2984.9716419793426,
+        "total_load_power_w": 10.000892716348828,
+        "fundamental_power_w": 9.999999305107947
+      },
+      "relative_errors": {
+        "ladder_heat_w": 2.416392785864474e-08,
+        "supply_power_w": 6.58227996552796e-08,
+        "total_load_power_w": 5.751368381545774e-09,
+        "fundamental_power_w": 6.948920550087223e-08
+      },
+      "power_balance_error_w": 0.00026842366938417683
+    },
+    {
+      "case": "12bit_700V_5000ohm_10W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 324.6418429064495,
+        "supply_power_w": 334.6427229386783,
+        "total_load_power_w": 10.000892720474782,
+        "fundamental_power_w": 9.99999930923354
+      },
+      "relative_errors": {
+        "ladder_heat_w": 2.1208627964952598e-08,
+        "supply_power_w": 5.865015006989438e-08,
+        "total_load_power_w": 5.338809727639671e-09,
+        "fundamental_power_w": 6.907664606981001e-08
+      },
+      "power_balance_error_w": 1.2688245989878055e-05
+    },
+    {
+      "case": "12bit_700V_10000ohm_10W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 341.2146354356984,
+        "supply_power_w": 351.2154833970522,
+        "total_load_power_w": 10.000892720794987,
+        "fundamental_power_w": 9.999999309553719
+      },
+      "relative_errors": {
+        "ladder_heat_w": 2.1567216124118715e-08,
+        "supply_power_w": 1.4854571794842286e-07,
+        "total_load_power_w": 5.306791783787901e-09,
+        "fundamental_power_w": 6.904462812595824e-08
+      },
+      "power_balance_error_w": 4.4759441216513096e-05
+    },
+    {
+      "case": "12bit_700V_20000ohm_10W_a1",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 890.8714107555879,
+        "supply_power_w": 900.8725248854477,
+        "total_load_power_w": 10.000892720232443,
+        "fundamental_power_w": 9.999999308991224
+      },
+      "relative_errors": {
+        "ladder_heat_w": 2.2233901608714746e-08,
+        "supply_power_w": 2.23725870274194e-07,
+        "total_load_power_w": 5.363041455375139e-09,
+        "fundamental_power_w": 6.910087768652318e-08
+      },
+      "power_balance_error_w": 0.00022140962728656177
+    },
+    {
+      "case": "12bit_650V_10000ohm_5W_a0.895",
+      "simulated_supply_v": 5,
+      "target_equivalent": {
+        "ladder_heat_w": 213.99975413308482,
+        "supply_power_w": 218.99960332179742,
+        "total_load_power_w": 5.000446598128652,
+        "fundamental_power_w": 4.999999803708915
+      },
+      "relative_errors": {
+        "ladder_heat_w": 5.1634327036254035e-08,
+        "supply_power_w": 2.7777908707671273e-06,
+        "total_load_power_w": 2.4470080850491627e-08,
+        "fundamental_power_w": 3.9258216455451134e-08
+      },
+      "power_balance_error_w": 0.0005974094160494658
+    }
+  ]
+}
