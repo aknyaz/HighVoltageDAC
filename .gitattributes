@@ -3,4 +3,5 @@
 
 # Preserve tool-generated formatting without whitespace diagnostics.
 plots/kicad/*.svg -whitespace
+plots/kicad_full/*.svg -whitespace
 results/*.log -whitespace

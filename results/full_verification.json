@@ -1,0 +1,10 @@
+{
+  "verified_symbols": 35,
+  "verified_pins": 88,
+  "verified_nets": 27,
+  "load_power_w": 0.0011186950123364353,
+  "primary_mean_v": -1.3201485495566275e-05,
+  "supply_power_w": 0.022192952175839206,
+  "max_secondary_difference_from_reference_v": 6.652441569832135e-09,
+  "relative_load_power_difference": 1.2985857056335703e-08
+}

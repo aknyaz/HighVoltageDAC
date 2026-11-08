@@ -1,0 +1,212 @@
+stderr Warning: can't find the initialization file spinit.
+stdout ******
+stdout ** ngspice-46 shared library
+stdout ** Creation Date: Apr 14 2026   05:15:29
+stdout ******
+stdout ******
+stdout ** ngspice-46 : Circuit level simulation program
+stdout ** Compiled with KLU Direct Linear Solver
+stdout ** The U. C. Berkeley CAD Group
+stdout ** Copyright 1985-1994, Regents of the University of California.
+stdout ** Copyright 2001-2025, The ngspice team.
+stdout ** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html
+stdout ** Please file your bug-reports at https://ngspice.sourceforge.io/bugrep.html
+stdout ** Creation Date: Apr 14 2026   05:15:29
+stdout ******
+stdout Note: No compatibility mode selected!
+stdout Circuit: KiCad schematic
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout /vref                                        5
+stdout /a0                                   0.292969
+stdout /a1                                   0.585938
+stdout /ca0                                         0
+stdout net-_u1-out_                       1.46484e-10
+stdout xu1.inv                                      1
+stdout net-_u2-out_                       2.92969e-10
+stdout xu2.inv                                      1
+stdout /ca1                                         0
+stdout /a2                                    1.17188
+stdout /b1                                    3.55469
+stdout /b2                                    3.35937
+stdout net-_u10-out_                                5
+stdout xu10.inv                                     0
+stdout /cb1                                         1
+stdout net-_u3-out_                       5.85938e-10
+stdout xu3.inv                                      1
+stdout /ca2                                         0
+stdout /a3                                    2.34375
+stdout net-_u4-out_                                 5
+stdout xu4.inv                                      0
+stdout /ca3                                         1
+stdout /b3                                    2.34375
+stdout /sec                                         0
+stdout net-_u11-out_                                5
+stdout /cb3                                         0
+stdout net-_u12-out_                      1.17188e-09
+stdout xu12.inv                                     1
+stdout /cb2                                         1
+stdout xu11.inv                                     0
+stdout /b0                                    3.02734
+stdout net-_u9-out_                                 5
+stdout /cb0                                         1
+stdout xu9.inv                                      0
+stdout b.xu9.binv#branch                            0
+stdout b.xu11.binv#branch                           0
+stdout b.xu12.binv#branch                           0
+stdout b.xu4.binv#branch                            0
+stdout b.xu3.binv#branch                            0
+stdout b.xu10.binv#branch                           0
+stdout b.xu2.binv#branch                            0
+stdout b.xu1.binv#branch                            0
+stdout l.xt1.ls#branch                              0
+stdout l.xt1.lp#branch                     0.00015625
+stdout v.xu14.vbit#branch                           0
+stdout v.xu13.vbit#branch                           0
+stdout v.xu15.vbit#branch                           0
+stdout v.xu16.vbit#branch                           0
+stdout v.xu7.vbit#branch                            0
+stdout v.xu8.vbit#branch                            0
+stdout v.xu6.vbit#branch                            0
+stdout v.xu5.vbit#branch                            0
+stdout v1#branch                          -0.00385742
+ Reference value :  5.40616e-03
+ Reference value :  1.07957e-02
+ Reference value :  1.55958e-02
+ Reference value :  1.99104e-02
+ Reference value :  2.40102e-02
+ Reference value :  2.78697e-02
+ Reference value :  3.14046e-02
+ Reference value :  3.47689e-02
+ Reference value :  3.80314e-02
+ Reference value :  4.11863e-02
+ Reference value :  4.42272e-02
+ Reference value :  4.71624e-02
+ Reference value :  4.99846e-02
+ Reference value :  5.27147e-02
+ Reference value :  5.53710e-02
+ Reference value :  5.79559e-02
+ Reference value :  6.04740e-02
+ Reference value :  6.29271e-02
+ Reference value :  6.53179e-02
+ Reference value :  6.76448e-02
+ Reference value :  6.98984e-02
+ Reference value :  7.20941e-02
+ Reference value :  7.41845e-02
+ Reference value :  7.61673e-02
+ Reference value :  7.82647e-02
+ Reference value :  8.02546e-02
+ Reference value :  8.21414e-02
+ Reference value :  8.41259e-02
+ Reference value :  8.60795e-02
+ Reference value :  8.80000e-02
+ Reference value :  8.97755e-02
+ Reference value :  9.15000e-02
+ Reference value :  9.29401e-02
+ Reference value :  9.45000e-02
+ Reference value :  9.61831e-02
+ Reference value :  9.79608e-02
+ Reference value :  9.97061e-02
+stdout No. of Data Rows : 546129
+stdout Note: No compatibility mode selected!
+stdout Circuit: 4-bit differential r-2r low-voltage research bench
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout ref                                          5
+stdout ca0                                          0
+stdout na0                                          1
+stdout da0                                1.46484e-10
+stdout a0                                    0.292969
+stdout ca1                                          0
+stdout na1                                          1
+stdout da1                                2.92969e-10
+stdout a1                                    0.585938
+stdout ca2                                          0
+stdout na2                                          1
+stdout da2                                5.85938e-10
+stdout a2                                     1.17188
+stdout ca3                                          1
+stdout na3                                          0
+stdout da3                                          5
+stdout a3                                     2.34375
+stdout cb0                                          1
+stdout nb0                                          0
+stdout db0                                          5
+stdout b0                                     3.02734
+stdout cb1                                          1
+stdout nb1                                          0
+stdout db1                                          5
+stdout b1                                     3.55469
+stdout cb2                                          1
+stdout nb2                                          0
+stdout db2                                          5
+stdout b2                                     3.35937
+stdout cb3                                          0
+stdout nb3                                          1
+stdout db3                                1.17188e-09
+stdout b3                                     2.34375
+stdout sec                                          0
+stdout bb3#branch                                   0
+stdout bb2#branch                                   0
+stdout bb1#branch                                   0
+stdout bb0#branch                                   0
+stdout ba3#branch                                   0
+stdout ba2#branch                                   0
+stdout ba1#branch                                   0
+stdout ba0#branch                                   0
+stdout ls#branch                                    0
+stdout lp#branch                           0.00015625
+stdout vb3#branch                                   0
+stdout vb2#branch                                   0
+stdout vb1#branch                                   0
+stdout vb0#branch                                   0
+stdout va3#branch                                   0
+stdout va2#branch                                   0
+stdout va1#branch                                   0
+stdout va0#branch                                   0
+stdout vref#branch                        -0.00385742
+ Reference value :  2.97648e-03
+ Reference value :  8.92445e-03
+ Reference value :  1.41870e-02
+ Reference value :  1.89772e-02
+ Reference value :  2.33852e-02
+ Reference value :  2.74679e-02
+ Reference value :  3.12945e-02
+ Reference value :  3.49005e-02
+ Reference value :  3.83465e-02
+ Reference value :  4.16012e-02
+ Reference value :  4.47166e-02
+ Reference value :  4.77165e-02
+ Reference value :  5.06187e-02
+ Reference value :  5.34142e-02
+ Reference value :  5.61200e-02
+ Reference value :  5.87435e-02
+ Reference value :  6.13032e-02
+ Reference value :  6.37617e-02
+ Reference value :  6.61905e-02
+ Reference value :  6.85396e-02
+ Reference value :  7.08489e-02
+ Reference value :  7.30819e-02
+ Reference value :  7.52693e-02
+ Reference value :  7.74012e-02
+ Reference value :  7.95014e-02
+ Reference value :  8.15729e-02
+ Reference value :  8.35917e-02
+ Reference value :  8.55783e-02
+ Reference value :  8.75290e-02
+ Reference value :  8.93433e-02
+ Reference value :  9.11119e-02
+ Reference value :  9.25469e-02
+ Reference value :  9.42545e-02
+ Reference value :  9.59441e-02
+ Reference value :  9.77427e-02
+ Reference value :  9.94977e-02
+stdout No. of Data Rows : 546110
