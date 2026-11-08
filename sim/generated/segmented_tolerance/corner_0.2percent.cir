@@ -1,0 +1,240 @@
+12-bit 4+8 segmented mismatch - 5 V only
+Vref ref 0 5
+Vcode code 0 0
+.model ideal SW(Ron=1u Roff=1e12 Vt=.5 Vh=0)
+.options reltol=1e-8 abstol=1e-14
+Bca0 ca0 0 V=floor(v(code)/1)-2*floor(v(code)/2)
+Bna0 na0 0 V=1-v(ca0)
+Sa0h da0 ref ca0 0 ideal
+Sa0l da0 0 na0 0 ideal
+Ra0 a da0 21561959.3357166
+Bca1 ca1 0 V=floor(v(code)/2)-2*floor(v(code)/4)
+Bna1 na1 0 V=1-v(ca1)
+Sa1h da1 ref ca1 0 ideal
+Sa1l da1 0 na1 0 ideal
+Ra1 a da1 10780979.6678583
+Bca2 ca2 0 V=floor(v(code)/4)-2*floor(v(code)/8)
+Bna2 na2 0 V=1-v(ca2)
+Sa2h da2 ref ca2 0 ideal
+Sa2l da2 0 na2 0 ideal
+Ra2 a da2 5390489.83392914
+Bca3 ca3 0 V=floor(v(code)/8)-2*floor(v(code)/16)
+Bna3 na3 0 V=1-v(ca3)
+Sa3h da3 ref ca3 0 ideal
+Sa3l da3 0 na3 0 ideal
+Ra3 a da3 2695244.91696457
+Bca4 ca4 0 V=floor(v(code)/16)-2*floor(v(code)/32)
+Bna4 na4 0 V=1-v(ca4)
+Sa4h da4 ref ca4 0 ideal
+Sa4l da4 0 na4 0 ideal
+Ra4 a da4 1347622.45848229
+Bca5 ca5 0 V=floor(v(code)/32)-2*floor(v(code)/64)
+Bna5 na5 0 V=1-v(ca5)
+Sa5h da5 ref ca5 0 ideal
+Sa5l da5 0 na5 0 ideal
+Ra5 a da5 673811.229241143
+Bca6 ca6 0 V=floor(v(code)/64)-2*floor(v(code)/128)
+Bna6 na6 0 V=1-v(ca6)
+Sa6h da6 ref ca6 0 ideal
+Sa6l da6 0 na6 0 ideal
+Ra6 a da6 336905.614620571
+Bca7 ca7 0 V=floor(v(code)/128)-2*floor(v(code)/256)
+Bna7 na7 0 V=1-v(ca7)
+Sa7h da7 ref ca7 0 ideal
+Sa7l da7 0 na7 0 ideal
+Ra7 a da7 168452.807310286
+Bca8 ca8 0 V=(floor(v(code)/256)>0)
+Bna8 na8 0 V=1-v(ca8)
+Sa8h da8 ref ca8 0 ideal
+Sa8l da8 0 na8 0 ideal
+Ra8 a da8 84563.9844313158
+Bca9 ca9 0 V=(floor(v(code)/256)>1)
+Bna9 na9 0 V=1-v(ca9)
+Sa9h da9 ref ca9 0 ideal
+Sa9l da9 0 na9 0 ideal
+Ra9 a da9 84563.9844313158
+Bca10 ca10 0 V=(floor(v(code)/256)>2)
+Bna10 na10 0 V=1-v(ca10)
+Sa10h da10 ref ca10 0 ideal
+Sa10l da10 0 na10 0 ideal
+Ra10 a da10 84563.9844313158
+Bca11 ca11 0 V=(floor(v(code)/256)>3)
+Bna11 na11 0 V=1-v(ca11)
+Sa11h da11 ref ca11 0 ideal
+Sa11l da11 0 na11 0 ideal
+Ra11 a da11 84563.9844313158
+Bca12 ca12 0 V=(floor(v(code)/256)>4)
+Bna12 na12 0 V=1-v(ca12)
+Sa12h da12 ref ca12 0 ideal
+Sa12l da12 0 na12 0 ideal
+Ra12 a da12 84563.9844313158
+Bca13 ca13 0 V=(floor(v(code)/256)>5)
+Bna13 na13 0 V=1-v(ca13)
+Sa13h da13 ref ca13 0 ideal
+Sa13l da13 0 na13 0 ideal
+Ra13 a da13 84563.9844313158
+Bca14 ca14 0 V=(floor(v(code)/256)>6)
+Bna14 na14 0 V=1-v(ca14)
+Sa14h da14 ref ca14 0 ideal
+Sa14l da14 0 na14 0 ideal
+Ra14 a da14 84563.9844313158
+Bca15 ca15 0 V=(floor(v(code)/256)>7)
+Bna15 na15 0 V=1-v(ca15)
+Sa15h da15 ref ca15 0 ideal
+Sa15l da15 0 na15 0 ideal
+Ra15 a da15 84563.9844313158
+Bca16 ca16 0 V=(floor(v(code)/256)>8)
+Bna16 na16 0 V=1-v(ca16)
+Sa16h da16 ref ca16 0 ideal
+Sa16l da16 0 na16 0 ideal
+Ra16 a da16 84563.9844313158
+Bca17 ca17 0 V=(floor(v(code)/256)>9)
+Bna17 na17 0 V=1-v(ca17)
+Sa17h da17 ref ca17 0 ideal
+Sa17l da17 0 na17 0 ideal
+Ra17 a da17 84563.9844313158
+Bca18 ca18 0 V=(floor(v(code)/256)>10)
+Bna18 na18 0 V=1-v(ca18)
+Sa18h da18 ref ca18 0 ideal
+Sa18l da18 0 na18 0 ideal
+Ra18 a da18 84563.9844313158
+Bca19 ca19 0 V=(floor(v(code)/256)>11)
+Bna19 na19 0 V=1-v(ca19)
+Sa19h da19 ref ca19 0 ideal
+Sa19l da19 0 na19 0 ideal
+Ra19 a da19 84563.9844313158
+Bca20 ca20 0 V=(floor(v(code)/256)>12)
+Bna20 na20 0 V=1-v(ca20)
+Sa20h da20 ref ca20 0 ideal
+Sa20l da20 0 na20 0 ideal
+Ra20 a da20 84563.9844313158
+Bca21 ca21 0 V=(floor(v(code)/256)>13)
+Bna21 na21 0 V=1-v(ca21)
+Sa21h da21 ref ca21 0 ideal
+Sa21l da21 0 na21 0 ideal
+Ra21 a da21 84563.9844313158
+Bca22 ca22 0 V=(floor(v(code)/256)>14)
+Bna22 na22 0 V=1-v(ca22)
+Sa22h da22 ref ca22 0 ideal
+Sa22l da22 0 na22 0 ideal
+Ra22 a da22 84563.9844313158
+Raterm a 0 21605169.6750667
+Bcb0 cb0 0 V=floor((4095-v(code))/1)-2*floor((4095-v(code))/2)
+Bnb0 nb0 0 V=1-v(cb0)
+Sb0h db0 ref cb0 0 ideal
+Sb0l db0 0 nb0 0 ideal
+Rb0 b db0 21561959.3357166
+Bcb1 cb1 0 V=floor((4095-v(code))/2)-2*floor((4095-v(code))/4)
+Bnb1 nb1 0 V=1-v(cb1)
+Sb1h db1 ref cb1 0 ideal
+Sb1l db1 0 nb1 0 ideal
+Rb1 b db1 10780979.6678583
+Bcb2 cb2 0 V=floor((4095-v(code))/4)-2*floor((4095-v(code))/8)
+Bnb2 nb2 0 V=1-v(cb2)
+Sb2h db2 ref cb2 0 ideal
+Sb2l db2 0 nb2 0 ideal
+Rb2 b db2 5390489.83392914
+Bcb3 cb3 0 V=floor((4095-v(code))/8)-2*floor((4095-v(code))/16)
+Bnb3 nb3 0 V=1-v(cb3)
+Sb3h db3 ref cb3 0 ideal
+Sb3l db3 0 nb3 0 ideal
+Rb3 b db3 2695244.91696457
+Bcb4 cb4 0 V=floor((4095-v(code))/16)-2*floor((4095-v(code))/32)
+Bnb4 nb4 0 V=1-v(cb4)
+Sb4h db4 ref cb4 0 ideal
+Sb4l db4 0 nb4 0 ideal
+Rb4 b db4 1347622.45848229
+Bcb5 cb5 0 V=floor((4095-v(code))/32)-2*floor((4095-v(code))/64)
+Bnb5 nb5 0 V=1-v(cb5)
+Sb5h db5 ref cb5 0 ideal
+Sb5l db5 0 nb5 0 ideal
+Rb5 b db5 673811.229241143
+Bcb6 cb6 0 V=floor((4095-v(code))/64)-2*floor((4095-v(code))/128)
+Bnb6 nb6 0 V=1-v(cb6)
+Sb6h db6 ref cb6 0 ideal
+Sb6l db6 0 nb6 0 ideal
+Rb6 b db6 336905.614620571
+Bcb7 cb7 0 V=floor((4095-v(code))/128)-2*floor((4095-v(code))/256)
+Bnb7 nb7 0 V=1-v(cb7)
+Sb7h db7 ref cb7 0 ideal
+Sb7l db7 0 nb7 0 ideal
+Rb7 b db7 168452.807310286
+Bcb8 cb8 0 V=(floor((4095-v(code))/256)>0)
+Bnb8 nb8 0 V=1-v(cb8)
+Sb8h db8 ref cb8 0 ideal
+Sb8l db8 0 nb8 0 ideal
+Rb8 b db8 84563.9844313158
+Bcb9 cb9 0 V=(floor((4095-v(code))/256)>1)
+Bnb9 nb9 0 V=1-v(cb9)
+Sb9h db9 ref cb9 0 ideal
+Sb9l db9 0 nb9 0 ideal
+Rb9 b db9 84563.9844313158
+Bcb10 cb10 0 V=(floor((4095-v(code))/256)>2)
+Bnb10 nb10 0 V=1-v(cb10)
+Sb10h db10 ref cb10 0 ideal
+Sb10l db10 0 nb10 0 ideal
+Rb10 b db10 84563.9844313158
+Bcb11 cb11 0 V=(floor((4095-v(code))/256)>3)
+Bnb11 nb11 0 V=1-v(cb11)
+Sb11h db11 ref cb11 0 ideal
+Sb11l db11 0 nb11 0 ideal
+Rb11 b db11 84563.9844313158
+Bcb12 cb12 0 V=(floor((4095-v(code))/256)>4)
+Bnb12 nb12 0 V=1-v(cb12)
+Sb12h db12 ref cb12 0 ideal
+Sb12l db12 0 nb12 0 ideal
+Rb12 b db12 84563.9844313158
+Bcb13 cb13 0 V=(floor((4095-v(code))/256)>5)
+Bnb13 nb13 0 V=1-v(cb13)
+Sb13h db13 ref cb13 0 ideal
+Sb13l db13 0 nb13 0 ideal
+Rb13 b db13 84563.9844313158
+Bcb14 cb14 0 V=(floor((4095-v(code))/256)>6)
+Bnb14 nb14 0 V=1-v(cb14)
+Sb14h db14 ref cb14 0 ideal
+Sb14l db14 0 nb14 0 ideal
+Rb14 b db14 84563.9844313158
+Bcb15 cb15 0 V=(floor((4095-v(code))/256)>7)
+Bnb15 nb15 0 V=1-v(cb15)
+Sb15h db15 ref cb15 0 ideal
+Sb15l db15 0 nb15 0 ideal
+Rb15 b db15 84563.9844313158
+Bcb16 cb16 0 V=(floor((4095-v(code))/256)>8)
+Bnb16 nb16 0 V=1-v(cb16)
+Sb16h db16 ref cb16 0 ideal
+Sb16l db16 0 nb16 0 ideal
+Rb16 b db16 84563.9844313158
+Bcb17 cb17 0 V=(floor((4095-v(code))/256)>9)
+Bnb17 nb17 0 V=1-v(cb17)
+Sb17h db17 ref cb17 0 ideal
+Sb17l db17 0 nb17 0 ideal
+Rb17 b db17 84563.9844313158
+Bcb18 cb18 0 V=(floor((4095-v(code))/256)>10)
+Bnb18 nb18 0 V=1-v(cb18)
+Sb18h db18 ref cb18 0 ideal
+Sb18l db18 0 nb18 0 ideal
+Rb18 b db18 84563.9844313158
+Bcb19 cb19 0 V=(floor((4095-v(code))/256)>11)
+Bnb19 nb19 0 V=1-v(cb19)
+Sb19h db19 ref cb19 0 ideal
+Sb19l db19 0 nb19 0 ideal
+Rb19 b db19 84563.9844313158
+Bcb20 cb20 0 V=(floor((4095-v(code))/256)>12)
+Bnb20 nb20 0 V=1-v(cb20)
+Sb20h db20 ref cb20 0 ideal
+Sb20l db20 0 nb20 0 ideal
+Rb20 b db20 84563.9844313158
+Bcb21 cb21 0 V=(floor((4095-v(code))/256)>13)
+Bnb21 nb21 0 V=1-v(cb21)
+Sb21h db21 ref cb21 0 ideal
+Sb21l db21 0 nb21 0 ideal
+Rb21 b db21 84563.9844313158
+Bcb22 cb22 0 V=(floor((4095-v(code))/256)>14)
+Bnb22 nb22 0 V=1-v(cb22)
+Sb22h db22 ref cb22 0 ideal
+Sb22l db22 0 nb22 0 ideal
+Rb22 b db22 84563.9844313158
+Rbterm b 0 21605169.6750667
+Rload a b 10000
+.dc Vcode 0 4095 1
+.end

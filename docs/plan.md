@@ -63,8 +63,13 @@ capacitance/timing, and long-held code states. No real HV device is selected yet
   80,000 random networks, exact carry-step analysis, and six full-code SPICE checks.
   Results: `docs/resistor_tolerance.md`. A 0.01% ratio-error scenario is a useful
   next-model baseline, not a hardware accuracy guarantee.
-- [ ] Extend mismatch analysis to the segmented network and add temperature/voltage
-  dependence, leakage, and finite switch behavior before selecting components.
+- [x] Extend static mismatch analysis to the 4+8 segmented network: 80,000 random
+  networks, exact coarse/fine transition analysis, and six full-code SPICE checks.
+  Results: `docs/segmented_tolerance.md`. Segmentation substantially improves the
+  monotonicity bound and improves sampled INL, with a higher switch count.
+- [ ] Add temperature/voltage dependence, leakage, and finite switch behavior before
+  selecting components. Compare switching glitches and driver burden in binary and
+  segmented candidates before treating the static advantage as a hardware decision.
 
 1. Check frequency response and output impedance, including at 20 Hz.
 2. Measure DC current and magnetic flux during startup, with a constant code, and with PCM offset.

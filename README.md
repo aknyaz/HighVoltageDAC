@@ -103,3 +103,15 @@ python sim/verify_resistor_tolerance.py
 
 Results: `results/resistor_tolerance/`. Plots: `plots/resistor_tolerance/`.
 Monte Carlo fractions describe the stated uniform-error scenario, not manufacturing yield.
+
+The [4+8 segmented tolerance study](docs/segmented_tolerance.md) now compares the
+same error bounds against the binary network, including explicit complementary
+thermometer decoding and full-code SPICE checks:
+
+```powershell
+python calc/segmented_tolerance.py
+python sim/verify_segmented_tolerance.py
+```
+
+It reads the binary baseline from `results/resistor_tolerance/summary.json`.
+New results and plots are in `results/segmented_tolerance/` and `plots/segmented_tolerance/`.

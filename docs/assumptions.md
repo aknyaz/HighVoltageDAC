@@ -38,3 +38,14 @@ coarse branches of weight 256 and eight binary fine branches of weights 1–128.
 There is no current source, interstage buffer, PWM power stage, or analog amplifier.
 Ideal code mapping and resistor power are verified; real 12-bit accuracy, glitch
 energy, leakage, capacitance, and driver losses remain unvalidated.
+
+## Segmented resistor tolerance extension
+
+The static 4+8 mismatch study retains the binary study's load, equivalent arm
+resistance, supply, error bounds, and sample count. There are now 24 resistors per
+arm including the grounded termination. Thermometer branches use fixed ordering:
+as coarse code increases, A branch j turns on while B branch 14-j turns off.
+The paired-error scenario matches A/B resistors of the same physical index, which
+is distinct from matching the two coarse branches that switch at the same boundary.
+Uniform-error statistics and monotonicity bounds apply only to the stated static
+ideal model. Endpoint INL fitting does not implement physical calibration.

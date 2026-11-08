@@ -9,3 +9,4 @@ results/*.log -whitespace
 results/power_study/*.log -whitespace
 results/resistive_comparison/*.log -whitespace
 results/resistor_tolerance/*.log -whitespace
+results/segmented_tolerance/*.log -whitespace
