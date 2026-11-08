@@ -67,3 +67,21 @@ python sim/verify_power_study.py
 
 Tables and verification data are in `results/power_study/`; charts are in
 `plots/power_study/`. These are ideal architecture comparisons, not hardware ratings.
+
+## Alternative resistive architectures
+
+The [parallel resistor comparison](docs/resistive_architecture_comparison.md) evaluates
+binary-weighted branches and a defined thermometer/binary segmented network against
+the R–2R reference at equal useful output power. It includes all resistor losses,
+switch counts, resistor ranges, idle dissipation, and independent SPICE checks.
+
+```powershell
+python calc/power_trade_study.py
+python calc/compare_resistive.py
+python sim/verify_resistive_comparison.py
+```
+
+Results are in `results/resistive_comparison/`, the chart is in
+`plots/resistive_comparison/`, and low-voltage decks are in
+`sim/generated/resistive_comparison/`. The existing KiCad sheet still shows R–2R;
+the new alternatives have not yet been transferred to a KiCad sheet.

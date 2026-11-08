@@ -27,3 +27,14 @@ losses. Each SPICE check runs one 1 ms period at 5 V into the reflected resistor
 there are no energy-storage elements requiring settling in these particular decks.
 This study verifies dissipation and static loading, not full 12-bit audio performance.
 See `power_trade_study.md` for derivations, numerical tolerances, and limitations.
+
+## Parallel architecture comparison
+
+The new binary and segmented networks are voltage-mode parallel branches, each
+switched between supply and return and connected through a resistor to its arm's
+output node. A grounded unit-conductance termination per arm preserves the exact
+R–2R code scale and output resistance. The 12-bit segmented case uses 15 equal
+coarse branches of weight 256 and eight binary fine branches of weights 1–128.
+There is no current source, interstage buffer, PWM power stage, or analog amplifier.
+Ideal code mapping and resistor power are verified; real 12-bit accuracy, glitch
+energy, leakage, capacitance, and driver losses remain unvalidated.

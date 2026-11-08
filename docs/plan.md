@@ -44,11 +44,19 @@ The present 5 V bench's efficiency is not a verdict on the final architecture.
 
 ### Following steps
 
-The immediate design decision is whether to accept the ordinary R–2R ladder's
-large internal dissipation. Compare a binary-weighted parallel resistor DAC and
-a clearly specified segmented resistive DAC at equal useful power before selecting
-real HV switches. Both candidates must retain direct transformer drive and explicitly
-account for all internal currents; lower heat is a hypothesis to test, not a promised result.
+The alternative-topology comparison is complete: see
+`docs/resistive_architecture_comparison.md`. Both parallel architectures reduce
+ideal resistor heat substantially; segmentation changes resistor range and switch
+count, but not total ideal heat at the same code and output resistance.
+
+- [x] Compare parallel binary and defined 4+8 segmented resistor networks at equal useful power.
+- [x] Check all 4096 ideal 12-bit codes and verify both alternatives in structural 5 V SPICE.
+- [x] Quantify branch count, resistor span, hottest resistor, and midpoint idle heat.
+
+The next concrete step is a readable wired KiCad sheet for the parallel candidate,
+using a low-bit demonstrator first. Retain R–2R as a reference. Before preferring
+binary or segmented hardware, evaluate resistance mismatch, leakage, switch
+capacitance/timing, and long-held code states. No real HV device is selected yet.
 
 1. Check frequency response and output impedance, including at 20 Hz.
 2. Measure DC current and magnetic flux during startup, with a constant code, and with PCM offset.

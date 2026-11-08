@@ -6,3 +6,4 @@ plots/kicad/*.svg -whitespace
 plots/kicad_full/*.svg -whitespace
 results/*.log -whitespace
 results/power_study/*.log -whitespace
+results/resistive_comparison/*.log -whitespace
