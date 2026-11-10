@@ -12,3 +12,4 @@ results/resistor_tolerance/*.log -whitespace
 results/segmented_tolerance/*.log -whitespace
 results/switching_glitches/*.log -whitespace
 results/nonideal_switches/*.log -whitespace
+results/sic_charge/*.log -whitespace

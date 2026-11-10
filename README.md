@@ -139,3 +139,12 @@ switching-loss sensitivity that was absent from the ideal resistor heat study.
 ```powershell
 python sim/nonideal_switches.py
 ```
+
+The [nonlinear charge and driver budget](docs/sic_charge_and_drivers.md) integrates
+an approximate datasheet Coss curve, verifies scaled charge-work calculations in
+SPICE, and estimates driver bias overhead. It is not a manufacturer MOSFET model.
+
+```powershell
+python calc/sic_charge.py
+python sim/verify_sic_charge.py
+```

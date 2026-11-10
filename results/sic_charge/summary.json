@@ -1,0 +1,214 @@
+{
+  "provenance": "Manual approximate typical Coss samples: C3M0350120D Rev 04 Fig 17/18",
+  "capacitance_points": [
+    [
+      0.0,
+      350.0
+    ],
+    [
+      5.0,
+      180.0
+    ],
+    [
+      10.0,
+      140.0
+    ],
+    [
+      15.0,
+      110.0
+    ],
+    [
+      20.0,
+      95.0
+    ],
+    [
+      30.0,
+      76.99999999999999
+    ],
+    [
+      40.0,
+      64.0
+    ],
+    [
+      50.0,
+      57.0
+    ],
+    [
+      75.0,
+      47.0
+    ],
+    [
+      100.0,
+      41.0
+    ],
+    [
+      150.0,
+      33.0
+    ],
+    [
+      200.0,
+      30.0
+    ],
+    [
+      300.0,
+      25.0
+    ],
+    [
+      400.0,
+      22.0
+    ],
+    [
+      600.0,
+      20.0
+    ],
+    [
+      800.0,
+      20.0
+    ],
+    [
+      1000.0,
+      20.0
+    ],
+    [
+      1200.0,
+      20.0
+    ]
+  ],
+  "voltage_rows": [
+    {
+      "supply_v": 600,
+      "qoss_nc": 20.557499999999997,
+      "eoss_uj": 4.3765625,
+      "halfbridge_hard_transition_uj": 12.334499999999998,
+      "charge_equivalent_pf": 34.262499999999996
+    },
+    {
+      "supply_v": 650,
+      "qoss_nc": 21.557499999999997,
+      "eoss_uj": 5.0015625,
+      "halfbridge_hard_transition_uj": 14.012374999999999,
+      "charge_equivalent_pf": 33.16538461538461
+    },
+    {
+      "supply_v": 700,
+      "qoss_nc": 22.557499999999994,
+      "eoss_uj": 5.6765625,
+      "halfbridge_hard_transition_uj": 15.790249999999997,
+      "charge_equivalent_pf": 32.224999999999994
+    },
+    {
+      "supply_v": 1000,
+      "qoss_nc": 28.557499999999997,
+      "eoss_uj": 10.7765625,
+      "halfbridge_hard_transition_uj": 28.557499999999994,
+      "charge_equivalent_pf": 28.557499999999997
+    }
+  ],
+  "budgets": [
+    {
+      "architecture": "binary",
+      "amplitude": 0.0,
+      "toggles_per_ms": 0,
+      "coss_loss_w": 0.0,
+      "coss_sensitivity_low_w": 0.0,
+      "coss_sensitivity_high_w": 0.0,
+      "gate_charge_w": 0.0,
+      "driver_quiescent_w": 3.9072,
+      "floating_high_side_domains": 24,
+      "driver_channels": 48,
+      "auxiliary_output_w": 3.9072
+    },
+    {
+      "architecture": "binary",
+      "amplitude": 0.1,
+      "toggles_per_ms": 1024,
+      "coss_loss_w": 14.348671999999997,
+      "coss_sensitivity_low_w": 10.761503999999999,
+      "coss_sensitivity_high_w": 17.935839999999995,
+      "gate_charge_w": 0.369664,
+      "driver_quiescent_w": 3.9072,
+      "floating_high_side_domains": 24,
+      "driver_channels": 48,
+      "auxiliary_output_w": 4.276864
+    },
+    {
+      "architecture": "binary",
+      "amplitude": 0.5,
+      "toggles_per_ms": 1312,
+      "coss_loss_w": 18.384235999999998,
+      "coss_sensitivity_low_w": 13.788176999999997,
+      "coss_sensitivity_high_w": 22.980294999999998,
+      "gate_charge_w": 0.47363200000000005,
+      "driver_quiescent_w": 3.9072,
+      "floating_high_side_domains": 24,
+      "driver_channels": 48,
+      "auxiliary_output_w": 4.380832
+    },
+    {
+      "architecture": "binary",
+      "amplitude": 1.0,
+      "toggles_per_ms": 1480,
+      "coss_loss_w": 20.738314999999997,
+      "coss_sensitivity_low_w": 15.553736249999996,
+      "coss_sensitivity_high_w": 25.922893749999997,
+      "gate_charge_w": 0.5342800000000001,
+      "driver_quiescent_w": 3.9072,
+      "floating_high_side_domains": 24,
+      "driver_channels": 48,
+      "auxiliary_output_w": 4.44148
+    },
+    {
+      "architecture": "segmented",
+      "amplitude": 0.0,
+      "toggles_per_ms": 0,
+      "coss_loss_w": 0.0,
+      "coss_sensitivity_low_w": 0.0,
+      "coss_sensitivity_high_w": 0.0,
+      "gate_charge_w": 0.0,
+      "driver_quiescent_w": 7.4888,
+      "floating_high_side_domains": 46,
+      "driver_channels": 92,
+      "auxiliary_output_w": 7.4888
+    },
+    {
+      "architecture": "segmented",
+      "amplitude": 0.1,
+      "toggles_per_ms": 1012,
+      "coss_loss_w": 14.180523499999998,
+      "coss_sensitivity_low_w": 10.635392624999998,
+      "coss_sensitivity_high_w": 17.725654374999998,
+      "gate_charge_w": 0.36533200000000005,
+      "driver_quiescent_w": 7.4888,
+      "floating_high_side_domains": 46,
+      "driver_channels": 92,
+      "auxiliary_output_w": 7.854132000000001
+    },
+    {
+      "architecture": "segmented",
+      "amplitude": 0.5,
+      "toggles_per_ms": 1292,
+      "coss_loss_w": 18.103988499999996,
+      "coss_sensitivity_low_w": 13.577991374999996,
+      "coss_sensitivity_high_w": 22.629985624999996,
+      "gate_charge_w": 0.466412,
+      "driver_quiescent_w": 7.4888,
+      "floating_high_side_domains": 46,
+      "driver_channels": 92,
+      "auxiliary_output_w": 7.955212
+    },
+    {
+      "architecture": "segmented",
+      "amplitude": 1.0,
+      "toggles_per_ms": 1436,
+      "coss_loss_w": 20.121770499999997,
+      "coss_sensitivity_low_w": 15.091327874999998,
+      "coss_sensitivity_high_w": 25.152213124999996,
+      "gate_charge_w": 0.5183960000000001,
+      "driver_quiescent_w": 7.4888,
+      "floating_high_side_domains": 46,
+      "driver_channels": 92,
+      "auxiliary_output_w": 8.007196
+    }
+  ],
+  "eoss_1000v_difference_from_10p6uj_percent": 1.6656839622641417
+}

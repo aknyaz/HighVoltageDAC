@@ -80,6 +80,11 @@ capacitance/timing, and long-held code states. No real HV device is selected yet
   counts and hypothetical hard-switch capacitance loss. See `docs/switch_candidates.md`.
 - [ ] Validate nonlinear device charge/energy and driver behavior; the linear
   surrogates do not yet establish real-device losses or final component selection.
+- [x] Integrate an approximate typical nonlinear Coss curve and verify charge-work
+  normalization with eight SPICE fixtures; estimate isolated-driver bias and gate
+  charge overhead. See `docs/sic_charge_and_drivers.md`.
+- [ ] Obtain/validate a full device model and optimize driver consumption and
+  coarse/fine partition before committing to the 92-transistor implementation.
 
 1. Check frequency response and output impedance, including at 20 Hz.
 2. Measure DC current and magnetic flux during startup, with a constant code, and with PCM offset.

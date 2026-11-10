@@ -1,0 +1,33 @@
+{
+  "spice_runs": 8,
+  "rows": [
+    {
+      "supply_equivalent_v": 600,
+      "spice_energy_uj": 12.348074559904925,
+      "analytic_energy_uj": 12.334499999999998,
+      "relative_error": 0.0011005358875451066,
+      "timestep_relative_difference": 0.001092672105652559
+    },
+    {
+      "supply_equivalent_v": 650,
+      "spice_energy_uj": 14.028441277727039,
+      "analytic_energy_uj": 14.012374999999999,
+      "relative_error": 0.0011465777733639104,
+      "timestep_relative_difference": 0.0011378156259727046
+    },
+    {
+      "supply_equivalent_v": 700,
+      "spice_energy_uj": 15.809016651712348,
+      "analytic_energy_uj": 15.790249999999997,
+      "relative_error": 0.0011884961740535882,
+      "timestep_relative_difference": 0.0011788292982748416
+    },
+    {
+      "supply_equivalent_v": 1000,
+      "spice_energy_uj": 28.596842425084088,
+      "analytic_energy_uj": 28.557499999999994,
+      "relative_error": 0.001377656485479939,
+      "timestep_relative_difference": 0.0013624529942277697
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+stderr Warning: can't find the initialization file spinit.
+stdout ******
+stdout ** ngspice-46 shared library
+stdout ** Creation Date: Apr 14 2026   05:15:29
+stdout ******
+stdout ******
+stdout ** ngspice-46 : Circuit level simulation program
+stdout ** Compiled with KLU Direct Linear Solver
+stdout ** The U. C. Berkeley CAD Group
+stdout ** Copyright 1985-1994, Regents of the University of California.
+stdout ** Copyright 2001-2025, The ngspice team.
+stdout ** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html
+stdout ** Please file your bug-reports at https://ngspice.sourceforge.io/bugrep.html
+stdout ** Creation Date: Apr 14 2026   05:15:29
+stdout ******
+stdout Note: No compatibility mode selected!
+stdout Circuit: nonlinear coss pair - scaled 5 v energy verification
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout ref                                          5
+stdout x                                            0
+stdout vdrive#branch                                0
+stdout vref#branch                                  0
+ Reference value :  2.89166e-07
+ Reference value :  5.87766e-07
+ Reference value :  8.91046e-07
+ Reference value :  1.18971e-06
+stdout No. of Data Rows : 60014
+stdout Note: No compatibility mode selected!
+stdout Circuit: nonlinear coss pair - scaled 5 v energy verification
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout ref                                          5
+stdout x                                            0
+stdout vdrive#branch                                0
+stdout vref#branch                                  0
+ Reference value :  1.38823e-07
+ Reference value :  2.89203e-07
+ Reference value :  4.40863e-07
+ Reference value :  5.90343e-07
+ Reference value :  7.35563e-07
+ Reference value :  8.79303e-07
+ Reference value :  1.02462e-06
+ Reference value :  1.17105e-06
+stdout No. of Data Rows : 120014
+stdout Note: No compatibility mode selected!
+stdout Circuit: nonlinear coss pair - scaled 5 v energy verification
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout ref                                          5
+stdout x                                            0
+stdout vdrive#branch                                0
+stdout vref#branch                                  0
+ Reference value :  2.31586e-07
+ Reference value :  5.27026e-07
+ Reference value :  8.11606e-07
+ Reference value :  1.09913e-06
+stdout No. of Data Rows : 60014
+stdout Note: No compatibility mode selected!
+stdout Circuit: nonlinear coss pair - scaled 5 v energy verification
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout ref                                          5
+stdout x                                            0
+stdout vdrive#branch                                0
+stdout vref#branch                                  0
+ Reference value :  8.80228e-08
+ Reference value :  2.32953e-07
+ Reference value :  3.75263e-07
+ Reference value :  5.19843e-07
+ Reference value :  6.67783e-07
+ Reference value :  8.07403e-07
+ Reference value :  9.54753e-07
+ Reference value :  1.09814e-06
+stdout No. of Data Rows : 120014
+stdout Note: No compatibility mode selected!
+stdout Circuit: nonlinear coss pair - scaled 5 v energy verification
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout ref                                          5
+stdout x                                            0
+stdout vdrive#branch                                0
+stdout vref#branch                                  0
+ Reference value :  8.44856e-08
+ Reference value :  3.72766e-07
+ Reference value :  6.64386e-07
+ Reference value :  9.55066e-07
+stdout No. of Data Rows : 60014
+stdout Note: No compatibility mode selected!
+stdout Circuit: nonlinear coss pair - scaled 5 v energy verification
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout ref                                          5
+stdout x                                            0
+stdout vdrive#branch                                0
+stdout vref#branch                                  0
+ Reference value :  1.67728e-08
+ Reference value :  1.39223e-07
+ Reference value :  2.79123e-07
+ Reference value :  4.22433e-07
+ Reference value :  5.63963e-07
+ Reference value :  6.99273e-07
+ Reference value :  8.45883e-07
+ Reference value :  9.90133e-07
+ Reference value :  1.13178e-06
+stdout No. of Data Rows : 120014
+stdout Note: No compatibility mode selected!
+stdout Circuit: nonlinear coss pair - scaled 5 v energy verification
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout ref                                          5
+stdout x                                            0
+stdout vdrive#branch                                0
+stdout vref#branch                                  0
+ Reference value :  1.46006e-07
+ Reference value :  4.31526e-07
+ Reference value :  7.16566e-07
+ Reference value :  1.00317e-06
+stdout No. of Data Rows : 60014
+stdout Note: No compatibility mode selected!
+stdout Circuit: nonlinear coss pair - scaled 5 v energy verification
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout ref                                          5
+stdout x                                            0
+stdout vdrive#branch                                0
+stdout vref#branch                                  0
+ Reference value :  3.84928e-08
+ Reference value :  1.70923e-07
+ Reference value :  3.09693e-07
+ Reference value :  4.48653e-07
+ Reference value :  5.87233e-07
+ Reference value :  7.11243e-07
+ Reference value :  8.51673e-07
+ Reference value :  9.93803e-07
+ Reference value :  1.13480e-06
+stdout No. of Data Rows : 120014
