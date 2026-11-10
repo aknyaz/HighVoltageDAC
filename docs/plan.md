@@ -70,6 +70,16 @@ capacitance/timing, and long-held code states. No real HV device is selected yet
 - [ ] Add temperature/voltage dependence, leakage, and finite switch behavior before
   selecting components. Compare switching glitches and driver burden in binary and
   segmented candidates before treating the static advantage as a hardware decision.
+- [x] Isolate inter-branch switching skew in the two 12-bit candidates: exhaustive
+  adjacent-code event scan and 72 structural SPICE transient checks, including
+  forward/reverse carries and 0/20/100 ns skew. See `docs/switching_glitches.md`.
+- [ ] Extend timing results with switch capacitance, break-before-make behavior,
+  arm-to-arm delay, arbitrary PCM transitions, and transformer/filter response.
+- [x] Screen actual high-voltage device references and run linear Ron/Coss/dead-time
+  sensitivity models (48 transients with timestep checks). Quantify PCM toggle
+  counts and hypothetical hard-switch capacitance loss. See `docs/switch_candidates.md`.
+- [ ] Validate nonlinear device charge/energy and driver behavior; the linear
+  surrogates do not yet establish real-device losses or final component selection.
 
 1. Check frequency response and output impedance, including at 20 Hz.
 2. Measure DC current and magnetic flux during startup, with a constant code, and with PCM offset.

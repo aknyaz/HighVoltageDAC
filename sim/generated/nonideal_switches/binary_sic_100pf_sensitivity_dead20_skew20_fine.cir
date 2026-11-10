@@ -1,0 +1,177 @@
+Linear Ron/Coss/BBM surrogate - 5 V only
+Vref ref 0 5
+.model sw SW(Ron=0.35 Roff=1e12 Vt=.5 Vh=0)
+.options reltol=1e-7 abstol=1e-13 method=gear
+Va0r1 ca0r1 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Sa0r1 da0 ref ca0r1 0 sw
+Ca0r1 da0 ref 1e-10
+Va0r0 ca0r0 0 PWL(0 0 1.0199995e-06 0 1.0200005e-06 1)
+Sa0r0 da0 0 ca0r0 0 sw
+Ca0r0 da0 0 1e-10
+Ra0 a da0 21605169.6750667
+Va1r1 ca1r1 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Sa1r1 da1 ref ca1r1 0 sw
+Ca1r1 da1 ref 1e-10
+Va1r0 ca1r0 0 PWL(0 0 1.0199995e-06 0 1.0200005e-06 1)
+Sa1r0 da1 0 ca1r0 0 sw
+Ca1r0 da1 0 1e-10
+Ra1 a da1 10802584.8375334
+Va2r1 ca2r1 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Sa2r1 da2 ref ca2r1 0 sw
+Ca2r1 da2 ref 1e-10
+Va2r0 ca2r0 0 PWL(0 0 1.0199995e-06 0 1.0200005e-06 1)
+Sa2r0 da2 0 ca2r0 0 sw
+Ca2r0 da2 0 1e-10
+Ra2 a da2 5401292.41876668
+Va3r1 ca3r1 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Sa3r1 da3 ref ca3r1 0 sw
+Ca3r1 da3 ref 1e-10
+Va3r0 ca3r0 0 PWL(0 0 1.0199995e-06 0 1.0200005e-06 1)
+Sa3r0 da3 0 ca3r0 0 sw
+Ca3r0 da3 0 1e-10
+Ra3 a da3 2700646.20938334
+Va4r1 ca4r1 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Sa4r1 da4 ref ca4r1 0 sw
+Ca4r1 da4 ref 1e-10
+Va4r0 ca4r0 0 PWL(0 0 1.0199995e-06 0 1.0200005e-06 1)
+Sa4r0 da4 0 ca4r0 0 sw
+Ca4r0 da4 0 1e-10
+Ra4 a da4 1350323.10469167
+Va5r1 ca5r1 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Sa5r1 da5 ref ca5r1 0 sw
+Ca5r1 da5 ref 1e-10
+Va5r0 ca5r0 0 PWL(0 0 1.0199995e-06 0 1.0200005e-06 1)
+Sa5r0 da5 0 ca5r0 0 sw
+Ca5r0 da5 0 1e-10
+Ra5 a da5 675161.552345835
+Va6r1 ca6r1 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Sa6r1 da6 ref ca6r1 0 sw
+Ca6r1 da6 ref 1e-10
+Va6r0 ca6r0 0 PWL(0 0 1.0199995e-06 0 1.0200005e-06 1)
+Sa6r0 da6 0 ca6r0 0 sw
+Ca6r0 da6 0 1e-10
+Ra6 a da6 337580.776172917
+Va7r1 ca7r1 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Sa7r1 da7 ref ca7r1 0 sw
+Ca7r1 da7 ref 1e-10
+Va7r0 ca7r0 0 PWL(0 0 1.0199995e-06 0 1.0200005e-06 1)
+Sa7r0 da7 0 ca7r0 0 sw
+Ca7r0 da7 0 1e-10
+Ra7 a da7 168790.388086459
+Va8r1 ca8r1 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Sa8r1 da8 ref ca8r1 0 sw
+Ca8r1 da8 ref 1e-10
+Va8r0 ca8r0 0 PWL(0 0 1.0199995e-06 0 1.0200005e-06 1)
+Sa8r0 da8 0 ca8r0 0 sw
+Ca8r0 da8 0 1e-10
+Ra8 a da8 84395.1940432293
+Va9r1 ca9r1 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Sa9r1 da9 ref ca9r1 0 sw
+Ca9r1 da9 ref 1e-10
+Va9r0 ca9r0 0 PWL(0 0 1.0199995e-06 0 1.0200005e-06 1)
+Sa9r0 da9 0 ca9r0 0 sw
+Ca9r0 da9 0 1e-10
+Ra9 a da9 42197.5970216147
+Va10r1 ca10r1 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Sa10r1 da10 ref ca10r1 0 sw
+Ca10r1 da10 ref 1e-10
+Va10r0 ca10r0 0 PWL(0 0 1.0199995e-06 0 1.0200005e-06 1)
+Sa10r0 da10 0 ca10r0 0 sw
+Ca10r0 da10 0 1e-10
+Ra10 a da10 21098.7985108073
+Va11r1 ca11r1 0 PWL(0 0 1.0399995e-06 0 1.0400005e-06 1)
+Sa11r1 da11 ref ca11r1 0 sw
+Ca11r1 da11 ref 1e-10
+Va11r0 ca11r0 0 PWL(0 1 1.0199995e-06 1 1.0200005e-06 0)
+Sa11r0 da11 0 ca11r0 0 sw
+Ca11r0 da11 0 1e-10
+Ra11 a da11 10549.3992554037
+Raterm a 0 21605169.6750667
+Vb0r1 cb0r1 0 PWL(0 0 1.0199995e-06 0 1.0200005e-06 1)
+Sb0r1 db0 ref cb0r1 0 sw
+Cb0r1 db0 ref 1e-10
+Vb0r0 cb0r0 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Sb0r0 db0 0 cb0r0 0 sw
+Cb0r0 db0 0 1e-10
+Rb0 b db0 21605169.6750667
+Vb1r1 cb1r1 0 PWL(0 0 1.0199995e-06 0 1.0200005e-06 1)
+Sb1r1 db1 ref cb1r1 0 sw
+Cb1r1 db1 ref 1e-10
+Vb1r0 cb1r0 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Sb1r0 db1 0 cb1r0 0 sw
+Cb1r0 db1 0 1e-10
+Rb1 b db1 10802584.8375334
+Vb2r1 cb2r1 0 PWL(0 0 1.0199995e-06 0 1.0200005e-06 1)
+Sb2r1 db2 ref cb2r1 0 sw
+Cb2r1 db2 ref 1e-10
+Vb2r0 cb2r0 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Sb2r0 db2 0 cb2r0 0 sw
+Cb2r0 db2 0 1e-10
+Rb2 b db2 5401292.41876668
+Vb3r1 cb3r1 0 PWL(0 0 1.0199995e-06 0 1.0200005e-06 1)
+Sb3r1 db3 ref cb3r1 0 sw
+Cb3r1 db3 ref 1e-10
+Vb3r0 cb3r0 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Sb3r0 db3 0 cb3r0 0 sw
+Cb3r0 db3 0 1e-10
+Rb3 b db3 2700646.20938334
+Vb4r1 cb4r1 0 PWL(0 0 1.0199995e-06 0 1.0200005e-06 1)
+Sb4r1 db4 ref cb4r1 0 sw
+Cb4r1 db4 ref 1e-10
+Vb4r0 cb4r0 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Sb4r0 db4 0 cb4r0 0 sw
+Cb4r0 db4 0 1e-10
+Rb4 b db4 1350323.10469167
+Vb5r1 cb5r1 0 PWL(0 0 1.0199995e-06 0 1.0200005e-06 1)
+Sb5r1 db5 ref cb5r1 0 sw
+Cb5r1 db5 ref 1e-10
+Vb5r0 cb5r0 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Sb5r0 db5 0 cb5r0 0 sw
+Cb5r0 db5 0 1e-10
+Rb5 b db5 675161.552345835
+Vb6r1 cb6r1 0 PWL(0 0 1.0199995e-06 0 1.0200005e-06 1)
+Sb6r1 db6 ref cb6r1 0 sw
+Cb6r1 db6 ref 1e-10
+Vb6r0 cb6r0 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Sb6r0 db6 0 cb6r0 0 sw
+Cb6r0 db6 0 1e-10
+Rb6 b db6 337580.776172917
+Vb7r1 cb7r1 0 PWL(0 0 1.0199995e-06 0 1.0200005e-06 1)
+Sb7r1 db7 ref cb7r1 0 sw
+Cb7r1 db7 ref 1e-10
+Vb7r0 cb7r0 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Sb7r0 db7 0 cb7r0 0 sw
+Cb7r0 db7 0 1e-10
+Rb7 b db7 168790.388086459
+Vb8r1 cb8r1 0 PWL(0 0 1.0199995e-06 0 1.0200005e-06 1)
+Sb8r1 db8 ref cb8r1 0 sw
+Cb8r1 db8 ref 1e-10
+Vb8r0 cb8r0 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Sb8r0 db8 0 cb8r0 0 sw
+Cb8r0 db8 0 1e-10
+Rb8 b db8 84395.1940432293
+Vb9r1 cb9r1 0 PWL(0 0 1.0199995e-06 0 1.0200005e-06 1)
+Sb9r1 db9 ref cb9r1 0 sw
+Cb9r1 db9 ref 1e-10
+Vb9r0 cb9r0 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Sb9r0 db9 0 cb9r0 0 sw
+Cb9r0 db9 0 1e-10
+Rb9 b db9 42197.5970216147
+Vb10r1 cb10r1 0 PWL(0 0 1.0199995e-06 0 1.0200005e-06 1)
+Sb10r1 db10 ref cb10r1 0 sw
+Cb10r1 db10 ref 1e-10
+Vb10r0 cb10r0 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Sb10r0 db10 0 cb10r0 0 sw
+Cb10r0 db10 0 1e-10
+Rb10 b db10 21098.7985108073
+Vb11r1 cb11r1 0 PWL(0 1 1.0199995e-06 1 1.0200005e-06 0)
+Sb11r1 db11 ref cb11r1 0 sw
+Cb11r1 db11 ref 1e-10
+Vb11r0 cb11r0 0 PWL(0 0 1.0399995e-06 0 1.0400005e-06 1)
+Sb11r0 db11 0 cb11r0 0 sw
+Cb11r0 db11 0 1e-10
+Rb11 b db11 10549.3992554037
+Rbterm b 0 21605169.6750667
+Rload a b 10000
+.tran 0.5n 2u 0 0.5n
+.end

@@ -1,0 +1,325 @@
+{
+  "model": "Linear surrogate only, no vendor MOSFET or driver model",
+  "profiles": {
+    "sic_20pf": {
+      "ron": 0.35,
+      "cap": 2e-11,
+      "note": "C3M0350120D Ron typ; Coss typ at 1000 V, frozen"
+    },
+    "sic_100pf_sensitivity": {
+      "ron": 0.35,
+      "cap": 1e-10,
+      "note": "Assumed capacitance sensitivity, not a device specification"
+    },
+    "silicon_102pf": {
+      "ron": 6.0,
+      "cap": 1.02e-10,
+      "note": "STP3N150 Ron typ; Coss typ at 25 V, frozen"
+    }
+  },
+  "spice_runs": 48,
+  "rows": [
+    {
+      "architecture": "binary",
+      "profile": "sic_20pf",
+      "dead_ns": 0,
+      "skew_ns": 0,
+      "peak_error_lsb": 0.9547142041711856,
+      "absolute_area_lsb_ns": 0.012730209247951305,
+      "signed_area_lsb_ns": -0.01273020924367172,
+      "final_error_lsb": 4.111705344429362e-12,
+      "area_convergence_lsb_ns": 3.7122287015189936e-10
+    },
+    {
+      "architecture": "binary",
+      "profile": "sic_20pf",
+      "dead_ns": 20,
+      "skew_ns": 0,
+      "peak_error_lsb": 30.665040281889507,
+      "absolute_area_lsb_ns": 300.571602132631,
+      "signed_area_lsb_ns": 299.9397529835178,
+      "final_error_lsb": 4.485496739377486e-12,
+      "area_convergence_lsb_ns": 0.003764434435026942
+    },
+    {
+      "architecture": "binary",
+      "profile": "sic_20pf",
+      "dead_ns": 20,
+      "skew_ns": 20,
+      "peak_error_lsb": 2047.7004688938694,
+      "absolute_area_lsb_ns": 40892.08358812955,
+      "signed_area_lsb_ns": -40892.08358810783,
+      "final_error_lsb": 4.485496739377486e-12,
+      "area_convergence_lsb_ns": 0.0015319740632548928
+    },
+    {
+      "architecture": "binary",
+      "profile": "sic_20pf",
+      "dead_ns": 100,
+      "skew_ns": 20,
+      "peak_error_lsb": 1868.9669762915403,
+      "absolute_area_lsb_ns": 41084.56856765217,
+      "signed_area_lsb_ns": -33851.59822759248,
+      "final_error_lsb": 4.485496739377486e-12,
+      "area_convergence_lsb_ns": 0.026713325969467405
+    },
+    {
+      "architecture": "binary",
+      "profile": "sic_100pf_sensitivity",
+      "dead_ns": 0,
+      "skew_ns": 0,
+      "peak_error_lsb": 0.9547142043891511,
+      "absolute_area_lsb_ns": 0.06365100467843757,
+      "signed_area_lsb_ns": -0.06365100467150578,
+      "final_error_lsb": 4.111705344429362e-12,
+      "area_convergence_lsb_ns": 3.726878944343426e-10
+    },
+    {
+      "architecture": "binary",
+      "profile": "sic_100pf_sensitivity",
+      "dead_ns": 20,
+      "skew_ns": 0,
+      "peak_error_lsb": 5.485284550539686,
+      "absolute_area_lsb_ns": 48.62452506147306,
+      "signed_area_lsb_ns": 45.79058867743348,
+      "final_error_lsb": 4.859288134325609e-12,
+      "area_convergence_lsb_ns": 0.051489075082685076
+    },
+    {
+      "architecture": "binary",
+      "profile": "sic_100pf_sensitivity",
+      "dead_ns": 20,
+      "skew_ns": 20,
+      "peak_error_lsb": 2047.7001453715754,
+      "absolute_area_lsb_ns": 40960.06293939017,
+      "signed_area_lsb_ns": -40960.06293936855,
+      "final_error_lsb": 4.485496739377486e-12,
+      "area_convergence_lsb_ns": 6.034097168594599e-05
+    },
+    {
+      "architecture": "binary",
+      "profile": "sic_100pf_sensitivity",
+      "dead_ns": 100,
+      "skew_ns": 20,
+      "peak_error_lsb": 2009.529803641857,
+      "absolute_area_lsb_ns": 40939.98399213239,
+      "signed_area_lsb_ns": -39509.08341538468,
+      "final_error_lsb": 4.485496739377486e-12,
+      "area_convergence_lsb_ns": 0.05205375930381706
+    },
+    {
+      "architecture": "binary",
+      "profile": "silicon_102pf",
+      "dead_ns": 0,
+      "skew_ns": 0,
+      "peak_error_lsb": 0.22407161696896294,
+      "absolute_area_lsb_ns": 0.7472481891810241,
+      "signed_area_lsb_ns": 0.6750809843853693,
+      "final_error_lsb": 2.6165397646368668e-12,
+      "area_convergence_lsb_ns": 9.616338836337945e-10
+    },
+    {
+      "architecture": "binary",
+      "profile": "silicon_102pf",
+      "dead_ns": 20,
+      "skew_ns": 0,
+      "peak_error_lsb": 6.086961073891566,
+      "absolute_area_lsb_ns": 67.28509156299927,
+      "signed_area_lsb_ns": 67.11737742113577,
+      "final_error_lsb": 2.9903311595849906e-12,
+      "area_convergence_lsb_ns": 0.00015593344808451093
+    },
+    {
+      "architecture": "binary",
+      "profile": "silicon_102pf",
+      "dead_ns": 20,
+      "skew_ns": 20,
+      "peak_error_lsb": 2043.7172850731192,
+      "absolute_area_lsb_ns": 40918.02150722491,
+      "signed_area_lsb_ns": -40918.02150722491,
+      "final_error_lsb": 3.3641225545331144e-12,
+      "area_convergence_lsb_ns": 3.340940020279959e-05
+    },
+    {
+      "architecture": "binary",
+      "profile": "silicon_102pf",
+      "dead_ns": 100,
+      "skew_ns": 20,
+      "peak_error_lsb": 2006.4330764252454,
+      "absolute_area_lsb_ns": 40910.058220219486,
+      "signed_area_lsb_ns": -39410.383012866616,
+      "final_error_lsb": 2.6165397646368668e-12,
+      "area_convergence_lsb_ns": 0.023842908267397434
+    },
+    {
+      "architecture": "segmented",
+      "profile": "sic_20pf",
+      "dead_ns": 0,
+      "skew_ns": 0,
+      "peak_error_lsb": 0.999294149560461,
+      "absolute_area_lsb_ns": 0.01397840059845295,
+      "signed_area_lsb_ns": -0.013978400586963946,
+      "final_error_lsb": 0.0,
+      "area_convergence_lsb_ns": 3.723373779435102e-10
+    },
+    {
+      "architecture": "segmented",
+      "profile": "sic_20pf",
+      "dead_ns": 20,
+      "skew_ns": 0,
+      "peak_error_lsb": 0.9992937265594349,
+      "absolute_area_lsb_ns": 14.950821761558455,
+      "signed_area_lsb_ns": -14.950821761553174,
+      "final_error_lsb": 3.737913949481238e-13,
+      "area_convergence_lsb_ns": 1.032134952616559e-05
+    },
+    {
+      "architecture": "segmented",
+      "profile": "sic_20pf",
+      "dead_ns": 20,
+      "skew_ns": 20,
+      "peak_error_lsb": 255.99231999182484,
+      "absolute_area_lsb_ns": 5135.397457253684,
+      "signed_area_lsb_ns": -5135.3974572508505,
+      "final_error_lsb": 3.737913949481238e-13,
+      "area_convergence_lsb_ns": 9.306786523666233e-06
+    },
+    {
+      "architecture": "segmented",
+      "profile": "sic_20pf",
+      "dead_ns": 100,
+      "skew_ns": 20,
+      "peak_error_lsb": 252.99461868009556,
+      "absolute_area_lsb_ns": 5117.928041269443,
+      "signed_area_lsb_ns": -5095.554911801851,
+      "final_error_lsb": 3.737913949481238e-13,
+      "area_convergence_lsb_ns": 0.003511612751026405
+    },
+    {
+      "architecture": "segmented",
+      "profile": "sic_100pf_sensitivity",
+      "dead_ns": 0,
+      "skew_ns": 0,
+      "peak_error_lsb": 0.9992941497758466,
+      "absolute_area_lsb_ns": 0.06989198229010253,
+      "signed_area_lsb_ns": -0.06989198079247717,
+      "final_error_lsb": 3.737913949481238e-13,
+      "area_convergence_lsb_ns": 3.7240158179407956e-10
+    },
+    {
+      "architecture": "segmented",
+      "profile": "sic_100pf_sensitivity",
+      "dead_ns": 20,
+      "skew_ns": 0,
+      "peak_error_lsb": 0.999294065177635,
+      "absolute_area_lsb_ns": 19.038321300191193,
+      "signed_area_lsb_ns": -19.038321298721595,
+      "final_error_lsb": 7.475827898962476e-13,
+      "area_convergence_lsb_ns": 4.172956202808109e-07
+    },
+    {
+      "architecture": "segmented",
+      "profile": "sic_100pf_sensitivity",
+      "dead_ns": 20,
+      "skew_ns": 20,
+      "peak_error_lsb": 255.99231835573354,
+      "absolute_area_lsb_ns": 5139.118210540985,
+      "signed_area_lsb_ns": -5139.118210536893,
+      "final_error_lsb": 7.475827898962476e-13,
+      "area_convergence_lsb_ns": 3.473551259958185e-07
+    },
+    {
+      "architecture": "segmented",
+      "profile": "sic_100pf_sensitivity",
+      "dead_ns": 100,
+      "skew_ns": 20,
+      "peak_error_lsb": 255.38716809827633,
+      "absolute_area_lsb_ns": 5194.8347256290435,
+      "signed_area_lsb_ns": -5194.8347256250545,
+      "final_error_lsb": 0.0,
+      "area_convergence_lsb_ns": 2.1317009668564424e-06
+    },
+    {
+      "architecture": "segmented",
+      "profile": "silicon_102pf",
+      "dead_ns": 0,
+      "skew_ns": 0,
+      "peak_error_lsb": 0.9879003757268565,
+      "absolute_area_lsb_ns": 1.194220545976524,
+      "signed_area_lsb_ns": -1.194220545976524,
+      "final_error_lsb": 5.2330795292737335e-12,
+      "area_convergence_lsb_ns": 1.0430878383260733e-10
+    },
+    {
+      "architecture": "segmented",
+      "profile": "silicon_102pf",
+      "dead_ns": 20,
+      "skew_ns": 0,
+      "peak_error_lsb": 0.9879003379278243,
+      "absolute_area_lsb_ns": 19.84051819465561,
+      "signed_area_lsb_ns": -19.84051819465561,
+      "final_error_lsb": 5.980662319169981e-12,
+      "area_convergence_lsb_ns": 4.136120246300834e-07
+    },
+    {
+      "architecture": "segmented",
+      "profile": "silicon_102pf",
+      "dead_ns": 20,
+      "skew_ns": 20,
+      "peak_error_lsb": 255.89262603997324,
+      "absolute_area_lsb_ns": 5139.725941475509,
+      "signed_area_lsb_ns": -5139.725941475509,
+      "final_error_lsb": 5.606870924221857e-12,
+      "area_convergence_lsb_ns": 1.241496647708118e-07
+    },
+    {
+      "architecture": "segmented",
+      "profile": "silicon_102pf",
+      "dead_ns": 100,
+      "skew_ns": 20,
+      "peak_error_lsb": 255.29973231427167,
+      "absolute_area_lsb_ns": 5194.550703222094,
+      "signed_area_lsb_ns": -5194.550703222094,
+      "final_error_lsb": 5.980662319169981e-12,
+      "area_convergence_lsb_ns": 1.6108624549815431e-06
+    }
+  ],
+  "capacitive_loss_scenarios": [
+    {
+      "architecture": "binary",
+      "profile": "sic_20pf",
+      "toggles_per_1ms": 1480,
+      "assumed_hard_switch_capacitive_w_650v": 12.505999999999998
+    },
+    {
+      "architecture": "binary",
+      "profile": "sic_100pf_sensitivity",
+      "toggles_per_1ms": 1480,
+      "assumed_hard_switch_capacitive_w_650v": 62.529999999999994
+    },
+    {
+      "architecture": "binary",
+      "profile": "silicon_102pf",
+      "toggles_per_1ms": 1480,
+      "assumed_hard_switch_capacitive_w_650v": 63.7806
+    },
+    {
+      "architecture": "segmented",
+      "profile": "sic_20pf",
+      "toggles_per_1ms": 1436,
+      "assumed_hard_switch_capacitive_w_650v": 12.1342
+    },
+    {
+      "architecture": "segmented",
+      "profile": "sic_100pf_sensitivity",
+      "toggles_per_1ms": 1436,
+      "assumed_hard_switch_capacitive_w_650v": 60.671
+    },
+    {
+      "architecture": "segmented",
+      "profile": "silicon_102pf",
+      "toggles_per_1ms": 1436,
+      "assumed_hard_switch_capacitive_w_650v": 61.88442
+    }
+  ]
+}

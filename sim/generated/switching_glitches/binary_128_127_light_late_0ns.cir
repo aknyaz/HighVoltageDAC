@@ -1,0 +1,129 @@
+Ideal parallel DAC timing skew, 5 V only
+Vref ref 0 5
+.model sw SW(Ron=1u Roff=1e12 Vt=.5 Vh=0)
+.options reltol=1e-8 abstol=1e-14
+Vca0 ca0 0 PWL(0 0 9.999995e-07 0 1.0000005e-06 1)
+Bna0 na0 0 V=1-v(ca0)
+Sa0h da0 ref ca0 0 sw
+Sa0l da0 0 na0 0 sw
+Ra0 a da0 21605169.6750667
+Vca1 ca1 0 PWL(0 0 9.999995e-07 0 1.0000005e-06 1)
+Bna1 na1 0 V=1-v(ca1)
+Sa1h da1 ref ca1 0 sw
+Sa1l da1 0 na1 0 sw
+Ra1 a da1 10802584.8375334
+Vca2 ca2 0 PWL(0 0 9.999995e-07 0 1.0000005e-06 1)
+Bna2 na2 0 V=1-v(ca2)
+Sa2h da2 ref ca2 0 sw
+Sa2l da2 0 na2 0 sw
+Ra2 a da2 5401292.41876668
+Vca3 ca3 0 PWL(0 0 9.999995e-07 0 1.0000005e-06 1)
+Bna3 na3 0 V=1-v(ca3)
+Sa3h da3 ref ca3 0 sw
+Sa3l da3 0 na3 0 sw
+Ra3 a da3 2700646.20938334
+Vca4 ca4 0 PWL(0 0 9.999995e-07 0 1.0000005e-06 1)
+Bna4 na4 0 V=1-v(ca4)
+Sa4h da4 ref ca4 0 sw
+Sa4l da4 0 na4 0 sw
+Ra4 a da4 1350323.10469167
+Vca5 ca5 0 PWL(0 0 9.999995e-07 0 1.0000005e-06 1)
+Bna5 na5 0 V=1-v(ca5)
+Sa5h da5 ref ca5 0 sw
+Sa5l da5 0 na5 0 sw
+Ra5 a da5 675161.552345835
+Vca6 ca6 0 PWL(0 0 9.999995e-07 0 1.0000005e-06 1)
+Bna6 na6 0 V=1-v(ca6)
+Sa6h da6 ref ca6 0 sw
+Sa6l da6 0 na6 0 sw
+Ra6 a da6 337580.776172917
+Vca7 ca7 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Bna7 na7 0 V=1-v(ca7)
+Sa7h da7 ref ca7 0 sw
+Sa7l da7 0 na7 0 sw
+Ra7 a da7 168790.388086459
+Vca8 ca8 0 0
+Bna8 na8 0 V=1-v(ca8)
+Sa8h da8 ref ca8 0 sw
+Sa8l da8 0 na8 0 sw
+Ra8 a da8 84395.1940432293
+Vca9 ca9 0 0
+Bna9 na9 0 V=1-v(ca9)
+Sa9h da9 ref ca9 0 sw
+Sa9l da9 0 na9 0 sw
+Ra9 a da9 42197.5970216147
+Vca10 ca10 0 0
+Bna10 na10 0 V=1-v(ca10)
+Sa10h da10 ref ca10 0 sw
+Sa10l da10 0 na10 0 sw
+Ra10 a da10 21098.7985108073
+Vca11 ca11 0 0
+Bna11 na11 0 V=1-v(ca11)
+Sa11h da11 ref ca11 0 sw
+Sa11l da11 0 na11 0 sw
+Ra11 a da11 10549.3992554037
+Raterm a 0 21605169.6750667
+Vcb0 cb0 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Bnb0 nb0 0 V=1-v(cb0)
+Sb0h db0 ref cb0 0 sw
+Sb0l db0 0 nb0 0 sw
+Rb0 b db0 21605169.6750667
+Vcb1 cb1 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Bnb1 nb1 0 V=1-v(cb1)
+Sb1h db1 ref cb1 0 sw
+Sb1l db1 0 nb1 0 sw
+Rb1 b db1 10802584.8375334
+Vcb2 cb2 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Bnb2 nb2 0 V=1-v(cb2)
+Sb2h db2 ref cb2 0 sw
+Sb2l db2 0 nb2 0 sw
+Rb2 b db2 5401292.41876668
+Vcb3 cb3 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Bnb3 nb3 0 V=1-v(cb3)
+Sb3h db3 ref cb3 0 sw
+Sb3l db3 0 nb3 0 sw
+Rb3 b db3 2700646.20938334
+Vcb4 cb4 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Bnb4 nb4 0 V=1-v(cb4)
+Sb4h db4 ref cb4 0 sw
+Sb4l db4 0 nb4 0 sw
+Rb4 b db4 1350323.10469167
+Vcb5 cb5 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Bnb5 nb5 0 V=1-v(cb5)
+Sb5h db5 ref cb5 0 sw
+Sb5l db5 0 nb5 0 sw
+Rb5 b db5 675161.552345835
+Vcb6 cb6 0 PWL(0 1 9.999995e-07 1 1.0000005e-06 0)
+Bnb6 nb6 0 V=1-v(cb6)
+Sb6h db6 ref cb6 0 sw
+Sb6l db6 0 nb6 0 sw
+Rb6 b db6 337580.776172917
+Vcb7 cb7 0 PWL(0 0 9.999995e-07 0 1.0000005e-06 1)
+Bnb7 nb7 0 V=1-v(cb7)
+Sb7h db7 ref cb7 0 sw
+Sb7l db7 0 nb7 0 sw
+Rb7 b db7 168790.388086459
+Vcb8 cb8 0 1
+Bnb8 nb8 0 V=1-v(cb8)
+Sb8h db8 ref cb8 0 sw
+Sb8l db8 0 nb8 0 sw
+Rb8 b db8 84395.1940432293
+Vcb9 cb9 0 1
+Bnb9 nb9 0 V=1-v(cb9)
+Sb9h db9 ref cb9 0 sw
+Sb9l db9 0 nb9 0 sw
+Rb9 b db9 42197.5970216147
+Vcb10 cb10 0 1
+Bnb10 nb10 0 V=1-v(cb10)
+Sb10h db10 ref cb10 0 sw
+Sb10l db10 0 nb10 0 sw
+Rb10 b db10 21098.7985108073
+Vcb11 cb11 0 1
+Bnb11 nb11 0 V=1-v(cb11)
+Sb11h db11 ref cb11 0 sw
+Sb11l db11 0 nb11 0 sw
+Rb11 b db11 10549.3992554037
+Rbterm b 0 21605169.6750667
+Rload a b 10000
+.tran 1e-09 2u 0 1e-09
+.end

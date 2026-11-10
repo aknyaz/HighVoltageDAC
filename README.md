@@ -115,3 +115,27 @@ python sim/verify_segmented_tolerance.py
 
 It reads the binary baseline from `results/resistor_tolerance/summary.json`.
 New results and plots are in `results/segmented_tolerance/` and `plots/segmented_tolerance/`.
+
+## 12-bit switching skew
+
+The [switching timing study](docs/switching_glitches.md) compares ideal-switch
+binary and segmented carry glitches with exact event calculations and 72 SPICE
+transient runs. This isolates timing skew; device capacitance and transformer
+response remain unmodeled.
+
+```powershell
+python sim/compare_switching_glitches.py
+```
+
+Results: `results/switching_glitches/`. Plot: `plots/switching_glitches/midscale_glitch.png`.
+
+## High-voltage switch references
+
+[Device research and nonideal switch results](docs/switch_candidates.md) compare
+SiC, silicon, and GaN candidates and introduce linear Ron/Coss/dead-time surrogates.
+They are not vendor transistor models. The report also quantifies a capacitive
+switching-loss sensitivity that was absent from the ideal resistor heat study.
+
+```powershell
+python sim/nonideal_switches.py
+```
