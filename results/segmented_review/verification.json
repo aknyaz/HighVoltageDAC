@@ -1,0 +1,11 @@
+{
+  "sheets": 34,
+  "components": 618,
+  "transistors": 64,
+  "drivers": 64,
+  "checked_pins": 2301,
+  "checked_nets": 447,
+  "unintended_shorts": 0,
+  "split_nets": 0,
+  "scope": "Connectivity only; passive symbol pin types; not hardware ERC qualification"
+}

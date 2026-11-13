@@ -35,7 +35,8 @@ With a standalone ngspice CLI, circuits can also be run using, for example,
 
 ## KiCad
 
-The latest alternative is **`kicad/parallel/hv_rdac_parallel.kicad_pro`**;
+The selected 12-bit design review is **`kicad/segmented/hv_rdac_segmented.kicad_pro`**.
+The earlier 4-bit simulation alternative is **`kicad/parallel/hv_rdac_parallel.kicad_pro`**;
 see [the parallel bench walkthrough](docs/kicad_parallel_bench.md). It preserves
 the reference bench's 5 V supply, output resistance, PCM, and transformer for a direct comparison.
 
@@ -89,7 +90,7 @@ python sim/verify_resistive_comparison.py
 Results are in `results/resistive_comparison/`, the chart is in
 `plots/resistive_comparison/`, and low-voltage decks are in
 `sim/generated/resistive_comparison/`. The binary parallel alternative now has
-a 4-bit KiCad project in `kicad/parallel/`. A segmented KiCad sheet is not yet supplied.
+a 4-bit KiCad project in `kicad/parallel/`. The selected 12-bit segmented design review is described below.
 
 ## 12-bit resistor mismatch
 
@@ -148,3 +149,29 @@ SPICE, and estimates driver bias overhead. It is not a manufacturer MOSFET model
 python calc/sic_charge.py
 python sim/verify_sic_charge.py
 ```
+
+## Selected working architecture
+
+The [partition decision](docs/partition_decision.md) freezes **3+9 segmented parallel**
+as the next 12-bit implementation baseline: 32 SPDT functions / 64 transistors.
+It compares seven splits, 210000 mismatch networks and eight full-code SPICE sweeps.
+The existing KiCad benches remain references. A wired 34-sheet 3+9 design review is
+now available in `kicad/segmented/hv_rdac_segmented.kicad_pro`, with candidate FETs,
+drivers and a status-tagged BOM. See [opening instructions and limitations](docs/kicad_segmented_review.md).
+The PDF is `plots/segmented_review/schematic.pdf`. Control HDL is implemented and tested; physical FPGA wiring, isolated bias and the
+transformer remain unfinished. This is not a complete vendor-model simulation.
+
+```powershell
+python calc/partition_study.py
+python sim/verify_partition_study.py
+```
+
+## Digital command controller
+
+[Controller implementation](docs/controller_design.md) adds complementary 3+9
+code decoding, per-branch 200 ns command non-overlap and latched fault handling.
+All 4096 codes and 1000 random transitions pass behavioral HDL simulation.
+The 64 command paths and 192 enable/status connections are checked against the
+exported KiCad netlist. See [reproduction commands](control/README.md).
+Physical FPGA wiring and timing qualification remain open; the next analog study
+must include this longer blank interval and transformer transients.

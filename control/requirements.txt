@@ -1,0 +1,2 @@
+amaranth[builtin-yosys]==0.5.10
+amaranth-yosys==0.50.0.0.post130

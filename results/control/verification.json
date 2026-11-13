@@ -1,0 +1,19 @@
+{
+  "codes_tested": 5096,
+  "cycles_checked": 56187,
+  "nonoverlap_checks": 56187,
+  "dead_cycles": 10,
+  "clock_hz": 50000000,
+  "nominal_dead_ns": 200,
+  "schematic_command_paths_checked": 64,
+  "schematic_shared_status_paths_checked": 192,
+  "tested_faults": [
+    "fault input",
+    "ready loss",
+    "sample while busy",
+    "missing sample timeout",
+    "reset",
+    "run dropped while busy"
+  ],
+  "scope": "Behavioral HDL simulation, not routed FPGA timing or transistor turn-off verification"
+}

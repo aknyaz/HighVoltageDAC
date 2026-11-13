@@ -1,0 +1,700 @@
+Partition mismatch full-code verification, 5 V
+Vref ref 0 5
+Vcode code 0 0
+.model sw SW(Ron=1u Roff=1e12 Vt=.5 Vh=0)
+.options reltol=1e-8 abstol=1e-14
+Bca0 ca0 0 V=floor(v(code)/1)-2*floor(v(code)/2)
+Bna0 na0 0 V=1-v(ca0)
+Sha0 da0 ref ca0 0 sw
+Sla0 da0 0 na0 0 sw
+Ra0 a da0 21605373.9352008
+Bca1 ca1 0 V=floor(v(code)/2)-2*floor(v(code)/4)
+Bna1 na1 0 V=1-v(ca1)
+Sha1 da1 ref ca1 0 sw
+Sla1 da1 0 na1 0 sw
+Ra1 a da1 10802956.5289969
+Bca2 ca2 0 V=floor(v(code)/4)-2*floor(v(code)/8)
+Bna2 na2 0 V=1-v(ca2)
+Sha2 da2 ref ca2 0 sw
+Sla2 da2 0 na2 0 sw
+Ra2 a da2 5401318.49988689
+Bca3 ca3 0 V=floor(v(code)/8)-2*floor(v(code)/16)
+Bna3 na3 0 V=1-v(ca3)
+Sha3 da3 ref ca3 0 sw
+Sla3 da3 0 na3 0 sw
+Ra3 a da3 2700887.11427797
+Bca4 ca4 0 V=floor(v(code)/16)-2*floor(v(code)/32)
+Bna4 na4 0 V=1-v(ca4)
+Sha4 da4 ref ca4 0 sw
+Sla4 da4 0 na4 0 sw
+Ra4 a da4 1350231.38420887
+Bca5 ca5 0 V=floor(v(code)/32)-2*floor(v(code)/64)
+Bna5 na5 0 V=1-v(ca5)
+Sha5 da5 ref ca5 0 sw
+Sla5 da5 0 na5 0 sw
+Ra5 a da5 675153.962205068
+Bca6 ca6 0 V=(floor(v(code)/64)>0)
+Bna6 na6 0 V=1-v(ca6)
+Sha6 da6 ref ca6 0 sw
+Sla6 da6 0 na6 0 sw
+Ra6 a da6 337592.538630922
+Bca7 ca7 0 V=(floor(v(code)/64)>1)
+Bna7 na7 0 V=1-v(ca7)
+Sha7 da7 ref ca7 0 sw
+Sla7 da7 0 na7 0 sw
+Ra7 a da7 337558.936135955
+Bca8 ca8 0 V=(floor(v(code)/64)>2)
+Bna8 na8 0 V=1-v(ca8)
+Sha8 da8 ref ca8 0 sw
+Sla8 da8 0 na8 0 sw
+Ra8 a da8 337559.742096896
+Bca9 ca9 0 V=(floor(v(code)/64)>3)
+Bna9 na9 0 V=1-v(ca9)
+Sha9 da9 ref ca9 0 sw
+Sla9 da9 0 na9 0 sw
+Ra9 a da9 337607.92193676
+Bca10 ca10 0 V=(floor(v(code)/64)>4)
+Bna10 na10 0 V=1-v(ca10)
+Sha10 da10 ref ca10 0 sw
+Sla10 da10 0 na10 0 sw
+Ra10 a da10 337579.155353599
+Bca11 ca11 0 V=(floor(v(code)/64)>5)
+Bna11 na11 0 V=1-v(ca11)
+Sha11 da11 ref ca11 0 sw
+Sla11 da11 0 na11 0 sw
+Ra11 a da11 337592.714457078
+Bca12 ca12 0 V=(floor(v(code)/64)>6)
+Bna12 na12 0 V=1-v(ca12)
+Sha12 da12 ref ca12 0 sw
+Sla12 da12 0 na12 0 sw
+Ra12 a da12 337562.257383755
+Bca13 ca13 0 V=(floor(v(code)/64)>7)
+Bna13 na13 0 V=1-v(ca13)
+Sha13 da13 ref ca13 0 sw
+Sla13 da13 0 na13 0 sw
+Ra13 a da13 337586.497530204
+Bca14 ca14 0 V=(floor(v(code)/64)>8)
+Bna14 na14 0 V=1-v(ca14)
+Sha14 da14 ref ca14 0 sw
+Sla14 da14 0 na14 0 sw
+Ra14 a da14 337611.172185781
+Bca15 ca15 0 V=(floor(v(code)/64)>9)
+Bna15 na15 0 V=1-v(ca15)
+Sha15 da15 ref ca15 0 sw
+Sla15 da15 0 na15 0 sw
+Ra15 a da15 337555.971266816
+Bca16 ca16 0 V=(floor(v(code)/64)>10)
+Bna16 na16 0 V=1-v(ca16)
+Sha16 da16 ref ca16 0 sw
+Sla16 da16 0 na16 0 sw
+Ra16 a da16 337601.955787446
+Bca17 ca17 0 V=(floor(v(code)/64)>11)
+Bna17 na17 0 V=1-v(ca17)
+Sha17 da17 ref ca17 0 sw
+Sla17 da17 0 na17 0 sw
+Ra17 a da17 337608.841397717
+Bca18 ca18 0 V=(floor(v(code)/64)>12)
+Bna18 na18 0 V=1-v(ca18)
+Sha18 da18 ref ca18 0 sw
+Sla18 da18 0 na18 0 sw
+Ra18 a da18 337611.521015079
+Bca19 ca19 0 V=(floor(v(code)/64)>13)
+Bna19 na19 0 V=1-v(ca19)
+Sha19 da19 ref ca19 0 sw
+Sla19 da19 0 na19 0 sw
+Ra19 a da19 337586.660090701
+Bca20 ca20 0 V=(floor(v(code)/64)>14)
+Bna20 na20 0 V=1-v(ca20)
+Sha20 da20 ref ca20 0 sw
+Sla20 da20 0 na20 0 sw
+Ra20 a da20 337594.694890442
+Bca21 ca21 0 V=(floor(v(code)/64)>15)
+Bna21 na21 0 V=1-v(ca21)
+Sha21 da21 ref ca21 0 sw
+Sla21 da21 0 na21 0 sw
+Ra21 a da21 337579.568615272
+Bca22 ca22 0 V=(floor(v(code)/64)>16)
+Bna22 na22 0 V=1-v(ca22)
+Sha22 da22 ref ca22 0 sw
+Sla22 da22 0 na22 0 sw
+Ra22 a da22 337558.282007099
+Bca23 ca23 0 V=(floor(v(code)/64)>17)
+Bna23 na23 0 V=1-v(ca23)
+Sha23 da23 ref ca23 0 sw
+Sla23 da23 0 na23 0 sw
+Ra23 a da23 337599.232909909
+Bca24 ca24 0 V=(floor(v(code)/64)>18)
+Bna24 na24 0 V=1-v(ca24)
+Sha24 da24 ref ca24 0 sw
+Sla24 da24 0 na24 0 sw
+Ra24 a da24 337587.491681972
+Bca25 ca25 0 V=(floor(v(code)/64)>19)
+Bna25 na25 0 V=1-v(ca25)
+Sha25 da25 ref ca25 0 sw
+Sla25 da25 0 na25 0 sw
+Ra25 a da25 337601.662597392
+Bca26 ca26 0 V=(floor(v(code)/64)>20)
+Bna26 na26 0 V=1-v(ca26)
+Sha26 da26 ref ca26 0 sw
+Sla26 da26 0 na26 0 sw
+Ra26 a da26 337568.165965181
+Bca27 ca27 0 V=(floor(v(code)/64)>21)
+Bna27 na27 0 V=1-v(ca27)
+Sha27 da27 ref ca27 0 sw
+Sla27 da27 0 na27 0 sw
+Ra27 a da27 337610.657235462
+Bca28 ca28 0 V=(floor(v(code)/64)>22)
+Bna28 na28 0 V=1-v(ca28)
+Sha28 da28 ref ca28 0 sw
+Sla28 da28 0 na28 0 sw
+Ra28 a da28 337600.608054465
+Bca29 ca29 0 V=(floor(v(code)/64)>23)
+Bna29 na29 0 V=1-v(ca29)
+Sha29 da29 ref ca29 0 sw
+Sla29 da29 0 na29 0 sw
+Ra29 a da29 337611.967122882
+Bca30 ca30 0 V=(floor(v(code)/64)>24)
+Bna30 na30 0 V=1-v(ca30)
+Sha30 da30 ref ca30 0 sw
+Sla30 da30 0 na30 0 sw
+Ra30 a da30 337604.958176244
+Bca31 ca31 0 V=(floor(v(code)/64)>25)
+Bna31 na31 0 V=1-v(ca31)
+Sha31 da31 ref ca31 0 sw
+Sla31 da31 0 na31 0 sw
+Ra31 a da31 337572.581154387
+Bca32 ca32 0 V=(floor(v(code)/64)>26)
+Bna32 na32 0 V=1-v(ca32)
+Sha32 da32 ref ca32 0 sw
+Sla32 da32 0 na32 0 sw
+Ra32 a da32 337563.704130907
+Bca33 ca33 0 V=(floor(v(code)/64)>27)
+Bna33 na33 0 V=1-v(ca33)
+Sha33 da33 ref ca33 0 sw
+Sla33 da33 0 na33 0 sw
+Ra33 a da33 337599.446573201
+Bca34 ca34 0 V=(floor(v(code)/64)>28)
+Bna34 na34 0 V=1-v(ca34)
+Sha34 da34 ref ca34 0 sw
+Sla34 da34 0 na34 0 sw
+Ra34 a da34 337593.658471267
+Bca35 ca35 0 V=(floor(v(code)/64)>29)
+Bna35 na35 0 V=1-v(ca35)
+Sha35 da35 ref ca35 0 sw
+Sla35 da35 0 na35 0 sw
+Ra35 a da35 337569.322913966
+Bca36 ca36 0 V=(floor(v(code)/64)>30)
+Bna36 na36 0 V=1-v(ca36)
+Sha36 da36 ref ca36 0 sw
+Sla36 da36 0 na36 0 sw
+Ra36 a da36 337566.209031587
+Bca37 ca37 0 V=(floor(v(code)/64)>31)
+Bna37 na37 0 V=1-v(ca37)
+Sha37 da37 ref ca37 0 sw
+Sla37 da37 0 na37 0 sw
+Ra37 a da37 337549.138804368
+Bca38 ca38 0 V=(floor(v(code)/64)>32)
+Bna38 na38 0 V=1-v(ca38)
+Sha38 da38 ref ca38 0 sw
+Sla38 da38 0 na38 0 sw
+Ra38 a da38 337561.967196923
+Bca39 ca39 0 V=(floor(v(code)/64)>33)
+Bna39 na39 0 V=1-v(ca39)
+Sha39 da39 ref ca39 0 sw
+Sla39 da39 0 na39 0 sw
+Ra39 a da39 337556.966756051
+Bca40 ca40 0 V=(floor(v(code)/64)>34)
+Bna40 na40 0 V=1-v(ca40)
+Sha40 da40 ref ca40 0 sw
+Sla40 da40 0 na40 0 sw
+Ra40 a da40 337601.616316086
+Bca41 ca41 0 V=(floor(v(code)/64)>35)
+Bna41 na41 0 V=1-v(ca41)
+Sha41 da41 ref ca41 0 sw
+Sla41 da41 0 na41 0 sw
+Ra41 a da41 337556.898060557
+Bca42 ca42 0 V=(floor(v(code)/64)>36)
+Bna42 na42 0 V=1-v(ca42)
+Sha42 da42 ref ca42 0 sw
+Sla42 da42 0 na42 0 sw
+Ra42 a da42 337582.047357713
+Bca43 ca43 0 V=(floor(v(code)/64)>37)
+Bna43 na43 0 V=1-v(ca43)
+Sha43 da43 ref ca43 0 sw
+Sla43 da43 0 na43 0 sw
+Ra43 a da43 337592.375653976
+Bca44 ca44 0 V=(floor(v(code)/64)>38)
+Bna44 na44 0 V=1-v(ca44)
+Sha44 da44 ref ca44 0 sw
+Sla44 da44 0 na44 0 sw
+Ra44 a da44 337563.303638649
+Bca45 ca45 0 V=(floor(v(code)/64)>39)
+Bna45 na45 0 V=1-v(ca45)
+Sha45 da45 ref ca45 0 sw
+Sla45 da45 0 na45 0 sw
+Ra45 a da45 337552.20296458
+Bca46 ca46 0 V=(floor(v(code)/64)>40)
+Bna46 na46 0 V=1-v(ca46)
+Sha46 da46 ref ca46 0 sw
+Sla46 da46 0 na46 0 sw
+Ra46 a da46 337550.574777803
+Bca47 ca47 0 V=(floor(v(code)/64)>41)
+Bna47 na47 0 V=1-v(ca47)
+Sha47 da47 ref ca47 0 sw
+Sla47 da47 0 na47 0 sw
+Ra47 a da47 337581.062228233
+Bca48 ca48 0 V=(floor(v(code)/64)>42)
+Bna48 na48 0 V=1-v(ca48)
+Sha48 da48 ref ca48 0 sw
+Sla48 da48 0 na48 0 sw
+Ra48 a da48 337582.7533076
+Bca49 ca49 0 V=(floor(v(code)/64)>43)
+Bna49 na49 0 V=1-v(ca49)
+Sha49 da49 ref ca49 0 sw
+Sla49 da49 0 na49 0 sw
+Ra49 a da49 337589.609626089
+Bca50 ca50 0 V=(floor(v(code)/64)>44)
+Bna50 na50 0 V=1-v(ca50)
+Sha50 da50 ref ca50 0 sw
+Sla50 da50 0 na50 0 sw
+Ra50 a da50 337585.658839093
+Bca51 ca51 0 V=(floor(v(code)/64)>45)
+Bna51 na51 0 V=1-v(ca51)
+Sha51 da51 ref ca51 0 sw
+Sla51 da51 0 na51 0 sw
+Ra51 a da51 337552.778139625
+Bca52 ca52 0 V=(floor(v(code)/64)>46)
+Bna52 na52 0 V=1-v(ca52)
+Sha52 da52 ref ca52 0 sw
+Sla52 da52 0 na52 0 sw
+Ra52 a da52 337581.270019773
+Bca53 ca53 0 V=(floor(v(code)/64)>47)
+Bna53 na53 0 V=1-v(ca53)
+Sha53 da53 ref ca53 0 sw
+Sla53 da53 0 na53 0 sw
+Ra53 a da53 337607.106297041
+Bca54 ca54 0 V=(floor(v(code)/64)>48)
+Bna54 na54 0 V=1-v(ca54)
+Sha54 da54 ref ca54 0 sw
+Sla54 da54 0 na54 0 sw
+Ra54 a da54 337549.119370596
+Bca55 ca55 0 V=(floor(v(code)/64)>49)
+Bna55 na55 0 V=1-v(ca55)
+Sha55 da55 ref ca55 0 sw
+Sla55 da55 0 na55 0 sw
+Ra55 a da55 337575.822927353
+Bca56 ca56 0 V=(floor(v(code)/64)>50)
+Bna56 na56 0 V=1-v(ca56)
+Sha56 da56 ref ca56 0 sw
+Sla56 da56 0 na56 0 sw
+Ra56 a da56 337607.499528145
+Bca57 ca57 0 V=(floor(v(code)/64)>51)
+Bna57 na57 0 V=1-v(ca57)
+Sha57 da57 ref ca57 0 sw
+Sla57 da57 0 na57 0 sw
+Ra57 a da57 337583.012545144
+Bca58 ca58 0 V=(floor(v(code)/64)>52)
+Bna58 na58 0 V=1-v(ca58)
+Sha58 da58 ref ca58 0 sw
+Sla58 da58 0 na58 0 sw
+Ra58 a da58 337576.749298603
+Bca59 ca59 0 V=(floor(v(code)/64)>53)
+Bna59 na59 0 V=1-v(ca59)
+Sha59 da59 ref ca59 0 sw
+Sla59 da59 0 na59 0 sw
+Ra59 a da59 337554.370116235
+Bca60 ca60 0 V=(floor(v(code)/64)>54)
+Bna60 na60 0 V=1-v(ca60)
+Sha60 da60 ref ca60 0 sw
+Sla60 da60 0 na60 0 sw
+Ra60 a da60 337557.330389454
+Bca61 ca61 0 V=(floor(v(code)/64)>55)
+Bna61 na61 0 V=1-v(ca61)
+Sha61 da61 ref ca61 0 sw
+Sla61 da61 0 na61 0 sw
+Ra61 a da61 337558.20029577
+Bca62 ca62 0 V=(floor(v(code)/64)>56)
+Bna62 na62 0 V=1-v(ca62)
+Sha62 da62 ref ca62 0 sw
+Sla62 da62 0 na62 0 sw
+Ra62 a da62 337552.76835724
+Bca63 ca63 0 V=(floor(v(code)/64)>57)
+Bna63 na63 0 V=1-v(ca63)
+Sha63 da63 ref ca63 0 sw
+Sla63 da63 0 na63 0 sw
+Ra63 a da63 337555.226141568
+Bca64 ca64 0 V=(floor(v(code)/64)>58)
+Bna64 na64 0 V=1-v(ca64)
+Sha64 da64 ref ca64 0 sw
+Sla64 da64 0 na64 0 sw
+Ra64 a da64 337578.313799512
+Bca65 ca65 0 V=(floor(v(code)/64)>59)
+Bna65 na65 0 V=1-v(ca65)
+Sha65 da65 ref ca65 0 sw
+Sla65 da65 0 na65 0 sw
+Ra65 a da65 337547.761508377
+Bca66 ca66 0 V=(floor(v(code)/64)>60)
+Bna66 na66 0 V=1-v(ca66)
+Sha66 da66 ref ca66 0 sw
+Sla66 da66 0 na66 0 sw
+Ra66 a da66 337571.760226964
+Bca67 ca67 0 V=(floor(v(code)/64)>61)
+Bna67 na67 0 V=1-v(ca67)
+Sha67 da67 ref ca67 0 sw
+Sla67 da67 0 na67 0 sw
+Ra67 a da67 337574.076399976
+Bca68 ca68 0 V=(floor(v(code)/64)>62)
+Bna68 na68 0 V=1-v(ca68)
+Sha68 da68 ref ca68 0 sw
+Sla68 da68 0 na68 0 sw
+Ra68 a da68 337559.324707341
+Raterm a 0 21603632.0917699
+Bcb0 cb0 0 V=floor((4095-v(code))/1)-2*floor((4095-v(code))/2)
+Bnb0 nb0 0 V=1-v(cb0)
+Shb0 db0 ref cb0 0 sw
+Slb0 db0 0 nb0 0 sw
+Rb0 b db0 21603692.2524962
+Bcb1 cb1 0 V=floor((4095-v(code))/2)-2*floor((4095-v(code))/4)
+Bnb1 nb1 0 V=1-v(cb1)
+Shb1 db1 ref cb1 0 sw
+Slb1 db1 0 nb1 0 sw
+Rb1 b db1 10803416.4771196
+Bcb2 cb2 0 V=floor((4095-v(code))/4)-2*floor((4095-v(code))/8)
+Bnb2 nb2 0 V=1-v(cb2)
+Shb2 db2 ref cb2 0 sw
+Slb2 db2 0 nb2 0 sw
+Rb2 b db2 5401555.30558624
+Bcb3 cb3 0 V=floor((4095-v(code))/8)-2*floor((4095-v(code))/16)
+Bnb3 nb3 0 V=1-v(cb3)
+Shb3 db3 ref cb3 0 sw
+Slb3 db3 0 nb3 0 sw
+Rb3 b db3 2700461.6741458
+Bcb4 cb4 0 V=floor((4095-v(code))/16)-2*floor((4095-v(code))/32)
+Bnb4 nb4 0 V=1-v(cb4)
+Shb4 db4 ref cb4 0 sw
+Slb4 db4 0 nb4 0 sw
+Rb4 b db4 1350297.09356601
+Bcb5 cb5 0 V=floor((4095-v(code))/32)-2*floor((4095-v(code))/64)
+Bnb5 nb5 0 V=1-v(cb5)
+Shb5 db5 ref cb5 0 sw
+Slb5 db5 0 nb5 0 sw
+Rb5 b db5 675165.038412126
+Bcb6 cb6 0 V=(floor((4095-v(code))/64)>0)
+Bnb6 nb6 0 V=1-v(cb6)
+Shb6 db6 ref cb6 0 sw
+Slb6 db6 0 nb6 0 sw
+Rb6 b db6 337556.222022308
+Bcb7 cb7 0 V=(floor((4095-v(code))/64)>1)
+Bnb7 nb7 0 V=1-v(cb7)
+Shb7 db7 ref cb7 0 sw
+Slb7 db7 0 nb7 0 sw
+Rb7 b db7 337553.897441215
+Bcb8 cb8 0 V=(floor((4095-v(code))/64)>2)
+Bnb8 nb8 0 V=1-v(cb8)
+Shb8 db8 ref cb8 0 sw
+Slb8 db8 0 nb8 0 sw
+Rb8 b db8 337549.938028691
+Bcb9 cb9 0 V=(floor((4095-v(code))/64)>3)
+Bnb9 nb9 0 V=1-v(cb9)
+Shb9 db9 ref cb9 0 sw
+Slb9 db9 0 nb9 0 sw
+Rb9 b db9 337563.697211326
+Bcb10 cb10 0 V=(floor((4095-v(code))/64)>4)
+Bnb10 nb10 0 V=1-v(cb10)
+Shb10 db10 ref cb10 0 sw
+Slb10 db10 0 nb10 0 sw
+Rb10 b db10 337601.443827359
+Bcb11 cb11 0 V=(floor((4095-v(code))/64)>5)
+Bnb11 nb11 0 V=1-v(cb11)
+Shb11 db11 ref cb11 0 sw
+Slb11 db11 0 nb11 0 sw
+Rb11 b db11 337560.248383765
+Bcb12 cb12 0 V=(floor((4095-v(code))/64)>6)
+Bnb12 nb12 0 V=1-v(cb12)
+Shb12 db12 ref cb12 0 sw
+Slb12 db12 0 nb12 0 sw
+Rb12 b db12 337610.220753236
+Bcb13 cb13 0 V=(floor((4095-v(code))/64)>7)
+Bnb13 nb13 0 V=1-v(cb13)
+Shb13 db13 ref cb13 0 sw
+Slb13 db13 0 nb13 0 sw
+Rb13 b db13 337549.745438158
+Bcb14 cb14 0 V=(floor((4095-v(code))/64)>8)
+Bnb14 nb14 0 V=1-v(cb14)
+Shb14 db14 ref cb14 0 sw
+Slb14 db14 0 nb14 0 sw
+Rb14 b db14 337594.022401067
+Bcb15 cb15 0 V=(floor((4095-v(code))/64)>9)
+Bnb15 nb15 0 V=1-v(cb15)
+Shb15 db15 ref cb15 0 sw
+Slb15 db15 0 nb15 0 sw
+Rb15 b db15 337594.695047121
+Bcb16 cb16 0 V=(floor((4095-v(code))/64)>10)
+Bnb16 nb16 0 V=1-v(cb16)
+Shb16 db16 ref cb16 0 sw
+Slb16 db16 0 nb16 0 sw
+Rb16 b db16 337608.210815912
+Bcb17 cb17 0 V=(floor((4095-v(code))/64)>11)
+Bnb17 nb17 0 V=1-v(cb17)
+Shb17 db17 ref cb17 0 sw
+Slb17 db17 0 nb17 0 sw
+Rb17 b db17 337588.001113325
+Bcb18 cb18 0 V=(floor((4095-v(code))/64)>12)
+Bnb18 nb18 0 V=1-v(cb18)
+Shb18 db18 ref cb18 0 sw
+Slb18 db18 0 nb18 0 sw
+Rb18 b db18 337559.484257507
+Bcb19 cb19 0 V=(floor((4095-v(code))/64)>13)
+Bnb19 nb19 0 V=1-v(cb19)
+Shb19 db19 ref cb19 0 sw
+Slb19 db19 0 nb19 0 sw
+Rb19 b db19 337608.801404359
+Bcb20 cb20 0 V=(floor((4095-v(code))/64)>14)
+Bnb20 nb20 0 V=1-v(cb20)
+Shb20 db20 ref cb20 0 sw
+Slb20 db20 0 nb20 0 sw
+Rb20 b db20 337566.546069052
+Bcb21 cb21 0 V=(floor((4095-v(code))/64)>15)
+Bnb21 nb21 0 V=1-v(cb21)
+Shb21 db21 ref cb21 0 sw
+Slb21 db21 0 nb21 0 sw
+Rb21 b db21 337594.539591353
+Bcb22 cb22 0 V=(floor((4095-v(code))/64)>16)
+Bnb22 nb22 0 V=1-v(cb22)
+Shb22 db22 ref cb22 0 sw
+Slb22 db22 0 nb22 0 sw
+Rb22 b db22 337576.848935143
+Bcb23 cb23 0 V=(floor((4095-v(code))/64)>17)
+Bnb23 nb23 0 V=1-v(cb23)
+Shb23 db23 ref cb23 0 sw
+Slb23 db23 0 nb23 0 sw
+Rb23 b db23 337564.505311012
+Bcb24 cb24 0 V=(floor((4095-v(code))/64)>18)
+Bnb24 nb24 0 V=1-v(cb24)
+Shb24 db24 ref cb24 0 sw
+Slb24 db24 0 nb24 0 sw
+Rb24 b db24 337556.713511601
+Bcb25 cb25 0 V=(floor((4095-v(code))/64)>19)
+Bnb25 nb25 0 V=1-v(cb25)
+Shb25 db25 ref cb25 0 sw
+Slb25 db25 0 nb25 0 sw
+Rb25 b db25 337588.667923431
+Bcb26 cb26 0 V=(floor((4095-v(code))/64)>20)
+Bnb26 nb26 0 V=1-v(cb26)
+Shb26 db26 ref cb26 0 sw
+Slb26 db26 0 nb26 0 sw
+Rb26 b db26 337571.2977268
+Bcb27 cb27 0 V=(floor((4095-v(code))/64)>21)
+Bnb27 nb27 0 V=1-v(cb27)
+Shb27 db27 ref cb27 0 sw
+Slb27 db27 0 nb27 0 sw
+Rb27 b db27 337606.039886087
+Bcb28 cb28 0 V=(floor((4095-v(code))/64)>22)
+Bnb28 nb28 0 V=1-v(cb28)
+Shb28 db28 ref cb28 0 sw
+Slb28 db28 0 nb28 0 sw
+Rb28 b db28 337547.240855897
+Bcb29 cb29 0 V=(floor((4095-v(code))/64)>23)
+Bnb29 nb29 0 V=1-v(cb29)
+Shb29 db29 ref cb29 0 sw
+Slb29 db29 0 nb29 0 sw
+Rb29 b db29 337549.303569497
+Bcb30 cb30 0 V=(floor((4095-v(code))/64)>24)
+Bnb30 nb30 0 V=1-v(cb30)
+Shb30 db30 ref cb30 0 sw
+Slb30 db30 0 nb30 0 sw
+Rb30 b db30 337588.460467008
+Bcb31 cb31 0 V=(floor((4095-v(code))/64)>25)
+Bnb31 nb31 0 V=1-v(cb31)
+Shb31 db31 ref cb31 0 sw
+Slb31 db31 0 nb31 0 sw
+Rb31 b db31 337589.321479115
+Bcb32 cb32 0 V=(floor((4095-v(code))/64)>26)
+Bnb32 nb32 0 V=1-v(cb32)
+Shb32 db32 ref cb32 0 sw
+Slb32 db32 0 nb32 0 sw
+Rb32 b db32 337600.200374925
+Bcb33 cb33 0 V=(floor((4095-v(code))/64)>27)
+Bnb33 nb33 0 V=1-v(cb33)
+Shb33 db33 ref cb33 0 sw
+Slb33 db33 0 nb33 0 sw
+Rb33 b db33 337612.440170244
+Bcb34 cb34 0 V=(floor((4095-v(code))/64)>28)
+Bnb34 nb34 0 V=1-v(cb34)
+Shb34 db34 ref cb34 0 sw
+Slb34 db34 0 nb34 0 sw
+Rb34 b db34 337580.298887744
+Bcb35 cb35 0 V=(floor((4095-v(code))/64)>29)
+Bnb35 nb35 0 V=1-v(cb35)
+Shb35 db35 ref cb35 0 sw
+Slb35 db35 0 nb35 0 sw
+Rb35 b db35 337580.045623441
+Bcb36 cb36 0 V=(floor((4095-v(code))/64)>30)
+Bnb36 nb36 0 V=1-v(cb36)
+Shb36 db36 ref cb36 0 sw
+Slb36 db36 0 nb36 0 sw
+Rb36 b db36 337609.313711498
+Bcb37 cb37 0 V=(floor((4095-v(code))/64)>31)
+Bnb37 nb37 0 V=1-v(cb37)
+Shb37 db37 ref cb37 0 sw
+Slb37 db37 0 nb37 0 sw
+Rb37 b db37 337596.052575743
+Bcb38 cb38 0 V=(floor((4095-v(code))/64)>32)
+Bnb38 nb38 0 V=1-v(cb38)
+Shb38 db38 ref cb38 0 sw
+Slb38 db38 0 nb38 0 sw
+Rb38 b db38 337577.281183419
+Bcb39 cb39 0 V=(floor((4095-v(code))/64)>33)
+Bnb39 nb39 0 V=1-v(cb39)
+Shb39 db39 ref cb39 0 sw
+Slb39 db39 0 nb39 0 sw
+Rb39 b db39 337601.966281947
+Bcb40 cb40 0 V=(floor((4095-v(code))/64)>34)
+Bnb40 nb40 0 V=1-v(cb40)
+Shb40 db40 ref cb40 0 sw
+Slb40 db40 0 nb40 0 sw
+Rb40 b db40 337552.667105242
+Bcb41 cb41 0 V=(floor((4095-v(code))/64)>35)
+Bnb41 nb41 0 V=1-v(cb41)
+Shb41 db41 ref cb41 0 sw
+Slb41 db41 0 nb41 0 sw
+Rb41 b db41 337606.746994881
+Bcb42 cb42 0 V=(floor((4095-v(code))/64)>36)
+Bnb42 nb42 0 V=1-v(cb42)
+Shb42 db42 ref cb42 0 sw
+Slb42 db42 0 nb42 0 sw
+Rb42 b db42 337579.125232165
+Bcb43 cb43 0 V=(floor((4095-v(code))/64)>37)
+Bnb43 nb43 0 V=1-v(cb43)
+Shb43 db43 ref cb43 0 sw
+Slb43 db43 0 nb43 0 sw
+Rb43 b db43 337552.65960546
+Bcb44 cb44 0 V=(floor((4095-v(code))/64)>38)
+Bnb44 nb44 0 V=1-v(cb44)
+Shb44 db44 ref cb44 0 sw
+Slb44 db44 0 nb44 0 sw
+Rb44 b db44 337614.125188134
+Bcb45 cb45 0 V=(floor((4095-v(code))/64)>39)
+Bnb45 nb45 0 V=1-v(cb45)
+Shb45 db45 ref cb45 0 sw
+Slb45 db45 0 nb45 0 sw
+Rb45 b db45 337612.306300407
+Bcb46 cb46 0 V=(floor((4095-v(code))/64)>40)
+Bnb46 nb46 0 V=1-v(cb46)
+Shb46 db46 ref cb46 0 sw
+Slb46 db46 0 nb46 0 sw
+Rb46 b db46 337569.860190328
+Bcb47 cb47 0 V=(floor((4095-v(code))/64)>41)
+Bnb47 nb47 0 V=1-v(cb47)
+Shb47 db47 ref cb47 0 sw
+Slb47 db47 0 nb47 0 sw
+Rb47 b db47 337600.133147397
+Bcb48 cb48 0 V=(floor((4095-v(code))/64)>42)
+Bnb48 nb48 0 V=1-v(cb48)
+Shb48 db48 ref cb48 0 sw
+Slb48 db48 0 nb48 0 sw
+Rb48 b db48 337603.101153264
+Bcb49 cb49 0 V=(floor((4095-v(code))/64)>43)
+Bnb49 nb49 0 V=1-v(cb49)
+Shb49 db49 ref cb49 0 sw
+Slb49 db49 0 nb49 0 sw
+Rb49 b db49 337553.360227561
+Bcb50 cb50 0 V=(floor((4095-v(code))/64)>44)
+Bnb50 nb50 0 V=1-v(cb50)
+Shb50 db50 ref cb50 0 sw
+Slb50 db50 0 nb50 0 sw
+Rb50 b db50 337588.248451442
+Bcb51 cb51 0 V=(floor((4095-v(code))/64)>45)
+Bnb51 nb51 0 V=1-v(cb51)
+Shb51 db51 ref cb51 0 sw
+Slb51 db51 0 nb51 0 sw
+Rb51 b db51 337606.324295423
+Bcb52 cb52 0 V=(floor((4095-v(code))/64)>46)
+Bnb52 nb52 0 V=1-v(cb52)
+Shb52 db52 ref cb52 0 sw
+Slb52 db52 0 nb52 0 sw
+Rb52 b db52 337549.418794442
+Bcb53 cb53 0 V=(floor((4095-v(code))/64)>47)
+Bnb53 nb53 0 V=1-v(cb53)
+Shb53 db53 ref cb53 0 sw
+Slb53 db53 0 nb53 0 sw
+Rb53 b db53 337613.73714796
+Bcb54 cb54 0 V=(floor((4095-v(code))/64)>48)
+Bnb54 nb54 0 V=1-v(cb54)
+Shb54 db54 ref cb54 0 sw
+Slb54 db54 0 nb54 0 sw
+Rb54 b db54 337613.477208766
+Bcb55 cb55 0 V=(floor((4095-v(code))/64)>49)
+Bnb55 nb55 0 V=1-v(cb55)
+Shb55 db55 ref cb55 0 sw
+Slb55 db55 0 nb55 0 sw
+Rb55 b db55 337601.725682439
+Bcb56 cb56 0 V=(floor((4095-v(code))/64)>50)
+Bnb56 nb56 0 V=1-v(cb56)
+Shb56 db56 ref cb56 0 sw
+Slb56 db56 0 nb56 0 sw
+Rb56 b db56 337611.424411594
+Bcb57 cb57 0 V=(floor((4095-v(code))/64)>51)
+Bnb57 nb57 0 V=1-v(cb57)
+Shb57 db57 ref cb57 0 sw
+Slb57 db57 0 nb57 0 sw
+Rb57 b db57 337571.13060891
+Bcb58 cb58 0 V=(floor((4095-v(code))/64)>52)
+Bnb58 nb58 0 V=1-v(cb58)
+Shb58 db58 ref cb58 0 sw
+Slb58 db58 0 nb58 0 sw
+Rb58 b db58 337592.773019208
+Bcb59 cb59 0 V=(floor((4095-v(code))/64)>53)
+Bnb59 nb59 0 V=1-v(cb59)
+Shb59 db59 ref cb59 0 sw
+Slb59 db59 0 nb59 0 sw
+Rb59 b db59 337591.061734099
+Bcb60 cb60 0 V=(floor((4095-v(code))/64)>54)
+Bnb60 nb60 0 V=1-v(cb60)
+Shb60 db60 ref cb60 0 sw
+Slb60 db60 0 nb60 0 sw
+Rb60 b db60 337596.077589518
+Bcb61 cb61 0 V=(floor((4095-v(code))/64)>55)
+Bnb61 nb61 0 V=1-v(cb61)
+Shb61 db61 ref cb61 0 sw
+Slb61 db61 0 nb61 0 sw
+Rb61 b db61 337580.983019443
+Bcb62 cb62 0 V=(floor((4095-v(code))/64)>56)
+Bnb62 nb62 0 V=1-v(cb62)
+Shb62 db62 ref cb62 0 sw
+Slb62 db62 0 nb62 0 sw
+Rb62 b db62 337585.573722828
+Bcb63 cb63 0 V=(floor((4095-v(code))/64)>57)
+Bnb63 nb63 0 V=1-v(cb63)
+Shb63 db63 ref cb63 0 sw
+Slb63 db63 0 nb63 0 sw
+Rb63 b db63 337607.639950047
+Bcb64 cb64 0 V=(floor((4095-v(code))/64)>58)
+Bnb64 nb64 0 V=1-v(cb64)
+Shb64 db64 ref cb64 0 sw
+Slb64 db64 0 nb64 0 sw
+Rb64 b db64 337598.114506073
+Bcb65 cb65 0 V=(floor((4095-v(code))/64)>59)
+Bnb65 nb65 0 V=1-v(cb65)
+Shb65 db65 ref cb65 0 sw
+Slb65 db65 0 nb65 0 sw
+Rb65 b db65 337613.313076896
+Bcb66 cb66 0 V=(floor((4095-v(code))/64)>60)
+Bnb66 nb66 0 V=1-v(cb66)
+Shb66 db66 ref cb66 0 sw
+Slb66 db66 0 nb66 0 sw
+Rb66 b db66 337593.781857206
+Bcb67 cb67 0 V=(floor((4095-v(code))/64)>61)
+Bnb67 nb67 0 V=1-v(cb67)
+Shb67 db67 ref cb67 0 sw
+Slb67 db67 0 nb67 0 sw
+Rb67 b db67 337592.223193127
+Bcb68 cb68 0 V=(floor((4095-v(code))/64)>62)
+Bnb68 nb68 0 V=1-v(cb68)
+Shb68 db68 ref cb68 0 sw
+Slb68 db68 0 nb68 0 sw
+Rb68 b db68 337580.343517297
+Rbterm b 0 21603925.7219206
+Rload a b 10000.0
+.dc Vcode 0 4095 1
+.end

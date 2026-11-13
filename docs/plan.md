@@ -1,5 +1,16 @@
 # Project plan
 
+## Current architecture decision
+
+Use **3+9 segmented parallel** as the fixed working 12-bit baseline. See
+`partition_decision.md` for the trade-off, validation and explicit reopening criteria.
+Broad partition exploration is complete. The wired 3+9 design-review hierarchy is
+available in `kicad/segmented/`; see `kicad_segmented_review.md`. Next: resolve its
+physical FPGA/bias interfaces and transformer/DC/audio validation. The command HDL
+is implemented and tested; see `controller_design.md`. First validate its 200 ns
+blank interval in the analog model. Device and driver
+selection remain provisional; estimated switch losses have not disappeared.
+
 ## Phase A0 — first reproducible test bench
 
 - [x] Locate the KiCad CLI and run the ngspice DLL.

@@ -1,0 +1,78 @@
+ERC report (2026-11-10T19:39:28, Encoding UTF8)
+Report includes: Errors, Warnings
+
+***** Sheet /
+
+***** Sheet /A_00 w=1/
+
+***** Sheet /A_01 w=2/
+
+***** Sheet /A_02 w=4/
+
+***** Sheet /A_03 w=8/
+
+***** Sheet /A_04 w=16/
+
+***** Sheet /A_05 w=32/
+
+***** Sheet /A_06 w=64/
+
+***** Sheet /A_07 w=128/
+
+***** Sheet /A_08 w=256/
+
+***** Sheet /A_09 w=512/
+
+***** Sheet /A_10 w=512/
+
+***** Sheet /A_11 w=512/
+
+***** Sheet /A_12 w=512/
+
+***** Sheet /A_13 w=512/
+
+***** Sheet /A_14 w=512/
+
+***** Sheet /A_15 w=512/
+
+***** Sheet /B_00 w=1/
+
+***** Sheet /B_01 w=2/
+
+***** Sheet /B_02 w=4/
+
+***** Sheet /B_03 w=8/
+
+***** Sheet /B_04 w=16/
+
+***** Sheet /B_05 w=32/
+
+***** Sheet /B_06 w=64/
+
+***** Sheet /B_07 w=128/
+
+***** Sheet /B_08 w=256/
+
+***** Sheet /B_09 w=512/
+
+***** Sheet /B_10 w=512/
+
+***** Sheet /B_11 w=512/
+
+***** Sheet /B_12 w=512/
+
+***** Sheet /B_13 w=512/
+
+***** Sheet /B_14 w=512/
+
+***** Sheet /B_15 w=512/
+
+***** Sheet /CONTROL - tested HDL/
+
+ ** ERC messages: 0  Errors 0  Warnings 0
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters

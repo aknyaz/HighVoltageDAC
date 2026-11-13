@@ -1,0 +1,1 @@
+(sym_lib_table (version 7) (lib (name "HV3") (type "KiCad") (uri "${KIPRJMOD}/HV3.kicad_sym") (options "") (descr "Design review symbols with verified candidate pin numbers")))
