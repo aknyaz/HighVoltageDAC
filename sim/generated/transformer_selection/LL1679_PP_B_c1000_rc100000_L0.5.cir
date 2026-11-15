@@ -1,0 +1,13 @@
+LL1679_PP_B / 1 V AC / datasheet-informed linear screening
+Vsrc src 0 DC 0 AC 1
+Rsrc src a 10549.3992554037
+Rp a p 160.0
+Lp p 0 75
+Ls s 0 0.0630119722747322
+K1 Lp Ls 0.999946665244369
+Rs s out 0.2
+Rload out 0 8
+Rcore p 0 100000
+Cpri p 0 1000p
+.ac dec 60 10 1Meg
+.end

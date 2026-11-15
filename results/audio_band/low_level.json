@@ -1,0 +1,26 @@
+{
+  "spice_runs": 2,
+  "input_hz": 1000,
+  "amplitude_full_scale": 0.01,
+  "dead_ns": 200,
+  "cap_pf": 20,
+  "supply_v": 5,
+  "clock_hz": 50000000,
+  "analysis_window_s": [
+    0.018,
+    0.02
+  ],
+  "fundamental_peak_v": 0.0006395225431706067,
+  "thd_2_to_20_percent": 0.5313678239263047,
+  "secondary_mean_v": -2.8056104968587903e-09,
+  "load_power_w": 2.5569938275542432e-08,
+  "primary_peak_v": 0.02435808508385202,
+  "primary_mean_current_a": 1.0432775352864702e-11,
+  "previous_window_fundamental_delta_percent": 0.00011833592107053972,
+  "previous_window_thd_delta_pp": 2.7158067847921075e-06,
+  "timestep_gain_delta_percent": 0.0001702771768252731,
+  "timestep_thd_delta_pp": 7.189621912284672e-05,
+  "ideal_quantized_source_fundamental_peak_v": 0.0006395752896424048,
+  "ideal_quantized_source_thd_percent": 0.5201841809524395,
+  "scope": "Full 3+9 conductance surrogate, assumed linear transformer, rounded 50 MHz request times; no HDL co-simulation, noise or nonlinear magnetic model"
+}

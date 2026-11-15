@@ -1,0 +1,13 @@
+LL1620_PP_B / 1 V AC / datasheet-informed linear screening
+Vsrc src 0 DC 0 AC 1
+Rsrc src a 10549.3992554037
+Rp a p 308.0
+Lp p 0 300
+Ls s 0 0.203450520833333
+K1 Lp Ls 0.999981666498608
+Rs s out 0.2
+Rload out 0 8
+Rcore p 0 1000000000
+Cpri p 0 1000p
+.ac dec 60 10 1Meg
+.end

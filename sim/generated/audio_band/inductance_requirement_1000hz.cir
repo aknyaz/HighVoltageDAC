@@ -1,0 +1,13 @@
+Linear Thevenin source / assumed transformer AC response
+Vsrc src 0 DC 0 AC 1
+Rsrc src a 10549.399255404
+Rp a p 200
+Lp p 0 77.9327718730294
+Ls s 0 0.0623462174984235
+K1 Lp Ls 0.999871740209168
+Rs s out .2
+Rload out 0 8
+Rcore p 0 100k
+Cpri p 0 100p
+.ac lin 1 1000 1000
+.end

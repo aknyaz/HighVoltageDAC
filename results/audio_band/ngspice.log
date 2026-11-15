@@ -1,0 +1,795 @@
+stderr Warning: can't find the initialization file spinit.
+stdout ******
+stdout ** ngspice-46 shared library
+stdout ** Creation Date: Apr 14 2026   05:15:29
+stdout ******
+stdout ******
+stdout ** ngspice-46 : Circuit level simulation program
+stdout ** Compiled with KLU Direct Linear Solver
+stdout ** The U. C. Berkeley CAD Group
+stdout ** Copyright 1985-1994, Regents of the University of California.
+stdout ** Copyright 2001-2025, The ngspice team.
+stdout ** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html
+stdout ** Please file your bug-reports at https://ngspice.sourceforge.io/bugrep.html
+stdout ** Creation Date: Apr 14 2026   05:15:29
+stdout ******
+stdout Note: No compatibility mode selected!
+stdout Circuit: linear thevenin source / assumed transformer ac response
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout No. of Data Rows : 401
+stdout Note: No compatibility mode selected!
+stdout Circuit: 3+9 low level / 1 khz 1 percent / 50 mhz requests / 5 v
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout ref                                          5
+stdout ca0_1                                        1
+stdout da0                                          5
+stdout ca0_0                                        0
+stdout a                                      2.49938
+stdout ca1_1                                        1
+stdout da1                                          5
+stdout ca1_0                                        0
+stdout ca2_1                                        1
+stdout da2                                          5
+stdout ca2_0                                        0
+stdout ca3_1                                        1
+stdout da3                                          5
+stdout ca3_0                                        0
+stdout ca4_1                                        1
+stdout da4                                          5
+stdout ca4_0                                        0
+stdout ca5_1                                        1
+stdout da5                                          5
+stdout ca5_0                                        0
+stdout ca6_1                                        1
+stdout da6                                          5
+stdout ca6_0                                        0
+stdout ca7_1                                        1
+stdout da7                                    4.99999
+stdout ca7_0                                        0
+stdout ca8_1                                        1
+stdout da8                                    4.99999
+stdout ca8_0                                        0
+stdout ca9_1                                        1
+stdout da9                                    4.99998
+stdout ca9_0                                        0
+stdout ca10_1                                       1
+stdout da10                                   4.99998
+stdout ca10_0                                       0
+stdout ca11_1                                       1
+stdout da11                                   4.99998
+stdout ca11_0                                       0
+stdout ca12_1                                       0
+stdout da12                               2.07305e-05
+stdout ca12_0                                       1
+stdout ca13_1                                       0
+stdout da13                               2.07305e-05
+stdout ca13_0                                       1
+stdout ca14_1                                       0
+stdout da14                               2.07305e-05
+stdout ca14_0                                       1
+stdout ca15_1                                       0
+stdout da15                               2.07305e-05
+stdout ca15_0                                       1
+stdout cb0_1                                        0
+stdout db0                                4.04916e-08
+stdout cb0_0                                        1
+stdout b                                       2.4994
+stdout cb1_1                                        0
+stdout db1                                8.09815e-08
+stdout cb1_0                                        1
+stdout cb2_1                                        0
+stdout db2                                1.61961e-07
+stdout cb2_0                                        1
+stdout cb3_1                                        0
+stdout db3                                3.23921e-07
+stdout cb3_0                                        1
+stdout cb4_1                                        0
+stdout db4                                6.47839e-07
+stdout cb4_0                                        1
+stdout cb5_1                                        0
+stdout db5                                1.29568e-06
+stdout cb5_0                                        1
+stdout cb6_1                                        0
+stdout db6                                2.59135e-06
+stdout cb6_0                                        1
+stdout cb7_1                                        0
+stdout db7                                5.18269e-06
+stdout cb7_0                                        1
+stdout cb8_1                                        0
+stdout db8                                1.03654e-05
+stdout cb8_0                                        1
+stdout cb9_1                                        1
+stdout db9                                    4.99998
+stdout cb9_0                                        0
+stdout cb10_1                                       1
+stdout db10                                   4.99998
+stdout cb10_0                                       0
+stdout cb11_1                                       1
+stdout db11                                   4.99998
+stdout cb11_0                                       0
+stdout cb12_1                                       1
+stdout db12                                   4.99998
+stdout cb12_0                                       0
+stdout cb13_1                                       0
+stdout db13                               2.07306e-05
+stdout cb13_0                                       1
+stdout cb14_1                                       0
+stdout db14                               2.07306e-05
+stdout cb14_0                                       1
+stdout cb15_1                                       0
+stdout db15                               2.07306e-05
+stdout cb15_0                                       1
+stdout p                                       2.4994
+stdout s                                            0
+stdout out                                          0
+stdout ls#branch                                    0
+stdout lp#branch                         -1.13239e-07
+stdout vb15_0#branch                                0
+stdout vb15_1#branch                                0
+stdout vb14_0#branch                                0
+stdout vb14_1#branch                                0
+stdout vb13_0#branch                                0
+stdout vb13_1#branch                                0
+stdout vb12_0#branch                                0
+stdout vb12_1#branch                                0
+stdout vb11_0#branch                                0
+stdout vb11_1#branch                                0
+stdout vb10_0#branch                                0
+stdout vb10_1#branch                                0
+stdout vb9_0#branch                                 0
+stdout vb9_1#branch                                 0
+stdout vb8_0#branch                                 0
+stdout vb8_1#branch                                 0
+stdout vb7_0#branch                                 0
+stdout vb7_1#branch                                 0
+stdout vb6_0#branch                                 0
+stdout vb6_1#branch                                 0
+stdout vb5_0#branch                                 0
+stdout vb5_1#branch                                 0
+stdout vb4_0#branch                                 0
+stdout vb4_1#branch                                 0
+stdout vb3_0#branch                                 0
+stdout vb3_1#branch                                 0
+stdout vb2_0#branch                                 0
+stdout vb2_1#branch                                 0
+stdout vb1_0#branch                                 0
+stdout vb1_1#branch                                 0
+stdout vb0_0#branch                                 0
+stdout vb0_1#branch                                 0
+stdout va15_0#branch                                0
+stdout va15_1#branch                                0
+stdout va14_0#branch                                0
+stdout va14_1#branch                                0
+stdout va13_0#branch                                0
+stdout va13_1#branch                                0
+stdout va12_0#branch                                0
+stdout va12_1#branch                                0
+stdout va11_0#branch                                0
+stdout va11_1#branch                                0
+stdout va10_0#branch                                0
+stdout va10_1#branch                                0
+stdout va9_0#branch                                 0
+stdout va9_1#branch                                 0
+stdout va8_0#branch                                 0
+stdout va8_1#branch                                 0
+stdout va7_0#branch                                 0
+stdout va7_1#branch                                 0
+stdout va6_0#branch                                 0
+stdout va6_1#branch                                 0
+stdout va5_0#branch                                 0
+stdout va5_1#branch                                 0
+stdout va4_0#branch                                 0
+stdout va4_1#branch                                 0
+stdout va3_0#branch                                 0
+stdout va3_1#branch                                 0
+stdout va2_0#branch                                 0
+stdout va2_1#branch                                 0
+stdout va1_0#branch                                 0
+stdout va1_1#branch                                 0
+stdout va0_0#branch                                 0
+stdout va0_1#branch                                 0
+stdout vref#branch                       -0.000473957
+ Reference value :  0.00000e+00
+ Reference value :  9.13400e-05
+ Reference value :  1.90300e-04
+ Reference value :  3.84133e-04
+ Reference value :  4.55921e-04
+ Reference value :  5.08020e-04
+ Reference value :  5.75720e-04
+ Reference value :  6.74680e-04
+ Reference value :  8.72600e-04
+ Reference value :  9.40300e-04
+ Reference value :  9.87181e-04
+ Reference value :  1.03406e-03
+ Reference value :  1.10176e-03
+ Reference value :  1.31530e-03
+ Reference value :  1.42988e-03
+ Reference value :  1.48198e-03
+ Reference value :  1.56510e-03
+ Reference value :  1.63302e-03
+ Reference value :  1.78926e-03
+ Reference value :  1.90384e-03
+ Reference value :  1.97156e-03
+ Reference value :  2.04069e-03
+ Reference value :  2.13302e-03
+ Reference value :  2.31530e-03
+ Reference value :  2.40384e-03
+ Reference value :  2.47269e-03
+ Reference value :  2.51842e-03
+ Reference value :  2.57572e-03
+ Reference value :  2.65906e-03
+ Reference value :  2.86218e-03
+ Reference value :  2.92988e-03
+ Reference value :  2.98718e-03
+ Reference value :  3.04448e-03
+ Reference value :  3.14342e-03
+ Reference value :  3.33092e-03
+ Reference value :  3.42988e-03
+ Reference value :  3.48494e-03
+ Reference value :  3.54448e-03
+ Reference value :  3.63282e-03
+ Reference value :  3.78926e-03
+ Reference value :  3.90384e-03
+ Reference value :  3.96114e-03
+ Reference value :  4.02385e-03
+ Reference value :  4.10176e-03
+ Reference value :  4.17468e-03
+ Reference value :  4.36198e-03
+ Reference value :  4.42084e-03
+ Reference value :  4.49804e-03
+ Reference value :  4.56010e-03
+ Reference value :  4.61363e-03
+ Reference value :  4.78926e-03
+ Reference value :  4.89342e-03
+ Reference value :  4.94552e-03
+ Reference value :  5.00280e-03
+ Reference value :  5.07572e-03
+ Reference value :  5.17468e-03
+ Reference value :  5.34657e-03
+ Reference value :  5.41948e-03
+ Reference value :  5.47156e-03
+ Reference value :  5.52040e-03
+ Reference value :  5.60176e-03
+ Reference value :  5.71634e-03
+ Reference value :  5.89342e-03
+ Reference value :  5.97156e-03
+ Reference value :  6.02364e-03
+ Reference value :  6.11218e-03
+ Reference value :  6.25942e-03
+ Reference value :  6.40384e-03
+ Reference value :  6.47136e-03
+ Reference value :  6.50974e-03
+ Reference value :  6.57572e-03
+ Reference value :  6.69030e-03
+ Reference value :  6.88302e-03
+ Reference value :  6.97326e-03
+ Reference value :  7.02523e-03
+ Reference value :  7.09134e-03
+ Reference value :  7.21634e-03
+ Reference value :  7.38292e-03
+ Reference value :  7.45592e-03
+ Reference value :  7.52364e-03
+ Reference value :  7.58614e-03
+ Reference value :  7.67468e-03
+ Reference value :  7.86469e-03
+ Reference value :  7.94030e-03
+ Reference value :  8.00260e-03
+ Reference value :  8.06530e-03
+ Reference value :  8.14342e-03
+ Reference value :  8.34656e-03
+ Reference value :  8.42988e-03
+ Reference value :  8.49760e-03
+ Reference value :  8.54968e-03
+ Reference value :  8.62260e-03
+ Reference value :  8.81530e-03
+ Reference value :  8.91426e-03
+ Reference value :  8.97156e-03
+ Reference value :  9.03098e-03
+ Reference value :  9.09289e-03
+ Reference value :  9.21634e-03
+ Reference value :  9.39342e-03
+ Reference value :  9.46094e-03
+ Reference value :  9.51842e-03
+ Reference value :  9.58614e-03
+ Reference value :  9.69030e-03
+ Reference value :  9.88302e-03
+ Reference value :  9.95592e-03
+ Reference value :  1.00083e-02
+ Reference value :  1.00757e-02
+ Reference value :  1.01746e-02
+ Reference value :  1.03726e-02
+ Reference value :  1.04455e-02
+ Reference value :  1.05028e-02
+ Reference value :  1.05678e-02
+ Reference value :  1.06591e-02
+ Reference value :  1.08466e-02
+ Reference value :  1.09299e-02
+ Reference value :  1.09976e-02
+ Reference value :  1.10601e-02
+ Reference value :  1.11330e-02
+ Reference value :  1.13309e-02
+ Reference value :  1.14195e-02
+ Reference value :  1.14872e-02
+ Reference value :  1.15495e-02
+ Reference value :  1.16226e-02
+ Reference value :  1.17906e-02
+ Reference value :  1.19038e-02
+ Reference value :  1.19676e-02
+ Reference value :  1.20236e-02
+ Reference value :  1.20913e-02
+ Reference value :  1.22108e-02
+ Reference value :  1.23934e-02
+ Reference value :  1.24636e-02
+ Reference value :  1.25236e-02
+ Reference value :  1.25881e-02
+ Reference value :  1.26747e-02
+ Reference value :  1.28622e-02
+ Reference value :  1.29403e-02
+ Reference value :  1.30028e-02
+ Reference value :  1.30757e-02
+ Reference value :  1.31591e-02
+ Reference value :  1.33620e-02
+ Reference value :  1.34403e-02
+ Reference value :  1.35028e-02
+ Reference value :  1.35653e-02
+ Reference value :  1.36434e-02
+ Reference value :  1.38622e-02
+ Reference value :  1.39453e-02
+ Reference value :  1.40062e-02
+ Reference value :  1.40757e-02
+ Reference value :  1.41591e-02
+ Reference value :  1.43696e-02
+ Reference value :  1.44455e-02
+ Reference value :  1.45080e-02
+ Reference value :  1.45757e-02
+ Reference value :  1.46591e-02
+ Reference value :  1.48622e-02
+ Reference value :  1.49403e-02
+ Reference value :  1.49976e-02
+ Reference value :  1.50601e-02
+ Reference value :  1.51330e-02
+ Reference value :  1.53309e-02
+ Reference value :  1.54297e-02
+ Reference value :  1.54976e-02
+ Reference value :  1.55601e-02
+ Reference value :  1.56434e-02
+ Reference value :  1.58466e-02
+ Reference value :  1.59299e-02
+ Reference value :  1.59974e-02
+ Reference value :  1.60497e-02
+ Reference value :  1.61330e-02
+ Reference value :  1.63153e-02
+ Reference value :  1.64195e-02
+ Reference value :  1.64974e-02
+ Reference value :  1.65497e-02
+ Reference value :  1.66226e-02
+ Reference value :  1.67893e-02
+ Reference value :  1.69038e-02
+ Reference value :  1.69716e-02
+ Reference value :  1.70236e-02
+ Reference value :  1.70913e-02
+ Reference value :  1.71903e-02
+ Reference value :  1.73830e-02
+ Reference value :  1.74476e-02
+ Reference value :  1.75080e-02
+ Reference value :  1.75653e-02
+ Reference value :  1.76434e-02
+ Reference value :  1.78466e-02
+ Reference value :  1.79299e-02
+ Reference value :  1.79976e-02
+ Reference value :  1.80601e-02
+ Reference value :  1.81330e-02
+ Reference value :  1.83284e-02
+ Reference value :  1.84195e-02
+ Reference value :  1.84870e-02
+ Reference value :  1.85497e-02
+ Reference value :  1.86252e-02
+ Reference value :  1.88309e-02
+ Reference value :  1.89157e-02
+ Reference value :  1.89870e-02
+ Reference value :  1.90445e-02
+ Reference value :  1.91122e-02
+ Reference value :  1.92891e-02
+ Reference value :  1.94038e-02
+ Reference value :  1.94716e-02
+ Reference value :  1.95236e-02
+ Reference value :  1.95913e-02
+ Reference value :  1.96903e-02
+ Reference value :  1.98830e-02
+ Reference value :  1.99559e-02
+stdout No. of Data Rows : 524518
+stdout Note: No compatibility mode selected!
+stdout Circuit: 3+9 low level / 1 khz 1 percent / 50 mhz requests / 5 v
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout ref                                          5
+stdout ca0_1                                        1
+stdout da0                                          5
+stdout ca0_0                                        0
+stdout a                                      2.49938
+stdout ca1_1                                        1
+stdout da1                                          5
+stdout ca1_0                                        0
+stdout ca2_1                                        1
+stdout da2                                          5
+stdout ca2_0                                        0
+stdout ca3_1                                        1
+stdout da3                                          5
+stdout ca3_0                                        0
+stdout ca4_1                                        1
+stdout da4                                          5
+stdout ca4_0                                        0
+stdout ca5_1                                        1
+stdout da5                                          5
+stdout ca5_0                                        0
+stdout ca6_1                                        1
+stdout da6                                          5
+stdout ca6_0                                        0
+stdout ca7_1                                        1
+stdout da7                                    4.99999
+stdout ca7_0                                        0
+stdout ca8_1                                        1
+stdout da8                                    4.99999
+stdout ca8_0                                        0
+stdout ca9_1                                        1
+stdout da9                                    4.99998
+stdout ca9_0                                        0
+stdout ca10_1                                       1
+stdout da10                                   4.99998
+stdout ca10_0                                       0
+stdout ca11_1                                       1
+stdout da11                                   4.99998
+stdout ca11_0                                       0
+stdout ca12_1                                       0
+stdout da12                               2.07305e-05
+stdout ca12_0                                       1
+stdout ca13_1                                       0
+stdout da13                               2.07305e-05
+stdout ca13_0                                       1
+stdout ca14_1                                       0
+stdout da14                               2.07305e-05
+stdout ca14_0                                       1
+stdout ca15_1                                       0
+stdout da15                               2.07305e-05
+stdout ca15_0                                       1
+stdout cb0_1                                        0
+stdout db0                                4.04916e-08
+stdout cb0_0                                        1
+stdout b                                       2.4994
+stdout cb1_1                                        0
+stdout db1                                8.09815e-08
+stdout cb1_0                                        1
+stdout cb2_1                                        0
+stdout db2                                1.61961e-07
+stdout cb2_0                                        1
+stdout cb3_1                                        0
+stdout db3                                3.23921e-07
+stdout cb3_0                                        1
+stdout cb4_1                                        0
+stdout db4                                6.47839e-07
+stdout cb4_0                                        1
+stdout cb5_1                                        0
+stdout db5                                1.29568e-06
+stdout cb5_0                                        1
+stdout cb6_1                                        0
+stdout db6                                2.59135e-06
+stdout cb6_0                                        1
+stdout cb7_1                                        0
+stdout db7                                5.18269e-06
+stdout cb7_0                                        1
+stdout cb8_1                                        0
+stdout db8                                1.03654e-05
+stdout cb8_0                                        1
+stdout cb9_1                                        1
+stdout db9                                    4.99998
+stdout cb9_0                                        0
+stdout cb10_1                                       1
+stdout db10                                   4.99998
+stdout cb10_0                                       0
+stdout cb11_1                                       1
+stdout db11                                   4.99998
+stdout cb11_0                                       0
+stdout cb12_1                                       1
+stdout db12                                   4.99998
+stdout cb12_0                                       0
+stdout cb13_1                                       0
+stdout db13                               2.07306e-05
+stdout cb13_0                                       1
+stdout cb14_1                                       0
+stdout db14                               2.07306e-05
+stdout cb14_0                                       1
+stdout cb15_1                                       0
+stdout db15                               2.07306e-05
+stdout cb15_0                                       1
+stdout p                                       2.4994
+stdout s                                            0
+stdout out                                          0
+stdout ls#branch                                    0
+stdout lp#branch                         -1.13239e-07
+stdout vb15_0#branch                                0
+stdout vb15_1#branch                                0
+stdout vb14_0#branch                                0
+stdout vb14_1#branch                                0
+stdout vb13_0#branch                                0
+stdout vb13_1#branch                                0
+stdout vb12_0#branch                                0
+stdout vb12_1#branch                                0
+stdout vb11_0#branch                                0
+stdout vb11_1#branch                                0
+stdout vb10_0#branch                                0
+stdout vb10_1#branch                                0
+stdout vb9_0#branch                                 0
+stdout vb9_1#branch                                 0
+stdout vb8_0#branch                                 0
+stdout vb8_1#branch                                 0
+stdout vb7_0#branch                                 0
+stdout vb7_1#branch                                 0
+stdout vb6_0#branch                                 0
+stdout vb6_1#branch                                 0
+stdout vb5_0#branch                                 0
+stdout vb5_1#branch                                 0
+stdout vb4_0#branch                                 0
+stdout vb4_1#branch                                 0
+stdout vb3_0#branch                                 0
+stdout vb3_1#branch                                 0
+stdout vb2_0#branch                                 0
+stdout vb2_1#branch                                 0
+stdout vb1_0#branch                                 0
+stdout vb1_1#branch                                 0
+stdout vb0_0#branch                                 0
+stdout vb0_1#branch                                 0
+stdout va15_0#branch                                0
+stdout va15_1#branch                                0
+stdout va14_0#branch                                0
+stdout va14_1#branch                                0
+stdout va13_0#branch                                0
+stdout va13_1#branch                                0
+stdout va12_0#branch                                0
+stdout va12_1#branch                                0
+stdout va11_0#branch                                0
+stdout va11_1#branch                                0
+stdout va10_0#branch                                0
+stdout va10_1#branch                                0
+stdout va9_0#branch                                 0
+stdout va9_1#branch                                 0
+stdout va8_0#branch                                 0
+stdout va8_1#branch                                 0
+stdout va7_0#branch                                 0
+stdout va7_1#branch                                 0
+stdout va6_0#branch                                 0
+stdout va6_1#branch                                 0
+stdout va5_0#branch                                 0
+stdout va5_1#branch                                 0
+stdout va4_0#branch                                 0
+stdout va4_1#branch                                 0
+stdout va3_0#branch                                 0
+stdout va3_1#branch                                 0
+stdout va2_0#branch                                 0
+stdout va2_1#branch                                 0
+stdout va1_0#branch                                 0
+stdout va1_1#branch                                 0
+stdout va0_0#branch                                 0
+stdout va0_1#branch                                 0
+stdout vref#branch                       -0.000473957
+ Reference value :  2.80039e-06
+ Reference value :  7.57202e-05
+ Reference value :  1.59060e-04
+ Reference value :  3.46560e-04
+ Reference value :  4.21533e-04
+ Reference value :  4.87181e-04
+ Reference value :  5.49680e-04
+ Reference value :  6.12181e-04
+ Reference value :  7.41728e-04
+ Reference value :  8.83021e-04
+ Reference value :  9.55920e-04
+ Reference value :  1.00804e-03
+ Reference value :  1.07572e-03
+ Reference value :  1.15906e-03
+ Reference value :  1.34656e-03
+ Reference value :  1.42988e-03
+ Reference value :  1.49760e-03
+ Reference value :  1.55945e-03
+ Reference value :  1.62260e-03
+ Reference value :  1.78926e-03
+ Reference value :  1.90364e-03
+ Reference value :  1.96237e-03
+ Reference value :  2.02345e-03
+ Reference value :  2.08614e-03
+ Reference value :  2.17468e-03
+ Reference value :  2.36218e-03
+ Reference value :  2.44030e-03
+ Reference value :  2.50280e-03
+ Reference value :  2.56530e-03
+ Reference value :  2.64322e-03
+ Reference value :  2.81530e-03
+ Reference value :  2.91406e-03
+ Reference value :  2.97156e-03
+ Reference value :  3.03406e-03
+ Reference value :  3.10176e-03
+ Reference value :  3.21973e-03
+ Reference value :  3.38302e-03
+ Reference value :  3.45592e-03
+ Reference value :  3.52364e-03
+ Reference value :  3.59134e-03
+ Reference value :  3.67468e-03
+ Reference value :  3.86218e-03
+ Reference value :  3.94030e-03
+ Reference value :  4.00280e-03
+ Reference value :  4.06530e-03
+ Reference value :  4.14342e-03
+ Reference value :  4.34656e-03
+ Reference value :  4.42988e-03
+ Reference value :  4.49760e-03
+ Reference value :  4.54968e-03
+ Reference value :  4.62260e-03
+ Reference value :  4.78926e-03
+ Reference value :  4.91154e-03
+ Reference value :  4.98198e-03
+ Reference value :  5.04444e-03
+ Reference value :  5.10291e-03
+ Reference value :  5.21634e-03
+ Reference value :  5.38302e-03
+ Reference value :  5.45592e-03
+ Reference value :  5.50802e-03
+ Reference value :  5.57572e-03
+ Reference value :  5.65906e-03
+ Reference value :  5.83092e-03
+ Reference value :  5.91948e-03
+ Reference value :  5.98198e-03
+ Reference value :  6.04448e-03
+ Reference value :  6.11218e-03
+ Reference value :  6.23945e-03
+ Reference value :  6.38302e-03
+ Reference value :  6.45592e-03
+ Reference value :  6.50802e-03
+ Reference value :  6.57595e-03
+ Reference value :  6.65906e-03
+ Reference value :  6.83092e-03
+ Reference value :  6.91948e-03
+ Reference value :  6.98198e-03
+ Reference value :  7.03506e-03
+ Reference value :  7.11218e-03
+ Reference value :  7.21634e-03
+ Reference value :  7.38302e-03
+ Reference value :  7.45592e-03
+ Reference value :  7.50802e-03
+ Reference value :  7.57572e-03
+ Reference value :  7.65762e-03
+ Reference value :  7.84641e-03
+ Reference value :  7.92811e-03
+ Reference value :  7.98718e-03
+ Reference value :  8.04968e-03
+ Reference value :  8.12267e-03
+ Reference value :  8.28926e-03
+ Reference value :  8.40384e-03
+ Reference value :  8.47156e-03
+ Reference value :  8.52558e-03
+ Reference value :  8.59134e-03
+ Reference value :  8.69030e-03
+ Reference value :  8.86218e-03
+ Reference value :  8.94030e-03
+ Reference value :  9.00280e-03
+ Reference value :  9.07572e-03
+ Reference value :  9.17468e-03
+ Reference value :  9.36218e-03
+ Reference value :  9.44010e-03
+ Reference value :  9.50030e-03
+ Reference value :  9.56010e-03
+ Reference value :  9.62260e-03
+ Reference value :  9.78926e-03
+ Reference value :  9.89565e-03
+ Reference value :  9.96114e-03
+ Reference value :  1.00236e-02
+ Reference value :  1.00998e-02
+ Reference value :  1.02163e-02
+ Reference value :  1.04038e-02
+ Reference value :  1.04820e-02
+ Reference value :  1.05341e-02
+ Reference value :  1.06018e-02
+ Reference value :  1.06903e-02
+ Reference value :  1.08726e-02
+ Reference value :  1.09453e-02
+ Reference value :  1.10028e-02
+ Reference value :  1.10755e-02
+ Reference value :  1.11589e-02
+ Reference value :  1.13466e-02
+ Reference value :  1.14195e-02
+ Reference value :  1.14872e-02
+ Reference value :  1.15445e-02
+ Reference value :  1.16122e-02
+ Reference value :  1.17163e-02
+ Reference value :  1.18830e-02
+ Reference value :  1.19559e-02
+ Reference value :  1.20080e-02
+ Reference value :  1.20861e-02
+ Reference value :  1.21697e-02
+ Reference value :  1.23620e-02
+ Reference value :  1.24299e-02
+ Reference value :  1.24977e-02
+ Reference value :  1.25601e-02
+ Reference value :  1.26330e-02
+ Reference value :  1.28307e-02
+ Reference value :  1.29143e-02
+ Reference value :  1.29820e-02
+ Reference value :  1.30341e-02
+ Reference value :  1.31056e-02
+ Reference value :  1.32280e-02
+ Reference value :  1.33830e-02
+ Reference value :  1.34559e-02
+ Reference value :  1.35184e-02
+ Reference value :  1.35913e-02
+ Reference value :  1.36747e-02
+ Reference value :  1.38678e-02
+ Reference value :  1.39403e-02
+ Reference value :  1.40007e-02
+ Reference value :  1.40601e-02
+ Reference value :  1.41330e-02
+ Reference value :  1.42893e-02
+ Reference value :  1.44143e-02
+ Reference value :  1.44976e-02
+ Reference value :  1.45757e-02
+ Reference value :  1.46984e-02
+ Reference value :  1.49038e-02
+ Reference value :  1.50026e-02
+ Reference value :  1.50913e-02
+ Reference value :  1.52891e-02
+ Reference value :  1.54195e-02
+ Reference value :  1.55028e-02
+ Reference value :  1.55913e-02
+ Reference value :  1.57893e-02
+ Reference value :  1.59250e-02
+ Reference value :  1.59883e-02
+ Reference value :  1.60497e-02
+ Reference value :  1.61226e-02
+ Reference value :  1.62893e-02
+ Reference value :  1.64038e-02
+ Reference value :  1.64611e-02
+ Reference value :  1.65184e-02
+ Reference value :  1.65913e-02
+ Reference value :  1.66903e-02
+ Reference value :  1.68622e-02
+ Reference value :  1.69339e-02
+ Reference value :  1.69976e-02
+ Reference value :  1.70538e-02
+ Reference value :  1.71226e-02
+ Reference value :  1.73153e-02
+ Reference value :  1.74038e-02
+ Reference value :  1.74716e-02
+ Reference value :  1.75236e-02
+ Reference value :  1.75913e-02
+ Reference value :  1.77163e-02
+ Reference value :  1.78750e-02
+ Reference value :  1.79455e-02
+ Reference value :  1.80080e-02
+ Reference value :  1.80757e-02
+ Reference value :  1.81591e-02
+ Reference value :  1.83466e-02
+ Reference value :  1.84299e-02
+ Reference value :  1.84872e-02
+ Reference value :  1.85497e-02
+ Reference value :  1.86226e-02
+ Reference value :  1.87891e-02
+ Reference value :  1.88934e-02
+ Reference value :  1.89559e-02
+ Reference value :  1.90184e-02
+ Reference value :  1.90861e-02
+ Reference value :  1.91747e-02
+ Reference value :  1.93543e-02
+ Reference value :  1.94299e-02
+ Reference value :  1.94976e-02
+ Reference value :  1.95595e-02
+ Reference value :  1.96324e-02
+ Reference value :  1.97893e-02
+ Reference value :  1.99096e-02
+ Reference value :  1.99716e-02
+stdout No. of Data Rows : 549160

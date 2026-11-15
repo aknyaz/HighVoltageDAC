@@ -1,0 +1,11 @@
+{
+  "target_20hz_gain_db_relative_1khz": -1,
+  "required_primary_self_inductance_h": 77.9327718730294,
+  "secondary_self_inductance_h": 0.06234621749842351,
+  "held_primary_short_circuit_leakage_h": 0.01998999999999973,
+  "coupling": 0.9998717402091677,
+  "spice_verified_gain_db": -1.0000000000000333,
+  "assumed_source_resistance_ohm": 10549.399255403667,
+  "spice_runs": 2,
+  "scope": "Conditional linear calculation: ratio, leakage, DCR, core-loss resistance and capacitance held fixed; no actual component selection or magnetic saturation claim"
+}

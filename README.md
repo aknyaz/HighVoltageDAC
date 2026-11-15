@@ -192,3 +192,36 @@ python sim/controller_transitions.py
 ```
 
 Results: `results/controller_analog/`; plots: `plots/controller_analog/`.
+
+## Audio-band and low-level findings
+
+The [audio-band study](docs/audio_band.md) identifies two limitations: the assumed
+10 H transformer is down 12.22 dB at 20 Hz, and a 1% full-scale 1 kHz sine produces
+0.531% THD in the switched model (0.520% with ideal held 12-bit codes). The latter
+includes requests rounded to a 50 MHz grid. Five ngspice runs and independent
+AC/Fourier calculations support these results.
+
+```powershell
+python sim/audio_band.py
+python sim/transformer_bandwidth.py
+```
+
+A conditional -1 dB / 20 Hz target requires about 78 H under the stated fixed
+parasitic assumptions. Actual transformer validation and low-level quantization
+now take priority. Keep 3+9 / 200 ns; shutdown and full switched upper-band tests
+remain open. Results and plots are in `results/audio_band/` and `plots/audio_band/`.
+
+## Transformer working candidate
+
+The [transformer selection](docs/transformer_selection.md) chooses
+**Lundahl LL1679/PP, standard core, secondary alternative B / 8 ohm** for the
+next modeling stage, with LL1620/PP as the higher-inductance fallback. Twenty-four
+verified AC sweeps use datasheet winding parameters and explicitly assumed
+capacitance/core loss. This is not procurement or hardware approval; the full
+5 W / 20 Hz target at 600-700 V remains unproven.
+
+```powershell
+python sim/select_transformer.py
+```
+
+[Supplier inquiry draft](docs/transformer_vendor_inquiry.md) is prepared but not sent.

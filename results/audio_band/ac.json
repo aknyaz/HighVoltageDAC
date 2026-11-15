@@ -1,0 +1,42 @@
+{
+  "spice_runs": 1,
+  "relative_analytic_error": 1.7741363933510002e-13,
+  "transformer": {
+    "primary_inductance_h": 10.0,
+    "secondary_inductance_h": 0.008,
+    "coupling": 0.999,
+    "primary_dcr_ohm": 200.0,
+    "secondary_dcr_ohm": 0.2,
+    "primary_shunt_pf": 100.0,
+    "primary_core_loss_ohm": 100000.0,
+    "load_ohm": 8.0,
+    "switch_ron_ohm": 0.35
+  },
+  "selected": [
+    {
+      "frequency_hz": 20,
+      "held_sine_gain_db_relative_1khz": -12.21555102024639
+    },
+    {
+      "frequency_hz": 50,
+      "held_sine_gain_db_relative_1khz": -5.440081705626472
+    },
+    {
+      "frequency_hz": 100,
+      "held_sine_gain_db_relative_1khz": -2.095434994580773
+    },
+    {
+      "frequency_hz": 1000,
+      "held_sine_gain_db_relative_1khz": 0.0
+    },
+    {
+      "frequency_hz": 10000,
+      "held_sine_gain_db_relative_1khz": -0.01664882109409033
+    },
+    {
+      "frequency_hz": 20000,
+      "held_sine_gain_db_relative_1khz": -0.14992068036547068
+    }
+  ],
+  "scope": "Linear continuous-source AC check plus analytical zero-order hold; excludes branch switching/capacitance, core saturation and resistor mismatch"
+}

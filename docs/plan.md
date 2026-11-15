@@ -10,8 +10,13 @@ physical FPGA/bias interfaces and transformer/DC/audio validation. The command H
 is implemented and tested; see `controller_design.md`. The initial 200 ns
 blanking study is complete at 1 kHz / 90% amplitude, with major-carry tests and
 an assumed linear transformer; see `controller_analog.md`. Retain the 200 ns
-simulation setting. Next: low-level/audio-band and stop/fault transients, actual
-50 MHz request timing, and transformer model selection. Device and driver
+simulation setting. Initial AC audio-band and 1%-amplitude switched tests are
+complete, including a 50 MHz request grid; see `audio_band.md`. The assumed 10 H
+transformer loses 12.22 dB at 20 Hz; low-level THD is about 0.53%, mostly already
+present with ideal quantized codes. The working transformer candidate is now LL1679/PP, alternative B / 8 ohm;
+LL1620/PP is the fallback. See `transformer_selection.md`. Next: obtain actual
+transformer impedance/core-loss data and run a bounded low-level quantization study. Full switched upper-band and stop/fault
+transients remain open, as do physical clock-domain checks. Device and driver
 selection remain provisional; estimated switch losses have not disappeared.
 
 ## Phase A0 — first reproducible test bench
