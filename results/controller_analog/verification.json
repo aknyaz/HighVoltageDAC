@@ -1,0 +1,19 @@
+{
+  "ideal_linear_fundamental_peak_v": 0.05737717131381997,
+  "baseline_difference_percent": 0.002790293947108058,
+  "comparisons": [
+    {
+      "cap_pf": 20,
+      "blanking_gain_change_percent": 0.0012199106864896336,
+      "thd_no_blanking_percent": 0.01031363234430508,
+      "thd_200ns_percent": 0.010698445652938596
+    },
+    {
+      "cap_pf": 100,
+      "blanking_gain_change_percent": 0.0002458431013874218,
+      "thd_no_blanking_percent": 0.0103074522922895,
+      "thd_200ns_percent": 0.010327650192877682
+    }
+  ],
+  "scope": "Independent 1 kHz impedance calculation; no vendor/hardware qualification"
+}

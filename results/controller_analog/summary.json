@@ -1,0 +1,85 @@
+{
+  "supply_v": 5,
+  "architecture": "3+9",
+  "sample_rate_hz": 192000,
+  "input_hz": 1000,
+  "amplitude_full_scale": 0.9,
+  "transformer": {
+    "primary_inductance_h": 10.0,
+    "secondary_inductance_h": 0.008,
+    "coupling": 0.999,
+    "primary_dcr_ohm": 200.0,
+    "secondary_dcr_ohm": 0.2,
+    "primary_shunt_pf": 100.0,
+    "primary_core_loss_ohm": 100000.0,
+    "load_ohm": 8.0,
+    "switch_ron_ohm": 0.35
+  },
+  "spice_runs": 8,
+  "analysis_window_s": [
+    0.018,
+    0.02
+  ],
+  "uniform_analysis_step_ns": 50,
+  "conductance_edge_ns": 2,
+  "command_timing": "Ideal 192 kS/s requests; not 50 MHz clock quantized",
+  "scope": "Linear assumed transformer; frozen Coss per device; no vendor device model, driver delays, saturation, noise or HDL co-simulation",
+  "rows": [
+    {
+      "cap_pf": 20,
+      "dead_ns": 0,
+      "fundamental_peak_v": 0.05737557032208178,
+      "thd_2_to_20_percent": 0.01031363234430508,
+      "secondary_mean_v": -2.8721255553847414e-07,
+      "load_power_w": 0.00020575059532387514,
+      "primary_peak_v": 2.1288776458197463,
+      "primary_mean_current_a": 1.0661147059276565e-09,
+      "previous_window_fundamental_delta_percent": 0.00013609833752542072,
+      "previous_window_thd_delta_pp": 1.438852082363655e-05,
+      "timestep_gain_delta_percent": 0.00023524419879893463,
+      "timestep_thd_delta_pp": 7.406968560066778e-05
+    },
+    {
+      "cap_pf": 20,
+      "dead_ns": 200,
+      "fundamental_peak_v": 0.057376270252795576,
+      "thd_2_to_20_percent": 0.010698445652938596,
+      "secondary_mean_v": -2.872070047899911e-07,
+      "load_power_w": 0.00020575561417426896,
+      "primary_peak_v": 2.128881177738152,
+      "primary_mean_current_a": 1.0659737237406208e-09,
+      "previous_window_fundamental_delta_percent": 0.00013411651421075117,
+      "previous_window_thd_delta_pp": 1.3517149693331731e-05,
+      "timestep_gain_delta_percent": 0.0002259869298009037,
+      "timestep_thd_delta_pp": 7.198037686879759e-05
+    },
+    {
+      "cap_pf": 100,
+      "dead_ns": 0,
+      "fundamental_peak_v": 0.05737556976833708,
+      "thd_2_to_20_percent": 0.0103074522922895,
+      "secondary_mean_v": -2.869292194731088e-07,
+      "load_power_w": 0.0002057505912567879,
+      "primary_peak_v": 2.1288839452735555,
+      "primary_mean_current_a": 1.0670168873516683e-09,
+      "previous_window_fundamental_delta_percent": 0.0001364081439569763,
+      "previous_window_thd_delta_pp": 1.7397394437228264e-05,
+      "timestep_gain_delta_percent": 0.00024116820516301274,
+      "timestep_thd_delta_pp": 8.514514651582032e-05
+    },
+    {
+      "cap_pf": 100,
+      "dead_ns": 200,
+      "fundamental_peak_v": 0.057375710822217235,
+      "thd_2_to_20_percent": 0.010327650192877682,
+      "secondary_mean_v": -2.869690416090975e-07,
+      "load_power_w": 0.00020575160353838876,
+      "primary_peak_v": 2.128873048358495,
+      "primary_mean_current_a": 1.0670731142969902e-09,
+      "previous_window_fundamental_delta_percent": 0.00013645735178112727,
+      "previous_window_thd_delta_pp": 1.6378645865736813e-05,
+      "timestep_gain_delta_percent": 0.00021001403665066445,
+      "timestep_thd_delta_pp": 5.6577266232409745e-05
+    }
+  ]
+}

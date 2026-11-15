@@ -7,8 +7,11 @@ Use **3+9 segmented parallel** as the fixed working 12-bit baseline. See
 Broad partition exploration is complete. The wired 3+9 design-review hierarchy is
 available in `kicad/segmented/`; see `kicad_segmented_review.md`. Next: resolve its
 physical FPGA/bias interfaces and transformer/DC/audio validation. The command HDL
-is implemented and tested; see `controller_design.md`. First validate its 200 ns
-blank interval in the analog model. Device and driver
+is implemented and tested; see `controller_design.md`. The initial 200 ns
+blanking study is complete at 1 kHz / 90% amplitude, with major-carry tests and
+an assumed linear transformer; see `controller_analog.md`. Retain the 200 ns
+simulation setting. Next: low-level/audio-band and stop/fault transients, actual
+50 MHz request timing, and transformer model selection. Device and driver
 selection remain provisional; estimated switch losses have not disappeared.
 
 ## Phase A0 — first reproducible test bench

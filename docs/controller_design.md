@@ -115,6 +115,7 @@ Verilog generation through bundled Yosys succeeds. That is HDL elaboration and
 conversion, not a synthesis/utilization or FPGA timing sign-off. Behavioral
 simulation coverage is not a formal proof over all sequences or analog behavior.
 
-Next deliverable: validate the 200 ns sequencer with the analog switching/transformer
-model, then resolve physical FPGA/bias interfaces. Do not reopen the 3+9 partition
+The initial analog blanking/transformer study is now complete; see
+[results and limitations](controller_analog.md). Retain 200 ns for further tests.
+Next: audio-band/low-level and stop/fault checks, then physical FPGA/bias interfaces. Do not reopen the 3+9 partition
 without a concrete failing result.

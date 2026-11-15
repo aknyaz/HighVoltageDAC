@@ -173,5 +173,22 @@ code decoding, per-branch 200 ns command non-overlap and latched fault handling.
 All 4096 codes and 1000 random transitions pass behavioral HDL simulation.
 The 64 command paths and 192 enable/status connections are checked against the
 exported KiCad netlist. See [reproduction commands](control/README.md).
-Physical FPGA wiring and timing qualification remain open; the next analog study
-must include this longer blank interval and transformer transients.
+Physical FPGA wiring and timing qualification remain open; the initial analog study below includes this blank interval and a linear transformer.
+Audio-band, low-level and shutdown validation remain open.
+
+## Controller blanking with transformer loading
+
+The [analog controller study](docs/controller_analog.md) runs the 3+9 network at
+5 V with an assumed linear transformer, comparing 0/200 ns blanking and fixed
+20/100 pF per-device capacitance. Eight sine and sixteen major-carry SPICE runs
+include timestep refinement and settling checks. At 1 kHz / 90% amplitude the
+20 pF case changes from 0.01031% to 0.01070% THD. This is not a vendor transistor
+or transformer qualification. Retain 200 ns for further simulation.
+
+```powershell
+python sim/controller_analog.py
+python sim/verify_controller_analog.py
+python sim/controller_transitions.py
+```
+
+Results: `results/controller_analog/`; plots: `plots/controller_analog/`.

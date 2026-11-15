@@ -1,0 +1,42 @@
+{
+  "spice_runs": 16,
+  "window_s": [
+    1e-06,
+    1e-05
+  ],
+  "rows": [
+    {
+      "reverse": false,
+      "cap_pf": 20,
+      "primary_peak_difference_v": 0.004331152922525928,
+      "secondary_peak_difference_v": 2.3423381601174904e-05,
+      "primary_absolute_difference_v_ns": 3.2701510180262234,
+      "area_step_difference_v_ns": 5.166381187748925e-05
+    },
+    {
+      "reverse": false,
+      "cap_pf": 100,
+      "primary_peak_difference_v": 0.0005556875705475973,
+      "secondary_peak_difference_v": 2.727153055468762e-06,
+      "primary_absolute_difference_v_ns": 0.38823498579476634,
+      "area_step_difference_v_ns": 8.286441277205459e-06
+    },
+    {
+      "reverse": true,
+      "cap_pf": 20,
+      "primary_peak_difference_v": 0.004331152985800781,
+      "secondary_peak_difference_v": 2.342338250247017e-05,
+      "primary_absolute_difference_v_ns": 3.2701511396898573,
+      "area_step_difference_v_ns": 5.169806651306175e-05
+    },
+    {
+      "reverse": true,
+      "cap_pf": 100,
+      "primary_peak_difference_v": 0.0005556875673352276,
+      "secondary_peak_difference_v": 2.7271551843421826e-06,
+      "primary_absolute_difference_v_ns": 0.38823527590964313,
+      "area_step_difference_v_ns": 8.841393274228171e-06
+    }
+  ],
+  "scope": "Difference from overlapping-edge zero-blanking reference; no saturation, clamp or driver model"
+}
