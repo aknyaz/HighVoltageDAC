@@ -1,0 +1,7 @@
+{
+  "test": "Known periodic 19/20 kHz tones and 0.003% 1 kHz product plus DC and exponential startup tail",
+  "expected_difference_peak_v": 9e-07,
+  "recovered_difference_peak_v": 9.000000000007386e-07,
+  "absolute_error_v": 7.386127300057499e-19,
+  "scope": "Validates detrending algorithm for its assumed exponential, not physical completeness of the transformer model"
+}

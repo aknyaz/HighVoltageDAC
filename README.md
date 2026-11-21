@@ -341,3 +341,12 @@ but output impedance is about 8.33 ohm. These are model findings, not complete
 hardware THD or noise predictions. Pause detailed mute/FPGA work while judging
 low-level quality and load dependence; switched-model checks are reported
 separately from this static screen.
+
+
+The subsequent six switched checks on the LL1679 model give approximately
+0.011% THD at 90% amplitude and 0.530% at 1%, with about 0.026% total in-band
+unwanted content for 19/20 kHz tones. The small IMD figures use documented slow
+startup-tail removal and window/timestep checks; raw values are retained.
+See the [completed review](docs/audio_viability.md) and
+[switched spectra](plots/audio_viability/switched.png). This supports an audio
+viability decision now; it is not a completed hardware-quality qualification.

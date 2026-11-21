@@ -1,0 +1,17 @@
+{
+  "kind": "sine",
+  "amplitude": 0.9,
+  "fundamental_peak_v": 0.05770970477181828,
+  "thd_2_to_20_percent": 0.01096797012008423,
+  "ideal_held_reference": {
+    "fundamental_peak_v": 0.05770924350547866,
+    "thd_2_to_20_percent": 0.01059514750486053
+  },
+  "raw_window_metrics": {
+    "fundamental_peak_v": 0.05771273476052016,
+    "thd_2_to_20_percent": 0.011248991329722782
+  },
+  "metric_refinement_pp": 6.345370758397209e-05,
+  "preceding_window_metric_change_pp": 6.705777203946245e-06,
+  "fitted_slow_tail_at_window_start_v": 0.0003441507792658189
+}

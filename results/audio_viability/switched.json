@@ -1,0 +1,78 @@
+{
+  "spice_runs": 6,
+  "bus_v": 5,
+  "rows": [
+    {
+      "kind": "sine",
+      "amplitude": 0.9,
+      "fundamental_peak_v": 0.05770970477181828,
+      "thd_2_to_20_percent": 0.01096797012008423,
+      "ideal_held_reference": {
+        "fundamental_peak_v": 0.05770924350547866,
+        "thd_2_to_20_percent": 0.01059514750486053
+      },
+      "raw_window_metrics": {
+        "fundamental_peak_v": 0.05771273476052016,
+        "thd_2_to_20_percent": 0.011248991329722782
+      },
+      "metric_refinement_pp": 6.345370758397209e-05,
+      "preceding_window_metric_change_pp": 6.705777203946245e-06,
+      "fitted_slow_tail_at_window_start_v": 0.0003441507792658189
+    },
+    {
+      "kind": "sine",
+      "amplitude": 0.01,
+      "fundamental_peak_v": 0.000643239038025419,
+      "thd_2_to_20_percent": 0.5302389643914914,
+      "ideal_held_reference": {
+        "fundamental_peak_v": 0.0006432929318972268,
+        "thd_2_to_20_percent": 0.5191275395290048
+      },
+      "raw_window_metrics": {
+        "fundamental_peak_v": 0.0006432956903083876,
+        "thd_2_to_20_percent": 0.5304381286922943
+      },
+      "metric_refinement_pp": 1.4485673877850935e-05,
+      "preceding_window_metric_change_pp": 1.0678803658015212e-06,
+      "fitted_slow_tail_at_window_start_v": 6.43460455851869e-06
+    },
+    {
+      "kind": "two_tone",
+      "amplitude": 0.9,
+      "tone_19khz_peak_v": 0.02839650683039259,
+      "tone_20khz_peak_v": 0.028347898921373734,
+      "difference_1khz_percent_per_mean_tone": 0.0027760211982884807,
+      "products_18_21khz_percent_rss_tones": 0.0018764363273513864,
+      "inband_nontone_percent_rss_tones": 0.026136471539052263,
+      "ideal_held_reference": {
+        "tone_19khz_peak_v": 0.02839222329521843,
+        "tone_20khz_peak_v": 0.028343586640733366,
+        "difference_1khz_percent_per_mean_tone": 0.0028692881661020204,
+        "products_18_21khz_percent_rss_tones": 0.0013360520909742534,
+        "inband_nontone_percent_rss_tones": 0.026020396511581056
+      },
+      "raw_window_metrics": {
+        "tone_19khz_peak_v": 0.02840046602503602,
+        "tone_20khz_peak_v": 0.02835161656610095,
+        "difference_1khz_percent_per_mean_tone": 0.2961391573386991,
+        "products_18_21khz_percent_rss_tones": 0.015656453209728298,
+        "inband_nontone_percent_rss_tones": 2.660061014159037
+      },
+      "metric_refinement_pp": 2.489720280383998e-06,
+      "preceding_window_metric_change_pp": 5.450719435555213e-05,
+      "fitted_slow_tail_at_window_start_v": 0.009474148841146576
+    }
+  ],
+  "clock_hz": 50000000,
+  "sample_rate_hz": 192000,
+  "analysis_window_s": [
+    0.02,
+    0.03
+  ],
+  "previous_window_s": [
+    0.01,
+    0.02
+  ],
+  "linear_tail_time_constant_s": 0.030874264110659102,
+  "scope": "Full 3+9 conductance surrogate; 20 pF fixed Coss, 200 ns command blanking, 2 ns edges, generic clamps; nominal linear LL1679. No nonlinear core, physical noise, thermal drift, HV switching model or RTL replay."
+}

@@ -1,0 +1,10 @@
+{
+  "metrics": {
+    "fundamental_peak_v": 0.05770970477181828,
+    "thd_2_to_20_percent": 0.01096797012008423
+  },
+  "previous": {
+    "fundamental_peak_v": 0.05770970615655841,
+    "thd_2_to_20_percent": 0.010961264342880283
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "two_tone",
+  "amplitude": 0.9,
+  "tone_19khz_peak_v": 0.02839650683039259,
+  "tone_20khz_peak_v": 0.028347898921373734,
+  "difference_1khz_percent_per_mean_tone": 0.0027760211982884807,
+  "products_18_21khz_percent_rss_tones": 0.0018764363273513864,
+  "inband_nontone_percent_rss_tones": 0.026136471539052263,
+  "ideal_held_reference": {
+    "tone_19khz_peak_v": 0.02839222329521843,
+    "tone_20khz_peak_v": 0.028343586640733366,
+    "difference_1khz_percent_per_mean_tone": 0.0028692881661020204,
+    "products_18_21khz_percent_rss_tones": 0.0013360520909742534,
+    "inband_nontone_percent_rss_tones": 0.026020396511581056
+  },
+  "raw_window_metrics": {
+    "tone_19khz_peak_v": 0.02840046602503602,
+    "tone_20khz_peak_v": 0.02835161656610095,
+    "difference_1khz_percent_per_mean_tone": 0.2961391573386991,
+    "products_18_21khz_percent_rss_tones": 0.015656453209728298,
+    "inband_nontone_percent_rss_tones": 2.660061014159037
+  },
+  "metric_refinement_pp": 2.489720280383998e-06,
+  "preceding_window_metric_change_pp": 5.450719435555213e-05,
+  "fitted_slow_tail_at_window_start_v": 0.009474148841146576
+}

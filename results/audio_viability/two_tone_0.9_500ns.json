@@ -1,0 +1,16 @@
+{
+  "metrics": {
+    "tone_19khz_peak_v": 0.028396482900684264,
+    "tone_20khz_peak_v": 0.028347876311975155,
+    "difference_1khz_percent_per_mean_tone": 0.002748303736400212,
+    "products_18_21khz_percent_rss_tones": 0.0018789260476317704,
+    "inband_nontone_percent_rss_tones": 0.026153195444496857
+  },
+  "previous": {
+    "tone_19khz_peak_v": 0.028396425180995968,
+    "tone_20khz_peak_v": 0.02834784832304234,
+    "difference_1khz_percent_per_mean_tone": 0.0032143751849713622,
+    "products_18_21khz_percent_rss_tones": 0.0019093868637224001,
+    "inband_nontone_percent_rss_tones": 0.026212207072959185
+  }
+}

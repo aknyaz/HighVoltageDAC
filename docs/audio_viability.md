@@ -114,12 +114,73 @@ switched 10 H-transformer results (approximately 0.0107% at 90% amplitude and
 0.531% at 1%) support the broad concern but must not be silently relabeled as
 LL1679 results. The new benchmark uses the LL1679 model consistently.
 
+## Completed switched-model check
+
+Six retained structural ngspice transients now use the LL1679 candidate model,
+32 half-bridges, fixed 20 pF per transistor, 0.35 ohm Ron, generic rail clamps,
+200 ns command blanking and 2 ns conductance edges. Requests are rounded to a
+50 MHz grid. The supply is 5 V; these are not vendor-device HV results.
+
+| Signal | Switched model | Ideal held-code reference with the same request times |
+|---|---:|---:|
+| 1 kHz, 90% amplitude: THD H2-H20 | 0.01097% | 0.01060% |
+| 1 kHz, 1% amplitude: THD H2-H20 | 0.53024% | 0.51913% |
+| 19/20 kHz, 90% envelope: 1 kHz difference / mean tone | about 0.003% | about 0.0029% |
+| Same two tones: 18/21 kHz RSS / wanted-tone RSS | about 0.0019% | about 0.0013% |
+| Same two tones: total in-band unwanted / wanted-tone RSS | about 0.0261% | about 0.0260% |
+
+The ideal references here include the rounded 50 MHz update times, while the
+static screen above has uniform sampling. Their differences, especially for
+high-frequency two-tone tests, must not all be attributed to switch nonlinearity.
+The 0.1%-amplitude 20% THD result remains a static/quantization result; no new
+switched check at that amplitude is claimed.
+
+For each signal, maximum timestep is reduced from 500 to 250 ns. The primary
+THD/third-order-product metric changes by at most 0.0000635 percentage points.
+The last 20-30 ms analysis window is compared with 10-20 ms. Third-order
+products change by 0.0000545 percentage points between those windows; the very
+small 1 kHz difference component varies approximately 0.00275%-0.00323% across
+windows/steps, so reporting six decimal places for it would imply false precision.
+This check finds no catastrophic large-signal switching or two-tone failure in
+the surrogate. It does not eliminate the low-level problem or qualify core THD.
+
+### Treatment of startup in the spectral measurement
+
+The ngspice operating point starts with a held code, so a slow magnetic transient
+is superimposed on the periodic audio. Ten 1 ms period means are fitted to a
+constant plus an exponential with the independently established 30.874 ms time
+constant. That fitted component is removed before the coherent 10 ms FFT.
+Period averaging preserves the periodic harmonics and 1 kHz-spaced two-tone
+products. A synthetic check recovers a known 0.003% difference tone despite an
+added DC/exponential tail. Both raw and corrected metrics are retained in JSON.
+
+This correction is consequential: the raw two-tone window contains about
+2.66% in-band non-tone content, dominated by the startup tail; the fitted tail
+at 20 ms is about 9.47 mV. The corrected 0.0261% is a preliminary periodic-audio
+estimate, not a claim that startup behavior has disappeared. The time-constant
+assumption and preceding-window comparison limit its precision. A fully settled
+long-record check is appropriate if a later design decision hinges on much
+smaller differences; it is not required to discover the present architectural
+limitations. Noise and nonlinear magnetic behavior remain absent.
+
+![Switched spectra](../plots/audio_viability/switched.png)
+
+```powershell
+python sim/audio_viability_switched.py
+# Fast standalone numerical-analysis check:
+python sim/audio_viability_switched.py --check-analysis
+```
+
+Results: `results/audio_viability/switched.json`, per-run metrics/logs, and
+`detrend_check.json`. The six structural decks are retained alongside the AC
+checks. The benchmark uses direct command generation, not mute-controller RTL.
+
 ## What remains before a go/no-go decision
 
-The present screen already justifies pausing detailed implementation. A bounded
-switched harmonic/two-tone check can test whether commutation introduces another
-major limitation. Then decide whether to accept high output impedance and pursue
-one low-level quantization remedy. Existing error-feedback studies are relevant,
+The present screen already justifies pausing detailed implementation. The bounded
+switched harmonic/two-tone check is complete and does not expose another large
+failure in the nominal surrogate. Decide whether to accept high output impedance
+and pursue one low-level quantization remedy before more detailed engineering. Existing error-feedback studies are relevant,
 but their reduced in-band error comes with additional switching activity; a low
 THD harmonic-bin number alone must not hide added noise or power loss.
 

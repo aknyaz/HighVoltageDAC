@@ -4,9 +4,9 @@
 
 The user requested a preliminary quality verdict before more transition studies.
 See `audio_viability.md`: quantization/static THD, two-tone products, frequency
-response and output impedance now have an executed screen. Complete the bounded
-switched sine/two-tone benchmark, then judge whether the low-level limitation
-and load dependence justify further research. Longer mute fades and DC-rejection
+response and output impedance now have an executed screen. The bounded switched sine/two-tone benchmark is now complete (six runs).
+Judge whether the low-level limitation and load dependence justify further
+research before launching another detailed transition/implementation study. Longer mute fades and DC-rejection
 optimization are deferred behind this decision. Do not resume FPGA selection.
 
 ## Remaining simulation coverage

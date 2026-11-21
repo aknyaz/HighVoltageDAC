@@ -82,7 +82,8 @@ def main():
         axes[0,0].plot([20*np.log10(x['amplitude']) for x in rr],[x['inband_nontone_percent'] for x in rr],'o-',label=f'{frequency} Hz')
     axes[0,0].set(yscale='log',xlabel='Input amplitude (dBFS)',ylabel='In-band non-tone / signal (%)',title='All 20 Hz-20 kHz residual; no physical noise');axes[0,0].legend()
     for amplitude,(ff,sp) in spectra.items():
-        axes[0,1].plot(ff/1000,20*np.log10(np.maximum(abs(sp)/abs(sp[100]),1e-10)),label=f'{amplitude*100:g}% amplitude')
+        hb=np.arange(1,21)*100
+        axes[0,1].plot(ff[hb]/1000,20*np.log10(np.maximum(abs(sp[hb])/abs(sp[100]),1e-10)),'o-',markersize=3,label=f'{amplitude*100:g}% amplitude')
     axes[0,1].set(xlim=(0,20),ylim=(-120,5),xlabel='Frequency (kHz)',ylabel='dBc',title='1 kHz harmonic spectra');axes[0,1].legend()
     axes[1,0].semilogx(frequencies,20*np.log10(gain/(abs(transfer(1000))*np.sinc(1000/FS))))
     axes[1,0].set(xlabel='Frequency (Hz)',ylabel='Relative gain (dB)',title='Nominal frequency response including hold')
