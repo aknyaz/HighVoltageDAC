@@ -7,7 +7,7 @@ class Controller(Elaboratable):
     def __init__(self,dead_cycles=10,timeout_cycles=50000):
         assert dead_cycles>=1 and timeout_cycles>dead_cycles
         self.dead_cycles=dead_cycles;self.timeout_cycles=timeout_cycles
-        self.code=Signal(12);self.valid=Signal();self.arm=Signal();self.run=Signal()
+        self.code=Signal(12);self.code_b=Signal(12);self.independent=Signal();self.valid=Signal();self.arm=Signal();self.run=Signal()
         self.ready=Signal();self.fault_n=Signal();self.clear=Signal();self.reset_n=Signal()
         self.h=Signal(32);self.l=Signal(32);self.enable=Signal();self.busy=Signal();self.fault=Signal()
     def elaborate(self,platform):
@@ -17,7 +17,7 @@ class Controller(Elaboratable):
         countdown=Signal(range(self.dead_cycles+1));age=Signal(range(self.timeout_cycles+1))
         arm_old=Signal();m.d.sync+=arm_old.eq(self.arm)
         b=Signal(12);target=Signal(32)
-        m.d.comb += [b.eq(4095-self.code),target.eq(Cat(self.code[:9],*[self.code[9:]>i for i in range(7)],b[:9],*[b[9:]>i for i in range(7)])),
+        m.d.comb += [b.eq(Mux(self.independent,self.code_b,4095-self.code)),target.eq(Cat(self.code[:9],*[self.code[9:]>i for i in range(7)],b[:9],*[b[9:]>i for i in range(7)])),
                      self.busy.eq(countdown!=0),self.enable.eq(active & self.run & self.ready & self.fault_n & ~self.fault & self.reset_n),
                      self.h.eq(Mux(self.enable,hi,0)),self.l.eq(Mux(self.enable,lo,0))]
         with m.If(~self.fault_n | (active & ~self.ready) | (active & self.valid & self.busy) | (active & (age==self.timeout_cycles))):
@@ -41,7 +41,7 @@ class Controller(Elaboratable):
             with m.Elif(countdown==1):m.d.sync += [hi.eq(pending),lo.eq(~pending),countdown.eq(0)]
         return m
 
-def ports(d):return [d.code,d.valid,d.arm,d.run,d.ready,d.fault_n,d.clear,d.reset_n,d.h,d.l,d.enable,d.busy,d.fault]
+def ports(d):return [d.code,d.code_b,d.independent,d.valid,d.arm,d.run,d.ready,d.fault_n,d.clear,d.reset_n,d.h,d.l,d.enable,d.busy,d.fault]
 if __name__=='__main__':
     d=Controller();p=Path(__file__).parent/'generated';p.mkdir(exist_ok=True)
     (p/'rdac_control.v').write_text(verilog.convert(d,name='rdac_control',ports=ports(d)))

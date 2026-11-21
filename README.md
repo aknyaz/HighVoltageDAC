@@ -225,3 +225,77 @@ python sim/select_transformer.py
 ```
 
 [Supplier inquiry draft](docs/transformer_vendor_inquiry.md) is prepared but not sent.
+
+## Low-level quantization trade-off
+
+The [quantization study](docs/quantization_study.md) compares rounding, triangular
+dither and first/second-order error feedback over 128 numerical trials. At 1%
+input, second-order EF reduces modeled 20 Hz-20 kHz error from 0.611% to 0.292%,
+but adds switching activity. The conditional 650 V Coss-only idle estimate is
+38.3 W, so it remains a software candidate and is not enabled in HDL.
+
+```powershell
+python calc/quantization_study.py
+```
+
+The model requires a high-precision source before 12-bit quantization. Next:
+explicit idle/start/stop policy and transformer-energy validation, followed by
+full switched-model evaluation. This is not a measured hardware noise result.
+
+## Higher sample rates
+
+The [192/384/768 kS/s study](docs/sample_rate_study.md) reuses the same model and
+executes 384 trials. With second-order error feedback, 1%-input in-band error
+falls from 0.292% to 0.0531% and 0.00985%. Conditional Coss-only losses rise from
+10.4 to 20.4 and 40.9 W on that signal, and 38.3 to 76.4 and 153.0 W at silence.
+These are spectral/linear and hard-switch-budget scenarios, not new analog
+transient validation. Keep 192 kS/s as baseline and 384 kS/s as the next analog
+candidate; address idle and commutation behavior before adopting a higher rate.
+
+```powershell
+python calc/sample_rate_study.py
+```
+
+Results: `results/sample_rates/comparison.json`; plot: `plots/sample_rates/comparison.png`.
+
+## Quiet state and stored magnetic energy
+
+The [stored-energy study](docs/shutdown_study.md) runs 24 structural ngspice
+transients with both current polarities, loaded/open secondary and timestep
+refinement. In the imposed 50 uA, 5 V open-load fixture, holding all lower
+switches on reduces the primary peak from 4.517 V (all off, unclamped) to
+0.476 V, but leaves 13.77 uA after 20 ms. Generic rail clamps are not validated
+device models. A dedicated healthy-control quiet state remains a proposal;
+entry/exit sequencing and loss-of-drive behavior still require validation.
+
+```powershell
+python sim/shutdown_study.py
+```
+
+## Audio-to-quiet sequencing
+
+The [quiet-transition study](docs/quiet_transitions.md) completes 16 ngspice
+runs at 5 V, including timestep refinement, 100 ns arm skew and a seeded
++/-0.01% resistor-error scenario. A 2 ms audio fade followed by a 2 ms common-mode
+move to all-low reduces transition-error peak from 8.061 to 0.306 mV in the
+combined skew/mismatch case, relative to each sequence's ideal-code reference.
+Adopt this as the working mute candidate for controller integration; no HDL or
+hardware protection change is included. Keep supervised refresh during quiet:
+the existing 1 ms watchdog must not be allowed to mistake mute for lost PCM.
+
+```powershell
+python sim/quiet_transitions.py
+```
+
+Plot: `plots/quiet_transitions/comparison.png`; results: `results/quiet_transitions/summary.json`.
+The 1 kHz loaded fixture does not establish general click-free behavior or
+nonlinear magnetic limits.
+
+## Implemented FPGA mute logic
+
+The [mute wrapper](docs/fpga_mute.md) now implements the 24-bit PCM envelope,
+independent arm commands, reversible 384-sample ramps and supervised quiet hold
+in Amaranth, with generated Verilog. Executed RTL tests cover 1,761 default-rate
+samples, 547 additional reversal/fault samples and 36 phase/fault combinations.
+The existing 5,096-code core regression still passes. Device-mapped FPGA timing,
+resource fit and analog replay of actual RTL gate edges remain unvalidated.

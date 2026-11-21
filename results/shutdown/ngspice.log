@@ -1,0 +1,213 @@
+stderr Warning: can't find the initialization file spinit.
+stdout ******
+stdout ** ngspice-46 shared library
+stdout ** Creation Date: Apr 14 2026   05:15:29
+stdout ******
+stdout ******
+stdout ** ngspice-46 : Circuit level simulation program
+stdout ** Compiled with KLU Direct Linear Solver
+stdout ** The U. C. Berkeley CAD Group
+stdout ** Copyright 1985-1994, Regents of the University of California.
+stdout ** Copyright 2001-2025, The ngspice team.
+stdout ** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html
+stdout ** Please file your bug-reports at https://ngspice.sourceforge.io/bugrep.html
+stdout ** Creation Date: Apr 14 2026   05:15:29
+stdout ******
+stdout Note: No compatibility mode selected!
+stdout Circuit: stored energy release: off_unclamped, 5 v, initial magnetizing current 5e-05
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+stdout No. of Data Rows : 10280
+stdout Note: No compatibility mode selected!
+stdout Circuit: stored energy release: off_unclamped, 5 v, initial magnetizing current 5e-05
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+ Reference value :  1.21121e-02
+stdout No. of Data Rows : 20251
+stdout Note: No compatibility mode selected!
+stdout Circuit: stored energy release: off_unclamped, 5 v, initial magnetizing current -5e-05
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+stdout No. of Data Rows : 10280
+stdout Note: No compatibility mode selected!
+stdout Circuit: stored energy release: off_unclamped, 5 v, initial magnetizing current -5e-05
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+ Reference value :  1.29711e-03
+stdout No. of Data Rows : 20251
+stdout Note: No compatibility mode selected!
+stdout Circuit: stored energy release: off_unclamped, 5 v, initial magnetizing current 5e-05
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+ Reference value :  8.87709e-03
+stdout No. of Data Rows : 10243
+stdout Note: No compatibility mode selected!
+stdout Circuit: stored energy release: off_unclamped, 5 v, initial magnetizing current 5e-05
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+ Reference value :  1.86472e-02
+stdout No. of Data Rows : 20215
+stdout Note: No compatibility mode selected!
+stdout Circuit: stored energy release: off_unclamped, 5 v, initial magnetizing current -5e-05
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+stdout No. of Data Rows : 10243
+stdout Note: No compatibility mode selected!
+stdout Circuit: stored energy release: off_unclamped, 5 v, initial magnetizing current -5e-05
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+ Reference value :  1.00982e-02
+stdout No. of Data Rows : 20215
+stdout Note: No compatibility mode selected!
+stdout Circuit: stored energy release: off_clamped, 5 v, initial magnetizing current 5e-05
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+ Reference value :  9.71933e-03
+stdout No. of Data Rows : 10280
+stdout Note: No compatibility mode selected!
+stdout Circuit: stored energy release: off_clamped, 5 v, initial magnetizing current 5e-05
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+ Reference value :  3.14311e-03
+ Reference value :  1.27321e-02
+stdout No. of Data Rows : 20251
+stdout Note: No compatibility mode selected!
+stdout Circuit: stored energy release: off_clamped, 5 v, initial magnetizing current -5e-05
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+ Reference value :  3.26333e-03
+stdout No. of Data Rows : 10280
+stdout Note: No compatibility mode selected!
+stdout Circuit: stored energy release: off_clamped, 5 v, initial magnetizing current -5e-05
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+ Reference value :  9.30110e-04
+ Reference value :  1.02861e-02
+stdout No. of Data Rows : 20251
+stdout Note: No compatibility mode selected!
+stdout Circuit: stored energy release: off_clamped, 5 v, initial magnetizing current 5e-05
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+ Reference value :  2.00000e-08
+ Reference value :  1.93002e-02
+stdout No. of Data Rows : 10356
+stdout Note: No compatibility mode selected!
+stdout Circuit: stored energy release: off_clamped, 5 v, initial magnetizing current 5e-05
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+ Reference value :  8.72444e-03
+ Reference value :  1.81124e-02
+stdout No. of Data Rows : 20306
+stdout Note: No compatibility mode selected!
+stdout Circuit: stored energy release: off_clamped, 5 v, initial magnetizing current -5e-05
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+ Reference value :  1.29786e-02
+stdout No. of Data Rows : 10345
+stdout Note: No compatibility mode selected!
+stdout Circuit: stored energy release: off_clamped, 5 v, initial magnetizing current -5e-05
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+ Reference value :  5.71002e-03
+ Reference value :  1.58390e-02
+stdout No. of Data Rows : 20311
+stdout Note: No compatibility mode selected!
+stdout Circuit: stored energy release: park_low, 5 v, initial magnetizing current 5e-05
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+ Reference value :  9.95802e-03
+stdout No. of Data Rows : 10160
+stdout Note: No compatibility mode selected!
+stdout Circuit: stored energy release: park_low, 5 v, initial magnetizing current 5e-05
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+ Reference value :  4.28174e-03
+ Reference value :  1.42547e-02
+stdout No. of Data Rows : 20156
+stdout Note: No compatibility mode selected!
+stdout Circuit: stored energy release: park_low, 5 v, initial magnetizing current -5e-05
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+ Reference value :  7.04602e-03
+stdout No. of Data Rows : 10160
+stdout Note: No compatibility mode selected!
+stdout Circuit: stored energy release: park_low, 5 v, initial magnetizing current -5e-05
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+ Reference value :  3.18474e-03
+ Reference value :  1.32087e-02
+stdout No. of Data Rows : 20156
+stdout Note: No compatibility mode selected!
+stdout Circuit: stored energy release: park_low, 5 v, initial magnetizing current 5e-05
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+ Reference value :  4.13164e-03
+stdout No. of Data Rows : 10146
+stdout Note: No compatibility mode selected!
+stdout Circuit: stored energy release: park_low, 5 v, initial magnetizing current 5e-05
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+ Reference value :  1.66996e-03
+ Reference value :  1.20670e-02
+stdout No. of Data Rows : 20141
+stdout Note: No compatibility mode selected!
+stdout Circuit: stored energy release: park_low, 5 v, initial magnetizing current -5e-05
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+ Reference value :  3.09364e-03
+stdout No. of Data Rows : 10146
+stdout Note: No compatibility mode selected!
+stdout Circuit: stored energy release: park_low, 5 v, initial magnetizing current -5e-05
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+ Reference value :  8.43961e-04
+ Reference value :  1.05710e-02
+stdout No. of Data Rows : 20141

@@ -3,7 +3,7 @@
 (* top =  1  *)
 (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:14" *)
 (* generator = "Amaranth" *)
-module rdac_control(valid, arm, run, ready, fault_n, clear, reset_n, h, l, enable, busy, fault, code);
+module rdac_control(code_b, independent, valid, arm, run, ready, fault_n, clear, reset_n, h, l, enable, busy, fault, code);
   reg \$auto$verilog_backend.cc:2355:dump_module$1  = 0;
   wire [12:0] \$1 ;
   wire \$10 ;
@@ -16,7 +16,7 @@ module rdac_control(valid, arm, run, ready, fault_n, clear, reset_n, h, l, enabl
   wire \$17 ;
   wire \$18 ;
   wire \$19 ;
-  wire \$2 ;
+  wire [12:0] \$2 ;
   wire \$20 ;
   wire \$21 ;
   wire \$22 ;
@@ -36,16 +36,16 @@ module rdac_control(valid, arm, run, ready, fault_n, clear, reset_n, h, l, enabl
   wire \$35 ;
   wire \$36 ;
   wire \$37 ;
-  wire [16:0] \$38 ;
-  wire \$39 ;
+  wire \$38 ;
+  wire [16:0] \$39 ;
   wire \$4 ;
   wire \$40 ;
   wire \$41 ;
-  wire [31:0] \$42 ;
-  wire \$43 ;
+  wire \$42 ;
+  wire [31:0] \$43 ;
   wire \$44 ;
   wire \$45 ;
-  wire [31:0] \$46 ;
+  wire \$46 ;
   wire [31:0] \$47 ;
   wire [31:0] \$48 ;
   wire [31:0] \$49 ;
@@ -58,16 +58,17 @@ module rdac_control(valid, arm, run, ready, fault_n, clear, reset_n, h, l, enabl
   wire [31:0] \$55 ;
   wire [31:0] \$56 ;
   wire [31:0] \$57 ;
-  wire [4:0] \$58 ;
-  wire [31:0] \$59 ;
+  wire [31:0] \$58 ;
+  wire [4:0] \$59 ;
   wire \$6 ;
-  reg \$60 ;
+  wire [31:0] \$60 ;
   reg \$61 ;
-  reg [31:0] \$62 ;
+  reg \$62 ;
   reg [31:0] \$63 ;
-  reg [3:0] \$64 ;
-  reg [15:0] \$65 ;
-  reg [31:0] \$66 ;
+  reg [31:0] \$64 ;
+  reg [3:0] \$65 ;
+  reg [15:0] \$66 ;
+  reg [31:0] \$67 ;
   wire \$7 ;
   wire \$8 ;
   wire \$9 ;
@@ -93,6 +94,9 @@ module rdac_control(valid, arm, run, ready, fault_n, clear, reset_n, h, l, enabl
   (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:10" *)
   input [11:0] code;
   wire [11:0] code;
+  (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:10" *)
+  input [11:0] code_b;
+  wire [11:0] code_b;
   (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:17" *)
   reg [3:0] countdown = 4'h0;
   (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:12" *)
@@ -109,6 +113,9 @@ module rdac_control(valid, arm, run, ready, fault_n, clear, reset_n, h, l, enabl
   wire [31:0] h;
   (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:16" *)
   reg [31:0] hi = 32'd0;
+  (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:10" *)
+  input independent;
+  wire independent;
   (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:12" *)
   output [31:0] l;
   wire [31:0] l;
@@ -132,37 +139,39 @@ module rdac_control(valid, arm, run, ready, fault_n, clear, reset_n, h, l, enabl
   (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:10" *)
   input valid;
   wire valid;
-  assign \$29  = active & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:23" *) \$28 ;
-  assign \$30  = \$27  | (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:23" *) \$29 ;
-  assign \$31  = ~ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:25" *) run;
-  assign \$32  = ~ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:30" *) active;
-  assign \$33  = clear & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:27" *) fault_n;
-  assign \$34  = \$33  & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:27" *) ready;
-  assign \$35  = ~ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:31" *) \$signal ;
-  assign \$36  = arm & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:31" *) \$35 ;
-  assign \$37  = \$36  & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:31" *) ready;
-  assign \$38  = age + (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:33" *) 1'h1;
-  assign \$39  = countdown > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:40" *) 1'h1;
-  assign \$40  = countdown == (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:41" *) 1'h1;
-  assign \$41  = hi == (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:36" *) { \$15 , \$14 , \$13 , \$12 , \$11 , \$10 , \$9 , \$1 [8:0], \$8 , \$7 , \$6 , \$5 , \$4 , \$3 , \$2 , code[8:0] };
-  assign \$42  = ~ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:36" *) { \$15 , \$14 , \$13 , \$12 , \$11 , \$10 , \$9 , \$1 [8:0], \$8 , \$7 , \$6 , \$5 , \$4 , \$3 , \$2 , code[8:0] };
-  assign \$43  = lo == (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:36" *) \$42 ;
-  assign \$44  = \$41  & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:36" *) \$43 ;
-  assign \$45  = ~ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:39" *) \$44 ;
-  assign \$46  = hi ^ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:37" *) { \$15 , \$14 , \$13 , \$12 , \$11 , \$10 , \$9 , \$1 [8:0], \$8 , \$7 , \$6 , \$5 , \$4 , \$3 , \$2 , code[8:0] };
-  assign \$47  = ~ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:37" *) { \$15 , \$14 , \$13 , \$12 , \$11 , \$10 , \$9 , \$1 [8:0], \$8 , \$7 , \$6 , \$5 , \$4 , \$3 , \$2 , code[8:0] };
-  assign \$48  = lo ^ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:37" *) \$47 ;
-  assign \$49  = \$46  | (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:37" *) \$48 ;
-  assign \$50  = ~ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:39" *) \$49 ;
-  assign \$51  = hi & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:39" *) \$50 ;
-  assign \$52  = hi ^ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:37" *) { \$15 , \$14 , \$13 , \$12 , \$11 , \$10 , \$9 , \$1 [8:0], \$8 , \$7 , \$6 , \$5 , \$4 , \$3 , \$2 , code[8:0] };
-  assign \$53  = ~ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:37" *) { \$15 , \$14 , \$13 , \$12 , \$11 , \$10 , \$9 , \$1 [8:0], \$8 , \$7 , \$6 , \$5 , \$4 , \$3 , \$2 , code[8:0] };
-  assign \$54  = lo ^ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:37" *) \$53 ;
-  assign \$55  = \$52  | (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:37" *) \$54 ;
-  assign \$56  = ~ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:39" *) \$55 ;
-  assign \$57  = lo & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:39" *) \$56 ;
-  assign \$58  = countdown - (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:40" *) 1'h1;
-  assign \$59  = ~ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:41" *) pending;
+  assign \$28  = \$25  | (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:23" *) \$27 ;
+  assign \$29  = age == (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:23" *) 16'hc350;
+  assign \$30  = active & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:23" *) \$29 ;
+  assign \$31  = \$28  | (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:23" *) \$30 ;
+  assign \$32  = ~ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:25" *) run;
+  assign \$33  = ~ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:30" *) active;
+  assign \$34  = clear & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:27" *) fault_n;
+  assign \$35  = \$34  & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:27" *) ready;
+  assign \$36  = ~ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:31" *) \$signal ;
+  assign \$37  = arm & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:31" *) \$36 ;
+  assign \$38  = \$37  & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:31" *) ready;
+  assign \$39  = age + (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:33" *) 1'h1;
+  assign \$40  = countdown > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:40" *) 1'h1;
+  assign \$41  = countdown == (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:41" *) 1'h1;
+  assign \$42  = hi == (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:36" *) { \$16 , \$15 , \$14 , \$13 , \$12 , \$11 , \$10 , \$2 [8:0], \$9 , \$8 , \$7 , \$6 , \$5 , \$4 , \$3 , code[8:0] };
+  assign \$43  = ~ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:36" *) { \$16 , \$15 , \$14 , \$13 , \$12 , \$11 , \$10 , \$2 [8:0], \$9 , \$8 , \$7 , \$6 , \$5 , \$4 , \$3 , code[8:0] };
+  assign \$44  = lo == (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:36" *) \$43 ;
+  assign \$45  = \$42  & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:36" *) \$44 ;
+  assign \$46  = ~ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:39" *) \$45 ;
+  assign \$47  = hi ^ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:37" *) { \$16 , \$15 , \$14 , \$13 , \$12 , \$11 , \$10 , \$2 [8:0], \$9 , \$8 , \$7 , \$6 , \$5 , \$4 , \$3 , code[8:0] };
+  assign \$48  = ~ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:37" *) { \$16 , \$15 , \$14 , \$13 , \$12 , \$11 , \$10 , \$2 [8:0], \$9 , \$8 , \$7 , \$6 , \$5 , \$4 , \$3 , code[8:0] };
+  assign \$49  = lo ^ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:37" *) \$48 ;
+  assign \$50  = \$47  | (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:37" *) \$49 ;
+  assign \$51  = ~ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:39" *) \$50 ;
+  assign \$52  = hi & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:39" *) \$51 ;
+  assign \$53  = hi ^ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:37" *) { \$16 , \$15 , \$14 , \$13 , \$12 , \$11 , \$10 , \$2 [8:0], \$9 , \$8 , \$7 , \$6 , \$5 , \$4 , \$3 , code[8:0] };
+  assign \$54  = ~ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:37" *) { \$16 , \$15 , \$14 , \$13 , \$12 , \$11 , \$10 , \$2 [8:0], \$9 , \$8 , \$7 , \$6 , \$5 , \$4 , \$3 , code[8:0] };
+  assign \$55  = lo ^ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:37" *) \$54 ;
+  assign \$56  = \$53  | (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:37" *) \$55 ;
+  assign \$57  = ~ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:39" *) \$56 ;
+  assign \$58  = lo & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:39" *) \$57 ;
+  assign \$59  = countdown - (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:40" *) 1'h1;
+  assign \$60  = ~ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:41" *) pending;
   (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:18" *)
   always @(posedge 1'h0, negedge reset_n)
     if (!reset_n) \$signal  <= 1'h0;
@@ -170,192 +179,191 @@ module rdac_control(valid, arm, run, ready, fault_n, clear, reset_n, h, l, enabl
   (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:12" *)
   always @(posedge 1'h0, negedge reset_n)
     if (!reset_n) fault <= 1'h0;
-    else fault <= \$60 ;
+    else fault <= \$61 ;
   (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:16" *)
   always @(posedge 1'h0, negedge reset_n)
     if (!reset_n) active <= 1'h0;
-    else active <= \$61 ;
+    else active <= \$62 ;
   (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:16" *)
   always @(posedge 1'h0, negedge reset_n)
     if (!reset_n) hi <= 32'd0;
-    else hi <= \$62 ;
+    else hi <= \$63 ;
   (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:16" *)
   always @(posedge 1'h0, negedge reset_n)
     if (!reset_n) lo <= 32'd0;
-    else lo <= \$63 ;
+    else lo <= \$64 ;
   (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:17" *)
   always @(posedge 1'h0, negedge reset_n)
     if (!reset_n) countdown <= 4'h0;
-    else countdown <= \$64 ;
+    else countdown <= \$65 ;
   (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:17" *)
   always @(posedge 1'h0, negedge reset_n)
     if (!reset_n) age <= 16'h0000;
-    else age <= \$65 ;
+    else age <= \$66 ;
   (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:16" *)
   always @(posedge 1'h0, negedge reset_n)
     if (!reset_n) pending <= 32'd0;
-    else pending <= \$66 ;
+    else pending <= \$67 ;
   assign rst = ~ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:15" *) reset_n;
   assign \$1  = 12'hfff - (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) code;
-  assign \$2  = code[11:9] > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) 1'h0;
-  assign \$3  = code[11:9] > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) 1'h1;
-  assign \$4  = code[11:9] > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) 2'h2;
-  assign \$5  = code[11:9] > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) 2'h3;
-  assign \$6  = code[11:9] > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) 3'h4;
-  assign \$7  = code[11:9] > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) 3'h5;
-  assign \$8  = code[11:9] > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) 3'h6;
-  assign \$9  = \$1 [11:9] > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) 1'h0;
-  assign \$10  = \$1 [11:9] > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) 1'h1;
-  assign \$11  = \$1 [11:9] > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) 2'h2;
-  assign \$12  = \$1 [11:9] > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) 2'h3;
-  assign \$13  = \$1 [11:9] > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) 3'h4;
-  assign \$14  = \$1 [11:9] > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) 3'h5;
-  assign \$15  = \$1 [11:9] > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) 3'h6;
+  assign \$2  = independent ? (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) { 1'h0, code_b } : \$1 ;
+  assign \$3  = code[11:9] > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) 1'h0;
+  assign \$4  = code[11:9] > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) 1'h1;
+  assign \$5  = code[11:9] > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) 2'h2;
+  assign \$6  = code[11:9] > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) 2'h3;
+  assign \$7  = code[11:9] > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) 3'h4;
+  assign \$8  = code[11:9] > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) 3'h5;
+  assign \$9  = code[11:9] > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) 3'h6;
+  assign \$10  = \$2 [11:9] > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) 1'h0;
+  assign \$11  = \$2 [11:9] > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) 1'h1;
+  assign \$12  = \$2 [11:9] > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) 2'h2;
+  assign \$13  = \$2 [11:9] > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) 2'h3;
+  assign \$14  = \$2 [11:9] > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) 3'h4;
+  assign \$15  = \$2 [11:9] > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) 3'h5;
+  assign \$16  = \$2 [11:9] > (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:20" *) 3'h6;
   assign busy = | (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:21" *) countdown;
-  assign \$16  = active & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:21" *) run;
-  assign \$17  = \$16  & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:21" *) ready;
-  assign \$18  = \$17  & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:21" *) fault_n;
-  assign \$19  = ~ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:21" *) fault;
-  assign \$20  = \$18  & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:21" *) \$19 ;
-  assign enable = \$20  & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:21" *) reset_n;
+  assign \$17  = active & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:21" *) run;
+  assign \$18  = \$17  & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:21" *) ready;
+  assign \$19  = \$18  & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:21" *) fault_n;
+  assign \$20  = ~ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:21" *) fault;
+  assign \$21  = \$19  & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:21" *) \$20 ;
+  assign enable = \$21  & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:21" *) reset_n;
   assign h = enable ? (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:22" *) hi : 32'd0;
   assign l = enable ? (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:22" *) lo : 32'd0;
-  assign \$21  = ~ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:23" *) fault_n;
-  assign \$22  = ~ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:23" *) ready;
-  assign \$23  = active & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:23" *) \$22 ;
-  assign \$24  = \$21  | (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:23" *) \$23 ;
-  assign \$25  = active & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:23" *) valid;
-  assign \$26  = \$25  & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:23" *) busy;
-  assign \$27  = \$24  | (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:23" *) \$26 ;
-  assign \$28  = age == (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:23" *) 16'hc350;
+  assign \$22  = ~ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:23" *) fault_n;
+  assign \$23  = ~ (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:23" *) ready;
+  assign \$24  = active & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:23" *) \$23 ;
+  assign \$25  = \$22  | (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:23" *) \$24 ;
+  assign \$26  = active & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:23" *) valid;
+  assign \$27  = \$26  & (* src = "C:\\Users\\aknya\\MyProjects\\HighVoltageDAC\\control\\controller.py:23" *) busy;
   always @* begin
     if (\$auto$verilog_backend.cc:2355:dump_module$1 ) begin end
-    \$60  = fault;
-    if (\$30 ) begin
-      \$60  = 1'h1;
-    end else if (\$31 ) begin
-      if (\$34 ) begin
-        \$60  = 1'h0;
-      end
-    end
-  end
-  always @* begin
-    if (\$auto$verilog_backend.cc:2355:dump_module$1 ) begin end
-    \$61  = active;
-    if (\$30 ) begin
-      \$61  = 1'h0;
-    end else if (\$31 ) begin
-      \$61  = 1'h0;
-    end else if (fault) begin
-      \$61  = 1'h0;
+    \$61  = fault;
+    if (\$31 ) begin
+      \$61  = 1'h1;
     end else if (\$32 ) begin
-      if (\$37 ) begin
-        \$61  = 1'h1;
+      if (\$35 ) begin
+        \$61  = 1'h0;
       end
     end
   end
   always @* begin
     if (\$auto$verilog_backend.cc:2355:dump_module$1 ) begin end
-    \$62  = hi;
-    (* full_case = 32'd1 *)
-    if (\$30 ) begin
-      \$62  = 32'd0;
-    end else if (\$31 ) begin
-      \$62  = 32'd0;
-    end else if (fault) begin
-      \$62  = 32'd0;
+    \$62  = active;
+    if (\$31 ) begin
+      \$62  = 1'h0;
     end else if (\$32 ) begin
-    end else begin
-      if (valid) begin
-        if (\$45 ) begin
-          \$62  = \$51 ;
-        end
-      end else if (\$39 ) begin
-      end else if (\$40 ) begin
-        \$62  = pending;
+      \$62  = 1'h0;
+    end else if (fault) begin
+      \$62  = 1'h0;
+    end else if (\$33 ) begin
+      if (\$38 ) begin
+        \$62  = 1'h1;
       end
     end
   end
   always @* begin
     if (\$auto$verilog_backend.cc:2355:dump_module$1 ) begin end
-    \$63  = lo;
+    \$63  = hi;
     (* full_case = 32'd1 *)
-    if (\$30 ) begin
+    if (\$31 ) begin
       \$63  = 32'd0;
-    end else if (\$31 ) begin
+    end else if (\$32 ) begin
       \$63  = 32'd0;
     end else if (fault) begin
       \$63  = 32'd0;
-    end else if (\$32 ) begin
+    end else if (\$33 ) begin
     end else begin
       if (valid) begin
-        if (\$45 ) begin
-          \$63  = \$57 ;
+        if (\$46 ) begin
+          \$63  = \$52 ;
         end
-      end else if (\$39 ) begin
       end else if (\$40 ) begin
-        \$63  = \$59 ;
+      end else if (\$41 ) begin
+        \$63  = pending;
       end
     end
   end
   always @* begin
     if (\$auto$verilog_backend.cc:2355:dump_module$1 ) begin end
-    \$64  = countdown;
+    \$64  = lo;
     (* full_case = 32'd1 *)
-    if (\$30 ) begin
-      \$64  = 4'h0;
-    end else if (\$31 ) begin
-      \$64  = 4'h0;
-    end else if (fault) begin
-      \$64  = 4'h0;
+    if (\$31 ) begin
+      \$64  = 32'd0;
     end else if (\$32 ) begin
+      \$64  = 32'd0;
+    end else if (fault) begin
+      \$64  = 32'd0;
+    end else if (\$33 ) begin
     end else begin
       if (valid) begin
-        if (\$45 ) begin
-          \$64  = 4'ha;
+        if (\$46 ) begin
+          \$64  = \$58 ;
         end
-      end else if (\$39 ) begin
-        \$64  = \$58 [3:0];
       end else if (\$40 ) begin
-        \$64  = 4'h0;
+      end else if (\$41 ) begin
+        \$64  = \$60 ;
       end
     end
   end
   always @* begin
     if (\$auto$verilog_backend.cc:2355:dump_module$1 ) begin end
-    \$65  = age;
+    \$65  = countdown;
     (* full_case = 32'd1 *)
-    if (\$30 ) begin
-      \$65  = 16'h0000;
-    end else if (\$31 ) begin
-      \$65  = 16'h0000;
-    end else if (fault) begin
+    if (\$31 ) begin
+      \$65  = 4'h0;
     end else if (\$32 ) begin
-      if (\$37 ) begin
-        \$65  = 16'h0000;
-      end
+      \$65  = 4'h0;
+    end else if (fault) begin
+      \$65  = 4'h0;
+    end else if (\$33 ) begin
     end else begin
-      \$65  = \$38 [15:0];
       if (valid) begin
-        \$65  = 16'h0000;
+        if (\$46 ) begin
+          \$65  = 4'ha;
+        end
+      end else if (\$40 ) begin
+        \$65  = \$59 [3:0];
+      end else if (\$41 ) begin
+        \$65  = 4'h0;
       end
     end
   end
   always @* begin
     if (\$auto$verilog_backend.cc:2355:dump_module$1 ) begin end
-    \$66  = pending;
+    \$66  = age;
     (* full_case = 32'd1 *)
-    if (\$30 ) begin
-    end else if (\$31 ) begin
-    end else if (fault) begin
+    if (\$31 ) begin
+      \$66  = 16'h0000;
     end else if (\$32 ) begin
+      \$66  = 16'h0000;
+    end else if (fault) begin
+    end else if (\$33 ) begin
+      if (\$38 ) begin
+        \$66  = 16'h0000;
+      end
     end else begin
+      \$66  = \$39 [15:0];
       if (valid) begin
-        \$66  = { \$15 , \$14 , \$13 , \$12 , \$11 , \$10 , \$9 , \$1 [8:0], \$8 , \$7 , \$6 , \$5 , \$4 , \$3 , \$2 , code[8:0] };
+        \$66  = 16'h0000;
       end
     end
   end
-  assign b = \$1 [11:0];
-  assign target = { \$15 , \$14 , \$13 , \$12 , \$11 , \$10 , \$9 , \$1 [8:0], \$8 , \$7 , \$6 , \$5 , \$4 , \$3 , \$2 , code[8:0] };
+  always @* begin
+    if (\$auto$verilog_backend.cc:2355:dump_module$1 ) begin end
+    \$67  = pending;
+    (* full_case = 32'd1 *)
+    if (\$31 ) begin
+    end else if (\$32 ) begin
+    end else if (fault) begin
+    end else if (\$33 ) begin
+    end else begin
+      if (valid) begin
+        \$67  = { \$16 , \$15 , \$14 , \$13 , \$12 , \$11 , \$10 , \$2 [8:0], \$9 , \$8 , \$7 , \$6 , \$5 , \$4 , \$3 , code[8:0] };
+      end
+    end
+  end
+  assign b = \$2 [11:0];
+  assign target = { \$16 , \$15 , \$14 , \$13 , \$12 , \$11 , \$10 , \$2 [8:0], \$9 , \$8 , \$7 , \$6 , \$5 , \$4 , \$3 , code[8:0] };
   assign clk = 1'h0;
 endmodule

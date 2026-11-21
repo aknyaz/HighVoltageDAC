@@ -1,0 +1,20 @@
+{
+  "default_samples": 1761,
+  "nonoverlap_and_timing_checks": 21136,
+  "ramp_samples": 384,
+  "ramp_ms_at_192ksps": 2.0,
+  "quiet_refresh_samples": 220,
+  "default_watchdog_cycles": 50000,
+  "reversal_and_fault_samples": 547,
+  "additional_timing_checks": 6765,
+  "phase_fault_cases": 36,
+  "phases": [
+    "park",
+    "up",
+    "fade_in",
+    "play",
+    "fade_out",
+    "down"
+  ],
+  "scope": "Executed Amaranth RTL; not routed FPGA timing, analog co-simulation or hardware validation."
+}

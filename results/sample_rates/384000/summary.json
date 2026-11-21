@@ -1,0 +1,713 @@
+{
+  "sample_rate_hz": 384000,
+  "samples": 76800,
+  "warmup_samples": 3840,
+  "seeds": 8,
+  "modes": [
+    "round",
+    "tpdf",
+    "ef1_tpdf",
+    "ef2_tpdf"
+  ],
+  "rows": [
+    {
+      "amplitude": 0.9,
+      "mode": "round",
+      "statistics": {
+        "inband_error_percent_of_signal": {
+          "median": 0.005309172804864323,
+          "min": 0.005309172804864323,
+          "max": 0.005309172804864323
+        },
+        "inband_error_dbfs": {
+          "median": -86.41461258833212,
+          "min": -86.41461258833212,
+          "max": -86.41461258833212
+        },
+        "harmonic_bins_percent_of_signal": {
+          "median": 0.004913734339439265,
+          "min": 0.004913734339439265,
+          "max": 0.004913734339439265
+        },
+        "outband_error_rms_v": {
+          "median": 7.094974159316432e-06,
+          "min": 7.094974159316432e-06,
+          "max": 7.094974159316432e-06
+        },
+        "branch_transitions_per_s": {
+          "median": 2783936.2491699113,
+          "min": 2783936.2491699113,
+          "max": 2783936.2491699113
+        },
+        "conditional_coss_loss_650v_w": {
+          "median": 39.009558699462225,
+          "min": 39.009558699462225,
+          "max": 39.009558699462225
+        },
+        "clipped_samples": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "average_code_error": {
+          "median": -1.3879268105180624e-14,
+          "min": -1.3879268105180624e-14,
+          "max": -1.3879268105180624e-14
+        }
+      }
+    },
+    {
+      "amplitude": 0.9,
+      "mode": "tpdf",
+      "statistics": {
+        "inband_error_percent_of_signal": {
+          "median": 0.012259682975904799,
+          "min": 0.012121487776082315,
+          "max": 0.012531208396531839
+        },
+        "inband_error_dbfs": {
+          "median": -79.14556729051677,
+          "min": -79.24403125406613,
+          "max": -78.95529076221409
+        },
+        "harmonic_bins_percent_of_signal": {
+          "median": 0.00083643278849729,
+          "min": 0.0007733091218408962,
+          "max": 0.0009703556386069731
+        },
+        "outband_error_rms_v": {
+          "median": 1.2482082471927552e-05,
+          "min": 1.2424514902597827e-05,
+          "max": 1.2534249760151131e-05
+        },
+        "branch_transitions_per_s": {
+          "median": 2808981.575280928,
+          "min": 2805886.5349809243,
+          "max": 2809966.588106616
+        },
+        "conditional_coss_loss_650v_w": {
+          "median": 39.360503200927084,
+          "min": 39.31713433560332,
+          "max": 39.37430557002044
+        },
+        "clipped_samples": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "average_code_error": {
+          "median": -0.0001302083333472126,
+          "min": -0.0019401041666805459,
+          "max": 0.0014973958333194541
+        }
+      }
+    },
+    {
+      "amplitude": 0.9,
+      "mode": "ef1_tpdf",
+      "statistics": {
+        "inband_error_percent_of_signal": {
+          "median": 0.002324379279457932,
+          "min": 0.002297324498479491,
+          "max": 0.0023464283880204042
+        },
+        "inband_error_dbfs": {
+          "median": -93.58902405520432,
+          "min": -93.69070293347333,
+          "max": -93.50700372579328
+        },
+        "harmonic_bins_percent_of_signal": {
+          "median": 0.0001584636047180795,
+          "min": 0.0001479286424550016,
+          "max": 0.00019558973646477488
+        },
+        "outband_error_rms_v": {
+          "median": 1.6940656831758726e-05,
+          "min": 1.6853478685517063e-05,
+          "max": 1.6987525643491124e-05
+        },
+        "branch_transitions_per_s": {
+          "median": 2772976.106459719,
+          "min": 2770916.0796364537,
+          "max": 2776066.1466946183
+        },
+        "conditional_coss_loss_650v_w": {
+          "median": 38.855981069753504,
+          "min": 38.82711520139584,
+          "max": 38.899279872289995
+        },
+        "clipped_samples": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "average_code_error": {
+          "median": -6.510416680545935e-06,
+          "min": -1.3020833347212601e-05,
+          "max": 1.3020833319454066e-05
+        }
+      }
+    },
+    {
+      "amplitude": 0.9,
+      "mode": "ef2_tpdf",
+      "statistics": {
+        "inband_error_percent_of_signal": {
+          "median": 0.000588366746378856,
+          "min": 0.0005770196596156936,
+          "max": 0.0006185685396143457
+        },
+        "inband_error_dbfs": {
+          "median": -105.52225590432315,
+          "min": -105.69133760642954,
+          "max": -105.08739325083938
+        },
+        "harmonic_bins_percent_of_signal": {
+          "median": 4.3462012913796495e-05,
+          "min": 3.8216249398151885e-05,
+          "max": 4.9193540785456944e-05
+        },
+        "outband_error_rms_v": {
+          "median": 2.78294345866967e-05,
+          "min": 2.7783718307898708e-05,
+          "max": 2.7921917579943097e-05
+        },
+        "branch_transitions_per_s": {
+          "median": 2756085.886534981,
+          "min": 2750765.8172632456,
+          "max": 2758815.922082319
+        },
+        "conditional_coss_loss_650v_w": {
+          "median": 38.619308974335596,
+          "min": 38.54476216867406,
+          "max": 38.657563256188226
+        },
+        "clipped_samples": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "average_code_error": {
+          "median": -6.510416680545935e-06,
+          "min": -2.6041666680545933e-05,
+          "max": 1.3020833319454066e-05
+        }
+      }
+    },
+    {
+      "amplitude": 0.01,
+      "mode": "round",
+      "statistics": {
+        "inband_error_percent_of_signal": {
+          "median": 0.3493845716572723,
+          "min": 0.3493845716572723,
+          "max": 0.3493845716572723
+        },
+        "inband_error_dbfs": {
+          "median": -89.13392553554777,
+          "min": -89.13392553554777,
+          "max": -89.13392553554777
+        },
+        "harmonic_bins_percent_of_signal": {
+          "median": 0.3465961395120994,
+          "min": 0.3465961395120994,
+          "max": 0.3465961395120994
+        },
+        "outband_error_rms_v": {
+          "median": 7.412396366797363e-06,
+          "min": 7.412396366797363e-06,
+          "max": 7.412396366797363e-06
+        },
+        "branch_transitions_per_s": {
+          "median": 343904.47792288964,
+          "min": 343904.47792288964,
+          "max": 343904.47792288964
+        },
+        "conditional_coss_loss_650v_w": {
+          "median": 4.8189185088347495,
+          "min": 4.8189185088347495,
+          "max": 4.8189185088347495
+        },
+        "clipped_samples": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "average_code_error": {
+          "median": 1.8622140866379292e-15,
+          "min": 1.8622140866379292e-15,
+          "max": 1.8622140866379292e-15
+        }
+      }
+    },
+    {
+      "amplitude": 0.01,
+      "mode": "tpdf",
+      "statistics": {
+        "inband_error_percent_of_signal": {
+          "median": 1.1080923465288528,
+          "min": 1.103851225330932,
+          "max": 1.135979660284141
+        },
+        "inband_error_dbfs": {
+          "median": -79.10849308737855,
+          "min": -79.14178911858136,
+          "max": -78.892588891962
+        },
+        "harmonic_bins_percent_of_signal": {
+          "median": 0.07545765518608913,
+          "min": 0.06568768688188673,
+          "max": 0.08805851035114587
+        },
+        "outband_error_rms_v": {
+          "median": 1.2478222672702417e-05,
+          "min": 1.2470227527847672e-05,
+          "max": 1.2551458711075177e-05
+        },
+        "branch_transitions_per_s": {
+          "median": 772980.0648445943,
+          "min": 767449.9928384484,
+          "max": 776110.1056003333
+        },
+        "conditional_coss_loss_650v_w": {
+          "median": 10.83128653612677,
+          "min": 10.753797093399651,
+          "max": 10.87514584096147
+        },
+        "clipped_samples": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "average_code_error": {
+          "median": 0.0003385416666685289,
+          "min": -0.0008203124999981377,
+          "max": 0.002799479166668529
+        }
+      }
+    },
+    {
+      "amplitude": 0.01,
+      "mode": "ef1_tpdf",
+      "statistics": {
+        "inband_error_percent_of_signal": {
+          "median": 0.20900274269266966,
+          "min": 0.2055958801532563,
+          "max": 0.2105572862913632
+        },
+        "inband_error_dbfs": {
+          "median": -93.59698376907237,
+          "min": -93.73971184456964,
+          "max": -93.53259450625829
+        },
+        "harmonic_bins_percent_of_signal": {
+          "median": 0.015277216112659489,
+          "min": 0.012193131988287878,
+          "max": 0.018487799497147
+        },
+        "outband_error_rms_v": {
+          "median": 1.693865227933942e-05,
+          "min": 1.6902969179565282e-05,
+          "max": 1.701583532682107e-05
+        },
+        "branch_transitions_per_s": {
+          "median": 1122364.6141225798,
+          "min": 1118784.5675073895,
+          "max": 1127974.6871704059
+        },
+        "conditional_coss_loss_650v_w": {
+          "median": 15.726993859815881,
+          "min": 15.676828904126355,
+          "max": 15.805604307139415
+        },
+        "clipped_samples": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "average_code_error": {
+          "median": -6.5104166648044524e-06,
+          "min": -1.3020833331471119e-05,
+          "max": 1.3020833335195548e-05
+        }
+      }
+    },
+    {
+      "amplitude": 0.01,
+      "mode": "ef2_tpdf",
+      "statistics": {
+        "inband_error_percent_of_signal": {
+          "median": 0.053081457922519906,
+          "min": 0.052165832244274894,
+          "max": 0.05401203524763251
+        },
+        "inband_error_dbfs": {
+          "median": -105.50116243353051,
+          "min": -105.65227719141686,
+          "max": -105.35018915196447
+        },
+        "harmonic_bins_percent_of_signal": {
+          "median": 0.003623180294413044,
+          "min": 0.002725691409140103,
+          "max": 0.004911785210495494
+        },
+        "outband_error_rms_v": {
+          "median": 2.7835858696362483e-05,
+          "min": 2.7701019094793212e-05,
+          "max": 2.796296994834175e-05
+        },
+        "branch_transitions_per_s": {
+          "median": 1454253.9355981199,
+          "min": 1447188.8436047344,
+          "max": 1463829.0602742224
+        },
+        "conditional_coss_loss_650v_w": {
+          "median": 20.3775514908267,
+          "min": 20.278552772405884,
+          "max": 20.511721728460003
+        },
+        "clipped_samples": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "average_code_error": {
+          "median": -6.5104166648044524e-06,
+          "min": -1.3020833331471119e-05,
+          "max": 1.3020833335195548e-05
+        }
+      }
+    },
+    {
+      "amplitude": 0.001,
+      "mode": "round",
+      "statistics": {
+        "inband_error_percent_of_signal": {
+          "median": 19.76406944465175,
+          "min": 19.76406944465175,
+          "max": 19.76406944465175
+        },
+        "inband_error_dbfs": {
+          "median": -74.08247257614619,
+          "min": -74.08247257614619,
+          "max": -74.08247257614619
+        },
+        "harmonic_bins_percent_of_signal": {
+          "median": 19.712775979460186,
+          "min": 19.712775979460186,
+          "max": 19.712775979460186
+        },
+        "outband_error_rms_v": {
+          "median": 4.912585416934834e-06,
+          "min": 4.912585416934834e-06,
+          "max": 4.912585416934834e-06
+        },
+        "branch_transitions_per_s": {
+          "median": 63900.83204208388,
+          "min": 63900.83204208388,
+          "max": 63900.83204208388
+        },
+        "conditional_coss_loss_650v_w": {
+          "median": 0.8954024213856949,
+          "min": 0.8954024213856949,
+          "max": 0.8954024213856949
+        },
+        "clipped_samples": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "average_code_error": {
+          "median": 6.158037043254202e-16,
+          "min": 6.158037043254202e-16,
+          "max": 6.158037043254202e-16
+        }
+      }
+    },
+    {
+      "amplitude": 0.001,
+      "mode": "tpdf",
+      "statistics": {
+        "inband_error_percent_of_signal": {
+          "median": 11.0544895237011,
+          "min": 10.937274146606173,
+          "max": 11.1582152100076
+        },
+        "inband_error_dbfs": {
+          "median": -79.12926529838501,
+          "min": -79.22181804011562,
+          "max": -79.0481053309679
+        },
+        "harmonic_bins_percent_of_signal": {
+          "median": 0.7495393064014789,
+          "min": 0.6115422704338114,
+          "max": 0.8578111284212891
+        },
+        "outband_error_rms_v": {
+          "median": 1.2487971596006187e-05,
+          "min": 1.2409860849152388e-05,
+          "max": 1.2510518517932178e-05
+        },
+        "branch_transitions_per_s": {
+          "median": 1024843.3443143792,
+          "min": 1012453.1829841534,
+          "max": 1033173.4527793331
+        },
+        "conditional_coss_loss_650v_w": {
+          "median": 14.360489256787194,
+          "min": 14.186873669917572,
+          "max": 14.477213860388805
+        },
+        "clipped_samples": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "average_code_error": {
+          "median": 0.0002278645833339491,
+          "min": -0.0026692708333327176,
+          "max": 0.0019791666666672827
+        }
+      }
+    },
+    {
+      "amplitude": 0.001,
+      "mode": "ef1_tpdf",
+      "statistics": {
+        "inband_error_percent_of_signal": {
+          "median": 2.087201214857306,
+          "min": 2.0553769175514796,
+          "max": 2.1370712134500622
+        },
+        "inband_error_dbfs": {
+          "median": -93.608754656359,
+          "min": -93.74217050054958,
+          "max": -93.40362011270275
+        },
+        "harmonic_bins_percent_of_signal": {
+          "median": 0.14505286870860654,
+          "min": 0.12447126512520776,
+          "max": 0.17014974357043525
+        },
+        "outband_error_rms_v": {
+          "median": 1.6944797819071996e-05,
+          "min": 1.6878467105778346e-05,
+          "max": 1.699960814541296e-05
+        },
+        "branch_transitions_per_s": {
+          "median": 1703382.1794554617,
+          "min": 1695692.0793239495,
+          "max": 1709962.2651336605
+        },
+        "conditional_coss_loss_650v_w": {
+          "median": 23.868429866847222,
+          "min": 23.760673300016922,
+          "max": 23.96063249490227
+        },
+        "clipped_samples": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "average_code_error": {
+          "median": -6.510416666050863e-06,
+          "min": -1.302083333271753e-05,
+          "max": 1.3020833333949137e-05
+        }
+      }
+    },
+    {
+      "amplitude": 0.001,
+      "mode": "ef2_tpdf",
+      "statistics": {
+        "inband_error_percent_of_signal": {
+          "median": 0.5344086472779268,
+          "min": 0.5169257271345629,
+          "max": 0.5415254416163253
+        },
+        "inband_error_dbfs": {
+          "median": -105.44254196704443,
+          "min": -105.73143705351094,
+          "max": -105.32762269604473
+        },
+        "harmonic_bins_percent_of_signal": {
+          "median": 0.03773985602056424,
+          "min": 0.030841493783222873,
+          "max": 0.04441237137298857
+        },
+        "outband_error_rms_v": {
+          "median": 2.785807089760044e-05,
+          "min": 2.7704565152709354e-05,
+          "max": 2.7918663957088443e-05
+        },
+        "branch_transitions_per_s": {
+          "median": 2741240.693238193,
+          "min": 2724465.47481087,
+          "max": 2755745.88210784
+        },
+        "conditional_coss_loss_650v_w": {
+          "median": 38.411292558913516,
+          "min": 38.176231907602954,
+          "max": 38.614544704800835
+        },
+        "clipped_samples": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "average_code_error": {
+          "median": -1.302083333271753e-05,
+          "min": -1.302083333271753e-05,
+          "max": 1.3020833333949137e-05
+        }
+      }
+    },
+    {
+      "amplitude": 0.0,
+      "mode": "round",
+      "statistics": {
+        "inband_error_dbfs": {
+          "median": -400.0,
+          "min": -400.0,
+          "max": -400.0
+        },
+        "outband_error_rms_v": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "branch_transitions_per_s": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "conditional_coss_loss_650v_w": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "clipped_samples": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "average_code_error": {
+          "median": 0.5,
+          "min": 0.5,
+          "max": 0.5
+        }
+      }
+    },
+    {
+      "amplitude": 0.0,
+      "mode": "tpdf",
+      "statistics": {
+        "inband_error_dbfs": {
+          "median": -79.11701078405571,
+          "min": -79.21202330206009,
+          "max": -79.0234620658433
+        },
+        "outband_error_rms_v": {
+          "median": 1.2492348286600652e-05,
+          "min": 1.2479393812208974e-05,
+          "max": 1.2517307497858896e-05
+        },
+        "branch_transitions_per_s": {
+          "median": 3849250.1204442764,
+          "min": 3829149.8587221187,
+          "max": 3868750.3743538326
+        },
+        "conditional_coss_loss_650v_w": {
+          "median": 53.937136156460355,
+          "min": 53.65548375161134,
+          "max": 54.21038102683628
+        },
+        "clipped_samples": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "average_code_error": {
+          "median": 0.0003385416666666667,
+          "min": -0.002395833333333333,
+          "max": 0.0027213541666666666
+        }
+      }
+    },
+    {
+      "amplitude": 0.0,
+      "mode": "ef1_tpdf",
+      "statistics": {
+        "inband_error_dbfs": {
+          "median": -93.62813969613362,
+          "min": -93.75285155324796,
+          "max": -93.50505955671862
+        },
+        "outband_error_rms_v": {
+          "median": 1.6958450465508546e-05,
+          "min": 1.6870901047947036e-05,
+          "max": 1.7015370863960265e-05
+        },
+        "branch_transitions_per_s": {
+          "median": 5289668.875896822,
+          "min": 5274888.683446399,
+          "max": 5307039.102071642
+        },
+        "conditional_coss_loss_650v_w": {
+          "median": 74.12082391489471,
+          "min": 73.91371831570723,
+          "max": 74.36422203789111
+        },
+        "clipped_samples": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "average_code_error": {
+          "median": -6.510416666666667e-06,
+          "min": -1.3020833333333334e-05,
+          "max": 1.3020833333333334e-05
+        }
+      }
+    },
+    {
+      "amplitude": 0.0,
+      "mode": "ef2_tpdf",
+      "statistics": {
+        "inband_error_dbfs": {
+          "median": -105.46467090528682,
+          "min": -105.58785831214747,
+          "max": -105.38354754994968
+        },
+        "outband_error_rms_v": {
+          "median": 2.7861165556447352e-05,
+          "min": 2.7709908465987372e-05,
+          "max": 2.7936095208101682e-05
+        },
+        "branch_transitions_per_s": {
+          "median": 5454781.025794607,
+          "min": 5438570.81472415,
+          "max": 5472211.252750687
+        },
+        "conditional_coss_loss_650v_w": {
+          "median": 76.43443727631869,
+          "min": 76.20729371997031,
+          "max": 76.67867615276239
+        },
+        "clipped_samples": {
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "average_code_error": {
+          "median": -6.510416666666667e-06,
+          "min": -1.3020833333333334e-05,
+          "max": 0.0
+        }
+      }
+    }
+  ],
+  "transformer": "LL1679/PP B equivalent: assumed 100 pF and 100 kohm core loss",
+  "loss_estimate": "Transition rate times 650*Qoss(650) from existing approximate charge curve; hard-switch scenario only, excludes driver/gate/resistor losses",
+  "scope": "Ideal 384 kS/s held-code spectral model, 5 V scaling. No 50 MHz jitter, blanking, mismatch, switching transients, physical noise or HDL. Baseband to Nyquist only; sampling images above 192 kHz omitted."
+}

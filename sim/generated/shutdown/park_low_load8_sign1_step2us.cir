@@ -1,0 +1,240 @@
+Stored energy release: park_low, 5 V, initial magnetizing current 5e-05
+Vref ref 0 5
+.options reltol=1e-7 abstol=1e-13 method=gear
+Ra0 a da0 21605169.6750667
+Rha0 da0 ref 1e12
+Rla0 da0 0 0.35
+Cha0 da0 ref 20p IC=-5
+Cla0 da0 0 20p IC=0
+Bdla0 0 da0 I=max(-v(da0)-0.7,0)/2
+Bdha0 da0 ref I=max(v(da0)-5.7,0)/2
+Ra1 a da1 10802584.8375334
+Rha1 da1 ref 1e12
+Rla1 da1 0 0.35
+Cha1 da1 ref 20p IC=-5
+Cla1 da1 0 20p IC=0
+Bdla1 0 da1 I=max(-v(da1)-0.7,0)/2
+Bdha1 da1 ref I=max(v(da1)-5.7,0)/2
+Ra2 a da2 5401292.41876668
+Rha2 da2 ref 1e12
+Rla2 da2 0 0.35
+Cha2 da2 ref 20p IC=-5
+Cla2 da2 0 20p IC=0
+Bdla2 0 da2 I=max(-v(da2)-0.7,0)/2
+Bdha2 da2 ref I=max(v(da2)-5.7,0)/2
+Ra3 a da3 2700646.20938334
+Rha3 da3 ref 1e12
+Rla3 da3 0 0.35
+Cha3 da3 ref 20p IC=-5
+Cla3 da3 0 20p IC=0
+Bdla3 0 da3 I=max(-v(da3)-0.7,0)/2
+Bdha3 da3 ref I=max(v(da3)-5.7,0)/2
+Ra4 a da4 1350323.10469167
+Rha4 da4 ref 1e12
+Rla4 da4 0 0.35
+Cha4 da4 ref 20p IC=-5
+Cla4 da4 0 20p IC=0
+Bdla4 0 da4 I=max(-v(da4)-0.7,0)/2
+Bdha4 da4 ref I=max(v(da4)-5.7,0)/2
+Ra5 a da5 675161.552345835
+Rha5 da5 ref 1e12
+Rla5 da5 0 0.35
+Cha5 da5 ref 20p IC=-5
+Cla5 da5 0 20p IC=0
+Bdla5 0 da5 I=max(-v(da5)-0.7,0)/2
+Bdha5 da5 ref I=max(v(da5)-5.7,0)/2
+Ra6 a da6 337580.776172917
+Rha6 da6 ref 1e12
+Rla6 da6 0 0.35
+Cha6 da6 ref 20p IC=-5
+Cla6 da6 0 20p IC=0
+Bdla6 0 da6 I=max(-v(da6)-0.7,0)/2
+Bdha6 da6 ref I=max(v(da6)-5.7,0)/2
+Ra7 a da7 168790.388086459
+Rha7 da7 ref 1e12
+Rla7 da7 0 0.35
+Cha7 da7 ref 20p IC=-5
+Cla7 da7 0 20p IC=0
+Bdla7 0 da7 I=max(-v(da7)-0.7,0)/2
+Bdha7 da7 ref I=max(v(da7)-5.7,0)/2
+Ra8 a da8 84395.1940432293
+Rha8 da8 ref 1e12
+Rla8 da8 0 0.35
+Cha8 da8 ref 20p IC=-5
+Cla8 da8 0 20p IC=0
+Bdla8 0 da8 I=max(-v(da8)-0.7,0)/2
+Bdha8 da8 ref I=max(v(da8)-5.7,0)/2
+Ra9 a da9 42197.5970216147
+Rha9 da9 ref 1e12
+Rla9 da9 0 0.35
+Cha9 da9 ref 20p IC=-5
+Cla9 da9 0 20p IC=0
+Bdla9 0 da9 I=max(-v(da9)-0.7,0)/2
+Bdha9 da9 ref I=max(v(da9)-5.7,0)/2
+Ra10 a da10 42197.5970216147
+Rha10 da10 ref 1e12
+Rla10 da10 0 0.35
+Cha10 da10 ref 20p IC=-5
+Cla10 da10 0 20p IC=0
+Bdla10 0 da10 I=max(-v(da10)-0.7,0)/2
+Bdha10 da10 ref I=max(v(da10)-5.7,0)/2
+Ra11 a da11 42197.5970216147
+Rha11 da11 ref 1e12
+Rla11 da11 0 0.35
+Cha11 da11 ref 20p IC=-5
+Cla11 da11 0 20p IC=0
+Bdla11 0 da11 I=max(-v(da11)-0.7,0)/2
+Bdha11 da11 ref I=max(v(da11)-5.7,0)/2
+Ra12 a da12 42197.5970216147
+Rha12 da12 ref 1e12
+Rla12 da12 0 0.35
+Cha12 da12 ref 20p IC=-5
+Cla12 da12 0 20p IC=0
+Bdla12 0 da12 I=max(-v(da12)-0.7,0)/2
+Bdha12 da12 ref I=max(v(da12)-5.7,0)/2
+Ra13 a da13 42197.5970216147
+Rha13 da13 ref 1e12
+Rla13 da13 0 0.35
+Cha13 da13 ref 20p IC=-5
+Cla13 da13 0 20p IC=0
+Bdla13 0 da13 I=max(-v(da13)-0.7,0)/2
+Bdha13 da13 ref I=max(v(da13)-5.7,0)/2
+Ra14 a da14 42197.5970216147
+Rha14 da14 ref 1e12
+Rla14 da14 0 0.35
+Cha14 da14 ref 20p IC=-5
+Cla14 da14 0 20p IC=0
+Bdla14 0 da14 I=max(-v(da14)-0.7,0)/2
+Bdha14 da14 ref I=max(v(da14)-5.7,0)/2
+Ra15 a da15 42197.5970216147
+Rha15 da15 ref 1e12
+Rla15 da15 0 0.35
+Cha15 da15 ref 20p IC=-5
+Cla15 da15 0 20p IC=0
+Bdla15 0 da15 I=max(-v(da15)-0.7,0)/2
+Bdha15 da15 ref I=max(v(da15)-5.7,0)/2
+Rta a 0 21605169.6750667
+Rb0 b db0 21605169.6750667
+Rhb0 db0 ref 1e12
+Rlb0 db0 0 0.35
+Chb0 db0 ref 20p IC=-5
+Clb0 db0 0 20p IC=0
+Bdlb0 0 db0 I=max(-v(db0)-0.7,0)/2
+Bdhb0 db0 ref I=max(v(db0)-5.7,0)/2
+Rb1 b db1 10802584.8375334
+Rhb1 db1 ref 1e12
+Rlb1 db1 0 0.35
+Chb1 db1 ref 20p IC=-5
+Clb1 db1 0 20p IC=0
+Bdlb1 0 db1 I=max(-v(db1)-0.7,0)/2
+Bdhb1 db1 ref I=max(v(db1)-5.7,0)/2
+Rb2 b db2 5401292.41876668
+Rhb2 db2 ref 1e12
+Rlb2 db2 0 0.35
+Chb2 db2 ref 20p IC=-5
+Clb2 db2 0 20p IC=0
+Bdlb2 0 db2 I=max(-v(db2)-0.7,0)/2
+Bdhb2 db2 ref I=max(v(db2)-5.7,0)/2
+Rb3 b db3 2700646.20938334
+Rhb3 db3 ref 1e12
+Rlb3 db3 0 0.35
+Chb3 db3 ref 20p IC=-5
+Clb3 db3 0 20p IC=0
+Bdlb3 0 db3 I=max(-v(db3)-0.7,0)/2
+Bdhb3 db3 ref I=max(v(db3)-5.7,0)/2
+Rb4 b db4 1350323.10469167
+Rhb4 db4 ref 1e12
+Rlb4 db4 0 0.35
+Chb4 db4 ref 20p IC=-5
+Clb4 db4 0 20p IC=0
+Bdlb4 0 db4 I=max(-v(db4)-0.7,0)/2
+Bdhb4 db4 ref I=max(v(db4)-5.7,0)/2
+Rb5 b db5 675161.552345835
+Rhb5 db5 ref 1e12
+Rlb5 db5 0 0.35
+Chb5 db5 ref 20p IC=-5
+Clb5 db5 0 20p IC=0
+Bdlb5 0 db5 I=max(-v(db5)-0.7,0)/2
+Bdhb5 db5 ref I=max(v(db5)-5.7,0)/2
+Rb6 b db6 337580.776172917
+Rhb6 db6 ref 1e12
+Rlb6 db6 0 0.35
+Chb6 db6 ref 20p IC=-5
+Clb6 db6 0 20p IC=0
+Bdlb6 0 db6 I=max(-v(db6)-0.7,0)/2
+Bdhb6 db6 ref I=max(v(db6)-5.7,0)/2
+Rb7 b db7 168790.388086459
+Rhb7 db7 ref 1e12
+Rlb7 db7 0 0.35
+Chb7 db7 ref 20p IC=-5
+Clb7 db7 0 20p IC=0
+Bdlb7 0 db7 I=max(-v(db7)-0.7,0)/2
+Bdhb7 db7 ref I=max(v(db7)-5.7,0)/2
+Rb8 b db8 84395.1940432293
+Rhb8 db8 ref 1e12
+Rlb8 db8 0 0.35
+Chb8 db8 ref 20p IC=-5
+Clb8 db8 0 20p IC=0
+Bdlb8 0 db8 I=max(-v(db8)-0.7,0)/2
+Bdhb8 db8 ref I=max(v(db8)-5.7,0)/2
+Rb9 b db9 42197.5970216147
+Rhb9 db9 ref 1e12
+Rlb9 db9 0 0.35
+Chb9 db9 ref 20p IC=-5
+Clb9 db9 0 20p IC=0
+Bdlb9 0 db9 I=max(-v(db9)-0.7,0)/2
+Bdhb9 db9 ref I=max(v(db9)-5.7,0)/2
+Rb10 b db10 42197.5970216147
+Rhb10 db10 ref 1e12
+Rlb10 db10 0 0.35
+Chb10 db10 ref 20p IC=-5
+Clb10 db10 0 20p IC=0
+Bdlb10 0 db10 I=max(-v(db10)-0.7,0)/2
+Bdhb10 db10 ref I=max(v(db10)-5.7,0)/2
+Rb11 b db11 42197.5970216147
+Rhb11 db11 ref 1e12
+Rlb11 db11 0 0.35
+Chb11 db11 ref 20p IC=-5
+Clb11 db11 0 20p IC=0
+Bdlb11 0 db11 I=max(-v(db11)-0.7,0)/2
+Bdhb11 db11 ref I=max(v(db11)-5.7,0)/2
+Rb12 b db12 42197.5970216147
+Rhb12 db12 ref 1e12
+Rlb12 db12 0 0.35
+Chb12 db12 ref 20p IC=-5
+Clb12 db12 0 20p IC=0
+Bdlb12 0 db12 I=max(-v(db12)-0.7,0)/2
+Bdhb12 db12 ref I=max(v(db12)-5.7,0)/2
+Rb13 b db13 42197.5970216147
+Rhb13 db13 ref 1e12
+Rlb13 db13 0 0.35
+Chb13 db13 ref 20p IC=-5
+Clb13 db13 0 20p IC=0
+Bdlb13 0 db13 I=max(-v(db13)-0.7,0)/2
+Bdhb13 db13 ref I=max(v(db13)-5.7,0)/2
+Rb14 b db14 42197.5970216147
+Rhb14 db14 ref 1e12
+Rlb14 db14 0 0.35
+Chb14 db14 ref 20p IC=-5
+Clb14 db14 0 20p IC=0
+Bdlb14 0 db14 I=max(-v(db14)-0.7,0)/2
+Bdhb14 db14 ref I=max(v(db14)-5.7,0)/2
+Rb15 b db15 42197.5970216147
+Rhb15 db15 ref 1e12
+Rlb15 db15 0 0.35
+Chb15 db15 ref 20p IC=-5
+Clb15 db15 0 20p IC=0
+Bdlb15 0 db15 I=max(-v(db15)-0.7,0)/2
+Bdhb15 db15 ref I=max(v(db15)-5.7,0)/2
+Rtb b 0 21605169.6750667
+Rp a p 160
+Lp p b 150.0 IC=5e-05
+Ls s 0 0.126023944549464 IC=0
+K1 Lp Ls 0.999973332977768
+Rs s out .2
+Rload out 0 8.0
+Rcore p b 100000.0
+Cpri p b 100p IC=0
+.save all
+.tran 2.0u 0.02 0 2.0u UIC
+.end

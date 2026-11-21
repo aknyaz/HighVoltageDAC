@@ -15,9 +15,26 @@ complete, including a 50 MHz request grid; see `audio_band.md`. The assumed 10 H
 transformer loses 12.22 dB at 20 Hz; low-level THD is about 0.53%, mostly already
 present with ideal quantized codes. The working transformer candidate is now LL1679/PP, alternative B / 8 ohm;
 LL1620/PP is the fallback. See `transformer_selection.md`. Next: obtain actual
-transformer impedance/core-loss data and run a bounded low-level quantization study. Full switched upper-band and stop/fault
+transformer impedance/core-loss data. The low-level quantization study is now
+complete (`quantization_study.md`): second-order EF is a software candidate, but
+its idle switching cost prevents immediate HDL adoption. Next: defined
+silence/start/stop policy with transformer energy and clamp/body-diode validation.
+The 192/384/768 kS/s comparison is complete (`sample_rate_study.md`): higher rates
+improve shaped quantization error but substantially increase counted switching
+loss. Keep 192 kS/s as baseline, with 384 kS/s the next analog-test candidate. Full switched upper-band and stop/fault
 transients remain open, as do physical clock-domain checks. Device and driver
 selection remain provisional; estimated switch losses have not disappeared.
+
+The first stored-energy fixture is complete (`shutdown_study.md`): 24 ngspice
+runs compare all-off and all-low states, both polarities and loaded/open output.
+All-low is the proposed healthy-control quiet state, not a fault-state guarantee.
+Entry/exit at 1 kHz with 200 ns blanking, 100 ns arm skew and seeded +/-0.01%
+resistor mismatch is now complete: 16 runs with timestep checks, documented in
+`quiet_transitions.md`. Adopt the tested 2 ms fade / 2 ms common-mode movement
+as the working healthy-control mute candidate. Next: implement and verify the
+independent-arm sequencing interface with supervised quiet refresh, retaining
+fault-disable priority. Broader low-frequency/phase and loss-of-drive validation
+remain separate requirements; this is not a general click-free guarantee.
 
 ## Phase A0 — first reproducible test bench
 
@@ -122,3 +139,12 @@ a passive filter, and a thermal assessment.
 
 Develop the complete schematic after validating the architecture. PCB design and
 physical high-voltage hardware are outside the current scope.
+
+## Mute RTL implementation update
+
+The sample-driven mute wrapper is implemented and digitally verified; see
+`fpga_mute.md`. It applies the envelope to signed 24-bit PCM before quantization,
+controls both arm codes, retraces partial ramps on reversal and retains watchdog
+and fault-disable priority. Next: export timestamped RTL gate edges for analog
+replay, then assess target FPGA resource/timing feasibility and update the logical
+input interface in KiCad. Prior analog quiet results are not RTL co-simulation.

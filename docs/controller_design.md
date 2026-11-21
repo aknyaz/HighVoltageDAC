@@ -119,3 +119,12 @@ The initial analog blanking/transformer study is now complete; see
 [results and limitations](controller_analog.md). Retain 200 ns for further tests.
 Next: audio-band/low-level and stop/fault checks, then physical FPGA/bias interfaces. Do not reopen the 3+9 partition
 without a concrete failing result.
+
+## Independent-arm extension and mute wrapper
+
+The standalone core now has `independent` and `code_b` inputs. Drive
+`independent=0` for the legacy behavior described above, or select explicit arm
+codes with `independent=1`. The new `mute_controller.py` wrapper handles signed
+24-bit PCM, pre-quantization fading and coordinated common-mode movement.
+See [FPGA mute implementation](fpga_mute.md) for the updated interface and tests.
+The earlier KiCad logical input block is not yet an integration of this wrapper.
