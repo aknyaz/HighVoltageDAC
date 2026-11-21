@@ -116,8 +116,9 @@ commands and is not a timestamped gate-edge trace or an analog co-simulation.
 
 The earlier analog quiet study used a Python-generated schedule, not this RTL.
 Its 26-fold peak-error reduction must not be presented as a new measurement of
-this implementation. Startup, sample alignment, integer PCM rounding and request
-reversal now need a gate-edge export from this controller and analog replay.
+this implementation. Startup, sample alignment and integer PCM rounding now have a nominal
+one-way gate-edge replay in [RTL replay](rtl_mute_replay.md). Request reversal,
+fault feedback and nonnominal analog coverage remain open.
 
 The wired KiCad X900 block remains the earlier logical interface. Its 64 gate
 outputs and status paths still match the core, but the 24-bit PCM/mute wrapper

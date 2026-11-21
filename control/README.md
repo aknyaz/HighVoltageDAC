@@ -36,3 +36,9 @@ fault behavior, executed tests and hardware integration limits. The exported
 replacement for the existing KiCad logical control block. In the standalone
 core, drive `independent=0` for legacy complement decoding or `independent=1`
 with explicit `code_b` for two arm targets.
+
+
+`export_mute_edges.py` records actual timestamped RTL output vectors for a full
+startup/mute/resume cycle. Run it with the control virtual environment, then
+run `python sim/rtl_mute_replay.py` with the analog-analysis environment. See
+[executed replay](../docs/rtl_mute_replay.md) for results and scope.

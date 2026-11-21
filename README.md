@@ -299,3 +299,45 @@ in Amaranth, with generated Verilog. Executed RTL tests cover 1,761 default-rate
 samples, 547 additional reversal/fault samples and 36 phase/fault combinations.
 The existing 5,096-code core regression still passes. Device-mapped FPGA timing,
 resource fit and analog replay of actual RTL gate edges remain unvalidated.
+
+## Executed RTL-to-analog replay
+
+The [RTL replay](docs/rtl_mute_replay.md) now exports actual mute-controller
+commands and runs them through the nominal 5 V structural network. The full
+startup/mute/resume trace includes 2,688 samples and 4,947 gate-vector changes.
+Four ngspice runs pass timestep checks; peak error against ideal accepted codes
+is 0.2734 mV. This is one-way replay, not physical FPGA timing or analog fault
+feedback. FPGA selection and implementation are deferred while simulation
+coverage is completed.
+
+```powershell
+.venv/control/Scripts/python.exe control/export_mute_edges.py
+python sim/rtl_mute_replay.py
+```
+
+## Low-frequency magnetic memory and DC
+
+The [20 Hz study](docs/low_frequency_mute.md) completes 35 ngspice runs using
+four interruption phases, four PCM offsets, a 200 ms quiet hold and resume.
+In the continuous 5 V equivalent, a zero-offset parked output tail reaches
+12.109 mV and takes about 142 ms to decay to 1%. A +1% input offset produces
+4.668 uA primary DC even though secondary steady DC is zero. Independent
+state-space and algebraic checks pass. This is not a switching or nonlinear-core
+qualification; the 2 ms fade remains a 1 kHz reference, not a full-band solution.
+Next compare longer fades and DC rejection. FPGA vendor/device/cost and physical
+implementation decisions are deferred until the simulation findings are settled.
+
+```powershell
+python sim/low_frequency_mute.py
+```
+
+## Audio viability checkpoint
+
+The [preliminary audio review](docs/audio_viability.md) consolidates 272 static
+single-tone records, 51 two-tone records and four independently checked AC
+sweeps. At 1 kHz, nominal 12-bit undithered THD rises from 0.01029% at 90%
+amplitude to 0.51808% at 1% and 20.04% at 0.1%. The nominal response is flat,
+but output impedance is about 8.33 ohm. These are model findings, not complete
+hardware THD or noise predictions. Pause detailed mute/FPGA work while judging
+low-level quality and load dependence; switched-model checks are reported
+separately from this static screen.

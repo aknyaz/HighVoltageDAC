@@ -1,0 +1,16 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: 20 hz continuous thevenin model / 5 v / linear ll1679
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout src                                          0
+stdout p                                            0
+stdout s                                            0
+stdout out                                          0
+stdout bsrc#branch                                  0
+stdout ls#branch                                    0
+stdout lp#branch                                    0
+stdout No. of Data Rows : 16434

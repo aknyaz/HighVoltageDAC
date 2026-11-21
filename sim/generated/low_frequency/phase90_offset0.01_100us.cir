@@ -1,0 +1,14 @@
+20 Hz continuous Thevenin model / 5 V / linear LL1679
+Bsrc src 0 V=4.998779296875*(.9*cos(2*pi*20*(time-0.254)+1.5707963267949)+0.01)*(min(max((time-.002)/.002,0),1)*min(max((0.256-time)/.002,0),1)+min(max((time-0.46)/.002,0),1))
+Rsrc src p 10709.3992554037
+Lp p 0 150.0
+Ls s 0 0.126023944549464
+K1 Lp Ls 0.999973332977768
+Rsec s out .2
+Rload out 0 8
+Rcore p 0 100000.0
+Cpri p 0 1e-10
+.options reltol=1e-8 abstol=1e-14 method=gear
+.save v(src) v(p) v(out) i(Lp) i(Ls)
+.tran 100u 0.712 0 100u
+.end

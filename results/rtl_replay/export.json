@@ -1,0 +1,13 @@
+{
+  "samples": 2688,
+  "clock_hz": 50000000,
+  "sample_rate_hz": 192000,
+  "stop_cycle": 700004,
+  "gate_vector_events": 4947,
+  "checks": 32259,
+  "mute_request_sample": 960,
+  "resume_request_sample": 1920,
+  "quiet_gate_transitions": 0,
+  "origin": "cycle zero is one clock period before the first recorded tick",
+  "scope": "Executed RTL gate vectors, nominal command timing; no physical FPGA propagation delays."
+}

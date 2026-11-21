@@ -1,0 +1,12 @@
+ac_load16
+Vsrc src 0 DC 0 AC 1
+Rsrc src p 10709.3992554037
+Lp p 0 150.0
+Ls s 0 0.126023944549464
+K1 Lp Ls 0.999973332977768
+Rsec s out .2
+Rcore p 0 100k
+Cpri p 0 100p
+Rload out 0 16
+.ac dec 40 20 20000
+.end

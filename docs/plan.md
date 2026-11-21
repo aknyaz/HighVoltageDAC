@@ -1,12 +1,36 @@
 # Project plan
 
+## Current priority: decide audio viability
+
+The user requested a preliminary quality verdict before more transition studies.
+See `audio_viability.md`: quantization/static THD, two-tone products, frequency
+response and output impedance now have an executed screen. Complete the bounded
+switched sine/two-tone benchmark, then judge whether the low-level limitation
+and load dependence justify further research. Longer mute fades and DC-rejection
+optimization are deferred behind this decision. Do not resume FPGA selection.
+
+## Remaining simulation coverage
+
+FPGA vendor/device selection, cost comparisons, mapping/timing and physical
+integration are deferred until simulation findings and circuit requirements are
+settled. Existing HDL remains a simulation command source.
+
+The 20 Hz phase/DC/long-hold study is complete (`low_frequency_mute.md`): 35
+ngspice runs with independent state-space and DC checks. The 2 ms fade is not a
+full-band solution: nominal zero-offset tails reach 12.109 mV in the 5 V model,
+and parked current takes about 142 ms to decay to 1%. Next compare longer fades
+and input DC rejection, then selected switched-model cases. Remaining coverage:
+load/drive loss, consistent audio-band distortion/noise plots, component
+variation and the total loss budget. Unknown nonlinear-core behavior must remain
+explicit rather than being marked verified by a linear model.
+
 ## Current architecture decision
 
 Use **3+9 segmented parallel** as the fixed working 12-bit baseline. See
 `partition_decision.md` for the trade-off, validation and explicit reopening criteria.
 Broad partition exploration is complete. The wired 3+9 design-review hierarchy is
-available in `kicad/segmented/`; see `kicad_segmented_review.md`. Next: resolve its
-physical FPGA/bias interfaces and transformer/DC/audio validation. The command HDL
+available in `kicad/segmented/`; see `kicad_segmented_review.md`. Next: complete transformer/DC/audio and transient validation. Physical FPGA
+and bias interface implementation is deferred. The command HDL
 is implemented and tested; see `controller_design.md`. The initial 200 ns
 blanking study is complete at 1 kHz / 90% amplitude, with major-carry tests and
 an assumed linear transformer; see `controller_analog.md`. Retain the 200 ns
@@ -30,11 +54,10 @@ runs compare all-off and all-low states, both polarities and loaded/open output.
 All-low is the proposed healthy-control quiet state, not a fault-state guarantee.
 Entry/exit at 1 kHz with 200 ns blanking, 100 ns arm skew and seeded +/-0.01%
 resistor mismatch is now complete: 16 runs with timestep checks, documented in
-`quiet_transitions.md`. Adopt the tested 2 ms fade / 2 ms common-mode movement
-as the working healthy-control mute candidate. Next: implement and verify the
-independent-arm sequencing interface with supervised quiet refresh, retaining
-fault-disable priority. Broader low-frequency/phase and loss-of-drive validation
-remain separate requirements; this is not a general click-free guarantee.
+`quiet_transitions.md`. The tested 2 ms fade / 2 ms common-mode movement remains a 1 kHz reference.
+Its independent-arm RTL is implemented; low-frequency findings now require
+further analog studies before treating this sequence as a full-band solution.
+Loss-of-drive validation remains open.
 
 ## Phase A0 — first reproducible test bench
 
@@ -145,6 +168,8 @@ physical high-voltage hardware are outside the current scope.
 The sample-driven mute wrapper is implemented and digitally verified; see
 `fpga_mute.md`. It applies the envelope to signed 24-bit PCM before quantization,
 controls both arm codes, retraces partial ramps on reversal and retains watchdog
-and fault-disable priority. Next: export timestamped RTL gate edges for analog
-replay, then assess target FPGA resource/timing feasibility and update the logical
-input interface in KiCad. Prior analog quiet results are not RTL co-simulation.
+and fault-disable priority. Nominal timestamped RTL replay is now complete (`rtl_mute_replay.md`): four
+ngspice runs check the default startup/mute/resume sequence with actual gate
+commands. FPGA implementation is deferred. Continue analog coverage first: the new
+continuous-equivalent 20 Hz study exposes a long magnetic tail; corresponding
+switched/RTL low-frequency, skew and fault-feedback tests remain open.

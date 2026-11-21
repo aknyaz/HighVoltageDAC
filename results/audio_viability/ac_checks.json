@@ -1,0 +1,25 @@
+{
+  "spice_runs": 4,
+  "rows": [
+    {
+      "load_ohm": 4,
+      "quantity": "gain",
+      "max_relative_analytic_error": 8.659739592076221e-15
+    },
+    {
+      "load_ohm": 8,
+      "quantity": "gain",
+      "max_relative_analytic_error": 3.1086244689504383e-15
+    },
+    {
+      "load_ohm": 16,
+      "quantity": "gain",
+      "max_relative_analytic_error": 4.218847493575595e-15
+    },
+    {
+      "load_ohm": null,
+      "quantity": "output_impedance",
+      "max_relative_analytic_error": 5.1514348342607263e-14
+    }
+  ]
+}

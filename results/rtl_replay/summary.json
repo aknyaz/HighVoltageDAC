@@ -1,0 +1,29 @@
+{
+  "spice_runs": 4,
+  "bus_v": 5,
+  "export": {
+    "samples": 2688,
+    "clock_hz": 50000000,
+    "sample_rate_hz": 192000,
+    "stop_cycle": 700004,
+    "gate_vector_events": 4947,
+    "checks": 32259,
+    "mute_request_sample": 960,
+    "resume_request_sample": 1920,
+    "quiet_gate_transitions": 0,
+    "origin": "cycle zero is one clock period before the first recorded tick",
+    "scope": "Executed RTL gate vectors, nominal command timing; no physical FPGA propagation delays."
+  },
+  "source_sha256": {
+    "gate_edges.csv": "4a94606b97f37f578adb10bf9c4df81e701bd32669cad6e01a56fd8241a901da",
+    "code_commands.csv": "54793a0e8b1e4567930ea20366a0668bda7ba05d03bf2610370402f45b0cd7bb"
+  },
+  "output_peak_v": 0.0577097769998221,
+  "error_peak_v": 0.00027344086005436866,
+  "error_rms_v": 4.079910636704306e-05,
+  "quiet_rms_v": 1.8625108739568e-07,
+  "quiet_mean_primary_current_a": -6.80824793956488e-10,
+  "reference_refinement_v": 1.1805371450471225e-06,
+  "peak_error_refinement_v": 2.5922269617298377e-09,
+  "scope": "Nominal one-way RTL command replay at 192 kS/s, 1 kHz 90% PCM, 8 ohm. 20 pF fixed Coss, 2 ns edges, generic rail clamps, linear LL1679; no delay skew, mismatch, nonlinear core or routed FPGA timing."
+}
