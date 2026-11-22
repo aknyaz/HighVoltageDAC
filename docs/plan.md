@@ -1,12 +1,62 @@
 # Project plan
 
-## Current priority: decide audio viability
+## Next study on resumption: adjustable supply and low-level audio
+
+Decision recorded on 22 November 2026: the project remains paused pending funding.
+The next requested calculation/simulation is to test whether reducing the DAC
+supply at low listening volume improves low-level distortion and resistor heat.
+This is a planned hypothesis test; no adjustable-supply results have been produced.
+FPGA selection, physical PCB design and energized HV implementation remain deferred.
+
+The proposed operating policy is a slowly adjustable supply coordinated with
+digital volume, related to Class G/H supply control rather than the definition
+of Class AB. The user accepts a gradual volume response: even a sudden large
+knob movement should produce a controlled ramp toward the requested level.
+This response is an intentional product characteristic; its duration and curve
+are not yet specified. Fast tracking of each musical envelope is not the initial
+goal. Quiet details within a loud passage therefore remain a separate limitation.
+
+The working assumption is that a suitable regulated switching supply can be
+developed. Modern controllability is encouraging, but output ripple, settling,
+downward slew under light load and interaction with code scaling must be modeled
+before declaring the supply transparent to audio. No supply has been selected.
+
+Planned checks, in order:
+
+1. Compare the existing 650 V reference with lower supplies, including 100 V,
+   at identical achievable output amplitudes, load and sample rate. Rescale
+   high-resolution PCM before final 12-bit quantization; retain an unchanged-code
+   control case to distinguish smaller output from improved relative distortion.
+2. Report THD, harmonic spectra, output power, code utilization/headroom and total
+   resistor dissipation. Include low-level cases from `audio_viability.md` and
+   distinguish quantization-only results from selected switched-model checks.
+   Report noise only where the model actually includes it.
+3. Model coordinated supply/code ramps for small and abrupt volume requests,
+   including reversal. Check amplitude continuity, clipping, transient error and
+   transformer differential DC/flux. Define a slew policy from these results,
+   rather than assuming the supply follows the command instantaneously.
+4. Add bounded ripple, regulation error and tracking lag to derive supply
+   requirements. The rail is also the DAC reference, so its errors can modulate
+   the audio. Keep nonlinear-core and device-model limitations explicit.
+
+Analytical expectations, not simulation results: 650 V to 100 V reduces the
+ideal absolute DAC step by 6.5 (16.26 dB, approximately 2.70 bits of range benefit).
+At the same output amplitude, 1% code utilization becomes 6.5%; this does not
+guarantee the approximately 0.011% THD previously obtained near full scale.
+Leaving codes unchanged scales signal and quantization error together. At fixed
+normalized code waveform, resistive power scales with supply voltage squared;
+the equal-output comparison must calculate its own heat because codes change.
+Available full-scale load power also falls approximately with voltage squared
+in the linear model. The study does not resolve output impedance, resistor
+repetitive pulse qualification or substrate parasitics.
+
+## Previous priority and outstanding implementation limits
 
 Update, 22 November 2026: the user advanced to resistor sourcing and packaging.
 The bounded [array preliminary review](resistor_array_preliminary.md) is complete,
 including stock-based composition, full-code DC, envelope, thermal and parasitic
 screens. It found an open repetitive pulse-voltage issue in the series strings.
-The next implementation priority is resolving that issue and substrate parasitics;
+Before physical implementation, resolve that issue and substrate parasitics;
 nominal sourcing success does not release a physical HV design. FPGA remains deferred.
 
 The user requested a preliminary quality verdict before more transition studies.
