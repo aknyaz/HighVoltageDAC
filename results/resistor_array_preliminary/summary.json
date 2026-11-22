@@ -1,0 +1,342 @@
+{
+  "date": "2026-11-22",
+  "thermal": {
+    "ideal_resistive_load_ohm": 10000.0,
+    "supply_v": 650.0,
+    "heat": {
+      "max_per_panel_w": 20.000000314551464,
+      "min_per_panel_w": 5.274721390524294,
+      "max_total_w": 39.999995860731346,
+      "full_sine_total_w": 25.28415640880606,
+      "max_static_chip_w": 0.03757945572641485
+    },
+    "temperature_cases": [
+      {
+        "ambient_c": 20,
+        "theta_k_per_w": 1,
+        "heat_rejection_at_50c_w": 30.0,
+        "supply_off_hold_50c_heater_w": 30.0,
+        "additional_cooling_at_max_heat_w": 0
+      },
+      {
+        "ambient_c": 20,
+        "theta_k_per_w": 2,
+        "heat_rejection_at_50c_w": 15.0,
+        "supply_off_hold_50c_heater_w": 15.0,
+        "additional_cooling_at_max_heat_w": 5.000000314551464
+      },
+      {
+        "ambient_c": 20,
+        "theta_k_per_w": 4,
+        "heat_rejection_at_50c_w": 7.5,
+        "supply_off_hold_50c_heater_w": 7.5,
+        "additional_cooling_at_max_heat_w": 12.500000314551464
+      },
+      {
+        "ambient_c": 25,
+        "theta_k_per_w": 1,
+        "heat_rejection_at_50c_w": 25.0,
+        "supply_off_hold_50c_heater_w": 25.0,
+        "additional_cooling_at_max_heat_w": 0
+      },
+      {
+        "ambient_c": 25,
+        "theta_k_per_w": 2,
+        "heat_rejection_at_50c_w": 12.5,
+        "supply_off_hold_50c_heater_w": 12.5,
+        "additional_cooling_at_max_heat_w": 7.500000314551464
+      },
+      {
+        "ambient_c": 25,
+        "theta_k_per_w": 4,
+        "heat_rejection_at_50c_w": 6.25,
+        "supply_off_hold_50c_heater_w": 6.25,
+        "additional_cooling_at_max_heat_w": 13.750000314551464
+      },
+      {
+        "ambient_c": 35,
+        "theta_k_per_w": 1,
+        "heat_rejection_at_50c_w": 15.0,
+        "supply_off_hold_50c_heater_w": 15.0,
+        "additional_cooling_at_max_heat_w": 5.000000314551464
+      },
+      {
+        "ambient_c": 35,
+        "theta_k_per_w": 2,
+        "heat_rejection_at_50c_w": 7.5,
+        "supply_off_hold_50c_heater_w": 7.5,
+        "additional_cooling_at_max_heat_w": 12.500000314551464
+      },
+      {
+        "ambient_c": 35,
+        "theta_k_per_w": 4,
+        "heat_rejection_at_50c_w": 3.75,
+        "supply_off_hold_50c_heater_w": 3.75,
+        "additional_cooling_at_max_heat_w": 16.250000314551464
+      }
+    ],
+    "required_theta_at_35c_for_heater_only_k_per_w": 0.7499999882043202
+  },
+  "parallel_plate_sensitivity": [
+    {
+      "area_mm2": 1,
+      "epsilon_r": 4,
+      "dielectric_um": 75,
+      "capacitance_pf": 0.4722233500160001
+    },
+    {
+      "area_mm2": 1,
+      "epsilon_r": 4,
+      "dielectric_um": 150,
+      "capacitance_pf": 0.23611167500800004
+    },
+    {
+      "area_mm2": 1,
+      "epsilon_r": 7,
+      "dielectric_um": 75,
+      "capacitance_pf": 0.8263908625280002
+    },
+    {
+      "area_mm2": 1,
+      "epsilon_r": 7,
+      "dielectric_um": 150,
+      "capacitance_pf": 0.4131954312640001
+    },
+    {
+      "area_mm2": 4,
+      "epsilon_r": 4,
+      "dielectric_um": 75,
+      "capacitance_pf": 1.8888934000640003
+    },
+    {
+      "area_mm2": 4,
+      "epsilon_r": 4,
+      "dielectric_um": 150,
+      "capacitance_pf": 0.9444467000320002
+    },
+    {
+      "area_mm2": 4,
+      "epsilon_r": 7,
+      "dielectric_um": 75,
+      "capacitance_pf": 3.305563450112001
+    },
+    {
+      "area_mm2": 4,
+      "epsilon_r": 7,
+      "dielectric_um": 150,
+      "capacitance_pf": 1.6527817250560004
+    }
+  ],
+  "edge_fixture": [
+    {
+      "ground_pf": 0,
+      "across_resistor_pf": 0,
+      "rise_ns": 20,
+      "peak_chip_scaled_650_v": 108.33333333333341,
+      "exceeds_150v_continuous_limit": false
+    },
+    {
+      "ground_pf": 0,
+      "across_resistor_pf": 0,
+      "rise_ns": 100,
+      "peak_chip_scaled_650_v": 108.33333333333341,
+      "exceeds_150v_continuous_limit": false
+    },
+    {
+      "ground_pf": 0.02,
+      "across_resistor_pf": 0,
+      "rise_ns": 20,
+      "peak_chip_scaled_650_v": 249.97081163057527,
+      "exceeds_150v_continuous_limit": true
+    },
+    {
+      "ground_pf": 0.02,
+      "across_resistor_pf": 0,
+      "rise_ns": 100,
+      "peak_chip_scaled_650_v": 141.88944569611138,
+      "exceeds_150v_continuous_limit": false
+    },
+    {
+      "ground_pf": 0.02,
+      "across_resistor_pf": 0.05,
+      "rise_ns": 20,
+      "peak_chip_scaled_650_v": 220.03719855859708,
+      "exceeds_150v_continuous_limit": true
+    },
+    {
+      "ground_pf": 0.02,
+      "across_resistor_pf": 0.05,
+      "rise_ns": 100,
+      "peak_chip_scaled_650_v": 141.67630350947513,
+      "exceeds_150v_continuous_limit": false
+    },
+    {
+      "ground_pf": 0.02,
+      "across_resistor_pf": 0.2,
+      "rise_ns": 20,
+      "peak_chip_scaled_650_v": 169.95778869784777,
+      "exceeds_150v_continuous_limit": true
+    },
+    {
+      "ground_pf": 0.02,
+      "across_resistor_pf": 0.2,
+      "rise_ns": 100,
+      "peak_chip_scaled_650_v": 138.41735845243602,
+      "exceeds_150v_continuous_limit": false
+    },
+    {
+      "ground_pf": 0.1,
+      "across_resistor_pf": 0,
+      "rise_ns": 20,
+      "peak_chip_scaled_650_v": 436.382568937236,
+      "exceeds_150v_continuous_limit": true
+    },
+    {
+      "ground_pf": 0.1,
+      "across_resistor_pf": 0,
+      "rise_ns": 100,
+      "peak_chip_scaled_650_v": 249.96845918872359,
+      "exceeds_150v_continuous_limit": true
+    },
+    {
+      "ground_pf": 0.1,
+      "across_resistor_pf": 0.05,
+      "rise_ns": 20,
+      "peak_chip_scaled_650_v": 384.68859286540214,
+      "exceeds_150v_continuous_limit": true
+    },
+    {
+      "ground_pf": 0.1,
+      "across_resistor_pf": 0.05,
+      "rise_ns": 100,
+      "peak_chip_scaled_650_v": 244.10291888477047,
+      "exceeds_150v_continuous_limit": true
+    },
+    {
+      "ground_pf": 0.1,
+      "across_resistor_pf": 0.2,
+      "rise_ns": 20,
+      "peak_chip_scaled_650_v": 296.6814800473552,
+      "exceeds_150v_continuous_limit": true
+    },
+    {
+      "ground_pf": 0.1,
+      "across_resistor_pf": 0.2,
+      "rise_ns": 100,
+      "peak_chip_scaled_650_v": 225.77686796187206,
+      "exceeds_150v_continuous_limit": true
+    },
+    {
+      "ground_pf": 1,
+      "across_resistor_pf": 0,
+      "rise_ns": 20,
+      "peak_chip_scaled_650_v": 614.3629452141007,
+      "exceeds_150v_continuous_limit": true
+    },
+    {
+      "ground_pf": 1,
+      "across_resistor_pf": 0,
+      "rise_ns": 100,
+      "peak_chip_scaled_650_v": 512.6320224694374,
+      "exceeds_150v_continuous_limit": true
+    },
+    {
+      "ground_pf": 1,
+      "across_resistor_pf": 0.05,
+      "rise_ns": 20,
+      "peak_chip_scaled_650_v": 590.432668855377,
+      "exceeds_150v_continuous_limit": true
+    },
+    {
+      "ground_pf": 1,
+      "across_resistor_pf": 0.05,
+      "rise_ns": 100,
+      "peak_chip_scaled_650_v": 501.17477218367634,
+      "exceeds_150v_continuous_limit": true
+    },
+    {
+      "ground_pf": 1,
+      "across_resistor_pf": 0.2,
+      "rise_ns": 20,
+      "peak_chip_scaled_650_v": 535.1972618148731,
+      "exceeds_150v_continuous_limit": true
+    },
+    {
+      "ground_pf": 1,
+      "across_resistor_pf": 0.2,
+      "rise_ns": 100,
+      "peak_chip_scaled_650_v": 470.7681220582145,
+      "exceeds_150v_continuous_limit": true
+    },
+    {
+      "ground_pf": 5,
+      "across_resistor_pf": 0,
+      "rise_ns": 20,
+      "peak_chip_scaled_650_v": 642.4273551802704,
+      "exceeds_150v_continuous_limit": true
+    },
+    {
+      "ground_pf": 5,
+      "across_resistor_pf": 0,
+      "rise_ns": 100,
+      "peak_chip_scaled_650_v": 614.3626103534007,
+      "exceeds_150v_continuous_limit": true
+    },
+    {
+      "ground_pf": 5,
+      "across_resistor_pf": 0.05,
+      "rise_ns": 20,
+      "peak_chip_scaled_650_v": 636.3423326172326,
+      "exceeds_150v_continuous_limit": true
+    },
+    {
+      "ground_pf": 5,
+      "across_resistor_pf": 0.05,
+      "rise_ns": 100,
+      "peak_chip_scaled_650_v": 609.2783094796484,
+      "exceeds_150v_continuous_limit": true
+    },
+    {
+      "ground_pf": 5,
+      "across_resistor_pf": 0.2,
+      "rise_ns": 20,
+      "peak_chip_scaled_650_v": 619.3612996256579,
+      "exceeds_150v_continuous_limit": true
+    },
+    {
+      "ground_pf": 5,
+      "across_resistor_pf": 0.2,
+      "rise_ns": 100,
+      "peak_chip_scaled_650_v": 594.9359539255768,
+      "exceeds_150v_continuous_limit": true
+    }
+  ],
+  "timestep_refinement_peak_difference_v": 0.0028388041058065028,
+  "metal_backed_ac_sensitivity": [
+    {
+      "ground_pf": 0,
+      "frequency_hz": 19952.623149689032,
+      "gain_db": -6.263639143307648,
+      "additional_loss_db": 0.0
+    },
+    {
+      "ground_pf": 1,
+      "frequency_hz": 19952.623149689032,
+      "gain_db": -6.464235403639991,
+      "additional_loss_db": 0.20059626033234323
+    },
+    {
+      "ground_pf": 5,
+      "frequency_hz": 19952.623149689032,
+      "gain_db": -8.820152445399064,
+      "additional_loss_db": 2.5565133020914157
+    },
+    {
+      "ground_pf": 10,
+      "frequency_hz": 19952.623149689032,
+      "gain_db": -12.626166005226086,
+      "additional_loss_db": 6.362526861918438
+    }
+  ],
+  "conclusion": "Preliminary sourcing/static/envelope checks complete. Fast-edge resistor rating and substrate remain unqualified; do not release HV purchasing/layout."
+}

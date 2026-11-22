@@ -1,0 +1,4 @@
+newmtl board
+Kd 0.08 0.35 0.26
+newmtl resistor
+Kd 0.17 0.21 0.26

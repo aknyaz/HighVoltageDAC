@@ -1,0 +1,12 @@
+Six-resistor edge screen, 5 V only
+.options reltol=1e-7 abstol=1e-14
+Vin in 0 PWL(0 0 1u 0 1.02e-06 5 20u 5)
+R0 in n1 169000.0
+R1 n1 n2 169000.0
+R2 n2 n3 169000.0
+R3 n3 n4 169000.0
+R4 n4 n5 169000.0
+R5 n5 0 169000.0
+.save v(in) v(n1) v(n2) v(n3) v(n4) v(n5)
+.tran 1n 20u 0 1n
+.end

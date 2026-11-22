@@ -1,0 +1,193 @@
+{
+  "mpn": "ERA-8AEB1693V",
+  "unit_ohm": 169000.0,
+  "total_parts": 3052,
+  "spares_20pct_quantity": 3663,
+  "arm_resistance_ohm": 5281.25,
+  "common_resistance_shift_percent": 0.12418474530313528,
+  "nominal_gain_change_percent": -0.06371182782410889,
+  "nominal_power_change_percent": -0.12738306367816588,
+  "cost_no_spares_usd": 474.83016,
+  "cost_20pct_spares_usd": 569.88954,
+  "rows": [
+    {
+      "weight": 512,
+      "quantity": 14,
+      "series": 6,
+      "parallel": 24,
+      "parts_per_assembly": 144,
+      "total_parts": 2016,
+      "resistance_ohm": 42250.0,
+      "old_resistance_ohm": 42197.59702161467,
+      "nominal_voltage_650_v": 108.33333333333333,
+      "nominal_power_650_w": 0.06944444444444443,
+      "worst_voltage_700_v": 116.86124082721813,
+      "worst_power_700_w": 0.08072725858565738,
+      "worst_current_700_a": 0.0006910263320519731
+    },
+    {
+      "weight": 256,
+      "quantity": 2,
+      "series": 6,
+      "parallel": 12,
+      "parts_per_assembly": 72,
+      "total_parts": 144,
+      "resistance_ohm": 84500.0,
+      "old_resistance_ohm": 84395.19404322933,
+      "nominal_voltage_650_v": 108.33333333333333,
+      "nominal_power_650_w": 0.06944444444444443,
+      "worst_voltage_700_v": 116.86124082721813,
+      "worst_power_700_w": 0.08072725858565738,
+      "worst_current_700_a": 0.0006910263320519731
+    },
+    {
+      "weight": 128,
+      "quantity": 2,
+      "series": 6,
+      "parallel": 6,
+      "parts_per_assembly": 36,
+      "total_parts": 72,
+      "resistance_ohm": 169000.0,
+      "old_resistance_ohm": 168790.38808645867,
+      "nominal_voltage_650_v": 108.33333333333333,
+      "nominal_power_650_w": 0.06944444444444443,
+      "worst_voltage_700_v": 116.86124082721813,
+      "worst_power_700_w": 0.08072725858565738,
+      "worst_current_700_a": 0.0006910263320519731
+    },
+    {
+      "weight": 64,
+      "quantity": 2,
+      "series": 6,
+      "parallel": 3,
+      "parts_per_assembly": 18,
+      "total_parts": 36,
+      "resistance_ohm": 338000.0,
+      "old_resistance_ohm": 337580.77617291734,
+      "nominal_voltage_650_v": 108.33333333333333,
+      "nominal_power_650_w": 0.06944444444444443,
+      "worst_voltage_700_v": 116.86124082721813,
+      "worst_power_700_w": 0.08072725858565738,
+      "worst_current_700_a": 0.0006910263320519731
+    },
+    {
+      "weight": 32,
+      "quantity": 2,
+      "series": 8,
+      "parallel": 2,
+      "parts_per_assembly": 16,
+      "total_parts": 32,
+      "resistance_ohm": 676000.0,
+      "old_resistance_ohm": 675161.5523458347,
+      "nominal_voltage_650_v": 81.25,
+      "nominal_power_650_w": 0.0390625,
+      "worst_voltage_700_v": 87.65323992994746,
+      "worst_power_700_w": 0.04541665713113476,
+      "worst_current_700_a": 0.0005182697490389798
+    },
+    {
+      "weight": 16,
+      "quantity": 2,
+      "series": 8,
+      "parallel": 1,
+      "parts_per_assembly": 8,
+      "total_parts": 16,
+      "resistance_ohm": 1352000.0,
+      "old_resistance_ohm": 1350323.1046916693,
+      "nominal_voltage_650_v": 81.25,
+      "nominal_power_650_w": 0.0390625,
+      "worst_voltage_700_v": 87.65323992994746,
+      "worst_power_700_w": 0.04541665713113476,
+      "worst_current_700_a": 0.0005182697490389798
+    },
+    {
+      "weight": 8,
+      "quantity": 2,
+      "series": 16,
+      "parallel": 1,
+      "parts_per_assembly": 16,
+      "total_parts": 32,
+      "resistance_ohm": 2704000.0,
+      "old_resistance_ohm": 2700646.2093833387,
+      "nominal_voltage_650_v": 40.625,
+      "nominal_power_650_w": 0.009765625,
+      "worst_voltage_700_v": 43.83210309020393,
+      "worst_power_700_w": 0.011357005487472675,
+      "worst_current_700_a": 0.0002591348745194899
+    },
+    {
+      "weight": 4,
+      "quantity": 2,
+      "series": 32,
+      "parallel": 1,
+      "parts_per_assembly": 32,
+      "total_parts": 64,
+      "resistance_ohm": 5408000.0,
+      "old_resistance_ohm": 5401292.418766677,
+      "nominal_voltage_650_v": 20.3125,
+      "nominal_power_650_w": 0.00244140625,
+      "worst_voltage_700_v": 21.917422583672188,
+      "worst_power_700_w": 0.0028396066224382933,
+      "worst_current_700_a": 0.00012956743725974496
+    },
+    {
+      "weight": 2,
+      "quantity": 2,
+      "series": 64,
+      "parallel": 1,
+      "parts_per_assembly": 64,
+      "total_parts": 128,
+      "resistance_ohm": 10816000.0,
+      "old_resistance_ohm": 10802584.837533355,
+      "nominal_voltage_650_v": 10.15625,
+      "nominal_power_650_w": 0.0006103515625,
+      "worst_voltage_700_v": 10.95905408364353,
+      "worst_power_700_w": 0.0007099460681816641,
+      "worst_current_700_a": 6.478371862987248e-05
+    },
+    {
+      "weight": 1,
+      "quantity": 4,
+      "series": 128,
+      "parallel": 1,
+      "parts_per_assembly": 128,
+      "total_parts": 512,
+      "resistance_ohm": 21632000.0,
+      "old_resistance_ohm": 21605169.67506671,
+      "nominal_voltage_650_v": 5.078125,
+      "nominal_power_650_w": 0.000152587890625,
+      "worst_voltage_700_v": 5.479612743794672,
+      "worst_power_700_w": 0.00017749206900766087,
+      "worst_current_700_a": 3.239185931493624e-05
+    }
+  ],
+  "verification": {
+    "full_code_dc_max_error_lsb": 2.9174316296121106e-11,
+    "ac_sensitivity": [
+      {
+        "internal_node_ground_capacitance_pf": 0,
+        "frequency_hz": 19952.623149689032,
+        "gain_20k": 0.4862034574468132,
+        "gain_20k_db": -6.263639143307648
+      },
+      {
+        "internal_node_ground_capacitance_pf": 0.02,
+        "frequency_hz": 19952.623149689032,
+        "gain_20k": 0.4860183285824245,
+        "gain_20k_db": -6.266947048823535
+      },
+      {
+        "internal_node_ground_capacitance_pf": 0.1,
+        "frequency_hz": 19952.623149689032,
+        "gain_20k": 0.4852489876152289,
+        "gain_20k_db": -6.280707240320206
+      },
+      {
+        "internal_node_ground_capacitance_pf": 0.5,
+        "frequency_hz": 19952.623149689032,
+        "gain_20k": 0.4817116697415816,
+        "gain_20k_db": -6.344256650502485
+      }
+    ]
+  }
+}

@@ -2,6 +2,13 @@
 
 ## Current priority: decide audio viability
 
+Update, 22 November 2026: the user advanced to resistor sourcing and packaging.
+The bounded [array preliminary review](resistor_array_preliminary.md) is complete,
+including stock-based composition, full-code DC, envelope, thermal and parasitic
+screens. It found an open repetitive pulse-voltage issue in the series strings.
+The next implementation priority is resolving that issue and substrate parasitics;
+nominal sourcing success does not release a physical HV design. FPGA remains deferred.
+
 The user requested a preliminary quality verdict before more transition studies.
 See `audio_viability.md`: quantization/static THD, two-tone products, frequency
 response and output impedance now have an executed screen. The bounded switched sine/two-tone benchmark is now complete (six runs).

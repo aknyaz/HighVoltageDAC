@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HV-RDAC resistor array envelope</title>
+<style>
+body{margin:0;background:#eef2f4;color:#203143;font:16px system-ui,sans-serif}header{padding:22px 28px;background:white}h1{font-size:25px;margin:0 0 8px}p{margin:6px 0;max-width:1100px;line-height:1.5}button{padding:9px 16px;border:1px solid #9cafbd;border-radius:5px;background:white;color:#203143;cursor:pointer;margin:8px 6px 0 0}canvas{display:block;width:100%;height:65vh;min-height:400px;touch-action:none}footer{padding:12px 28px;font-size:14px}strong{color:#0b5a46}
+</style></head><body>
+<header><h1>HV-RDAC resistor-array envelope</h1>
+<p><strong>3,052 identical 169 kohm resistors</strong> · Panasonic ERA-8AEB1693V · one mono channel</p>
+<p>Two 250 × 220 mm arm panels. Each contains 1,526 resistor bodies (1206, nominal 3.2 × 1.6 × 0.6 mm). Board thickness: 1.6 mm.</p>
+<button id="iso">Perspective</button><button id="top">Top view</button><button id="reset">Reset zoom</button>
+</header><canvas id="view" aria-label="Interactive three-dimensional resistor envelope; drag to rotate and scroll to zoom"></canvas>
+<footer><p>Drag to rotate · scroll to zoom. Seven large groups per panel are coarse branches; the lower bank contains the fine branches and termination.</p>
+<p><b>Envelope study only.</b> No pads, copper, routing, HV clearance approval or thermal hardware. Empty space is an illustrative allowance. Drivers, switches, transformer and power supplies are excluded.</p></footer>
+<script>
+const model=__MODEL_DATA__;
+const canvas=document.getElementById('view'),ctx=canvas.getContext('2d');
+let yaw=-0.18,pitch=0.85,zoom=1,drag=null,W=0,H=0;
+function project(x,y,z){x-=260;y-=110;const a=x*Math.cos(yaw)-y*Math.sin(yaw),b=x*Math.sin(yaw)+y*Math.cos(yaw);return [W/2+a*scale(),H/2+(b*Math.sin(pitch)-z*Math.cos(pitch))*scale(),b*Math.cos(pitch)+z*Math.sin(pitch)];}
+function scale(){return Math.min(W/570,H/300)*zoom;}
+function rect(x,y,z,dx,dy,color,stroke=false){const a=[[x,y,z],[x+dx,y,z],[x+dx,y+dy,z],[x,y+dy,z]].map(p=>project(...p));ctx.beginPath();a.forEach((p,i)=>i?ctx.lineTo(p[0],p[1]):ctx.moveTo(p[0],p[1]));ctx.closePath();ctx.fillStyle=color;ctx.fill();if(stroke){ctx.strokeStyle='#3e7562';ctx.lineWidth=1;ctx.stroke();}}
+function draw(){ctx.clearRect(0,0,W,H);for(const x of [0,270])rect(x,0,1.6,250,220,'#438e73',true);const ordered=model.parts.slice().sort((a,b)=>project(a[0],a[1],0)[2]-project(b[0],b[1],0)[2]);for(const p of ordered){rect(p[0],p[1],p[2]+p[5],p[3],p[4],'#253448');rect(p[0],p[1],p[2]+p[5]+.01,.45,p[4],'#bec8d0');rect(p[0]+p[3]-.45,p[1],p[2]+p[5]+.01,.45,p[4],'#bec8d0');}ctx.font='14px system-ui';ctx.fillStyle='#203143';ctx.fillText('Each panel: 250 × 220 mm | body height above panel: 0.6 mm',20,H-20);}
+function resize(){const r=canvas.getBoundingClientRect(),d=window.devicePixelRatio||1;W=r.width;H=r.height;canvas.width=W*d;canvas.height=H*d;ctx.setTransform(d,0,0,d,0,0);draw();}
+canvas.onpointerdown=e=>{drag=[e.clientX,e.clientY];canvas.setPointerCapture(e.pointerId);};
+canvas.onpointermove=e=>{if(!drag)return;yaw+=(e.clientX-drag[0])*.006;pitch=Math.max(.15,Math.min(Math.PI/2,pitch+(e.clientY-drag[1])*.006));drag=[e.clientX,e.clientY];draw();};canvas.onpointerup=()=>drag=null;canvas.onpointercancel=()=>drag=null;
+canvas.addEventListener('wheel',e=>{e.preventDefault();zoom=Math.max(.4,Math.min(8,zoom*Math.exp(-e.deltaY*.001)));draw();},{passive:false});
+document.getElementById('top').onclick=()=>{yaw=0;pitch=Math.PI/2;draw();};document.getElementById('iso').onclick=()=>{yaw=-.18;pitch=.85;draw();};document.getElementById('reset').onclick=()=>{zoom=1;draw();};window.addEventListener('resize',resize);resize();
+</script></body></html>

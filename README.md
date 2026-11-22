@@ -1,7 +1,23 @@
 # HV-RDAC
 
 A research project exploring a resistive DAC as a power stage with an output transformer.
-Current status: **a low-voltage simulation of a 4-bit core**, not a finished 5–10 W amplifier.
+Current status: **low-voltage simulations of a 12-bit 3+9 segmented DAC**, with
+the original 4-bit core retained as a regression bench; not a finished 5-10 W amplifier.
+
+## Resistor-array preliminary review (22 November 2026)
+
+- [Complete resistor assembly table and sourcing](docs/resistor_array_candidate.md):
+  3,052 identical 169 kohm chips per mono channel, with explicit series/parallel groups.
+- [Thermal, aluminum-backing and fast-edge review](docs/resistor_array_preliminary.md):
+  preliminary screen complete; repetitive chip pulse-voltage compliance remains open.
+- [Interactive offline 3D envelope](output/resistor_array/resistor_array_3d.html),
+  two illustrative 250 x 220 mm arm panels, not an HV PCB layout.
+- [Predicted prototype BOM PDF](output/pdf/HV_RDAC_Predicted_Bill_of_Materials.pdf).
+
+Reproduce with `python calc/resistor_array_design.py` and
+`python calc/resistor_array_preliminary.py`. The BOM PDF builder is
+`python docs/build_predicted_bom.py`; install its optional dependency with
+`python -m pip install -r requirements-docs.txt`.
 
 ## Repository layout
 

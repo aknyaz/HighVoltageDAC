@@ -1,5 +1,6 @@
 * text=auto eol=lf
 *.png binary
+*.pdf binary
 
 # Preserve tool-generated formatting without whitespace diagnostics.
 plots/kicad/*.svg -whitespace
@@ -14,4 +15,6 @@ results/switching_glitches/*.log -whitespace
 results/nonideal_switches/*.log -whitespace
 results/sic_charge/*.log -whitespace
 results/partition_study/*.log -whitespace
+results/resistor_array/*.log -whitespace
+results/resistor_array_preliminary/*.log -whitespace
 plots/segmented_review/*.svg -whitespace
