@@ -1,0 +1,17 @@
+{
+  "bus_v": 100,
+  "code_amplitude": 0.0065,
+  "step_ns": 500,
+  "fundamental_peak_v": 0.008367243034175671,
+  "thd_2_to_20_percent": 1.0150138741977481,
+  "previous_window": {
+    "fundamental_peak_v": 0.008367243113413686,
+    "thd_2_to_20_percent": 1.0150132953381754
+  },
+  "window_change_pp": 5.788595727196366e-07,
+  "raw_window": {
+    "fundamental_peak_v": 0.008368483169076818,
+    "thd_2_to_20_percent": 1.0131883879969374
+  },
+  "fitted_tail_v": 0.0001408546686196232
+}

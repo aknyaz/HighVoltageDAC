@@ -1,11 +1,23 @@
 # Project plan
 
-## Next study on resumption: adjustable supply and low-level audio
+## Adjustable supply: first fixed-voltage comparison complete
+
+Follow-up on 22 November 2026: the user authorized the bounded 100 V check.
+The [fixed-supply study](supply_voltage_study.md) is now complete: nine held-code
+records and ten SPICE transients with timestep/window checks, using the existing
+12-bit model. At equal target output, switched 1 kHz THD improved from 0.530234%
+to 0.140474% at -40 dBFS and from 20.081713% to 1.015012% at -60 dBFS when moving
+from 650 V to 100 V and rescaling codes. Unchanged codes retained approximately
+0.530% THD at 1% utilization. This supports the hypothesis within the stated
+model limits, not a hardware distortion guarantee. Next follow-up: coordinated
+ramps, supply errors and equal-output thermal accounting. No FPGA or physical
+implementation work was resumed.
 
 Decision recorded on 22 November 2026: the project remains paused pending funding.
 The next requested calculation/simulation is to test whether reducing the DAC
 supply at low listening volume improves low-level distortion and resistor heat.
-This is a planned hypothesis test; no adjustable-supply results have been produced.
+The original plan below now has a first fixed-supply result as described above;
+dynamic adjustable-supply behavior has not yet been simulated.
 FPGA selection, physical PCB design and energized HV implementation remain deferred.
 
 The proposed operating policy is a slowly adjustable supply coordinated with

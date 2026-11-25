@@ -1,0 +1,292 @@
+stderr Warning: can't find the initialization file spinit.
+stdout ******
+stdout ** ngspice-46 shared library
+stdout ** Creation Date: Apr 14 2026   05:15:29
+stdout ******
+stdout ******
+stdout ** ngspice-46 : Circuit level simulation program
+stdout ** Compiled with KLU Direct Linear Solver
+stdout ** The U. C. Berkeley CAD Group
+stdout ** Copyright 1985-1994, Regents of the University of California.
+stdout ** Copyright 2001-2025, The ngspice team.
+stdout ** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html
+stdout ** Please file your bug-reports at https://ngspice.sourceforge.io/bugrep.html
+stdout ** Creation Date: Apr 14 2026   05:15:29
+stdout ******
+stdout Note: No compatibility mode selected!
+stdout Circuit: audio viability / ll1679 / 650 v / 200 ns blanking / 20 pf
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout ref                                        650
+stdout ca0_1                                        1
+stdout da0                                        650
+stdout ca0_0                                        0
+stdout a                                      324.919
+stdout ca1_1                                        1
+stdout da1                                        650
+stdout ca1_0                                        0
+stdout ca2_1                                        1
+stdout da2                                        650
+stdout ca2_0                                        0
+stdout ca3_1                                        1
+stdout da3                                        650
+stdout ca3_0                                        0
+stdout ca4_1                                        1
+stdout da4                                        650
+stdout ca4_0                                        0
+stdout ca5_1                                        1
+stdout da5                                        650
+stdout ca5_0                                        0
+stdout ca6_1                                        1
+stdout da6                                        650
+stdout ca6_0                                        0
+stdout ca7_1                                        1
+stdout da7                                    649.999
+stdout ca7_0                                        0
+stdout ca8_1                                        1
+stdout da8                                    649.999
+stdout ca8_0                                        0
+stdout ca9_1                                        1
+stdout da9                                    649.997
+stdout ca9_0                                        0
+stdout ca10_1                                       1
+stdout da10                                   649.997
+stdout ca10_0                                       0
+stdout ca11_1                                       1
+stdout da11                                   649.997
+stdout ca11_0                                       0
+stdout ca12_1                                       0
+stdout da12                                0.00269496
+stdout ca12_0                                       1
+stdout ca13_1                                       0
+stdout da13                                0.00269496
+stdout ca13_0                                       1
+stdout ca14_1                                       0
+stdout da14                                0.00269496
+stdout ca14_0                                       1
+stdout ca15_1                                       0
+stdout da15                                0.00269496
+stdout ca15_0                                       1
+stdout cb0_1                                        0
+stdout db0                                 5.2639e-06
+stdout cb0_0                                        1
+stdout b                                      324.922
+stdout cb1_1                                        0
+stdout db1                                1.05276e-05
+stdout cb1_0                                        1
+stdout cb2_1                                        0
+stdout db2                                2.10549e-05
+stdout cb2_0                                        1
+stdout cb3_1                                        0
+stdout db3                                4.21096e-05
+stdout cb3_0                                        1
+stdout cb4_1                                        0
+stdout db4                                 8.4219e-05
+stdout cb4_0                                        1
+stdout cb5_1                                        0
+stdout db5                                0.000168438
+stdout cb5_0                                        1
+stdout cb6_1                                        0
+stdout db6                                0.000336875
+stdout cb6_0                                        1
+stdout cb7_1                                        0
+stdout db7                                 0.00067375
+stdout cb7_0                                        1
+stdout cb8_1                                        0
+stdout db8                                  0.0013475
+stdout cb8_0                                        1
+stdout cb9_1                                        1
+stdout db9                                    649.997
+stdout cb9_0                                        0
+stdout cb10_1                                       1
+stdout db10                                   649.997
+stdout cb10_0                                       0
+stdout cb11_1                                       1
+stdout db11                                   649.997
+stdout cb11_0                                       0
+stdout cb12_1                                       1
+stdout db12                                   649.997
+stdout cb12_0                                       0
+stdout cb13_1                                       0
+stdout db13                                0.00269498
+stdout cb13_0                                       1
+stdout cb14_1                                       0
+stdout db14                                0.00269498
+stdout cb14_0                                       1
+stdout cb15_1                                       0
+stdout db15                                0.00269498
+stdout cb15_0                                       1
+stdout p                                      324.922
+stdout s                                            0
+stdout out                                          0
+stdout ls#branch                                    0
+stdout lp#branch                          -1.4776e-05
+stdout vb15_0#branch                                0
+stdout vb15_1#branch                                0
+stdout vb14_0#branch                                0
+stdout vb14_1#branch                                0
+stdout vb13_0#branch                                0
+stdout vb13_1#branch                                0
+stdout vb12_0#branch                                0
+stdout vb12_1#branch                                0
+stdout vb11_0#branch                                0
+stdout vb11_1#branch                                0
+stdout vb10_0#branch                                0
+stdout vb10_1#branch                                0
+stdout vb9_0#branch                                 0
+stdout vb9_1#branch                                 0
+stdout vb8_0#branch                                 0
+stdout vb8_1#branch                                 0
+stdout vb7_0#branch                                 0
+stdout vb7_1#branch                                 0
+stdout vb6_0#branch                                 0
+stdout vb6_1#branch                                 0
+stdout vb5_0#branch                                 0
+stdout vb5_1#branch                                 0
+stdout vb4_0#branch                                 0
+stdout vb4_1#branch                                 0
+stdout vb3_0#branch                                 0
+stdout vb3_1#branch                                 0
+stdout vb2_0#branch                                 0
+stdout vb2_1#branch                                 0
+stdout vb1_0#branch                                 0
+stdout vb1_1#branch                                 0
+stdout vb0_0#branch                                 0
+stdout vb0_1#branch                                 0
+stdout va15_0#branch                                0
+stdout va15_1#branch                                0
+stdout va14_0#branch                                0
+stdout va14_1#branch                                0
+stdout va13_0#branch                                0
+stdout va13_1#branch                                0
+stdout va12_0#branch                                0
+stdout va12_1#branch                                0
+stdout va11_0#branch                                0
+stdout va11_1#branch                                0
+stdout va10_0#branch                                0
+stdout va10_1#branch                                0
+stdout va9_0#branch                                 0
+stdout va9_1#branch                                 0
+stdout va8_0#branch                                 0
+stdout va8_1#branch                                 0
+stdout va7_0#branch                                 0
+stdout va7_1#branch                                 0
+stdout va6_0#branch                                 0
+stdout va6_1#branch                                 0
+stdout va5_0#branch                                 0
+stdout va5_1#branch                                 0
+stdout va4_0#branch                                 0
+stdout va4_1#branch                                 0
+stdout va3_0#branch                                 0
+stdout va3_1#branch                                 0
+stdout va2_0#branch                                 0
+stdout va2_1#branch                                 0
+stdout va1_0#branch                                 0
+stdout va1_1#branch                                 0
+stdout va0_0#branch                                 0
+stdout va0_1#branch                                 0
+stdout vref#branch                         -0.0616144
+ Reference value :  0.00000e+00
+ Reference value :  2.16341e-04
+ Reference value :  4.85359e-04
+ Reference value :  7.16340e-04
+ Reference value :  1.00260e-03
+ Reference value :  1.28906e-03
+ Reference value :  1.50280e-03
+ Reference value :  1.71666e-03
+ Reference value :  2.00260e-03
+ Reference value :  2.21634e-03
+ Reference value :  2.48590e-03
+ Reference value :  2.71634e-03
+ Reference value :  2.91986e-03
+ Reference value :  3.19369e-03
+ Reference value :  3.41948e-03
+ Reference value :  3.65722e-03
+ Reference value :  3.91948e-03
+ Reference value :  4.17324e-03
+ Reference value :  4.41948e-03
+ Reference value :  4.69412e-03
+ Reference value :  4.91948e-03
+ Reference value :  5.28906e-03
+ Reference value :  5.68875e-03
+ Reference value :  6.07317e-03
+ Reference value :  6.50280e-03
+ Reference value :  6.91948e-03
+ Reference value :  7.28926e-03
+ Reference value :  7.69131e-03
+ Reference value :  8.00434e-03
+ Reference value :  8.44601e-03
+ Reference value :  8.78953e-03
+ Reference value :  9.07712e-03
+ Reference value :  9.42421e-03
+ Reference value :  9.79372e-03
+ Reference value :  1.02163e-02
+ Reference value :  1.04621e-02
+ Reference value :  1.07163e-02
+ Reference value :  1.09195e-02
+ Reference value :  1.11720e-02
+ Reference value :  1.14195e-02
+ Reference value :  1.16034e-02
+ Reference value :  1.19195e-02
+ Reference value :  1.20861e-02
+ Reference value :  1.24193e-02
+ Reference value :  1.27161e-02
+ Reference value :  1.29195e-02
+ Reference value :  1.31026e-02
+ Reference value :  1.34195e-02
+ Reference value :  1.37893e-02
+ Reference value :  1.41726e-02
+ Reference value :  1.45058e-02
+ Reference value :  1.49195e-02
+ Reference value :  1.52163e-02
+ Reference value :  1.55861e-02
+ Reference value :  1.60028e-02
+ Reference value :  1.64195e-02
+ Reference value :  1.67521e-02
+ Reference value :  1.71264e-02
+ Reference value :  1.75043e-02
+ Reference value :  1.79213e-02
+ Reference value :  1.83023e-02
+ Reference value :  1.87163e-02
+ Reference value :  1.90861e-02
+ Reference value :  1.95028e-02
+ Reference value :  1.99227e-02
+ Reference value :  2.02893e-02
+ Reference value :  2.05866e-02
+ Reference value :  2.10028e-02
+ Reference value :  2.12893e-02
+ Reference value :  2.15086e-02
+ Reference value :  2.17893e-02
+ Reference value :  2.20687e-02
+ Reference value :  2.22893e-02
+ Reference value :  2.25861e-02
+ Reference value :  2.28408e-02
+ Reference value :  2.30861e-02
+ Reference value :  2.34075e-02
+ Reference value :  2.35861e-02
+ Reference value :  2.39195e-02
+ Reference value :  2.40865e-02
+ Reference value :  2.44195e-02
+ Reference value :  2.46450e-02
+ Reference value :  2.49195e-02
+ Reference value :  2.52098e-02
+ Reference value :  2.54201e-02
+ Reference value :  2.57163e-02
+ Reference value :  2.59341e-02
+ Reference value :  2.62163e-02
+ Reference value :  2.65082e-02
+ Reference value :  2.69516e-02
+ Reference value :  2.73327e-02
+ Reference value :  2.77324e-02
+ Reference value :  2.80859e-02
+ Reference value :  2.83821e-02
+ Reference value :  2.85861e-02
+ Reference value :  2.89195e-02
+ Reference value :  2.90886e-02
+ Reference value :  2.94195e-02
+ Reference value :  2.97891e-02
+stdout No. of Data Rows : 201366

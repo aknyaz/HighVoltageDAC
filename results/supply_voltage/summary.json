@@ -1,0 +1,272 @@
+{
+  "sample_rate_hz": 192000,
+  "tone_hz": 1000,
+  "spice_runs": 10,
+  "static": [
+    {
+      "reference_amplitude_at_650_v": 0.1,
+      "mode": "baseline",
+      "bus_v": 650,
+      "code_amplitude": 0.1,
+      "fundamental_peak_v": 0.8336470464610871,
+      "fundamental_gain_error_percent": 0.005787877551144405,
+      "thd_2_to_20_percent": 0.0778437993552147,
+      "source_quantization_rms_v": 0.08710043682621608,
+      "source_quantization_rms_percent_of_signal": 0.18955184507247325,
+      "differential_source_step_v": 0.3173828125,
+      "distinct_codes": 92
+    },
+    {
+      "reference_amplitude_at_650_v": 0.1,
+      "mode": "equal_target_output",
+      "bus_v": 100,
+      "code_amplitude": 0.65,
+      "fundamental_peak_v": 0.833647198669123,
+      "fundamental_gain_error_percent": 0.005806136698849329,
+      "thd_2_to_20_percent": 0.01451358078108576,
+      "source_quantization_rms_v": 0.014335321301071086,
+      "source_quantization_rms_percent_of_signal": 0.031197163887321456,
+      "differential_source_step_v": 0.048828125,
+      "distinct_codes": 96
+    },
+    {
+      "reference_amplitude_at_650_v": 0.1,
+      "mode": "unchanged_codes",
+      "bus_v": 100,
+      "code_amplitude": 0.1,
+      "fundamental_peak_v": 0.12825339176324418,
+      "fundamental_gain_error_percent": 0.005787877551188814,
+      "thd_2_to_20_percent": 0.0778437993552156,
+      "source_quantization_rms_v": 0.013400067204033174,
+      "source_quantization_rms_percent_of_signal": 0.18955184507247222,
+      "differential_source_step_v": 0.048828125,
+      "distinct_codes": 92
+    },
+    {
+      "reference_amplitude_at_650_v": 0.01,
+      "mode": "baseline",
+      "bus_v": 650,
+      "code_amplitude": 0.01,
+      "fundamental_peak_v": 0.08362808114663947,
+      "fundamental_gain_error_percent": 0.3217390292504785,
+      "thd_2_to_20_percent": 0.519127539529004,
+      "source_quantization_rms_v": 0.08952347373801321,
+      "source_quantization_rms_percent_of_signal": 1.9482496578283472,
+      "differential_source_step_v": 0.3173828125,
+      "distinct_codes": 42
+    },
+    {
+      "reference_amplitude_at_650_v": 0.01,
+      "mode": "equal_target_output",
+      "bus_v": 100,
+      "code_amplitude": 0.065,
+      "fundamental_peak_v": 0.08335353213453273,
+      "fundamental_gain_error_percent": -0.0076148667813469295,
+      "thd_2_to_20_percent": 0.13927713722131502,
+      "source_quantization_rms_v": 0.014164051152049542,
+      "source_quantization_rms_percent_of_signal": 0.3082443817048441,
+      "differential_source_step_v": 0.048828125,
+      "distinct_codes": 90
+    },
+    {
+      "reference_amplitude_at_650_v": 0.01,
+      "mode": "unchanged_codes",
+      "bus_v": 100,
+      "code_amplitude": 0.01,
+      "fundamental_peak_v": 0.012865858637944531,
+      "fundamental_gain_error_percent": 0.3217390292504563,
+      "thd_2_to_20_percent": 0.5191275395290051,
+      "source_quantization_rms_v": 0.013772842113540493,
+      "source_quantization_rms_percent_of_signal": 1.9482496578283472,
+      "differential_source_step_v": 0.048828125,
+      "distinct_codes": 42
+    },
+    {
+      "reference_amplitude_at_650_v": 0.001,
+      "mode": "baseline",
+      "bus_v": 650,
+      "code_amplitude": 0.001,
+      "fundamental_peak_v": 0.00825870197030274,
+      "fundamental_gain_error_percent": -0.9271368630031196,
+      "thd_2_to_20_percent": 20.037496622067305,
+      "source_quantization_rms_v": 0.10500546027573941,
+      "source_quantization_rms_percent_of_signal": 22.851755356478147,
+      "differential_source_step_v": 0.3173828125,
+      "distinct_codes": 6
+    },
+    {
+      "reference_amplitude_at_650_v": 0.001,
+      "mode": "equal_target_output",
+      "bus_v": 100,
+      "code_amplitude": 0.006500000000000001,
+      "fundamental_peak_v": 0.008368338995435005,
+      "fundamental_gain_error_percent": 0.3880884623246095,
+      "thd_2_to_20_percent": 0.9988270413326743,
+      "source_quantization_rms_v": 0.014185713717529557,
+      "source_quantization_rms_percent_of_signal": 3.0871581209088585,
+      "differential_source_step_v": 0.048828125,
+      "distinct_codes": 28
+    },
+    {
+      "reference_amplitude_at_650_v": 0.001,
+      "mode": "unchanged_codes",
+      "bus_v": 100,
+      "code_amplitude": 0.001,
+      "fundamental_peak_v": 0.0012705695338927287,
+      "fundamental_gain_error_percent": -0.9271368630031751,
+      "thd_2_to_20_percent": 20.03749662206731,
+      "source_quantization_rms_v": 0.0161546861962676,
+      "source_quantization_rms_percent_of_signal": 22.851755356478144,
+      "differential_source_step_v": 0.048828125,
+      "distinct_codes": 6
+    }
+  ],
+  "switched": [
+    {
+      "bus_v": 650,
+      "code_amplitude": 0.01,
+      "step_ns": 250,
+      "fundamental_peak_v": 0.08362107587262094,
+      "thd_2_to_20_percent": 0.5302344171383849,
+      "previous_window": {
+        "fundamental_peak_v": 0.08362107263983577,
+        "thd_2_to_20_percent": 0.5302271850918616
+      },
+      "window_change_pp": 7.232046523308888e-06,
+      "raw_window": {
+        "fundamental_peak_v": 0.08362844057092637,
+        "thd_2_to_20_percent": 0.530433504039589
+      },
+      "fitted_tail_v": 0.0008364874086067511,
+      "refinement_pp": 1.1284073257122884e-05,
+      "held": {
+        "bus_v": 650,
+        "code_amplitude": 0.01,
+        "fundamental_peak_v": 0.08362808114663947,
+        "fundamental_gain_error_percent": 0.3217390292504785,
+        "thd_2_to_20_percent": 0.519127539529004,
+        "source_quantization_rms_v": 0.08952347373801321,
+        "source_quantization_rms_percent_of_signal": 1.9482496578283472,
+        "differential_source_step_v": 0.3173828125,
+        "distinct_codes": 42
+      }
+    },
+    {
+      "bus_v": 100,
+      "code_amplitude": 0.065,
+      "step_ns": 250,
+      "fundamental_peak_v": 0.08335270841516539,
+      "thd_2_to_20_percent": 0.14047441012482462,
+      "previous_window": {
+        "fundamental_peak_v": 0.08335271095251968,
+        "thd_2_to_20_percent": 0.14047460775178405
+      },
+      "window_change_pp": 1.9762695943614794e-07,
+      "raw_window": {
+        "fundamental_peak_v": 0.08335793931806285,
+        "thd_2_to_20_percent": 0.13961476227010136
+      },
+      "fitted_tail_v": 0.0005941336158703267,
+      "refinement_pp": 1.634622023219401e-05,
+      "held": {
+        "bus_v": 100,
+        "code_amplitude": 0.065,
+        "fundamental_peak_v": 0.08335353213453273,
+        "fundamental_gain_error_percent": -0.0076148667813469295,
+        "thd_2_to_20_percent": 0.13927713722131502,
+        "source_quantization_rms_v": 0.014164051152049542,
+        "source_quantization_rms_percent_of_signal": 0.3082443817048441,
+        "differential_source_step_v": 0.048828125,
+        "distinct_codes": 90
+      }
+    },
+    {
+      "bus_v": 100,
+      "code_amplitude": 0.01,
+      "step_ns": 250,
+      "fundamental_peak_v": 0.012864779992197262,
+      "thd_2_to_20_percent": 0.5302223323605648,
+      "previous_window": {
+        "fundamental_peak_v": 0.012864779516786466,
+        "thd_2_to_20_percent": 0.5302286511803029
+      },
+      "window_change_pp": 6.318819738115877e-06,
+      "raw_window": {
+        "fundamental_peak_v": 0.012865913040560856,
+        "thd_2_to_20_percent": 0.5304216813215711
+      },
+      "fitted_tail_v": 0.00012869239913632655,
+      "refinement_pp": 7.98689269221331e-06,
+      "held": {
+        "bus_v": 100,
+        "code_amplitude": 0.01,
+        "fundamental_peak_v": 0.012865858637944531,
+        "fundamental_gain_error_percent": 0.3217390292504563,
+        "thd_2_to_20_percent": 0.5191275395290051,
+        "source_quantization_rms_v": 0.013772842113540493,
+        "source_quantization_rms_percent_of_signal": 1.9482496578283472,
+        "differential_source_step_v": 0.048828125,
+        "distinct_codes": 42
+      }
+    },
+    {
+      "bus_v": 650,
+      "code_amplitude": 0.001,
+      "step_ns": 250,
+      "fundamental_peak_v": 0.008251450574037068,
+      "thd_2_to_20_percent": 20.081712599460097,
+      "previous_window": {
+        "fundamental_peak_v": 0.008251450805936098,
+        "thd_2_to_20_percent": 20.081712764842575
+      },
+      "window_change_pp": 1.653824774905388e-07,
+      "raw_window": {
+        "fundamental_peak_v": 0.008260603834636428,
+        "thd_2_to_20_percent": 20.064197067720336
+      },
+      "fitted_tail_v": 0.0010395582144183816,
+      "refinement_pp": 1.138045888637862e-06,
+      "held": {
+        "bus_v": 650,
+        "code_amplitude": 0.001,
+        "fundamental_peak_v": 0.00825870197030274,
+        "fundamental_gain_error_percent": -0.9271368630031196,
+        "thd_2_to_20_percent": 20.037496622067305,
+        "source_quantization_rms_v": 0.10500546027573941,
+        "source_quantization_rms_percent_of_signal": 22.851755356478147,
+        "differential_source_step_v": 0.3173828125,
+        "distinct_codes": 6
+      }
+    },
+    {
+      "bus_v": 100,
+      "code_amplitude": 0.0065,
+      "step_ns": 250,
+      "fundamental_peak_v": 0.008367243717900331,
+      "thd_2_to_20_percent": 1.0150117851479876,
+      "previous_window": {
+        "fundamental_peak_v": 0.008367243376470919,
+        "thd_2_to_20_percent": 1.0150134771179824
+      },
+      "window_change_pp": 1.691969994777054e-06,
+      "raw_window": {
+        "fundamental_peak_v": 0.008368483853928087,
+        "thd_2_to_20_percent": 1.0131864386192635
+      },
+      "fitted_tail_v": 0.00014085479341098623,
+      "refinement_pp": 2.0890497605119407e-06,
+      "held": {
+        "bus_v": 100,
+        "code_amplitude": 0.0065,
+        "fundamental_peak_v": 0.008368338995435005,
+        "fundamental_gain_error_percent": 0.3880884623246317,
+        "thd_2_to_20_percent": 0.9988270413326743,
+        "source_quantization_rms_v": 0.014185713717529566,
+        "source_quantization_rms_percent_of_signal": 3.0871581209088617,
+        "differential_source_step_v": 0.048828125,
+        "distinct_codes": 28
+      }
+    }
+  ],
+  "scope": "Nominal 3+9 equivalent resistors and linear LL1679; existing fixed 20 pF, 0.35 ohm switch surrogate, 200 ns blanking, 2 ns edges, 50 MHz command grid. Ideal fixed supplies. Generic rail clamps corrected for each bus. No nonlinear HV devices/core, physical noise, supply ripple/ramps, tolerance or thermal drift. Not the expanded 3052-chip parasitic model. THD includes harmonics 2-20; not THD+N. Same target amplitude is set before quantization; actual amplitudes differ slightly from quantization and switching. Slow startup tail removed by the existing period-mean fit."
+}
