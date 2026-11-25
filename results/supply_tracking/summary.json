@@ -1,0 +1,186 @@
+{
+  "date": "2026-11-24",
+  "spice_runs": 16,
+  "thermal": {
+    "arm_resistance_ohm": 5281.25,
+    "load_ohm": 10000,
+    "rows": [
+      {
+        "reference_amplitude_650_v": 0.1,
+        "bus_v": 650.0,
+        "code_amplitude": 0.1,
+        "array_heat_w": 39.85282485009147,
+        "load_power_w": 0.04994417150028609,
+        "supply_power_w": 39.90276902159176,
+        "peak_arm_heat_w": 19.999972497677575,
+        "power_balance_max_error_w": 1.940114735532461e-14
+      },
+      {
+        "reference_amplitude_650_v": 0.1,
+        "bus_v": 100.0,
+        "code_amplitude": 0.65,
+        "array_heat_w": 0.7995732575014411,
+        "load_power_w": 0.049943995874524694,
+        "supply_power_w": 0.8495172533759657,
+        "peak_arm_heat_w": 0.4733367752376859,
+        "power_balance_max_error_w": 2.220446049250313e-16
+      },
+      {
+        "reference_amplitude_650_v": 0.01,
+        "bus_v": 650.0,
+        "code_amplitude": 0.01,
+        "array_heat_w": 39.99851603336672,
+        "load_power_w": 0.0005027860112951696,
+        "supply_power_w": 39.99901881937802,
+        "peak_arm_heat_w": 20.000000314551464,
+        "power_balance_max_error_w": 1.6764801352708858e-14
+      },
+      {
+        "reference_amplitude_650_v": 0.01,
+        "bus_v": 100.0,
+        "code_amplitude": 0.065,
+        "array_heat_w": 0.9452741646973101,
+        "load_power_w": 0.0004993105008261365,
+        "supply_power_w": 0.9457734751981363,
+        "peak_arm_heat_w": 0.473372515746753,
+        "power_balance_max_error_w": 3.209238430557093e-16
+      },
+      {
+        "reference_amplitude_650_v": 0.001,
+        "bus_v": 650.0,
+        "code_amplitude": 0.001,
+        "array_heat_w": 39.999982405096084,
+        "load_power_w": 5.161870204807252e-06,
+        "supply_power_w": 39.9999875669663,
+        "peak_arm_heat_w": 20.000000314551464,
+        "power_balance_max_error_w": 3.695457788654164e-15
+      },
+      {
+        "reference_amplitude_650_v": 0.001,
+        "bus_v": 100.0,
+        "code_amplitude": 0.006500000000000001,
+        "array_heat_w": 0.946730661922027,
+        "load_power_w": 5.037346253576069e-06,
+        "supply_power_w": 0.9467356992682804,
+        "peak_arm_heat_w": 0.47337278851009384,
+        "power_balance_max_error_w": 2.167049092255402e-16
+      }
+    ],
+    "scope": "Exact nominal static branch power over a 192-sample 1 kHz cycle. 3052-chip candidate equivalent resistances, ideal switches and resistive 10 kohm load; no transformer/driver/supply losses or thermal transient."
+  },
+  "tracking": [
+    {
+      "frequency_hz": 20,
+      "lag_s": 0.01,
+      "actual_voltage_feedback": false,
+      "output_error_peak_v": 0.01561748086644385,
+      "output_error_peak_percent": 19.281699256379564,
+      "gain_ratio_min": 0.8463818749419735,
+      "gain_ratio_max": 1.274999999433517,
+      "differential_source_mean_v": -0.009993986194904903,
+      "flux_linkage_error_peak_wb_turn": 0.005401346365985898,
+      "analytic_rail_max_error_v": 3.2067971460492117e-06,
+      "max_code_amplitude": 0.065,
+      "timestep_peak_error_difference_v": 3.935952272438037e-09
+    },
+    {
+      "frequency_hz": 20,
+      "lag_s": 0.01,
+      "actual_voltage_feedback": true,
+      "output_error_peak_v": 1.2054593434562832e-13,
+      "output_error_peak_percent": 1.4882876902553649e-10,
+      "gain_ratio_min": 1.0,
+      "gain_ratio_max": 1.0,
+      "differential_source_mean_v": -5.540552584600072e-19,
+      "flux_linkage_error_peak_wb_turn": 7.021828163676136e-16,
+      "analytic_rail_max_error_v": 3.2067971460492117e-06,
+      "max_code_amplitude": 0.06499999996315532,
+      "timestep_peak_error_difference_v": 6.619010894937105e-14
+    },
+    {
+      "frequency_hz": 20,
+      "lag_s": 0.05,
+      "actual_voltage_feedback": false,
+      "output_error_peak_v": 0.08933700906155612,
+      "output_error_peak_percent": 110.29751570824544,
+      "gain_ratio_min": 0.63774781029848,
+      "gain_ratio_max": 2.349815997853449,
+      "differential_source_mean_v": -0.0014419145491673807,
+      "flux_linkage_error_peak_wb_turn": 0.026462993193045747,
+      "analytic_rail_max_error_v": 6.995592798375583e-07,
+      "max_code_amplitude": 0.065,
+      "timestep_peak_error_difference_v": 2.102025760397641e-08
+    },
+    {
+      "frequency_hz": 20,
+      "lag_s": 0.05,
+      "actual_voltage_feedback": true,
+      "output_error_peak_v": 1.8418599978531347e-13,
+      "output_error_peak_percent": 2.2740025010867748e-10,
+      "gain_ratio_min": 1.0,
+      "gain_ratio_max": 1.0,
+      "differential_source_mean_v": 4.465396874600943e-19,
+      "flux_linkage_error_peak_wb_turn": 8.843437397634607e-16,
+      "analytic_rail_max_error_v": 6.995592798375583e-07,
+      "max_code_amplitude": 0.0634453902948608,
+      "timestep_peak_error_difference_v": 5.5268289944621074e-14
+    },
+    {
+      "frequency_hz": 1000,
+      "lag_s": 0.01,
+      "actual_voltage_feedback": false,
+      "output_error_peak_v": 0.022773210899854596,
+      "output_error_peak_percent": 27.305897921394834,
+      "gain_ratio_min": 0.8463818908819045,
+      "gain_ratio_max": 1.2749999994331191,
+      "differential_source_mean_v": -1.6844153178035559e-07,
+      "flux_linkage_error_peak_wb_turn": 0.00012904663914987515,
+      "analytic_rail_max_error_v": 7.186793027358362e-08,
+      "max_code_amplitude": 0.065,
+      "timestep_peak_error_difference_v": 3.7200797997627433e-13
+    },
+    {
+      "frequency_hz": 1000,
+      "lag_s": 0.01,
+      "actual_voltage_feedback": true,
+      "output_error_peak_v": 1.2605610999472106e-12,
+      "output_error_peak_percent": 1.5114592168703319e-09,
+      "gain_ratio_min": 1.0,
+      "gain_ratio_max": 1.0,
+      "differential_source_mean_v": -3.202232416241971e-19,
+      "flux_linkage_error_peak_wb_turn": 1.782415962472978e-15,
+      "analytic_rail_max_error_v": 7.190317319327733e-08,
+      "max_code_amplitude": 0.06499999996315912,
+      "timestep_peak_error_difference_v": 1.1117495812840161e-13
+    },
+    {
+      "frequency_hz": 1000,
+      "lag_s": 0.05,
+      "actual_voltage_feedback": false,
+      "output_error_peak_v": 0.11199579648058108,
+      "output_error_peak_percent": 134.28698964925795,
+      "gain_ratio_min": 0.6377478126870354,
+      "gain_ratio_max": 2.349815996555856,
+      "differential_source_mean_v": 5.77224538483156e-07,
+      "flux_linkage_error_peak_wb_turn": 0.0006334147239860815,
+      "analytic_rail_max_error_v": 1.5617104054399533e-08,
+      "max_code_amplitude": 0.065,
+      "timestep_peak_error_difference_v": 1.8374607391180575e-12
+    },
+    {
+      "frequency_hz": 1000,
+      "lag_s": 0.05,
+      "actual_voltage_feedback": true,
+      "output_error_peak_v": 1.4678258608569195e-12,
+      "output_error_peak_percent": 1.7599774218725788e-09,
+      "gain_ratio_min": 1.0,
+      "gain_ratio_max": 1.0,
+      "differential_source_mean_v": -1.0680490562991281e-19,
+      "flux_linkage_error_peak_wb_turn": 1.9040397116845558e-15,
+      "analytic_rail_max_error_v": 1.5597692026858567e-08,
+      "max_code_amplitude": 0.06344539052022954,
+      "timestep_peak_error_difference_v": 1.2886913758336505e-13
+    }
+  ],
+  "scope": "Continuous unquantized Thevenin source, linear LL1679. Constant desired 6.5 V peak differential source while rail ramps 650->100->650 V, 200 ms per ramp. First-order 10/50 ms supply lag. Perfect instantaneous actual-voltage knowledge in feedback control case. No switch replay, 12-bit rounding, ADC delay/noise, supply ripple, rail load coupling or real converter model. Transient peak error is not THD; linkage is not flux density or saturation qualification."
+}

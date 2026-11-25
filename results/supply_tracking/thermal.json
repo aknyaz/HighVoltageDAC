@@ -1,0 +1,67 @@
+{
+  "arm_resistance_ohm": 5281.25,
+  "load_ohm": 10000,
+  "rows": [
+    {
+      "reference_amplitude_650_v": 0.1,
+      "bus_v": 650.0,
+      "code_amplitude": 0.1,
+      "array_heat_w": 39.85282485009147,
+      "load_power_w": 0.04994417150028609,
+      "supply_power_w": 39.90276902159176,
+      "peak_arm_heat_w": 19.999972497677575,
+      "power_balance_max_error_w": 1.940114735532461e-14
+    },
+    {
+      "reference_amplitude_650_v": 0.1,
+      "bus_v": 100.0,
+      "code_amplitude": 0.65,
+      "array_heat_w": 0.7995732575014411,
+      "load_power_w": 0.049943995874524694,
+      "supply_power_w": 0.8495172533759657,
+      "peak_arm_heat_w": 0.4733367752376859,
+      "power_balance_max_error_w": 2.220446049250313e-16
+    },
+    {
+      "reference_amplitude_650_v": 0.01,
+      "bus_v": 650.0,
+      "code_amplitude": 0.01,
+      "array_heat_w": 39.99851603336672,
+      "load_power_w": 0.0005027860112951696,
+      "supply_power_w": 39.99901881937802,
+      "peak_arm_heat_w": 20.000000314551464,
+      "power_balance_max_error_w": 1.6764801352708858e-14
+    },
+    {
+      "reference_amplitude_650_v": 0.01,
+      "bus_v": 100.0,
+      "code_amplitude": 0.065,
+      "array_heat_w": 0.9452741646973101,
+      "load_power_w": 0.0004993105008261365,
+      "supply_power_w": 0.9457734751981363,
+      "peak_arm_heat_w": 0.473372515746753,
+      "power_balance_max_error_w": 3.209238430557093e-16
+    },
+    {
+      "reference_amplitude_650_v": 0.001,
+      "bus_v": 650.0,
+      "code_amplitude": 0.001,
+      "array_heat_w": 39.999982405096084,
+      "load_power_w": 5.161870204807252e-06,
+      "supply_power_w": 39.9999875669663,
+      "peak_arm_heat_w": 20.000000314551464,
+      "power_balance_max_error_w": 3.695457788654164e-15
+    },
+    {
+      "reference_amplitude_650_v": 0.001,
+      "bus_v": 100.0,
+      "code_amplitude": 0.006500000000000001,
+      "array_heat_w": 0.946730661922027,
+      "load_power_w": 5.037346253576069e-06,
+      "supply_power_w": 0.9467356992682804,
+      "peak_arm_heat_w": 0.47337278851009384,
+      "power_balance_max_error_w": 2.167049092255402e-16
+    }
+  ],
+  "scope": "Exact nominal static branch power over a 192-sample 1 kHz cycle. 3052-chip candidate equivalent resistances, ideal switches and resistive 10 kohm load; no transformer/driver/supply losses or thermal transient."
+}

@@ -7,6 +7,8 @@ the original 4-bit core retained as a regression bench; not a finished 5-10 W am
 The [100 V versus 650 V supply study](docs/supply_voltage_study.md) compares
 low-level audio with rescaled digital codes using the existing transformer and
 switch models. All voltages are simulation parameters, not hardware validation.
+The [heat and supply-tracking follow-up](docs/supply_tracking.md) quantifies
+resistor dissipation and the effect of supply lag during slow voltage ramps.
 
 ## Resistor-array preliminary review (22 November 2026)
 

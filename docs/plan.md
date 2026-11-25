@@ -2,6 +2,14 @@
 
 ## Adjustable supply: first fixed-voltage comparison complete
 
+Update, 24 November 2026: [equal-output heat and continuous supply tracking](supply_tracking.md)
+are now checked. For a 10 kohm resistive load, low-level array heat falls from
+about 40 W to 0.95 W at 100 V. Sixteen SPICE runs show that command-based digital
+scaling produces substantial temporary gain error when the assumed supply lags;
+ideal actual-rail scaling cancels this factor. This is a continuous reference
+bound, not a quantized controller or validated supply. Next: finite rail sensing
+accuracy/delay and ripple, followed by coordinated volume ramps with held codes.
+
 Follow-up on 22 November 2026: the user authorized the bounded 100 V check.
 The [fixed-supply study](supply_voltage_study.md) is now complete: nine held-code
 records and ten SPICE transients with timestep/window checks, using the existing
@@ -9,8 +17,8 @@ records and ten SPICE transients with timestep/window checks, using the existing
 to 0.140474% at -40 dBFS and from 20.081713% to 1.015012% at -60 dBFS when moving
 from 650 V to 100 V and rescaling codes. Unchanged codes retained approximately
 0.530% THD at 1% utilization. This supports the hypothesis within the stated
-model limits, not a hardware distortion guarantee. Next follow-up: coordinated
-ramps, supply errors and equal-output thermal accounting. No FPGA or physical
+model limits, not a hardware distortion guarantee. The first follow-up on
+tracking lag and equal-output heat is documented above. No FPGA or physical
 implementation work was resumed.
 
 Decision recorded on 22 November 2026: the project remains paused pending funding.

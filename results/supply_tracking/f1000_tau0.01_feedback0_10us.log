@@ -1,0 +1,48 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: supply tracking / continuous differential equivalent / simulation only
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout cmd                                        650
+stdout actual                                     650
+stdout drive                                        0
+stdout ideal                                        0
+stdout pa                                           0
+stdout sa                                           0
+stdout oa                                           0
+stdout pb                                           0
+stdout sb                                           0
+stdout ob                                           0
+stdout bideal#branch                                0
+stdout bdrive#branch                                0
+stdout lsb#branch                                   0
+stdout lpb#branch                                   0
+stdout lsa#branch                                   0
+stdout lpa#branch                                   0
+stdout vcmd#branch                                  0
+ Reference value :  0.00000e+00
+ Reference value :  4.87039e-02
+ Reference value :  9.76063e-02
+ Reference value :  1.46781e-01
+ Reference value :  1.98150e-01
+ Reference value :  2.38519e-01
+ Reference value :  2.79809e-01
+ Reference value :  3.31006e-01
+ Reference value :  3.82453e-01
+ Reference value :  4.32999e-01
+ Reference value :  4.81087e-01
+ Reference value :  5.31127e-01
+ Reference value :  5.80505e-01
+ Reference value :  6.19627e-01
+ Reference value :  6.57227e-01
+ Reference value :  7.01526e-01
+ Reference value :  7.27240e-01
+ Reference value :  7.71022e-01
+ Reference value :  8.15699e-01
+ Reference value :  8.65303e-01
+ Reference value :  9.12908e-01
+ Reference value :  9.61519e-01
+stdout No. of Data Rows : 807980

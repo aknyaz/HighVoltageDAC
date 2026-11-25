@@ -1,0 +1,26 @@
+Supply tracking / continuous differential equivalent / simulation only
+Vcmd cmd 0 PWL(0 650 .1 650 .3 100 .5 100 .7 650 1 650)
+Rlag cmd actual 1
+Clag actual 0 0.05
+.options reltol=1e-8 abstol=1e-14 method=gear
+Bdrive drive 0 V=6.5*sin(2*pi*20*time)*v(actual)/v(actual)
+Bideal ideal 0 V=6.5*sin(2*pi*20*time)
+Rsrca drive pa 10709.3992554037
+Lpa pa 0 150.0
+Lsa sa 0 0.126023944549464
+Ka Lpa Lsa 0.999973332977768
+Rseca sa oa .2
+Rloada oa 0 8
+Rcorea pa 0 100000.0
+Cpria pa 0 1e-10
+Rsrcb ideal pb 10709.3992554037
+Lpb pb 0 150.0
+Lsb sb 0 0.126023944549464
+Kb Lpb Lsb 0.999973332977768
+Rsecb sb ob .2
+Rloadb ob 0 8
+Rcoreb pb 0 100000.0
+Cprib pb 0 1e-10
+.save v(cmd) v(actual) v(drive) v(ideal) v(oa) v(ob) i(Lpa) i(Lsa) i(Lpb) i(Lsb)
+.tran 20u 1.0 0 20u
+.end
