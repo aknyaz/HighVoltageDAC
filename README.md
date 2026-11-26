@@ -4,6 +4,21 @@ A research project exploring a resistive DAC as a power stage with an output tra
 Current status: **simulation studies of a 12-bit 3+9 segmented DAC**, with
 the original 4-bit core retained as a regression bench; not a finished 5-10 W amplifier.
 
+![HV-RDAC monoblock appearance concept](output/concepts/hv_rdac_monoblock_v1.png)
+
+*AI-generated enclosure concept for one channel: two complementary resistor
+panels, an output transformer and a separate power-supply compartment. This is
+an appearance study, not a production layout or a photograph of working hardware.*
+
+The power stage is a switched precision resistor network driving an output
+transformer directly, without a conventional analog power-amplifier stage.
+The current assembly candidate uses 3,052 resistors per channel. The repository
+contains KiCad review schematics, reproducible calculations, SPICE netlists and
+simulation results. Hardware performance and listening impressions remain untested.
+
+Start with the [audio viability review](docs/audio_viability.md),
+[current plan](docs/plan.md) and [enclosure concept notes](output/concepts/README.md).
+
 The [100 V versus 650 V supply study](docs/supply_voltage_study.md) compares
 low-level audio with rescaled digital codes using the existing transformer and
 switch models. All voltages are simulation parameters, not hardware validation.
